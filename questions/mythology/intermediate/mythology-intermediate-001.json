@@ -1,0 +1,1977 @@
+[
+  {
+    "id": "myth_int_001",
+    "question": "The epithets Ergane, Promachus, and Pallas all belong to what deity?",
+    "answer": ["Athena"],
+    "topic": "Mythology",
+    "subtopic": "Epithets",
+    "group": "passage_001",
+    "dependency": "tossup",
+    "explanation": "Athena is identified by many epithets; 'Ergane' refers to her as patroness of craftsmen, 'Promachus' as protector in battle, and 'Pallas' as a common epithet meaning 'maiden.'"
+  },
+  {
+    "id": "myth_int_002",
+    "question": "Which of those epithets means 'Champion'?",
+    "answer": ["Promachus"],
+    "topic": "Mythology",
+    "subtopic": "Epithets",
+    "group": "passage_001",
+    "dependency": "bonus_dependent",
+    "explanation": "The epithet 'Promachus' literally means 'the one who fights in the front lines' or 'champion,' emphasizing Athena's role as a warrior and protector of cities."
+  },
+  {
+    "id": "myth_int_003",
+    "question": "Which deity bears the epithets Pandemos, Epitragia, and Urania?",
+    "answer": ["Aphrodite"],
+    "topic": "Mythology",
+    "subtopic": "Epithets",
+    "group": "passage_001",
+    "dependency": "bonus_independent",
+    "explanation": "Aphrodite is called 'Pandemos' in her role as unifier of the people, 'Epitragia' in connection with a goat sacrifice on Aegina, and 'Urania' in her aspect as heavenly or spiritual love."
+  },
+  {
+    "id": "myth_int_004",
+    "question": "Protesilaus was the unfortunate Greek who was first to die in the Trojan War. What was his widow's name?",
+    "answer": ["Laodameia"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War – Early Deaths",
+    "group": "passage_002",
+    "dependency": "tossup",
+    "explanation": "Laodameia, the wife of Protesilaus, grieved deeply after his death. Some accounts say the gods allowed her a brief reunion with him before she took her own life from sorrow."
+  },
+  {
+    "id": "myth_int_005",
+    "question": "The Trojan War devastated countless other families, and even the gods were not immune to loss. Name the son of Eos and Tithonus who was killed by Achilles.",
+    "answer": "Memnon",
+    "options": ["Sarpedon", "Rhesus", "Memnon", "Aeneas"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War – Heroes",
+    "group": "passage_002",
+    "dependency": "bonus_independent",
+    "explanation": "Memnon, the king of the Ethiopians and son of Eos (the dawn goddess) and Tithonus, came to aid Troy but was slain by Achilles in battle."
+  },
+  {
+    "id": "myth_int_006",
+    "question": "In Book VI of the Iliad, Andromache relates the death of her family in a raid on their city, including her father, who was killed by Achilles himself. Name Andromache's father.",
+    "answer": "Eetion",
+    "options": ["Priam", "Eetion", "Anchises", "Oeneus"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War – Family of Andromache",
+    "group": "passage_002",
+    "dependency": "bonus_independent",
+    "explanation": "Eetion, king of Cilician Thebe, was Andromache's father. Achilles sacked the city, killed Eetion, but did not despoil his body, instead honoring him with funeral rites."
+  },
+  {
+    "id": "myth_int_007",
+    "question": "Name the man who, in addition to being an Argonaut, took part in the Calydonian Boar hunt, became king of Salamis, and fathered one of the strongest Greek soldiers in the Trojan War.",
+    "answer": ["Telamon"],
+    "explanation": "Telamon was both an Argonaut and participant in the Calydonian Boar hunt. He became king of Salamis and was the father of the hero Ajax, one of the strongest Greek warriors at Troy.",
+    "topic": "Mythology – Argonauts",
+    "subtopic": "Argonauts and Heroes",
+    "dependency": "tossup",
+    "group": "passage_003"
+  },
+  {
+    "id": "myth_int_008",
+    "question": "Which other famous Argonaut helped his fellow adventurers by playing music, even saving them from the Sirens by drowning out their songs with his own?",
+    "options": ["Orpheus", "Heracles", "Jason", "Castor"],
+    "answer": "Orpheus",
+    "explanation": "Orpheus, the legendary musician, accompanied the Argonauts and used his music to protect them from the Sirens' deadly song.",
+    "topic": "Mythology – Argonauts",
+    "subtopic": "Argonauts and Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_003"
+  },
+  {
+    "id": "myth_int_009",
+    "question": "Which other famous Argonaut left the expedition early after nymphs kidnapped his lover Hylas?",
+    "options": ["Theseus", "Heracles", "Orpheus", "Telamon"],
+    "answer": "Heracles",
+    "explanation": "Heracles departed the Argonaut expedition when Hylas, his companion and lover, was abducted by nymphs, interrupting his journey with Jason and the Argonauts.",
+    "topic": "Mythology – Argonauts",
+    "subtopic": "Argonauts and Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_003"
+  },
+  {
+    "id": "myth_int_010",
+    "question": "Book 5 of the Iliad recounts the aristeia, or feats in battle, of which king of Argos, who even wounded a god?",
+    "answer": ["Diomedes"],
+    "explanation": "Diomedes, king of Argos, had an aristeia in Book 5 of the Iliad that included wounding a deity, showcasing his martial excellence.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Diomedes",
+    "dependency": "tossup",
+    "group": "passage_004"
+  },
+  {
+    "id": "myth_int_011",
+    "question": "During his aristeia, Diomedes wounded two Olympian gods. Who were they?",
+    "options": ["Ares and Aphrodite", "Ares and Apollo", "Zeus and Ares", "Aphrodite and Hera"],
+    "answer": "Ares and Aphrodite",
+    "explanation": "In the Iliad, Diomedes wounded both Ares and Aphrodite during his aristeia, highlighting his divine-level prowess in battle.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Diomedes",
+    "dependency": "bonus_independent",
+    "group": "passage_004"
+  },
+  {
+    "id": "myth_int_012",
+    "question": "After the Trojan War, Diomedes fled Argos due to political strife and betrayal, eventually founding which city in Italy?",
+    "answer": ["Argyrippa"],
+    "explanation": "Following exile, Diomedes traveled to Italy, where he met Aeneas and established the city of Argyrippa.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Diomedes",
+    "dependency": "bonus_independent",
+    "group": "passage_004"
+  },
+  {
+    "id": "myth_int_013",
+    "question": "Pelops conspired with which of King Oenomaus' charioteers to win the race for Hippodameia's hand?",
+    "answer": ["Myrtilus"],
+    "explanation": "Pelops bribed Myrtilus, the king's charioteer, to sabotage the race, securing his victory and marriage to Hippodameia.",
+    "topic": "Mythology – House of Atreus",
+    "subtopic": "Pelops and Hippodameia",
+    "dependency": "tossup",
+    "group": "passage_005"
+  },
+  {
+    "id": "myth_int_014",
+    "question": "Hippodameia ordered her sons Atreus and Thyestes to kill their half-brother, son of Pelops and a nymph. Who was he?",
+    "answer": ["Chrysippus"],
+    "explanation": "Fearing Chrysippus might claim the throne, Hippodameia had her sons murder him, a tragic start to the family's long history of bloodshed.",
+    "topic": "Mythology – House of Atreus",
+    "subtopic": "Family Betrayal",
+    "dependency": "bonus_independent",
+    "group": "passage_005"
+  },
+  {
+    "id": "myth_int_015",
+    "question": "Atreus took revenge on his brother Thyestes after discovering Thyestes' affair with his wife Aerope. How did he exact his revenge?",
+    "options": [
+      "Exiled Thyestes from Argos",
+      "Cursed Thyestes to never have children",
+      "Killed Thyestes' sons and tricked him into eating them",
+      "Stole Thyestes' kingdom while he slept"
+    ],
+    "answer": "Killed Thyestes' sons and tricked him into eating them",
+    "explanation": "In one of the most infamous acts of the House of Atreus, Atreus killed Thyestes' sons and served them to him at a feast as revenge for the affair.",
+    "topic": "Mythology – House of Atreus",
+    "subtopic": "Family Betrayal",
+    "dependency": "bonus_independent",
+    "group": "passage_005"
+  },
+  {
+    "id": "myth_int_016",
+    "question": "What healing god was raised by Chiron on Mount Pelion?",
+    "answer": ["Asclepius"],
+    "explanation": "Asclepius, famed for his healing abilities, was raised and taught medicine by the centaur Chiron on Mount Pelion.",
+    "topic": "Mythology – Asclepius",
+    "subtopic": "Parentage and Education",
+    "dependency": "tossup",
+    "group": "passage_006"
+  },
+  {
+    "id": "myth_int_017",
+    "question": "Asclepius was born of the union of Apollo and which daughter of King Phlegyas?",
+    "answer": ["Coronis"],
+    "explanation": "Coronis, daughter of Phlegyas, was loved by Apollo and became the mother of Asclepius, though she later betrayed him.",
+    "topic": "Mythology – Asclepius",
+    "subtopic": "Parentage and Education",
+    "dependency": "bonus_independent",
+    "group": "passage_006"
+  },
+  {
+    "id": "myth_int_018",
+    "question": "Which bird alerted Apollo that his wife Coronis was unfaithful?",
+    "options": [
+      "Swan",
+      "Eagle",
+      "Raven",
+      "Crow"
+    ],
+    "answer": "Crow",
+    "explanation": "A crow (sometimes called a raven) informed Apollo that Coronis was cheating on him, leading to her tragic death.",
+    "topic": "Mythology – Asclepius",
+    "subtopic": "Parentage and Education",
+    "dependency": "bonus_independent",
+    "group": "passage_006"
+  },
+  {
+    "id": "myth_int_019",
+    "question": "What fisherman discovered Danae and the infant Perseus washed up on the beach of Seriphos?",
+    "answer": ["Dictys"],
+    "explanation": "Dictys, a kind fisherman of Seriphos, rescued Danae and her son Perseus after they were set adrift in a chest by Acrisius.",
+    "topic": "Mythology – Perseus",
+    "subtopic": "Early Life",
+    "dependency": "tossup",
+    "group": "passage_007"
+  },
+  {
+    "id": "myth_int_020",
+    "question": "Who was Perseus' great-uncle, the brother of Acrisius, who feuded with him and later sent Bellerophon to Iobates to be killed?",
+    "answer": "Proetus",
+    "options": ["Dictys", "Proetus", "Polydectes", "Cepheus"],
+    "explanation": "Proetus, king of Tiryns and brother of Acrisius, had long-standing conflicts with Acrisius and became involved in the life of Bellerophon through deceit.",
+    "topic": "Mythology – Perseus",
+    "subtopic": "Family and Rivals",
+    "dependency": "bonus_independent",
+    "group": "passage_007"
+  },
+  {
+    "id": "myth_int_021",
+    "question": "Who was Proetus' wife, who convinced him to send Bellerophon away?",
+    "answer": "Stheneboea",
+    "options": ["Andromeda", "Stheneboea", "Danae", "Hippodameia"],
+    "explanation": "Stheneboea (also called Anteia) falsely accused Bellerophon of attempting to seduce her, persuading Proetus to send the hero to King Iobates with a deadly mission.",
+    "topic": "Mythology – Perseus",
+    "subtopic": "Family and Rivals",
+    "dependency": "bonus_independent",
+    "group": "passage_007"
+  },
+  {
+    "id": "myth_int_022",
+    "question": "What king of Pisa challenged Pelops to a deadly chariot race to prevent his daughter from marrying?",
+    "answer": "Oenomaus",
+    "options": ["Pelops", "Oenomaus", "Mycenaeus", "Theseus"],
+    "explanation": "King Oenomaus, fearing a prophecy that he would be killed by his son-in-law, challenged all suitors to a chariot race, killing those who lost.",
+    "topic": "Mythology – House of Pelops",
+    "subtopic": "Chariot Race",
+    "dependency": "tossup",
+    "group": "passage_008"
+  },
+  {
+    "id": "myth_int_023",
+    "question": "Which daughter of Oenomaus became the bride of Pelops after he won the chariot race?",
+    "answer": "Hippodameia",
+    "options": ["Danae", "Hippodameia", "Andromeda", "Alcmena"],
+    "explanation": "Hippodameia married Pelops after he successfully completed the dangerous race, securing her hand and beginning the House of Pelops.",
+    "topic": "Mythology – House of Pelops",
+    "subtopic": "Marriage and Dynasty",
+    "dependency": "bonus_independent",
+    "group": "passage_008"
+  },
+  {
+    "id": "myth_int_024",
+    "question": "Which charioteer of Oenomaus was bribed by Pelops to sabotage the race and was later killed by Pelops himself?",
+    "answer": "Myrtilus",
+    "options": ["Eurytus", "Cteatus", "Castor", "Myrtilus"],
+    "explanation": "Myrtilus was bribed to loosen the chariot's wheels so Pelops could win, but Pelops killed him afterward, incurring a curse on his lineage.",
+    "topic": "Mythology – House of Pelops",
+    "subtopic": "Chariot Race",
+    "dependency": "bonus_independent",
+    "group": "passage_008"
+  },
+  {
+    "id": "myth_int_025",
+    "question": "Pelops' victory in the chariot race indirectly caused a curse on his family. What was the nature of this curse?",
+    "answer": ["Bloodshed and betrayal among descendants"],
+    "explanation": "Pelops' murder of Myrtilus led to a curse on his descendants, including the infamous tragedies in the House of Atreus.",
+    "topic": "Mythology – House of Pelops",
+    "subtopic": "Family Curse",
+    "dependency": "tossup",
+    "group": "passage_009"
+  },
+  {
+    "id": "myth_int_026",
+    "question": "After Pelops married Hippodameia, the couple's children went on to create a notorious dynasty full of feuds and betrayals. What is the name of this family?",
+    "answer": "House of Atreus",
+    "options": ["House of Pelops", "House of Atreus", "House of Thebes", "House of Atreides"],
+    "explanation": "Pelops' sons, Atreus and Thyestes, became embroiled in a deadly feud marked by murder and revenge, establishing a cycle of curses and betrayals that haunted their descendants, including Agamemnon and Menelaus, central figures in the Trojan War.",
+    "topic": "Mythology – House of Pelops",
+    "subtopic": "Dynastic Legacy",
+    "dependency": "bonus_independent",
+    "group": "passage_009"
+  },
+  {
+    "id": "myth_int_027",
+    "question": "What kingdom did Pelops establish after marrying Hippodameia, which became the center of his dynasty?",
+    "answer": "Peloponnesus",
+    "options": ["Athens", "Mycenae", "Peloponnesus", "Corinth"],
+    "explanation": "After winning Hippodameia's hand, Pelops became ruler of the region that would later be named Peloponnesus, cementing his dynasty.",
+    "topic": "Mythology – House of Pelops",
+    "subtopic": "Dynasty and Legacy",
+    "dependency": "bonus_independent",
+    "group": "passage_009"
+  },
+  {
+    "id": "myth_int_028",
+    "question": "According to some accounts, what bronze giant patrolled Crete and was considered the last of the Bronze Race of men?",
+    "answer": ["Talus"],
+    "explanation": "Talus was a giant made of bronze who circled the island of Crete to protect it. He is often described as the last member of the Bronze Race of men, a mythological age preceding humans as we know them.",
+    "topic": "Mythology – Talus",
+    "subtopic": "Bronze Age Figures",
+    "dependency": "tossup",
+    "group": "passage_010"
+  },
+  {
+    "id": "myth_int_029",
+    "question": "Whom did Zeus give the giant Talus to serve as a protector?",
+    "answer": "Europa",
+    "options": ["Minos", "Europa", "Ariadne", "Crete"],
+    "explanation": "In certain traditions, Zeus entrusted Talus to Europa to safeguard her on Crete, reinforcing his role as a divine guardian.",
+    "topic": "Mythology – Talus",
+    "subtopic": "Bronze Age Figures",
+    "dependency": "bonus_independent",
+    "group": "passage_010"
+  },
+  {
+    "id": "myth_int_030",
+    "question": "Which witch killed Talus by removing the nail in his ankle that kept his life force (ichor) contained?",
+    "answer": "Medea",
+    "options": ["Circe", "Medea", "Hecate", "Calypso"],
+    "explanation": "Medea, the famous sorceress, defeated Talus by removing the bronze nail in his ankle, which caused his ichor to leak out and led to his death.",
+    "topic": "Mythology – Talus",
+    "subtopic": "Bronze Age Figures",
+    "dependency": "bonus_independent",
+    "group": "passage_010"
+  },
+  {
+    "id": "myth_int_031",
+    "question": "Who, as custodian of Hades' orchard, revealed that Persephone had eaten pomegranate seeds in the Underworld, dooming her to spend part of each year there?",
+    "answer": "Ascalaphus",
+    "options": ["Thanatos", "Ascalaphus", "Charon", "Morpheus"],
+    "explanation": "Ascalaphus was a minor chthonic figure who tended Hades' orchard. He told the gods that Persephone had eaten pomegranate seeds in Hades, which prevented her permanent return to the world above and explains the mythic origin of the seasons.",
+    "topic": "Mythology – Persephone",
+    "subtopic": "Ascalaphus' Betrayal",
+    "dependency": "tossup",
+    "group": "passage_011"
+  },
+  {
+    "id": "myth_int_032",
+    "question": "As punishment for betraying Persephone, Ascalaphus was transformed into what bird?",
+    "answer": ["Owl"],
+    "explanation": "In many accounts Demeter (Ceres) punished Ascalaphus by turning him into an owl – a transformation that links him to nocturnal and ominous symbolism. Some traditions instead credit Persephone with the metamorphosis.",
+    "topic": "Mythology – Persephone",
+    "subtopic": "Ascalaphus' Punishment",
+    "dependency": "bonus_dependent",
+    "group": "passage_011"
+  },
+  {
+    "id": "myth_int_033",
+    "question": "In an alternate version of the Persephone and Hades myth, Ascalaphus was pinned beneath a great boulder in the Underworld. Which hero later removed the stone and freed him?",
+    "answer": "Heracles",
+    "options": ["Odysseus", "Theseus", "Orpheus", "Heracles"],
+    "explanation": "One variant holds that Ascalaphus was imprisoned under a massive rock; during his twelfth labor Heracles descended to Hades and removed the boulder, freeing the trapped chthonic figure.",
+    "topic": "Mythology – Persephone",
+    "subtopic": "Ascalaphus Freed",
+    "dependency": "bonus_dependent",
+    "group": "passage_011"
+  },
+  {
+    "id": "myth_int_034",
+    "question": "What god, known for his panpipes and pursuit of nymphs, chased the nymph Syrinx until she was transformed into reeds?",
+    "answer": ["Pan"],
+    "explanation": "Pan, the rustic god of shepherds and flocks, fell in love with Syrinx. To escape him, she was transformed into reeds, which Pan then crafted into his first panpipes.",
+    "topic": "Mythology – Pan",
+    "subtopic": "Transformation Myths",
+    "dependency": "tossup",
+    "group": "passage_012"
+  },
+  {
+    "id": "myth_int_035",
+    "question": "Which woman, pursued by the sun god Helios, died before he could save her and was transformed into a fragrant plant?",
+    "answer": "Leucothoe",
+    "options": ["Clytie", "Syrinx", "Myrrha", "Leucothoe"],
+    "explanation": "Leucothoe was loved by Helios, but her father discovered their affair and buried her alive. Helios mourned her death, and she was transformed into a fragrant plant.",
+    "topic": "Mythology – Leucothoe",
+    "subtopic": "Transformation Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_012"
+  },
+  {
+    "id": "myth_int_036",
+    "question": "Who was the mother of Adonis, famously transformed into a myrrh tree after being cursed to fall in love with her father?",
+    "answer": "Myrrha",
+    "options": ["Leucothoe", "Aphrodite", "Myrrha", "Syrinx"],
+    "explanation": "Cursed by the gods, Myrrha (Smyrna) fell in love with her father. To escape the shame, she was turned into a myrrh tree. From this tree, Adonis was born, later celebrated as a symbol of beauty and desire.",
+    "topic": "Mythology – Myrrha",
+    "subtopic": "Transformation Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_012"
+  },
+  {
+    "id": "myth_int_037",
+    "question": "What Corinthian princess, also known as Creusa, was tricked by Medea into wearing a poisoned robe and crown that led to her gruesome death?",
+    "answer": "Glauce",
+    "options": ["Ariadne", "Iphigenia", "Glauce", "Hippodamia"],
+    "explanation": "Glauce, daughter of King Creon of Corinth, agreed to marry Jason after he abandoned Medea. Medea sent her a poisoned garment, which clung to her flesh and burned her alive when she put it on. This act marked the beginning of Medea's revenge.",
+    "topic": "Mythology – Medea",
+    "subtopic": "Revenge on Jason",
+    "dependency": "tossup",
+    "group": "passage_013"
+  },
+  {
+    "id": "myth_int_038",
+    "question": "After murdering Glauce (Jason's wife), Medea took revenge on Jason by killing his two sons. What were the names of these children?",
+    "answer": "Mermerus and Pheres",
+    "options": ["Phrixus and Helle", "Castor and Pollux", "Orestes and Pylades", "Mermerus and Pheres"],
+    "explanation": "Medea and Jason had two sons, Mermerus and Pheres. In her fury and grief, Medea killed them herself, ensuring Jason would be left without heirs. This infanticide is one of the darkest elements of her myth.",
+    "topic": "Mythology – Medea",
+    "subtopic": "Infanticide",
+    "dependency": "bonus_dependent",
+    "group": "passage_013"
+  },
+  {
+    "id": "myth_int_039",
+    "question": "After exacting her revenge on Jason, Medea fled Corinth in a chariot drawn by dragons. She eventually found refuge in Athens, where she married which king?",
+    "answer": "Aegeus",
+    "options": ["Theseus", "Aegeus", "Minos", "Cecrops"],
+    "explanation": "Medea's escape to Athens brought her into marriage with King Aegeus. Their union was short-lived, however, as Medea attempted to kill Theseus when he returned to claim his father's throne. When her plot failed, she fled once more.",
+    "topic": "Mythology – Medea",
+    "subtopic": "Exile in Athens",
+    "dependency": "bonus_independent",
+    "group": "passage_013"
+  },
+  {
+    "id": "myth_int_040",
+    "question": "Whose daughters were transformed into magpies after losing a musical contest against the Muses?",
+    "answer": "Pierus",
+    "options": ["Aeolus", "Pierus", "Cadmus", "Minos"],
+    "explanation": "Pierus, king of Emathia, had nine daughters who challenged the Muses to a contest and were punished for their hubris by being turned into magpies.",
+    "topic": "Mythology – Muses",
+    "subtopic": "Hubris and Punishment",
+    "dependency": "tossup",
+    "group": "passage_014"
+  },
+  {
+    "id": "myth_int_041",
+    "question": "After the Muses defeated the Sirens in the musical contest, they used the vanquished Sirens' feathers to decorate their crowns. What does this act symbolize in Greek mythology?",
+    "answer": "The triumph of divine inspiration and order over chaos",
+    "options": [
+      "The triumph of divine inspiration and order over chaos",
+      "The Muses' jealousy over mortal musicians",
+      "The Sirens' permanent servitude to the Muses",
+      "The punishment of those who challenge Zeus"
+    ],
+    "explanation": "By using the Sirens' feathers to adorn their crowns, the Muses demonstrated their superiority in music and symbolized that divine inspiration and structured art triumph over chaotic or disruptive forces like the Sirens.",
+    "topic": "Mythology – Muses",
+    "subtopic": "Victory over Rivals",
+    "dependency": "bonus_independent",
+    "group": "passage_014"
+  },
+  {
+    "id": "myth_int_042",
+    "question": "Which goddess encouraged the Sirens to challenge the Muses in the first place?",
+    "answer": "Hera",
+    "options": ["Athena", "Hera", "Aphrodite", "Demeter"],
+    "explanation": "Hera, displeased with mortals and rivals in general, instigated the Sirens' challenge to the Muses, hoping to disrupt divine order and demonstrate the power of her favored agents.",
+    "topic": "Mythology – Muses",
+    "subtopic": "Victory over Rivals",
+    "dependency": "bonus_independent",
+    "group": "passage_014"
+  },
+  {
+    "id": "myth_int_043",
+    "question": "According to prophecy, what sacred statue had to be taken from Troy in order for the city to fall?",
+    "answer": ["Palladium"],
+    "explanation": "The Palladium was a wooden statue of Athena kept in Troy. Greek legends held that as long as the Palladium remained within the city, Troy could not be conquered.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Prophecies and Omens",
+    "dependency": "tossup",
+    "group": "passage_015"
+  },
+  {
+    "id": "myth_int_044",
+    "question": "Which two Greek heroes snuck into Troy and stole the Palladium?",
+    "answer": ["Odysseus", "Diomedes"],
+    "options": [
+      "Odysseus and Diomedes",
+      "Ajax and Achilles",
+      "Menelaus and Agamemnon",
+      "Patroclus and Nestor"
+    ],
+    "explanation": "Odysseus and Diomedes, using stealth and cunning, infiltrated Troy and removed the Palladium, fulfilling one of the conditions necessary for the city's eventual fall.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Prophecies and Omens",
+    "dependency": "bonus_independent",
+    "group": "passage_015"
+  },
+  {
+    "id": "myth_int_045",
+    "question": "In addition to the theft of the Palladium, the bones of which hero had to be brought to Troy to ensure its destruction?",
+    "answer": ["Pelops"],
+    "explanation": "Legend held that bringing the bones of Pelops, an important hero of the Greek mythic tradition, to Troy would help fulfill the prophecy guaranteeing the city's downfall.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Prophecies and Omens",
+    "dependency": "bonus_independent",
+    "group": "passage_015"
+  },
+  {
+    "id": "myth_int_046",
+    "question": "Name the mythical princess of Argos who was the only one of her 50 sisters not to murder her husband on their wedding night.",
+    "answer": ["Hypermnestra"],
+    "explanation": "Hypermnestra was one of the Danaides, daughters of Danaus. Unlike her sisters, she spared her husband Lynceus, demonstrating mercy and defying her father's murderous command.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and the Danaides",
+    "dependency": "tossup",
+    "group": "passage_016"
+  },
+  {
+    "id": "myth_int_047",
+    "question": "Who was Hypermnestra's father, the king who commanded the mass murder of the 50 sons of Aegyptus?",
+    "answer": "Danaus",
+    "options": [
+      "Lynceus",
+      "Danaus",
+      "Aegyptus",
+      "Pelops"
+    ],
+    "explanation": "Danaus, king of Argos, ordered his daughters to kill their husbands on their wedding night to prevent a dynastic threat from the sons of his brother Aegyptus. Hypermnestra disobeyed.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and the Danaides",
+    "dependency": "bonus_independent",
+    "group": "passage_016"
+  },
+  {
+    "id": "myth_int_048",
+    "question": "In the Underworld, what eternal punishment did Hypermnestra's 49 sisters receive for their crime?",
+    "answer": "Filling a leaky vessel with water",
+    "options": [
+      "Walking endlessly in circles",
+      "Being turned into snakes",
+      "Filling a leaky vessel with water",
+      "Carrying a boulder up a hill"
+    ],
+    "explanation": "The 49 sisters of Hypermnestra, known as the Danaides, were punished in Tartarus with an endless and futile task: filling a vessel or sieve with water, symbolizing the consequences of their murderous act.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and the Danaides",
+    "dependency": "bonus_independent",
+    "group": "passage_016"
+  },
+  {
+    "id": "myth_int_049",
+    "question": "Hypermnestra was imprisoned by her father for disobeying his order. Which goddess intervened to save her from punishment, according to some versions of the myth?",
+    "answer": ["Aphrodite"],
+    "explanation": "In some versions, Aphrodite intervened on behalf of Hypermnestra, sparing her from her father Danaus' wrath and highlighting the goddess's role in protecting love and marriage.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and the Danaides",
+    "dependency": "tossup",
+    "group": "passage_017"
+  },
+  {
+    "id": "myth_int_050",
+    "question": "What was the name of the son of Hypermnestra and Lynceus?",
+    "answer": ["Abas"],
+    "explanation": "Abas was the son of Hypermnestra and Lynceus. He later became king and was the ancestor of a line of kings in Argos, continuing the royal dynasty.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and Lynceus",
+    "dependency": "bonus_independent",
+    "group": "passage_017"
+  },
+  {
+    "id": "myth_int_051",
+    "question": "The murder of the 49 husbands by the Danaids is sometimes interpreted as a myth representing the summer drying up of the rivers and springs of which region of Greece?",
+    "answer": ["Argolis"],
+    "explanation": "The myth of the Danaids killing their husbands has been interpreted as an allegory for the seasonal drying of rivers and springs in Argolis, linking myth with natural phenomena.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and the Danaids",
+    "dependency": "bonus_independent",
+    "group": "passage_017"
+  },
+  {
+    "id": "myth_int_052",
+    "question": "According to the poet Ovid, which of his works, a collection of letters from mythological heroines to their lovers, includes a letter from Hypermnestra to Lynceus?",
+    "answer": ["Heroides"],
+    "explanation": "Ovid's Heroides is a collection of poetic letters written from the perspectives of mythological women to their absent lovers. Hypermnestra's letter to Lynceus is one of these epistolary poems.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and Lynceus",
+    "dependency": "tossup",
+    "group": "passage_018"
+  },
+  {
+    "id": "myth_int_053",
+    "question": "What was the name of Danaus's twin brother, whose 50 sons sailed to Argos seeking to marry the Danaids?",
+    "answer": ["Aegyptus"],
+    "explanation": "Aegyptus was Danaus's twin brother. His 50 sons married the Danaids, most of whom killed their husbands on the wedding night, except for Hypermnestra.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and the Danaids",
+    "dependency": "bonus_independent",
+    "group": "passage_018"
+  },
+  {
+    "id": "myth_int_054",
+    "question": "To commemorate her escape, Hypermnestra is said to have commissioned an image of Aphrodite and given her what specific epithet?",
+    "answer": "Bringer of Victory",
+    "options": ["Giver of Love", "Protector of Women", "Bringer of Victory", "Queen of the Gods"],
+    "explanation": "Hypermnestra honored Aphrodite with the epithet 'Bringer of Victory,' celebrating the goddess' role in helping her survive her father's punishment.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra and Lynceus",
+    "dependency": "bonus_independent",
+    "group": "passage_018"
+  },
+  {
+    "id": "myth_int_055",
+    "question": "Which legendary hero, a great-grandson of Hypermnestra and Lynceus, is famed for slaying Medusa and rescuing Andromeda?",
+    "answer": "Perseus",
+    "options": ["Heracles", "Perseus", "Theseus", "Jason"],
+    "explanation": "Perseus, descendant of Hypermnestra and Lynceus through their grandson Acrisius, is famous for slaying Medusa and saving Andromeda. He is an ancestor of Heracles.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra's Descendants",
+    "dependency": "tossup",
+    "group": "passage_019"
+  },
+  {
+    "id": "myth_int_056",
+    "question": "Both Perseus and Heracles were descendants of ____ , the 12th king of Argos, whose line continued through the Perseid dynasty.",
+    "answer": ["Abas"],
+    "explanation": "Abas, the 12th king of Argos, was the ancestor of Perseus and, through him, of Heracles. The lineage through the Perseid dynasty links these heroes to the Argive royal line.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Hypermnestra's Descendants",
+    "dependency": "bonus_independent",
+    "group": "passage_019"
+  },
+  {
+    "id": "myth_int_057",
+    "question": "The Danaids' punishment in the Underworld is often compared to that of ____ , the figure condemned to eternally roll a boulder up a hill.",
+    "answer": ["Sisyphus"],
+    "explanation": "Sisyphus, king of Corinth, was condemned by the gods to roll a massive boulder up a hill endlessly. This punishment is often cited alongside the Danaids' endless labor to illustrate eternal toil in myth.",
+    "topic": "Mythology – Danaids",
+    "subtopic": "Underworld Punishments",
+    "dependency": "bonus_independent",
+    "group": "passage_019"
+  },
+  {
+    "id": "myth_int_058",
+    "question": "While taking part in the Calydonian Boar Hunt, this swift maiden shot the first arrow into the creature and was rewarded with its skin as a prize. Name the maiden.",
+    "answer": ["Atalanta"],
+    "explanation": "Atalanta was the only female participant in the Calydonian Boar Hunt. She shot the first arrow into the boar and, for her bravery, received the boar's hide as a reward.",
+    "topic": "Mythology – Atalanta",
+    "subtopic": "Calydonian Boar & Footrace",
+    "dependency": "tossup",
+    "group": "passage_020"
+  },
+  {
+    "id": "myth_int_059",
+    "question": "Aphrodite assisted this young man in a footrace against Atalanta. Using three golden apples, he distracted her and won her as his wife. Name this suitor of Atalanta.",
+    "answer": ["Hippomenes", "Melanion"],
+    "explanation": "Hippomenes (also called Melanion) used the golden apples given by Aphrodite to distract Atalanta and win the race, marrying her as a result.",
+    "topic": "Mythology – Atalanta",
+    "subtopic": "Calydonian Boar & Footrace",
+    "dependency": "bonus_independent",
+    "group": "passage_020"
+  },
+  {
+    "id": "myth_int_060",
+    "question": "For failing to properly thank the goddess who aided him in defeating Atalanta in the footrace, Hippomenes and Atalanta were transformed into lions. Which goddess of love punished them?",
+    "answer": "Aphrodite",
+    "options": ["Athena", "Artemis", "Aphrodite", "Hera"],
+    "explanation": "Aphrodite turned Hippomenes and Atalanta into lions as punishment for not showing gratitude after she helped Hippomenes win the footrace.",
+    "topic": "Mythology – Atalanta",
+    "subtopic": "Calydonian Boar & Footrace",
+    "dependency": "bonus_independent",
+    "group": "passage_020"
+  },
+  {
+    "id": "myth_int_061",
+    "question": "Atalanta was exposed at birth to die in the wilderness by her father who had wanted a son. She was left for dead and subsequently raised by a ________.",
+    "answer": ["bear", "she-bear", "she bear"],
+    "explanation": "Atalanta was left to die but was nurtured and raised by a bear, which gave her the strength and ferocity she was famous for in later adventures.",
+    "topic": "Mythology – Atalanta",
+    "subtopic": "Early Life",
+    "dependency": "tossup",
+    "group": "passage_021"
+  },
+  {
+    "id": "myth_int_062",
+    "question": "Aphrodite gave Hippomenes golden apples to distract Atalanta. These apples came from the garden of the ________.",
+    "answer": ["Hesperides"],
+    "explanation": "The golden apples came from the sacred garden of the Hesperides, nymphs who tended the divine fruit in the far west, and were used strategically by Hippomenes.",
+    "topic": "Mythology – Atalanta",
+    "subtopic": "Footrace & Golden Apples",
+    "dependency": "bonus_independent",
+    "group": "passage_021"
+  },
+  {
+    "id": "myth_int_063",
+    "question": "The golden apples used by Hippomenes were the same type of fruit that ________ had to retrieve as his eleventh labor.",
+    "answer": ["Hercules"],
+    "explanation": "Hercules' eleventh labor required him to retrieve the golden apples from the garden of the Hesperides, connecting the mythological apples to both his adventures and Hippomenes' story.",
+    "topic": "Mythology – Atalanta",
+    "subtopic": "Footrace & Golden Apples",
+    "dependency": "bonus_independent",
+    "group": "passage_021"
+  },
+  {
+    "id": "myth_int_064",
+    "question": "Meleager's mother, Althaea, enraged over a family dispute, threw a fateful log into the fire. What was the consequence of her action?",
+    "answer": "Meleager died",
+    "options": ["The Calydonian Boar was killed", "Meleager died", "Meleager became king", "Artemis cursed Althaea"],
+    "explanation": "The Fates had tied Meleager's life to a log in the hearth. In a fit of rage, Althaea burned the log, causing Meleager to die. This act set off further tragedy for his family, including the transformation of his sisters into birds.",
+    "topic": "Mythology – Meleager",
+    "subtopic": "Calydonian Boar Aftermath",
+    "dependency": "tossup",
+    "group": "passage_022"
+  },
+  {
+    "id": "myth_int_065",
+    "question": "After Meleager's death, what mythical creatures did Artemis turn his grieving sisters into?",
+    "answer": "Guinea Fowl",
+    "options": ["Doves", "Swans", "Guinea Fowl", "Sparrows"],
+    "explanation": "In grief over Meleager's death, Artemis transformed his sisters into guinea fowl, sometimes called Meleagrides, sparing two sisters in some versions of the myth.",
+    "topic": "Mythology – Meleager",
+    "subtopic": "Calydonian Boar Aftermath",
+    "dependency": "bonus_independent",
+    "group": "passage_022"
+  },
+  {
+    "id": "myth_int_066",
+    "question": "While most of Meleager's sisters were transformed into birds, which two sisters escaped this fate according to some versions of the story?",
+    "answer": "Deianeira and Gorge",
+    "options": ["Althaea and Hippodamia", "Atalanta and Medea", "Evadne and Iphimedeia", "Deianeira and Gorge"],
+    "explanation": "Deianeira and Gorge were the only sisters who were not transformed into guinea fowl, while the rest of the sisters suffered this metamorphosis.",
+    "topic": "Mythology – Meleager",
+    "subtopic": "Calydonian Boar Aftermath",
+    "dependency": "bonus_independent",
+    "group": "passage_022"
+  },
+  {
+    "id": "myth_int_067",
+    "question": "Penthesileia's mother, Otrere, was considered the founder of the Amazons. By which god did she bear Penthesileia and her sisters?",
+    "answer": ["Ares"],
+    "explanation": "Otrere, often named as the first queen of the Amazons, was said to have borne her daughters by Ares, the god of war. This ancestry gave the Amazons their warlike nature and divine connection to battle.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Origins",
+    "dependency": "tossup",
+    "group": "passage_023"
+  },
+  {
+    "id": "myth_int_068",
+    "question": "Besides Penthesileia, name one of the other daughters of Ares and Otrere.",
+    "answer": ["Hippolyte", "Antiope", "Melanippe"],
+    "options": ["Penthisilea", "Melanippe", "Hippolyte", "Antiope"],
+    "explanation": "The Amazons were a tribe of warrior women. In some traditions, Penthesileia had sisters named Hippolyte, Antiope, and Melanippe, all famous in Greek mythology for their roles in stories involving Theseus and Heracles.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Amazonian Figures",
+    "dependency": "bonus_independent",
+    "group": "passage_023"
+  },
+  {
+    "id": "myth_int_069",
+    "question": "After receiving purification from Priam for accidentally killing her sister Hippolyte, Penthesileia and the Amazons rode to aid the Trojans at ________.",
+    "answer": ["Troy"],
+    "explanation": "Penthesileia joined the Trojan War after being purified by King Priam for the accidental death of her sister. She and her Amazon warriors fought valiantly for Troy, though she was ultimately slain by Achilles.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Penthesileia & the Trojan War",
+    "dependency": "bonus_independent",
+    "group": "passage_023"
+  },
+  {
+    "id": "myth_int_070",
+    "question": "After killing Penthesileia in battle, Achilles was mocked by Thersites, who insulted him by saying Penthesileia was nothing more than a ________.",
+    "answer": "beautiful corpse",
+    "options": ["beautiful corpse", "fallen queen", "soulless warrior", "cowardly Amazon"],
+    "explanation": "In some traditions, Thersites mocked Achilles for falling in love with Penthesileia after killing her, calling her a 'beautiful corpse.' This insult enraged Achilles and led him to kill Thersites.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Penthesileia & Achilles",
+    "dependency": "tossup",
+    "group": "passage_024"
+  },
+  {
+    "id": "myth_int_071",
+    "question": "The Achaean hero depicted on a famous vase slaying Penthesileia, and later said to have fallen in love with her after her death, was ________.",
+    "answer": ["Achilles"],
+    "explanation": "Vase paintings show Achilles killing Penthesileia during the Trojan War. Later traditions emphasized his tragic attraction to her even after death, a theme blending heroism and irony.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Penthesileia & Achilles",
+    "dependency": "bonus_dependent",
+    "group": "passage_024"
+  },
+  {
+    "id": "myth_int_072",
+    "question": "Which Amazon warrior fought alongside Penthesileia at Troy?",
+    "answer": "Eilissus",
+    "options": ["Hippolyte", "Melanippe", "Antiope", "Eilissus"],
+    "explanation": "While Penthesileia is the best-known Amazon at Troy, lesser-known traditions also mention the warrior Eilissus fighting alongside her in defense of the city.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Amazon Allies",
+    "dependency": "bonus_dependent",
+    "group": "passage_024"
+  },
+  {
+    "id": "myth_int_073",
+    "question": "After killing Thersites, Achilles traveled to the island of ________ for purification before returning to Troy.",
+    "answer": ["Lesbos"],
+    "explanation": "Following the killing of Thersites, Achilles sought purification for the bloodshed. He traveled to Lesbos, a location frequently mentioned in Greek myths as a site for cleansing after committing homicide, before resuming his campaign at Troy.",
+    "topic": "Mythology – Achilles",
+    "subtopic": "Purification & Penitence",
+    "dependency": "tossup",
+    "group": "passage_025"
+  },
+  {
+    "id": "myth_int_074",
+    "question": "Penthesileia, the Amazon queen whose name means 'mourned by the people,' was the daughter of ________ and ________, and led her troops to Troy.",
+    "answer": ["Ares", "Otrere"],
+    "options": ["Zeus and Hera", "Ares and Otrere", "Apollo and Antiope", "Hephaestus and Hippolyte"],
+    "explanation": "Penthesileia, daughter of Ares and Otrere, was an Amazon queen who fought in the Trojan War and was killed by Achilles. Her tragic death and bravery made her a prominent figure in myths about the Amazons.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Penthesileia",
+    "dependency": "bonus_independent",
+    "group": "passage_025"
+  },
+  {
+    "id": "myth_int_075",
+    "question": "After her purification by Priam for accidentally killing her sister Hippolyte, Penthesileia and the Amazons rode to assist the Trojans at ________.",
+    "answer": ["Troy"],
+    "explanation": "Penthesileia received purification from Priam for accidentally killing her sister Hippolyte. Following this, she led the Amazons to Troy (Ilium) to support the Trojans in the war, demonstrating their loyalty and martial prowess.",
+    "topic": "Mythology – Amazons",
+    "subtopic": "Trojan War Involvement",
+    "dependency": "bonus_independent",
+    "group": "passage_025"
+  },
+  {
+    "id": "myth_int_076",
+    "question": "To whom did Menelaus give Phaedimus' silver mixing bowl as a parting gift when he came to Sparta in search of his father?",
+    "answer": ["Telemachus"],
+    "explanation": "Menelaus, king of Sparta, gave Telemachus the silver mixing bowl as a gift when he visited in search of his father, Odysseus. This gift symbolized hospitality and the passing of honor between generations.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Telemachus' Journey",
+    "dependency": "tossup",
+    "group": "passage_026"
+  },
+  {
+    "id": "myth_int_077",
+    "question": "When Telemachus arrived in Sparta, Menelaus was hosting a double wedding ceremony for which two of his children?",
+    "answer": "Hermione and Megapenthes",
+    "options": ["Clytemnestra and Orestes", "Helen and Polydeuces", "Andromache and Astyanax", "Hermione and Megapenthes"],
+    "explanation": "Menelaus was celebrating the marriages of his children Hermione and Megapenthes when Telemachus arrived, highlighting the domestic and political life of Sparta during the post-Trojan War era.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Telemachus' Journey",
+    "dependency": "bonus_independent",
+    "group": "passage_026"
+  },
+  {
+    "id": "myth_int_078",
+    "question": "Which sea deity reassured Menelaus that Odysseus was alive, calming Telemachus and allowing him to return to Ithaca?",
+    "answer": ["Proteus"],
+    "explanation": "Proteus, the prophetic sea god, informed Menelaus that Odysseus was still alive. This assurance allowed Telemachus to leave Sparta with renewed hope for finding his father.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Telemachus' Journey",
+    "dependency": "bonus_independent",
+    "group": "passage_026"
+  },
+  {
+    "id": "myth_int_079",
+    "question": "What son of the sun god Helios was warned by an oracle that he would lose his kingdom if a stranger carried off the Golden Fleece, leading him to devise several impossible tasks for Jason?",
+    "answer": ["Aeëtes"],
+    "explanation": "Aeëtes, king of Colchis and son of Helios, was cautious after an oracle predicted that his throne would be taken if the Golden Fleece was stolen. This prompted him to set Jason difficult challenges.",
+    "topic": "Mythology – Jason and the Argonauts",
+    "subtopic": "Aeëtes and the Golden Fleece",
+    "dependency": "tossup",
+    "group": "passage_027"
+  },
+  {
+    "id": "myth_int_080",
+    "question": "Medea, daughter of Aeëtes, helped Jason by giving him a protective ointment. In exchange, what did Medea make Jason promise to do?",
+    "answer": "Marry her",
+    "options": ["Marry her", "Return the Fleece", "Bring her to Greece", "Kill her brother"],
+    "explanation": "Medea agreed to help Jason overcome Aeëtes' challenges on the condition that he would marry her, binding them through both love and obligation during the quest for the Golden Fleece.",
+    "topic": "Mythology – Jason and the Argonauts",
+    "subtopic": "Medea's Aid",
+    "dependency": "bonus_independent",
+    "group": "passage_027"
+  },
+  {
+    "id": "myth_int_081",
+    "question": "After Jason's quest and departure, the loss of the Golden Fleece ultimately led to the loss of Aeëtes' throne. Which brother of Aeëtes usurped his power?",
+    "answer": ["Perses"],
+    "explanation": "Following the theft of the Golden Fleece, Aeëtes' rule was destabilized, allowing his brother Perses to seize the throne of Colchis.",
+    "topic": "Mythology – Jason and the Argonauts",
+    "subtopic": "Aeëtes' Downfall",
+    "dependency": "bonus_independent",
+    "group": "passage_027"
+  },
+  {
+    "id": "myth_int_082",
+    "question": "Which Colchian princess, daughter of Aeëtes, aided Jason in his quest for the Golden Fleece?",
+    "answer": ["Idyia"],
+    "explanation": "Idyia, daughter of Aeëtes, is sometimes named as the Colchian princess who assisted Jason, highlighting her role in the myth alongside Medea.",
+    "topic": "Mythology – Jason and the Argonauts",
+    "subtopic": "Medea and Idyia",
+    "dependency": "tossup",
+    "group": "passage_028"
+  },
+  {
+    "id": "myth_int_083",
+    "question": "In Colchis, Jason was required to yoke two fire-breathing, bronze-hooved bulls as part of Aeëtes' challenges. What were these bulls called?",
+    "answer": ["Khalkotauroi"],
+    "explanation": "The Khalkotauroi were fearsome bulls gifted to Aeëtes by Hephaestus. Jason's task to yoke them tested his strength and courage.",
+    "topic": "Mythology – Jason and the Argonauts",
+    "subtopic": "Aeëtes' Challenges",
+    "dependency": "bonus_independent",
+    "group": "passage_028"
+  },
+  {
+    "id": "myth_int_084",
+    "question": "After plowing a field with the fire-breathing bulls, Jason sowed the dragon's teeth given to him by Aeëtes. What grew from these sown teeth?",
+    "answer": "An army of armed warriors",
+    "options": ["A flock of giant birds", "An army of armed warriors", "A forest of thorny plants", "A river of fire"],
+    "explanation": "From the dragon's teeth sown by Jason, an army of armed warriors, also called earth-born men, sprang up. This was one of the challenges Aeëtes set for Jason.",
+    "topic": "Mythology – Jason and the Argonauts",
+    "subtopic": "Dragon's Teeth",
+    "dependency": "bonus_independent",
+    "group": "passage_028"
+  },
+  {
+    "id": "myth_int_085",
+    "question": "Who introduced himself to the Cyclops Polyphemus as 'Outis' or 'Nobody' after giving him wine to make him drunk?",
+    "answer": "Odysseus",
+    "options": ["Odysseus", "Telemachus", "Menelaus", "Achilles"],
+    "explanation": "Odysseus cleverly told Polyphemus that his name was 'Nobody' ('Outis') so that when he blinded the Cyclops, Polyphemus' cries would confuse the other Cyclopes.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "tossup",
+    "group": "passage_029"
+  },
+  {
+    "id": "myth_int_086",
+    "question": "From what priest of Ismarus did Odysseus obtain the wine used to intoxicate Polyphemus?",
+    "answer": "Maron",
+    "options": ["Nestor", "Eurylochus", "Laertes", "Maron"],
+    "explanation": "Odysseus received potent wine from Maron, a priest of Apollo in Ismarus, which he used to make the Cyclops drunk and gain the upper hand.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "bonus_independent",
+    "group": "passage_029"
+  },
+  {
+    "id": "myth_int_087",
+    "question": "How many of Odysseus' men did Polyphemus eat before Odysseus and his crew escaped from the cave?",
+    "answer": "Six",
+    "options": ["Twelve", "Six", "Three", "Nine"],
+    "explanation": "Polyphemus devoured six of Odysseus' men before Odysseus blinded him and escaped by hiding under the bellies of sheep.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "bonus_independent",
+    "group": "passage_029"
+  },
+  {
+    "id": "myth_int_088",
+    "question": "What is the name of the one-eyed Cyclops who traps Odysseus and his men in a cave?",
+    "answer": "Polyphemus",
+    "options": ["Polyphemus", "Antiphates", "Talos", "Cyclops"],
+    "explanation": "Polyphemus is the son of Poseidon and the one-eyed giant who imprisons Odysseus and his men in the Odyssey.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "tossup",
+    "group": "passage_030"
+  },
+  {
+    "id": "myth_int_089",
+    "question": "After getting the Cyclops drunk, Odysseus and his men used what object to blind Polyphemus?",
+    "answer": ["A sharpened, heated wooden stake"],
+    "explanation": "Odysseus and his men crafted a sharpened wooden stake, heated it in the fire, and drove it into Polyphemus' single eye to escape.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "bonus_independent",
+    "group": "passage_030"
+  },
+  {
+    "id": "myth_int_090",
+    "question": "What did Polyphemus promise Odysseus in return for revealing his real name?",
+    "answer": "That he would eat Odysseus last",
+    "options": ["That he would guard their ship", "That he would spare all his men", "That he would eat Odysseus last", "That he would set Odysseus free"],
+    "explanation": "Polyphemus promised Odysseus he would eat him last if he told his real name, not knowing Odysseus would escape before the threat could be carried out.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "bonus_independent",
+    "group": "passage_030"
+  },
+  {
+    "id": "myth_int_091",
+    "question": "Why does Odysseus not kill Polyphemus with his sword on the first night, even when the Cyclops is asleep?",
+    "answer": "He realizes that Polyphemus is the only one strong enough to move the gigantic boulder blocking the cave entrance",
+    "options": [
+      "He is afraid of angering the other Cyclopes",
+      "He plans to escape at dawn instead",
+      "He wants to trick Polyphemus first",
+      "He realizes that Polyphemus is the only one strong enough to move the gigantic boulder blocking the cave entrance"
+    ],
+    "explanation": "Odysseus recognizes that if he killed Polyphemus immediately, he and his men would be trapped inside the cave, as only the Cyclops could move the massive stone blocking the exit.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "tossup",
+    "group": "passage_031"
+  },
+  {
+    "id": "myth_int_092",
+    "question": "How do Odysseus and his remaining crew members escape the cave after blinding Polyphemus?",
+    "answer": "They cling to the bellies of Polyphemus' sheep",
+    "options": [
+      "They hide in large baskets Polyphemus uses",
+      "They flee at night while Polyphemus sleeps",
+      "They cling to the bellies of Polyphemus' sheep",
+      "They dig a tunnel under the cave"
+    ],
+    "explanation": "Odysseus devises a clever escape by tying his men beneath the bellies of the Cyclops' sheep. Polyphemus, unable to see, unknowingly lets them leave while counting only the sheep.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "bonus_independent",
+    "group": "passage_031"
+  },
+  {
+    "id": "myth_int_093",
+    "question": "What arrogant and fatal mistake does Odysseus make after sailing away from the Cyclops' island?",
+    "answer": "He reveals his real name to Polyphemus",
+    "options": [
+      "He reveals his real name to Polyphemus",
+      "He steals more sheep from the cave",
+      "He leaves some men behind",
+      "He insults the other Cyclopes on the island"
+    ],
+    "explanation": "Odysseus' pride leads him to taunt Polyphemus, revealing his true identity. This allows the Cyclops to call upon his father, Poseidon, to curse Odysseus' voyage home.",
+    "topic": "Mythology – Odyssey",
+    "subtopic": "Polyphemus",
+    "dependency": "bonus_independent",
+    "group": "passage_031"
+  },
+  {
+    "id": "myth_int_094",
+    "question": "Which sea-god assisted the Argonauts when they were trapped on the coast of Libya by guiding them safely back to the open sea?",
+    "answer": "Triton",
+    "options": [
+      "Poseidon",
+      "Triton",
+      "Nereus",
+      "Glaucus"
+    ],
+    "explanation": "Triton, a minor sea-god and messenger of the deep, aided the Argonauts by showing them the safe passage when they were stranded in Libya.",
+    "topic": "Mythology – Argonauts",
+    "subtopic": "Sea-Gods & Assistance",
+    "dependency": "tossup",
+    "group": "passage_032"
+  },
+  {
+    "id": "myth_int_095",
+    "question": "Triton gave a special gift to the Argonaut Euphemus. What was it?",
+    "answer": "A clod of dirt",
+    "options": [
+      "A magical scroll",
+      "A horn of plenty",
+      "A clod of dirt",
+      "A golden sword"
+    ],
+    "explanation": "The clod of dirt given to Euphemus by Triton had magical properties, later allowing him to found colonies in Libya according to myth.",
+    "topic": "Mythology – Argonauts",
+    "subtopic": "Sea-Gods & Assistance",
+    "dependency": "bonus_independent",
+    "group": "passage_032"
+  },
+  {
+    "id": "myth_int_096",
+    "question": "Triton blew on his conch to scare away certain mythological creatures while aiding the Argonauts. Which creatures did he frighten?",
+    "answer": ["Giants"],
+    "explanation": "Triton's conch produced a terrifying sound that drove off Alcyoneus, Porphyrion, and other giants, clearing the path for the Argonauts.",
+    "topic": "Mythology – Argonauts",
+    "subtopic": "Sea-Gods & Assistance",
+    "dependency": "bonus_independent",
+    "group": "passage_032"
+  },
+  {
+    "id": "myth_int_097",
+    "question": "Who was sent to Aulis under the pretense of marrying Achilles, but was actually meant to be sacrificed by her father Agamemnon to secure favorable winds to Troy?",
+    "answer": ["Iphigeneia"],
+    "explanation": "Agamemnon lured his daughter to Aulis under the guise of marriage to Achilles, intending to sacrifice her to appease the gods and ensure the Greek fleet could sail to Troy.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Aulis & Sacrifice",
+    "dependency": "tossup",
+    "group": "passage_033"
+  },
+  {
+    "id": "myth_int_098",
+    "question": "Who was Iphigeneia's mother, who was hesitant to send her daughter away, prompting Agamemnon to use the trick of a fake marriage?",
+    "answer": ["Clytemnestra"],
+    "explanation": "Clytemnestra, aware of the danger, was reluctant to let her daughter go, prompting Agamemnon to deceive her into thinking she would wed Achilles.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Aulis & Sacrifice",
+    "dependency": "bonus_independent",
+    "group": "passage_033"
+  },
+  {
+    "id": "myth_int_099",
+    "question": "After being rescued by Artemis and made a priestess among the Taurians, Iphigeneia later helped her brother ________ when he arrived in her new land.",
+    "answer": ["Orestes"],
+    "explanation": "Iphigeneia, now a priestess of Artemis in Tauris, assisted her brother Orestes during his visit, fulfilling a key episode in the myth of the Taurian rites.",
+    "topic": "Mythology – Trojan War",
+    "subtopic": "Aulis & Taurians",
+    "dependency": "bonus_independent",
+    "group": "passage_033"
+  },
+  {
+    "id": "myth_int_100",
+    "question": "Before Jason could claim the Golden Fleece, he had to defeat its sleepless guardian in the grove of Ares. What was this guardian?",
+    "answer": "Colchian Dragon",
+    "options": ["Hydra", "Python", "Cerberus", "Colchian Dragon"],
+    "explanation": "The Colchian Dragon, sometimes described as a serpent, was placed by Ares to guard the Golden Fleece, and Jason had to overcome it to complete his quest.",
+    "topic": "Mythology – Jason & the Argonauts",
+    "subtopic": "Golden Fleece & Guardians",
+    "dependency": "standalone",
+    "group": null
+  },
+  {
+    "id": "myth_int_101",
+    "question": "Who killed Hephaestus' club-wielding son Periphetes, a pine-bending robber named Sinis, and a brigand who kicked people to a man-eating turtle, all while on his way to find his father Aegeus at Athens?",
+    "answer": ["Theseus"],
+    "topic": "Mythology",
+    "subtopic": "Theseus",
+    "dependency": "tossup",
+    "group": "passage_034"
+  },
+  {
+    "id": "myth_int_102",
+    "question": "What other brigand killed by Theseus was known for cutting people down to size to fit into a bed?",
+    "answer": ["Procrustes", "Damastes", "Polypemon"],
+    "topic": "Mythology",
+    "subtopic": "Theseus",
+    "dependency": "bonus_independent",
+    "group": "passage_034"
+  },
+  {
+    "id": "myth_int_103",
+    "question": "At what city had Theseus been raised by his mother Aethra?",
+    "answer": "Troezen",
+    "options": [
+      "Athens",
+      "Troezen",
+      "Delos",
+      "Eleusis"
+    ],
+    "topic": "Mythology",
+    "subtopic": "Theseus",
+    "dependency": "bonus_independent",
+    "group": "passage_034"
+  },
+  {
+    "id": "myth_int_104",
+    "question": "What constellation, which has the shape of a W, is thought to have been an upside down queen, whose rash boasts endangered her daughter by Cepheus, the Ethiopian princess Andromeda?",
+    "answer": ["Cassiopeia"],
+    "topic": "Mythology",
+    "subtopic": "Andromeda and Perseus",
+    "dependency": "tossup",
+    "group": "passage_035"
+  },
+  {
+    "id": "myth_int_105",
+    "question": "What was Cassiopeia's rash boast?",
+    "answer": "Andromeda was prettier than the Nereids",
+    "options": [
+      "That she was wiser than Athena",
+      "Andromeda could out sing the Muses",
+      "Andromeda was prettier than the Nereids",
+      "That her beauty surpassed even Hera's"
+    ],
+    "topic": "Mythology",
+    "subtopic": "Andromeda and Perseus",
+    "dependency": "bonus_independent",
+    "group": "passage_035"
+  },
+  {
+    "id": "myth_int_106",
+    "question": "Although Cepheus betrothed Andromeda to Perseus, what uncle of hers fought Perseus for her?",
+    "answer": ["Phineus"],
+    "topic": "Mythology",
+    "subtopic": "Andromeda and Perseus",
+    "dependency": "bonus_independent",
+    "group": "passage_035"
+  },
+  {
+    "id": "myth_int_107",
+    "question": "What monster threw herself off the citadel of Thebes when Laius's clever son ended her habit of eating visitors by producing the answer 'man' in response to her riddle?",
+    "answer": ["Sphinx"],
+    "topic": "Mythology",
+    "subtopic": "Oedipus and Thebes",
+    "dependency": "tossup",
+    "group": "passage_036"
+  },
+  {
+    "id": "myth_int_108",
+    "question": "Oedipus went on to accidentally marry his mother Jocasta. Which daughter of Oedipus and Jocasta is the subject of a Sophoclean tragedy where she buries her brother illegally?",
+    "answer": "Antigone",
+    "options": [
+      "Iphigenia",
+      "Electra",
+      "Ismene",
+      "Antigone"
+    ],
+    "topic": "Mythology",
+    "subtopic": "Oedipus and Thebes",
+    "dependency": "bonus_independent",
+    "group": "passage_036"
+  },
+  {
+    "id": "myth_int_109",
+    "question": "The Sphinx was the child of Echidna and what two-headed dog, who guarded the cattle of Geryon?",
+    "answer": ["Orthrus", "Orthos"],
+    "topic": "Mythology",
+    "subtopic": "Oedipus and Thebes",
+    "dependency": "bonus_independent",
+    "group": "passage_036"
+  },
+  {
+    "id": "myth_int_110",
+    "question": "What man, whose agnomen means 'one-eyed,' defended the Pons Sublicius from an invading Etruscan army?",
+    "answer": "Horatius Cocles",
+    "options": ["Gaius Mucius", "Horatius Cocles", "Cloelius", "Scaevola"],
+    "explanation": "Horatius Cocles heroically defended the bridge across the Tiber against Lars Porsenna's Etruscan army, allowing the Romans time to destroy it and prevent invasion.",
+    "topic": "Mythology",
+    "subtopic": "Early Roman Legends",
+    "dependency": "tossup",
+    "group": "passage_037"
+  },
+  {
+    "id": "myth_int_111",
+    "question": "What famous Roman girl swam the Tiber to free hostages from Porsenna's camp?",
+    "answer": ["Cloelia"],
+    "topic": "Mythology",
+    "subtopic": "Early Roman Legends",
+    "dependency": "bonus_independent",
+    "group": "passage_037",
+    "explanation": "Cloelia escaped captivity by swimming across the Tiber River and was later honored for her bravery with a statue on horseback."
+  },
+  {
+    "id": "myth_int_112",
+    "question": "A man named Gaius Mucius was captured by Porsenna after a failed assassination attempt. What agnomen was he given for bravely defying the Etruscan king and thrusting his right hand into a fire?",
+    "answer": "Scaevola",
+    "options": ["Mucianus", "Horatius Cocles", "Cloelius", "Scaevola"],
+    "topic": "Mythology",
+    "subtopic": "Early Roman Legends",
+    "dependency": "bonus_independent",
+    "group": "passage_037",
+    "explanation": "After burning his own hand to show Roman courage, Gaius Mucius earned the agnomen Scaevola, meaning 'left-handed.'"
+  },
+  {
+    "id": "myth_int_113",
+    "question": "'Smintheus,' 'Delphinius,' 'Pythius,' and 'Delius' are all epithets of what god, whose birth on Delos from Leto was followed by a journey to Delphi, where he set up his oracle?",
+    "answer": ["Apollo"],
+    "topic": "Mythology",
+    "subtopic": "Greek Deities and Epithets",
+    "dependency": "tossup",
+    "group": "passage_038",
+    "explanation": "Apollo, son of Zeus and Leto, was born on Delos and later established the famous oracle at Delphi; many epithets reflect his attributes and places associated with him."
+  },
+  {
+    "id": "myth_int_114",
+    "question": "What tree was sacred to Apollo, as referred to by his epithet 'Daphnaeus'?",
+    "answer": ["Laurel", "Laurel tree"],
+    "topic": "Mythology",
+    "subtopic": "Greek Deities and Epithets",
+    "dependency": "bonus_independent",
+    "group": "passage_038",
+    "explanation": "The laurel tree was sacred to Apollo, commemorating his pursuit of Daphne, who was transformed into a laurel to escape him."
+  },
+  {
+    "id": "myth_int_115",
+    "question": "Another epithet of Apollo referred to his ill-fated love for what Spartan youth, whom he accidentally killed?",
+    "answer": "Hyacinth",
+    "options": ["Phaethon", "Hyacinth", "Adonis", "Orpheus"],
+    "topic": "Mythology",
+    "subtopic": "Greek Deities and Epithets",
+    "dependency": "bonus_independent",
+    "group": "passage_038",
+    "explanation": "Apollo loved the Spartan youth Hyacinth, whom he accidentally killed with a discus; the flower hyacinth sprang up from his blood."
+  },
+  {
+    "id": "myth_int_116",
+    "question": "What island saw Eumaeus and the dog Argus remain loyal to their master, while Antinous and over a hundred other greedy men insulted Telemachus and sought the hand of Penelope in marriage?",
+    "answer": ["Ithaca"],
+    "topic": "Mythology",
+    "subtopic": "Odyssey",
+    "dependency": "tossup",
+    "group": "passage_039",
+    "explanation": "Ithaca is the home of Odysseus. Eumaeus the swineherd and Argus the dog stayed loyal, while the suitors pursued Penelope and mocked her son, Telemachus."
+  },
+  {
+    "id": "myth_int_117",
+    "question": "When Telemachus went on an expedition to seek information about Odysseus, he first came to Pylos and spoke with what wise old man, a veteran of the Trojan War?",
+    "answer": ["Nestor"],
+    "topic": "Mythology",
+    "subtopic": "Odyssey",
+    "dependency": "bonus_independent",
+    "group": "passage_039",
+    "explanation": "Nestor, king of Pylos and a veteran of the Trojan War, provided Telemachus with guidance and news about other Greek heroes."
+  },
+  {
+    "id": "myth_int_118",
+    "question": "Who was Odysseus's father, who stuck to tending his garden and tried to forget about the whole situation unfolding on Ithaca?",
+    "answer": "Laertes",
+    "options": ["Nestor", "Eumaeus", "Laertes", "Antinous"],
+    "topic": "Mythology",
+    "subtopic": "Odyssey",
+    "dependency": "bonus_independent",
+    "group": "passage_039",
+    "explanation": "Laertes, father of Odysseus, withdrew from public life to care for his garden while the suitors overran his household."
+  },
+  {
+    "id": "myth_int_119",
+    "question": "Book five of the Iliad relates the aristeia, or amazing feats in battle, of which king of Argos, that included the wounding of a deity?",
+    "answer": ["Diomedes"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "tossup",
+    "group": "passage_040",
+    "explanation": "In Book 5 of the Iliad, Diomedes demonstrates exceptional skill in battle, even wounding two gods."
+  },
+  {
+    "id": "myth_int_120",
+    "question": "The word 'aristeia' literally means 'excellence', and Diomedes' aristeia was truly excellent. So excellent that he even wounded two Olympian gods in battle! Name these gods.",
+    "answer": "Ares and Aphrodite",
+    "options": ["Hera and Artemis", "Zeus and Apollo", "Ares and Aphrodite", "Athena and Hermes"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_040",
+    "explanation": "During his aristeia in Book 5, Diomedes wounds Ares and Aphrodite, with Athena's help."
+  },
+  {
+    "id": "myth_int_121",
+    "question": "Although Diomedes survived the Trojan war and made it home safely, his troubles were not over. Because of competing claims to the throne of Argos and the betrayal of his wife, Diomedes was forced into exile. He ultimately fled to Italy, even meeting Aeneas, and founded what city?",
+    "answer": "Argyrippa",
+    "options": ["Troy", "Argyrippa", "Rome", "Patavium"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_040",
+    "explanation": "Diomedes fled Argos after political conflict and founded Argyrippa in Italy."
+  },
+  {
+    "id": "myth_int_122",
+    "question": "The son of Thetis and Peleus, trained by the centaur Chiron, who led the Myrmidons at Troy and killed Hector, was ________.",
+    "answer": ["Achillēs", "Achilles"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "tossup",
+    "group": "passage_041",
+    "explanation": "Achilles, son of Thetis and Peleus, was trained by Chiron and became the greatest Greek warrior at Troy, killing Hector."
+  },
+  {
+    "id": "myth_int_123",
+    "question": "Who, Achilles' closest companion, begged to borrow Achilles' armor with a promise to return from battle alive, though he did not get to fulfill that promise?",
+    "answer": "Patroclus",
+    "options": ["Phoenix", "Patroclus", "Ajax", "Hector"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_041",
+    "explanation": "Patroclus wore Achilles' armor to inspire the Greeks but was killed by Hector."
+  },
+  {
+    "id": "myth_int_124",
+    "question": "What Amazonian queen was skilled in battle and earned a reputation for being a strong fighter before being killed by Achilles, who fell in love with her corpse?",
+    "answer": "Penthesileia",
+    "options": ["Antiope", "Penthesileia", "Hippolyta", "Camilla"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_041",
+    "explanation": "Achilles killed the Amazon queen Penthesileia during the Trojan War and reportedly mourned her death."
+  },
+  {
+    "id": "myth_int_125",
+    "question": "What relative of Medea reluctantly purified her and Jason after they committed fratricide?",
+    "answer": "Circe",
+    "options": ["Hecate", "Ariadne", "Hera", "Circe"],
+    "topic": "Mythology",
+    "subtopic": "Jason and Medea",
+    "dependency": "tossup",
+    "group": "passage_042",
+    "explanation": "Circe purified Medea and Jason after they killed her brother Absyrtus."
+  },
+  {
+    "id": "myth_int_126",
+    "question": "What brother of Medea was slain by her and Jason during their escape from Colchis?",
+    "answer": "Absyrtus",
+    "options": ["Phaethon", "Absyrtus", "Talos", "Hippolytus"],
+    "topic": "Mythology",
+    "subtopic": "Jason and Medea",
+    "dependency": "bonus_independent",
+    "group": "passage_042",
+    "explanation": "Medea and Jason killed her brother Absyrtus to facilitate their escape from Colchis."
+  },
+  {
+    "id": "myth_int_127",
+    "question": "After Jason left Medea for the princess of Corinth, Medea sought sanctuary in this city, whose king Aegeus promised her protection. What city did she flee to?",
+    "answer": "Athens",
+    "options": ["Delphi", "Athens", "Corinth", "Thebes"],
+    "topic": "Mythology",
+    "subtopic": "Jason and Medea",
+    "dependency": "bonus_independent",
+    "group": "passage_042",
+    "explanation": "Medea fled to Athens, where King Aegeus offered her sanctuary after Jason abandoned her."
+  },
+  {
+    "id": "myth_int_128",
+    "question": "Who bore a child named Arcas, then almost killed him, after she embraced who she thought was Artemis and was first raped by Zeus, then turned into a bear by Hera?",
+    "answer": "Callisto",
+    "options": ["Artemis", "Leto", "Callisto", "Hera"],
+    "topic": "Mythology",
+    "subtopic": "Arcadian Myths",
+    "dependency": "tossup",
+    "group": "passage_043",
+    "explanation": "Callisto was transformed into a bear by Hera after her encounter with Zeus, and she gave birth to Arcas."
+  },
+  {
+    "id": "myth_int_129",
+    "question": "Who was Callisto's father, a wicked king of Arcadia who had tried to feed Zeus human flesh?",
+    "answer": "Lycaon",
+    "options": ["Tantalus", "Lycaon", "Catreus", "Minos"],
+    "topic": "Mythology",
+    "subtopic": "Arcadian Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_043",
+    "explanation": "Lycaon, king of Arcadia, attempted to test Zeus by serving him human flesh."
+  },
+  {
+    "id": "myth_int_130",
+    "question": "What other mythological man made the mistake of seeing Artemis bathing and was torn apart for it?",
+    "answer": "Actaeon",
+    "options": ["Pentheus", "Orpheus", "Narcissus", "Actaeon"],
+    "topic": "Mythology",
+    "subtopic": "Arcadian Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_043",
+    "explanation": "Actaeon accidentally saw Artemis bathing and was punished by being torn apart by his own hounds."
+  },
+  {
+    "id": "myth_int_131",
+    "question": "To whom did King Laomedon promise a prize for rescuing his daughter?",
+    "answer": "Heracles",
+    "options": ["Perseus", "Apollo", "Theseus", "Heracles"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "tossup",
+    "group": "passage_044",
+    "explanation": "King Laomedon promised Heracles a reward for rescuing his daughter Hesione from a sea monster."
+  },
+  {
+    "id": "myth_int_132",
+    "question": "What was the name of King Laomedon's daughter whom Heracles rescued?",
+    "answer": "Hesione",
+    "options": ["Electra", "Hesione", "Andromeda", "Danaë"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_044",
+    "explanation": "Hesione was the daughter of Laomedon, rescued by Heracles from the sea monster."
+  },
+  {
+    "id": "myth_int_133",
+    "question": "What two gods were forced to work for King Laomedon for a year?",
+    "answer": "Apollo and Poseidon",
+    "options": ["Zeus and Hermes", "Apollo and Poseidon", "Ares and Dionysus", "Hades and Hephaestus"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_044",
+    "explanation": "Apollo and Poseidon were punished by working for Laomedon for a year after he refused to pay them for building Troy's walls."
+  },
+  {
+    "id": "myth_int_134",
+    "question": "What sacred object supposedly fell from the sky as a gift from Jupiter to Numa?",
+    "answer": ["The Ancile"],
+    "topic": "Mythology",
+    "subtopic": "Roman Myths",
+    "dependency": "tossup",
+    "group": "passage_045",
+    "explanation": "The Ancile, a sacred shield, fell from the sky as a divine gift from Jupiter to King Numa."
+  },
+  {
+    "id": "myth_int_135",
+    "question": "What priestly order wore replicas of the sacred shield Ancile?",
+    "answer": "Salii",
+    "options": ["Flamines", "Pontifices", "Vestal Virgins", "Salii"],
+    "topic": "Mythology",
+    "subtopic": "Roman Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_045",
+    "explanation": "The Salii, priests of Mars, wore twelve replicas of the Ancile during their ceremonial dances."
+  },
+  {
+    "id": "myth_int_136",
+    "question": "What god besides Mars was the Salii priestly order connected with?",
+    "answer": ["Herculēs", "Hercules"],
+    "topic": "Mythology",
+    "subtopic": "Roman Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_045",
+    "explanation": "The Salii were connected with Mars primarily, but also associated with Hercules (Herculēs) in certain rituals."
+  },
+  {
+    "id": "myth_int_137",
+    "question": "The venom of what monster encountered by Heracles on his second labor was the ultimate cause of his death when his wife confused it for a love potion?",
+    "answer": ["Hydra"],
+    "topic": "Mythology",
+    "subtopic": "Heracles",
+    "dependency": "tossup",
+    "group": "passage_046",
+    "explanation": "The venom of the Hydra, encountered during Heracles' second labor, eventually caused his death when Deianeira mistakenly used it as a love potion."
+  },
+  {
+    "id": "myth_int_138",
+    "question": "What was the name of Heracles' wife whom the centaur Nessus had deceived?",
+    "answer": "Deianeira",
+    "options": ["Alcmene", "Megara", "Hippolyta", "Deianeira"],
+    "topic": "Mythology",
+    "subtopic": "Heracles",
+    "dependency": "bonus_independent",
+    "group": "passage_046",
+    "explanation": "Deianeira, Heracles' wife, was tricked by the centaur Nessus into giving him the poisoned cloak that would later cause Heracles' death."
+  },
+  {
+    "id": "myth_int_139",
+    "question": "After his death, Heracles married whom, the goddess of youth?",
+    "answer": ["Hebe"],
+    "topic": "Mythology",
+    "subtopic": "Heracles",
+    "dependency": "bonus_independent",
+    "group": "passage_046",
+    "explanation": "After Heracles died, he married Hebe, the goddess of youth, when he ascended to Olympus."
+  },
+  {
+    "id": "myth_int_140",
+    "question": "What descendant of Erechtheus was an expert craftsman credited with inventing the sail, axe, and compass, and was commissioned by Minos to build the Labyrinth?",
+    "answer": ["Daedalus"],
+    "topic": "Mythology",
+    "subtopic": "Daedalus and Icarus",
+    "dependency": "tossup",
+    "group": "passage_047",
+    "explanation": "Daedalus, a descendant of Erechtheus, was a master craftsman who built the Labyrinth for King Minos and invented many tools."
+  },
+  {
+    "id": "myth_int_141",
+    "question": "On what island did Daedalus build the Labyrinth?",
+    "answer": ["Crete"],
+    "topic": "Mythology",
+    "subtopic": "Daedalus and Icarus",
+    "dependency": "bonus_independent",
+    "group": "passage_047",
+    "explanation": "Daedalus constructed the Labyrinth on Crete at the request of King Minos to contain the Minotaur."
+  },
+  {
+    "id": "myth_int_142",
+    "question": "When King Minos was searching for Daedalus in Sicily, he carried a spiraled seashell and offered a prize to anyone who could pass a thread through it. What method did Daedalus use to solve this impossible task?",
+    "answer": "He tied a thread to an ant.",
+    "options": [
+      "He cut the shell and reassembled it around the thread.",
+      "He tied a thread to an ant.",
+      "He flattened the seashell and pushed the thread through.",
+      "He used a needle and wax to force the thread."
+    ],
+    "topic": "Mythology",
+    "subtopic": "Daedalus and Icarus",
+    "dependency": "bonus_independent",
+    "group": "passage_047",
+    "explanation": "Daedalus cleverly tied a thread to an ant, which carried it through the spiraled seashell, demonstrating his ingenuity."
+  },
+  {
+    "id": "myth_int_143",
+    "question": "Into what animal did Hecuba transform in Thrace?",
+    "answer": "Dog",
+    "options": ["Lion", "Sheep", "Horse", "Dog"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_048",
+    "explanation": "Hecuba was transformed into a dog in Thrace as part of her tragic fate after the Trojan War."
+  },
+  {
+    "id": "myth_int_144",
+    "question": "Whose death did Hecuba learn of in Thrace that caused her transformation?",
+    "answer": ["Polydorus"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_048",
+    "explanation": "Hecuba's grief over the death of her son Polydorus led to her transformation into a dog in Thrace."
+  },
+  {
+    "id": "myth_int_145",
+    "question": "What woman fled from a lion while trying to meet her lover at Ninus's tomb, leaving her bloody veil and causing a misconception that ended with her suicide over Pyramus's dead body?",
+    "answer": ["Thisbe"],
+    "topic": "Mythology",
+    "subtopic": "Lovers and Tragic Myths",
+    "dependency": "tossup",
+    "group": "passage_049",
+    "explanation": "Thisbe fled from a lion near Ninus's tomb, and the bloody veil she dropped led Pyramus to take his own life."
+  },
+  {
+    "id": "myth_int_146",
+    "question": "Blood from Pyramus's suicide stains the white fruit of what tree red forever?",
+    "answer": "Mulberry",
+    "options": ["Pomegranate", "Fig", "Mulberry", "Apple"],
+    "topic": "Mythology",
+    "subtopic": "Lovers and Tragic Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_049",
+    "explanation": "According to the myth, Pyramus's blood turned the white fruit of the mulberry tree permanently red."
+  },
+  {
+    "id": "myth_int_147",
+    "question": "Pyramus and Thisbe were lovers during the reign of what legendary ruler of Babylon?",
+    "answer": ["Semiramis"],
+    "topic": "Mythology",
+    "subtopic": "Lovers and Tragic Myths",
+    "dependency": "bonus_independent",
+    "group": "passage_049",
+    "explanation": "Pyramus and Thisbe's story was set during the reign of Semiramis, the legendary queen of Babylon."
+  },
+  {
+    "id": "myth_int_148",
+    "question": "Inspired by her own escape from Pygmalion, her murderous brother at Tyre, what woman helped the Trojans when they landed in Africa, though Aeneas abandoned her and left Carthage for Italy?",
+    "answer": ["Dido"],
+    "topic": "Mythology",
+    "subtopic": "Aeneid and Carthage",
+    "dependency": "tossup",
+    "group": "passage_050",
+    "explanation": "Dido, queen of Carthage, aided Aeneas and the Trojans after fleeing her brother Pygmalion's violence in Tyre."
+  },
+  {
+    "id": "myth_int_149",
+    "question": "What deity did Jupiter send to urge Aeneas to move on from Carthage to his destiny?",
+    "answer": "Mercury",
+    "options": ["Juno", "Apollo", "Neptune", "Mercury"],
+    "topic": "Mythology",
+    "subtopic": "Aeneid and Carthage",
+    "dependency": "bonus_independent",
+    "group": "passage_050",
+    "explanation": "Jupiter sent Mercury to remind Aeneas of his destiny in Italy and to leave Carthage and Dido behind."
+  },
+  {
+    "id": "myth_int_150",
+    "question": "Before the Trojans came to Carthage, Venus appeared to Aeneas and what faithful companion of his, encouraging them to seek Dido's help?",
+    "answer": "Achates",
+    "options": ["Iulus", "Palinurus", "Anchises", "Achates"],
+    "topic": "Mythology",
+    "subtopic": "Aeneid and Carthage",
+    "dependency": "bonus_independent",
+    "group": "passage_050",
+    "explanation": "Venus appeared to Aeneas and his loyal friend Achates before they sought Dido's hospitality in Carthage."
+  },
+  {
+    "id": "myth_int_151",
+    "question": "What Amazon queen aided the Trojans?",
+    "answer": ["Penthesilea"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "tossup",
+    "group": "passage_051",
+    "explanation": "Penthesilea, queen of the Amazons, came to assist the Trojans during the final phase of the Trojan War."
+  },
+  {
+    "id": "myth_int_152",
+    "question": "Penthesilea helped the Trojans because King Priam had purified her for the murder of which other Amazon?",
+    "answer": "Hippolyta",
+    "options": ["Antiope", "Melanippe", "Glauce", "Hippolyta"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_051",
+    "explanation": "Priam purified Penthesilea for killing her sister Hippolyta before she aided the Trojans in battle."
+  },
+  {
+    "id": "myth_int_153",
+    "question": "What Greek fell in love with Penthesilea's corpse after killing her in battle?",
+    "answer": "Achilles",
+    "options": ["Ajax", "Achilles", "Odysseus", "Diomedes"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "bonus_independent",
+    "group": "passage_051",
+    "explanation": "After slaying Penthesilea in battle, Achilles was overcome with remorse and fell in love with her even in death."
+  },
+  {
+    "id": "myth_int_227",
+    "question": "Which of the Fates visited Althaea, the mother of Meleager, just seven days after his birth to tell her that his life was tied to a firebrand in the hearth?",
+    "answer": ["Atropos"],
+    "explanation": "Atropos, one of the three Fates, informed Althaea that Meleager's lifespan was linked to a burning log; if the log were destroyed, he would die.",
+    "topic": "Mythology – Meleager",
+    "subtopic": "Fate and Birth",
+    "dependency": "tossup",
+    "group": "passage_076"
+  },
+  {
+    "id": "myth_int_228",
+    "question": "The Calydonian Boar was sent by which goddess after King Oeneus angered her by neglecting to include her in a sacrificial offering?",
+    "answer": ["Artemis"],
+    "explanation": "Artemis, insulted by Oeneus' oversight in a sacrifice, unleashed the monstrous boar on Calydon, setting the stage for the famous hunt.",
+    "topic": "Mythology – Calydonian Boar",
+    "subtopic": "Divine Retribution",
+    "dependency": "bonus_independent",
+    "group": "passage_076"
+  },
+  {
+    "id": "myth_int_229",
+    "question": "During the Calydonian Boar hunt, Heracles killed two Centaurs who tried to violate Althaea at a banquet. Name them.",
+    "answer": ["Rhoecus", "Hylaeus", "Rhoecus and Hylaeus"],
+    "explanation": "Heracles killed Rhoecus and Hylaeus, two aggressive Centaurs, whose actions provoked the anger of the other Calydonian hunters.",
+    "topic": "Mythology – Calydonian Boar",
+    "subtopic": "Heroes and Conflict",
+    "dependency": "bonus_independent",
+    "group": "passage_076"
+  },
+  {
+    "id": "myth_int_230",
+    "question": "Whom did Odysseus take from Troy as his slave woman?",
+    "answer": "Hecuba",
+    "options": ["Cassandra", "Hecuba", "Andromache", "Helen"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War Heroes",
+    "dependency": "standalone",
+    "explanation": "Odysseus took Hecuba, the queen of Troy, as a captive after the fall of the city."
+  },
+  {
+    "id": "myth_int_231",
+    "question": "Who judged a music contest between Apollo and Pan?",
+    "answer": ["Tmolus"],
+    "topic": "Mythology",
+    "subtopic": "Apollo and Pan",
+    "dependency": "standalone",
+    "explanation": "Tmolus, the mountain god, judged the contest between Apollo and Pan, awarding victory to Apollo."
+  },
+  {
+    "id": "myth_int_232",
+    "question": "The dove and the rose are both considered symbols of which deity?",
+    "options": ["Demeter", "Aphrodite", "Hestia", "Athena"],
+    "answer": "Aphrodite",
+    "topic": "Mythology",
+    "subtopic": "Symbols of Deities",
+    "dependency": "standalone",
+    "explanation": "The dove and the rose are sacred to Aphrodite, reflecting her association with love and beauty."
+  },
+  {
+    "id": "myth_int_233",
+    "question": "Which muse is associated with sacred poetry and hymns?",
+    "answer": ["Polyhymnia"],
+    "topic": "Mythology",
+    "subtopic": "Muses",
+    "dependency": "standalone",
+    "explanation": "Polyhymnia is the muse of sacred poetry, hymns, and eloquence."
+  },
+  {
+    "id": "myth_int_234",
+    "question": "Whose sisters were turned into guinea fowl after his mother Althaea put the log attached to his life into a fire?",
+    "answer": ["Meleager"],
+    "topic": "Mythology",
+    "subtopic": "Calydonian Boar Hunt",
+    "dependency": "standalone",
+    "explanation": "When Althaea burned the log tied to his life, Meleager died, and his sisters were transformed into guinea fowl by Artemis."
+  },
+  {
+    "id": "myth_int_235",
+    "question": "Which of Meleager's sisters was not turned into guinea fowl and was later offered to Heracles as a wife?",
+    "options": ["Cleopatra", "Deianira", "Atalanta", "Callirhoe"],
+    "answer": "Deianira",
+    "topic": "Mythology",
+    "subtopic": "Calydonian Boar Hunt",
+    "dependency": "standalone",
+    "explanation": "Deianira, Meleager's sister, was spared from transformation and was later offered to Heracles as a bride."
+  },
+  {
+    "id": "myth_int_236",
+    "question": "What infant, born on Mt. Cyllene, was the son of Zeus and Maia?",
+    "answer": ["Hermes"],
+    "topic": "Mythology",
+    "subtopic": "Hermes",
+    "dependency": "tossup",
+    "group": "passage_077",
+    "explanation": "Hermes, the messenger god, was born on Mt. Cyllene to Zeus and the nymph Maia."
+  },
+  {
+    "id": "myth_int_237",
+    "question": "What is the name of Hermes' winged hat?",
+    "answer": ["Petasus"],
+    "topic": "Mythology",
+    "subtopic": "Hermes",
+    "dependency": "bonus_independent",
+    "group": "passage_077",
+    "explanation": "The petasus is the distinctive winged hat worn by Hermes, symbolizing his role as the swift messenger of the gods."
+  },
+  {
+    "id": "myth_int_238",
+    "question": "What is the name of Hermes' winged sandals?",
+    "answer": ["Talaria"],
+    "topic": "Mythology",
+    "subtopic": "Hermes",
+    "dependency": "bonus_independent",
+    "group": "passage_077",
+    "explanation": "The talaria are the winged sandals worn by Hermes, granting him supernatural speed."
+  },
+  {
+    "id": "myth_int_239",
+    "question": "What king of Thebes fled the city when Zethus and Amphion took power, but was later reinstated only to be murdered and replaced by his son, Oedipus?",
+    "answer": ["Laius"],
+    "topic": "Mythology",
+    "subtopic": "Thebes",
+    "dependency": "tossup",
+    "group": "passage_078",
+    "explanation": "Laius, king of Thebes, was killed by his own son Oedipus, fulfilling a tragic prophecy."
+  },
+  {
+    "id": "myth_int_240",
+    "question": "What son of Pelops did Laius abduct, bringing a curse on his house?",
+    "answer": ["Chrysippus"],
+    "topic": "Mythology",
+    "subtopic": "Thebes",
+    "dependency": "bonus_independent",
+    "group": "passage_078",
+    "explanation": "Laius' abduction of Chrysippus brought a curse on Thebes that would plague his descendants."
+  },
+  {
+    "id": "myth_int_241",
+    "question": "Who was the wife of both Laius and Oedipus?",
+    "answer": ["Jocasta"],
+    "topic": "Mythology",
+    "subtopic": "Thebes",
+    "dependency": "bonus_independent",
+    "group": "passage_078",
+    "explanation": "Jocasta unknowingly married her own son Oedipus after the death of her first husband Laius."
+  },
+  {
+    "id": "myth_int_242",
+    "question": "Who won Iole, the daughter of Eurytus, in an archery contest and thereby earned the jealousy of his wife Deianeira?",
+    "answer": ["Heracles", "Hercules"],
+    "topic": "Mythology",
+    "subtopic": "Heracles",
+    "dependency": "tossup",
+    "group": "passage_079",
+    "explanation": "Heracles' victory in the archery contest for Iole sparked Deianeira's jealousy, leading to tragic consequences."
+  },
+  {
+    "id": "myth_int_243",
+    "question": "Who had told Deianeira that a cloak soaked in his blood would ensure Heracles' faithfulness?",
+    "answer": ["Nessus"],
+    "topic": "Mythology",
+    "subtopic": "Heracles",
+    "dependency": "bonus_independent",
+    "group": "passage_079",
+    "explanation": "The centaur Nessus deceived Deianeira into believing his poisoned blood was a love charm."
+  },
+  {
+    "id": "myth_int_244",
+    "question": "What herald did she send to deliver this cloak to Heracles, resulting in the deaths of the hero and the messenger?",
+    "answer": ["Lichas"],
+    "topic": "Mythology",
+    "subtopic": "Heracles",
+    "dependency": "bonus_independent",
+    "group": "passage_079",
+    "explanation": "Lichas unwittingly delivered the poisoned cloak to Heracles, leading to both their deaths."
+  },
+  {
+    "id": "myth_int_245",
+    "question": "In the final book of the Iliad, what king begs Achilles to accept ransom for the body of his son, Hector?",
+    "answer": ["Priam"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War",
+    "dependency": "tossup",
+    "group": "passage_080",
+    "explanation": "Priam's supplication to Achilles is one of the most moving scenes in the Iliad."
+  },
+  {
+    "id": "myth_int_246",
+    "question": "What friend of Achilles did Hector kill, leading to his own demise?",
+    "answer": ["Patroclus"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War",
+    "dependency": "bonus_independent",
+    "group": "passage_080",
+    "explanation": "Hector's killing of Patroclus drove Achilles to return to battle and seek revenge."
+  },
+  {
+    "id": "myth_int_247",
+    "question": "Achilles was moved by Priam, partly because the old man reminded him of whom?",
+    "answer": ["His father, Peleus"],
+    "topic": "Mythology",
+    "subtopic": "Trojan War",
+    "dependency": "bonus_independent",
+    "group": "passage_080",
+    "explanation": "Priam's age and grief reminded Achilles of his own aging father Peleus, softening his heart."
+  },
+  {
+    "id": "myth_int_248",
+    "question": "What river, commonly said to surround all of Hades, was the river of hate, upon which the gods swore oaths?",
+    "answer": ["Styx"],
+    "topic": "Mythology",
+    "subtopic": "Underworld",
+    "dependency": "tossup",
+    "group": "passage_081",
+    "explanation": "The river Styx was the most sacred river in the Underworld, and oaths sworn upon it were unbreakable."
+  },
+  {
+    "id": "myth_int_249",
+    "question": "From what river did the dead drink to forget their lives?",
+    "answer": ["Lethe"],
+    "topic": "Mythology",
+    "subtopic": "Underworld",
+    "dependency": "bonus_independent",
+    "group": "passage_081",
+    "explanation": "The river Lethe granted forgetfulness to souls who drank from it, erasing memories of their mortal lives."
+  },
+  {
+    "id": "myth_int_250",
+    "question": "What river of fire was most often said to surround Tartarus?",
+    "answer": ["Phlegethon", "Pyriphlegethon"],
+    "topic": "Mythology",
+    "subtopic": "Underworld",
+    "dependency": "bonus_independent",
+    "group": "passage_081",
+    "explanation": "The Phlegethon, a river of fire, surrounded Tartarus where the wicked were punished."
+  },
+  {
+    "id": "myth_int_251",
+    "question": "What son of Eupeithes was utterly awestruck when a beggar shot an arrow through twelve axe-heads in the palace of Odysseus?",
+    "answer": ["Antinous"],
+    "topic": "Mythology",
+    "subtopic": "Odyssey",
+    "dependency": "tossup",
+    "group": "passage_082",
+    "explanation": "Antinous, the leading suitor, was the first to die when Odysseus revealed himself and began his revenge."
+  },
+  {
+    "id": "myth_int_252",
+    "question": "What son of Polybus was the next suitor to die?",
+    "answer": ["Eurymachus"],
+    "topic": "Mythology",
+    "subtopic": "Odyssey",
+    "dependency": "bonus_independent",
+    "group": "passage_082",
+    "explanation": "Eurymachus was the second suitor killed by Odysseus during the slaughter in the great hall."
+  },
+  {
+    "id": "myth_int_253",
+    "question": "Who killed Amphinomus, who was the third suitor to die?",
+    "answer": ["Telemachus"],
+    "topic": "Mythology",
+    "subtopic": "Odyssey",
+    "dependency": "bonus_independent",
+    "group": "passage_082",
+    "explanation": "Telemachus proved his worth as a warrior by killing Amphinomus during the battle against the suitors."
+  },
+  {
+    "id": "myth_int_254",
+    "question": "Who, incited by the sight of Pallas' belt, ended a war between the Latins and the Trojans?",
+    "answer": ["Aeneas"],
+    "topic": "Mythology",
+    "subtopic": "Aeneid",
+    "dependency": "tossup",
+    "group": "passage_083",
+    "explanation": "Aeneas killed Turnus when he saw Pallas' belt, which Turnus had taken as a trophy, ending the war."
+  },
+  {
+    "id": "myth_int_255",
+    "question": "Name Pallas' father who sent Pallas along with an Arcadian contingent to aid Aeneas against Turnus.",
+    "answer": ["Evander"],
+    "topic": "Mythology",
+    "subtopic": "Aeneid",
+    "dependency": "bonus_independent",
+    "group": "passage_083",
+    "explanation": "Evander, king of Pallanteum, sent his son Pallas to fight alongside Aeneas, though Pallas was killed by Turnus."
+  },
+  {
+    "id": "myth_int_256",
+    "question": "What woman was the cause of the conflict because both Turnus and Aeneas wanted to marry her?",
+    "answer": ["Lavinia"],
+    "topic": "Mythology",
+    "subtopic": "Aeneid",
+    "dependency": "bonus_independent",
+    "group": "passage_083",
+    "explanation": "Lavinia, daughter of King Latinus, was promised to both Turnus and Aeneas, sparking the Italian war."
+  }
+]

@@ -1,0 +1,2771 @@
+[
+  {
+    "id": "deriv_adv_001",
+    "question": "Which of the following English words does NOT belong, all being derived from Latin roots related to 'to prick' or 'to point'?",
+    "options": ["unction", "punctual", "punctilious", "punctuate"],
+    "answer": ["unction"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Multiple Choice",
+    "dependency": "tossup",
+    "group": "passage_001",
+    "explanation": "'Punctual', 'punctilious', and 'punctuate' derive from 'pungere' (to prick). 'Unction' comes from 'ungere' (to anoint)."
+  },
+  {
+    "id": "deriv_adv_002",
+    "question": "Analogy: punctilious : conscientious :: punctus : ____ (consider the sense of exactness or point in time, rather than the simple meaning 'point')",
+    "answer": ["punctual"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Analogy",
+    "dependency": "bonus_dependent",
+    "group": "passage_001",
+    "explanation": "'Punctilious' means extremely attentive to detail, while 'punctual' relates to exactness in time. Both derive from 'punctus' (point)."
+  },
+  {
+    "id": "deriv_adv_003",
+    "question": "Compare English derivatives of 'pungere' and related roots: which one is used for a tool or device that pierces, but also has metaphorical uses in editing, boxing, and music (e.g., a sharp beat)?",
+    "answer": ["punch"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Scientific / Technical Derivatives",
+    "dependency": "bonus_dependent",
+    "group": "passage_001",
+    "explanation": "'Punch' retains the literal sense of piercing while extending to editorial impact, boxing strikes, and musical accents."
+  },
+  {
+    "id": "deriv_adv_004",
+    "question": "The words 'ostler', 'hostage', 'hotel', and 'hospital' all derive from which Latin noun meaning 'guest' or 'host'?",
+    "answer": ["hospes"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Fill-in-the-Blank",
+    "dependency": "tossup",
+    "group": "passage_002",
+    "explanation": "'Hospes' shows remarkable range: 'ostler' (tends guests' horses), 'hostage' (guest/pledge), 'hotel', 'hospital' (originally for pilgrims)."
+  },
+  {
+    "id": "deriv_adv_005",
+    "question": "Which English derivative of 'hospes' refers to an inexpensive lodging frequently used by young travelers outside the United States?",
+    "options": ["hostel", "hotel", "hostelry", "hospitable"],
+    "answer": ["hostel"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Multiple Choice",
+    "dependency": "bonus_dependent",
+    "group": "passage_002",
+    "explanation": "'Hostel' refers to budget accommodations, distinct from 'hotel' (more formal) and 'hostelry' (archaic for inn)."
+  },
+  {
+    "id": "deriv_adv_006",
+    "question": "The word 'ostler' should not be confused with 'jostle', which — like 'joust' — derives from which Latin verb?",
+    "options": ["iungō", "hospes", "pungere", "currō"],
+    "answer": ["iungō"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "bonus_dependent",
+    "group": "passage_002",
+    "explanation": "'Jostle' and 'joust' derive from 'iungere' (to join), referring to joining in combat or pushing together."
+  },
+  {
+    "id": "deriv_adv_007",
+    "question": "The group of people in the city square joined together in a collective orison. Which English word best describes this?",
+    "options": ["prayer", "cheer", "gasp", "scream"],
+    "answer": ["prayer"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Multiple Choice",
+    "dependency": "tossup",
+    "group": "passage_003",
+    "explanation": "'Orison' derives from 'oratio' (speech, prayer). Though archaic, it specifically means a prayer or entreaty."
+  },
+  {
+    "id": "deriv_adv_008",
+    "question": "In the Roman army, what was the term for a small tactical unit consisting of a handful of soldiers, whose name derives from the Latin word for 'hand'?",
+    "answer": ["maniple"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "bonus_dependent",
+    "group": "passage_003",
+    "explanation": "'Maniple' comes from 'manipulus' (handful), from 'manus' (hand). It was a Roman military unit of 60-120 soldiers."
+  },
+  {
+    "id": "deriv_adv_009",
+    "question": "From 'manus' comes the English word 'legerdemain.' Breaking down its French origin, léger de main literally means 'light of hand.' What is the English definition of legerdemain?",
+    "answer": ["sleight of hand", "conjuring", "trickery"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "bonus_dependent",
+    "group": "passage_003",
+    "explanation": "'Legerdemain' passed through French 'léger de main' (light of hand), referring to skillful deception or sleight of hand."
+  },
+  {
+    "id": "deriv_adv_010",
+    "question": "Which English word derives from the Latin 'pars' or 'parco' and refers to a small portion or division?",
+    "answer": ["parcel"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Fill-in-the-Blank",
+    "dependency": "tossup",
+    "group": "passage_004",
+    "explanation": "'Parcel' derives from 'particula' (small part), from 'pars', retaining the sense of a divided portion."
+  },
+  {
+    "id": "deriv_adv_011",
+    "question": "The financial manager was accused of misusing funds, a concept captured by which English derivative of 'peculium'?",
+    "answer": ["embezzlement"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_004",
+    "explanation": "'Embezzlement' traces to 'peculium' (private property, originally livestock from 'pecus'), meaning misappropriating entrusted funds."
+  },
+  {
+    "id": "deriv_adv_012",
+    "question": "Which English word, derived from the same Latin root as 'parcō' but through a different path, means 'to give up' or 'relinquish'?",
+    "options": ["forbear", "spare", "parsimonious", "partake"],
+    "answer": ["forbear"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_004",
+    "explanation": "'Forbear' shares the Germanic root related to Latin 'parcere' (to spare), meaning to refrain from or give up."
+  },
+  {
+    "id": "deriv_adv_013",
+    "question": "From the Latin verb 'pello, pellere' meaning 'to drive or push,' which English word means 'to drive forward or propel'?",
+    "answer": ["propel"],
+    "options": ["compel", "propel", "expel", "repel"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Motion",
+    "dependency": "tossup",
+    "group": "passage_005",
+    "explanation": "'Propel' from 'pro-' (forward) + 'pellere' (to push) literally means 'to push forward.'"
+  },
+  {
+    "id": "deriv_adv_014",
+    "question": "From the same root 'pellere,' what English word means 'to force or drive someone to do something'?",
+    "answer": ["compel"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Motion",
+    "dependency": "bonus_independent",
+    "group": "passage_005",
+    "explanation": "'Compel' from 'com-' (together, intensive) + 'pellere' intensifies the sense of forcefully driving someone to action."
+  },
+  {
+    "id": "deriv_adv_015",
+    "question": "Which English derivative of 'pellere' describes the act of driving out or forcing away?",
+    "answer": ["expel", "expulsion"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Motion",
+    "dependency": "bonus_independent",
+    "group": "passage_005",
+    "explanation": "'Expel' from 'ex-' (out) + 'pellere' (to drive) literally means 'to drive out,' referring to physical or formal removal."
+  },
+  {
+    "id": "deriv_adv_016",
+    "question": "From the Latin 'specio, specere' meaning 'to look at,' which English word means 'to regard with suspicion or distrust'?",
+    "answer": ["suspect"],
+    "options": ["suspect", "respect", "inspect", "prospect"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Perception",
+    "dependency": "tossup",
+    "group": "passage_006",
+    "explanation": "'Suspect' from 'sub-' (under, secretly) + 'specere' literally means 'to look at from below,' suggesting hidden distrust."
+  },
+  {
+    "id": "deriv_adv_017",
+    "question": "From the same root, what English word means 'to look back' or 'to review past events'?",
+    "answer": ["retrospect", "retrospection"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Perception",
+    "dependency": "bonus_independent",
+    "group": "passage_006",
+    "explanation": "'Retrospect' combines 'retro-' (backward) + 'specere' (to look), meaning to look back on past events."
+  },
+  {
+    "id": "deriv_adv_018",
+    "question": "Which English noun from 'specere' refers to a view or mental image of future events?",
+    "answer": ["prospect"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Perception",
+    "dependency": "bonus_independent",
+    "group": "passage_006",
+    "explanation": "'Prospect' from 'pro-' (forward) + 'specere' means both a physical view ahead and an anticipated future possibility."
+  },
+  {
+    "id": "deriv_adv_019",
+    "question": "From the Latin 'duco, ducere' meaning 'to lead,' which English word means 'to lead away from a correct path or conclusion'?",
+    "answer": ["seduce"],
+    "options": ["seduce", "conduct", "deduce", "produce"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Leading",
+    "dependency": "tossup",
+    "group": "passage_007",
+    "explanation": "'Seduce' from 'se-' (aside, away) + 'ducere' literally means 'to lead astray,' now commonly referring to persuasion or enticement."
+  },
+  {
+    "id": "deriv_adv_020",
+    "question": "From the same root, what English word means 'to lead or draw a conclusion from reasoning'?",
+    "answer": ["deduce", "deduction"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Leading",
+    "dependency": "bonus_independent",
+    "group": "passage_007",
+    "explanation": "'Deduce' from 'de-' (down, from) + 'ducere' literally means 'to lead down from' general principles to specific conclusions."
+  },
+  {
+    "id": "deriv_adv_021",
+    "question": "Which English derivative means 'to bring forth or create something'?",
+    "answer": ["produce", "production"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs of Leading",
+    "dependency": "bonus_independent",
+    "group": "passage_007",
+    "explanation": "'Produce' from 'pro-' (forward, forth) + 'ducere' (to lead) literally means 'to lead forth' or bring into existence."
+  },
+  {
+    "id": "deriv_adv_022",
+    "question": "What general meaning is shared by the Latin nouns 'flāmen' (neut.) and 'aura'?",
+    "answer": ["breeze", "wind"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "tossup",
+    "group": "passage_008",
+    "explanation": "Both 'flāmen' (neuter) and 'aura' refer to a light wind or breeze, though 'aura' can also mean a subtle emanation."
+  },
+  {
+    "id": "deriv_adv_023",
+    "question": "Which English derivative of 'aura' refers to a light or subtle current of air, or figuratively, an atmosphere surrounding someone?",
+    "answer": ["aura"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_008",
+    "explanation": "'Aura' was borrowed directly into English, retaining both literal (gentle breeze) and figurative (distinctive atmosphere) meanings."
+  },
+  {
+    "id": "deriv_adv_024",
+    "question": "Which English derivative of 'flāmen' (neut.) refers to a light wind or a current of air?",
+    "answer": ["breeze"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_008",
+    "explanation": "'Breeze' derives through Spanish/Portuguese from Latin 'flāmen', maintaining the sense of gentle wind."
+  },
+  {
+    "id": "deriv_adv_025",
+    "question": "What general meaning is shared by the Latin nouns 'calor', 'ardor', and 'ignis'?",
+    "answer": ["heat", "fire", "warmth"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "tossup",
+    "group": "passage_009",
+    "explanation": "'Calor' (heat/warmth), 'ardor' (burning heat/passion), and 'ignis' (fire) all share the semantic field of heat and burning."
+  },
+  {
+    "id": "deriv_adv_026",
+    "question": "What general meaning is shared by the Latin nouns 'unda', 'litus', and 'pontus'?",
+    "answer": ["wave", "shore", "sea", "water"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_010",
+    "explanation": "'Unda' (wave), 'litus' (shore/coast), and 'pontus' (sea/deep water) all relate to water and maritime geography."
+  },
+  {
+    "id": "deriv_adv_027",
+    "question": "From the Latin noun 'lītus, lītoris', meaning 'shore', which English adjective refers to something belonging to the shore or living near it?",
+    "options": ["maritime", "littoral", "pelagic", "coastal"],
+    "answer": ["littoral"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_010",
+    "explanation": "'Littoral' derives directly from 'litus' and describes the coastal zone between high and low tide marks."
+  },
+  {
+    "id": "deriv_adv_028",
+    "question": "What general meaning is shared by the Latin verbs 'vīgō', 'vīgere', and the noun 'vīres'?",
+    "answer": ["to flourish", "to thrive", "strength", "vitality"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "tossup",
+    "group": "passage_011",
+    "explanation": "'Vīgō' and 'vīgere' (to flourish/be vigorous) and 'vīres' (strength/forces) share the root concept of vital power."
+  },
+  {
+    "id": "deriv_adv_029",
+    "question": "What general meaning is shared by the Latin nouns 'mūnus', 'mūneris', and 'officium'?",
+    "options": ["gift", "honor", "duty", "office"],
+    "answer": ["duty"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Meaning Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_011",
+    "explanation": "'Mūnus' (duty/service/gift) and 'officium' (duty/obligation) both emphasize responsibility, though 'mūnus' can also mean gift given in fulfillment of duty."
+  },
+  {
+    "id": "deriv_adv_030",
+    "question": "Which English adjective, derived from the Latin root 'fīdō' and the prefix 'per-' ('through'), describes a person who has betrayed a trust?",
+    "options": ["perfunctory", "persevering", "perfidious", "permanent"],
+    "answer": ["perfidious"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Prefix / Suffix Change / Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_011",
+    "explanation": "'Perfidious' from 'per-' (thoroughly) + 'fīdō' (trust/faith) literally means 'through faith,' describing treacherous betrayal."
+  },
+  {
+    "id": "deriv_adv_031",
+    "question": "Which English word, derived from the Latin verb 'ululō', best describes the mournful sound often made in grief or alarm?",
+    "options": ["twist", "wail", "fester", "crawl"],
+    "answer": ["wail"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Root Recognition",
+    "dependency": "tossup",
+    "group": "passage_012",
+    "explanation": "'Wail' derives from 'ululō' (to howl), an onomatopoetic verb describing prolonged mournful crying."
+  },
+  {
+    "id": "deriv_adv_032",
+    "question": "Which of the following English words derived from Latin does NOT share the root meaning related to 'oath' or 'swearing'?",
+    "options": ["swear", "seek", "perjury", "jurisdiction"],
+    "answer": ["seek"],
+    "topic": "Latin Derivatives",
+    "subtopic": "What Does Not Belong / Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_012",
+    "explanation": "'Swear', 'perjury', and 'jurisdiction' relate to 'iūrāre' (to swear/oath) and 'iūs' (law). 'Seek' is unrelated."
+  },
+  {
+    "id": "deriv_adv_033",
+    "question": "The English term 'jettison' comes from Latin 'iaciō'. Which choice best captures the nuanced meaning of 'jettison' as used in maritime or figurative contexts?",
+    "options": ["be", "throw", "liver", "cast off"],
+    "answer": ["throw"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_012",
+    "explanation": "'Jettison' from 'iaciō' (to throw) specifically means throwing goods overboard to lighten a ship, or figuratively to discard."
+  },
+  {
+    "id": "deriv_adv_034",
+    "question": "The English words 'paraffin' and 'infinitesimal' are derived from which Latin noun, and what is its primary meaning?",
+    "answer": ["finis", "end", "boundary"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_013",
+    "explanation": "'Finis' (end/boundary) appears in 'paraffin' ('little affinity') and 'infinitesimal' ('not having an end' = immeasurably small)."
+  },
+  {
+    "id": "deriv_adv_035",
+    "question": "Which English derivative of 'finis' refers to skillfully handling a situation or achieving a delicate outcome?",
+    "options": ["finesse", "finish", "finite", "finalize"],
+    "answer": ["finesse"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Prefix-Suffix Change",
+    "dependency": "bonus_independent",
+    "group": "passage_013",
+    "explanation": "'Finesse' from 'finis' through French originally meant 'refinement,' emphasizing delicate skill in bringing something to completion."
+  },
+  {
+    "id": "deriv_adv_036",
+    "question": "Which English derivative of the Latin noun 'terminus' conveys the sense of getting rid of something completely, often by killing or elimination?",
+    "options": ["eliminate", "exterminate", "terminate", "finalize"],
+    "answer": ["exterminate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Prefix-Suffix Change",
+    "dependency": "bonus_independent",
+    "group": "passage_013",
+    "explanation": "'Exterminate' combines 'ex-' (out) + 'terminus' (boundary), literally 'to drive beyond boundaries,' emphasizing complete destruction."
+  },
+  {
+    "id": "deriv_adv_037",
+    "question": "Which English verb, derived from the Latin prefix 'ex-' and the verb 'tenuāre', means 'to lessen the seriousness or magnitude of something' or 'to make thin'?",
+    "options": ["attenuate", "diminish", "extenuate", "exonerate"],
+    "answer": ["extenuate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Prefix / Root Recognition",
+    "dependency": "tossup",
+    "group": "passage_014"
+  },
+  {
+    "id": "deriv_adv_038",
+    "question": "Name the Latin adjective from which 'tenuāre' is derived, and give its English meaning.",
+    "answer": ["tenuis", "thin", "slender", "weak"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_014"
+  },
+  {
+    "id": "deriv_adv_039",
+    "question": "From the same Latin adjective 'tenuis', what English word means 'lacking substance or strength; flimsy' or 'very slight or small'?",
+    "answer": ["tenuous"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_014"
+  },
+  {
+    "id": "deriv_adv_040",
+    "question": "Which Latin verb is the source of the English words 'chisel', 'precise', and 'concise'?",
+    "options": ["cadō", "caedō", "cado", "capiō"],
+    "answer": ["caedō"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_015"
+  },
+  {
+    "id": "deriv_adv_041",
+    "question": "Which Latin verb is at the root of the English words 'nonchalant' and 'scald', reflecting a sense of warmth or heat?",
+    "answer": ["caleō"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_015"
+  },
+  {
+    "id": "deriv_adv_042",
+    "question": "Which Latin noun, meaning 'horse', is at the root of the English words 'chivalry' and 'cavalier'?",
+    "answer": ["caballus"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_015"
+  },
+  {
+    "id": "deriv_adv_043",
+    "question": "Which Latin verb is the source of the English words 'science', 'omniscient', and 'conscience'?",
+    "options": ["scandō", "sciō", "sentio", "scrībō"],
+    "answer": ["sciō"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_016"
+  },
+  {
+    "id": "deriv_adv_044",
+    "question": "Which English word derived from 'sciō' refers to the moral sense of right and wrong within a person?",
+    "answer": ["conscience"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_016"
+  },
+  {
+    "id": "deriv_adv_045",
+    "question": "What English noun, also derived from 'nesciō', refers to a lack of knowledge or ignorance?",
+    "answer": ["nescience"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_016"
+  },
+  {
+    "id": "deriv_adv_046",
+    "question": "Which Latin verb is the source of the English words 'pretext', 'exhibit', and 'contribution'?",
+    "options": ["ferō", "praebeō", "do, dare", "videō"],
+    "answer": ["praebeō"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_017",
+    "explanation": "'Praebeō' (to offer/provide) combines prae- (forth) with habeō (to have); 'exhibit' from ex-habeō shows the related root."
+  },
+  {
+    "id": "deriv_adv_047",
+    "question": "From the Latin verb 'praebeō', meaning 'to offer' or 'provide,' and its root 'habeō', what is the name for the financial allowance paid to a member of a cathedral or collegiate church?",
+    "answer": ["prebend"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_017"
+  },
+  {
+    "id": "deriv_adv_048",
+    "question": "What general meaning is shared by the English words 'pretext', 'contribution', and 'provision', all derived from the Latin verb 'praebeō'?",
+    "answer": ["to provide", "offering", "supply", "showing"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Meaning / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_017",
+    "explanation": "'Praebeō' means 'to offer/provide': 'pretext' (something put forward), 'contribution' (something given), 'provision' (something supplied)."
+  },
+  {
+    "id": "deriv_adv_049",
+    "question": "Which Latin noun is the source of the English word 'nubilous'?",
+    "options": ["nubere", "nūbēs", "nux", "nasus"],
+    "answer": ["nūbēs"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_018",
+    "explanation": "'Nubilous' from 'nūbēs' (cloud) means cloudy/obscure; 'nux' (nut), 'nasus' (nose), 'nubere' (to marry) are unrelated."
+  },
+  {
+   "id": "deriv_adv_050",
+    "question": "Which English word is derived from the same Latin root as 'surreptitious'?",
+    "options": ["ravishing", "rage", "surrogate", "repeat"],
+    "answer": ["surrogate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Comparative / Multi-Root Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_018",
+    "explanation": "Both 'surreptitious' (from 'surripere' - to take secretly) and 'surrogate' (from 'surrogare' - to substitute) share the prefix 'sur-/sub-'."
+  },
+  {
+    "id": "deriv_adv_051",
+    "question": "What general meaning is shared by the English words 'nubilous' and 'nebulosity', both derived from the Latin 'nūbēs'?",
+    "answer": ["cloud"],
+    "options": ["mist", "cloud", "fog", "darkness"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Meaning / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_018",
+    "explanation": "Both derive from 'nūbēs' (cloud): 'nubilous' means cloudy/vague, 'nebulosity' refers to cloud-like quality."
+  },
+  {
+    "id": "deriv_adv_052",
+    "question": "From the Latin noun 'maeror', meaning 'sorrow' or 'grief', which English verb, often used in literary contexts, means to express deep sorrow?",
+    "options": ["mourn", "lament", "grieve", "dolere"],
+    "answer": ["lament"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_020",
+    "explanation": "'Lament' derives from 'lamentum' (wailing), capturing literary expression of deep grief associated with 'maeror'." 
+  },
+  {
+    "id": "deriv_adv_053",
+    "question": "The Latin noun 'luctus' means 'deep grief' or 'mourning.' Which rare English noun, derived from this root, refers to intense suffering or distress, often in a figurative or literary sense?",
+    "answer": ["luctation"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Comparative / Multi-Root Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_020",
+    "explanation": "'Luctation' from 'luctari' (to struggle, related to 'luctus') means intense mental/emotional struggle, particularly the turmoil of grief."
+  },
+  {
+    "id": "deriv_adv_054",
+    "question": "What nuanced conceptual meaning links the Latin nouns 'maeror' and 'luctus' with their English derivatives 'lament' and 'luctation', beyond simple sorrow?",
+    "answer": ["grief", "mourning", "lamentation", "deep emotional suffering"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Meaning / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_020"
+  },
+  {
+    "id": "deriv_adv_055",
+    "question": "From the Latin verb 'cingō', meaning 'to surround or encircle', what English noun denotes the zone of land surrounding a Roman fort or town?",
+    "answer": ["cingulum"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_021"
+  },
+  {
+    "id": "deriv_adv_056",
+    "question": "Which Latin root, appearing in the English word 'incite', is related to 'cingō' and means 'to rouse or stir up'?",
+    "answer": ["ciēō, ciēre, cīvī, citum"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Comparative / Multi-Root Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_021"
+  },
+  {
+    "id": "deriv_adv_057",
+    "question": "What is the conceptual difference between a 'circumference' (circum + ferō) and a 'precinct' (prae + cingō)?",
+    "options": [
+      "A precinct is the boundary of a circle, while a circumference is a defined area within a larger whole.",
+      "Both refer to the boundary of a circle but in different historical contexts.",
+      "A circumference is the boundary of a circle, while a precinct is a defined area within a larger whole.",
+      "A circumference is any enclosed area, while a precinct is specifically the edge of a circle."
+    ],
+    "answer": [
+      "A circumference is the boundary of a circle, while a precinct is a defined area within a larger whole."
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Meaning / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_021"
+  },
+  {
+    "id": "deriv_adv_058",
+    "question": "What English adjective, derived from the Latin 'rūmen', describes a mammal that chews cud?",
+    "answer": ["ruminant"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_022"
+  },
+  {
+    "id": "deriv_adv_059",
+    "question": "Differentiate in meaning between the Latin nouns 'rūmen' and 'rūmor'.",
+    "answer": ["Rūmen means 'throat' or 'gullet', while rūmor means 'rumor' or 'common talk'."],
+    "topic": "Latin Derivatives",
+    "subtopic": "Comparative / Multi-Root Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_022"
+  },
+  {
+    "id": "deriv_adv_060",
+    "question": "Adding the prefix ex- (ē-) to the root 'rūmen', from which the verb 'rūminō' is derived, gives rise to an English verb describing disgorging from the throat. Which word is correct?",
+    "options": ["expectorate", "regurgitate", "vomit", "eructate"],
+    "answer": ["eructate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Comparative / Multi-Root Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_022"
+  },
+  {
+    "id": "deriv_adv_061",
+    "question": "From what Latin noun and with what meaning do we derive the English word 'recalcitrant', which describes someone stubbornly defiant?",
+    "answer": ["calx, calcis, meaning 'heel'"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_023"
+  },
+  {
+    "id": "deriv_adv_062",
+    "question": "Which Latin root is related to the English word 'inculcate'?",
+    "options": ["colo", "calx", "culex", "coquo"],
+    "answer": ["calx"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Comparative / Multi-Root Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_023"
+  },
+  {
+    "id": "deriv_adv_063",
+    "question": "The Latin word 'calculus', a diminutive of 'calx', means 'little pebble' and refers to stones used for counting. Which English word derived from 'calculus' denotes a method of mathematical computation developed by Newton and Leibniz?",
+    "answer": ["calculus"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Comparative / Multi-Root Connection",
+    "dependency": "bonus_independent",
+    "group": "passage_023"
+  },
+  {
+    "id": "deriv_adv_064",
+    "question": "Which Latin root meaning 'poor' or 'destitute' is shared by the English words 'parsimonious' and 'penurious'?",
+    "answer": ["penuria"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Root / Comparative",
+    "dependency": "tossup",
+    "group": "passage_024"
+  },
+  {
+    "id": "deriv_adv_065",
+    "question": "Which English adjective, derived from the Latin verb 'pāreō', shares its root with the noun 'apparition' and describes something that can be seen or perceived?",
+    "answer": ["apparent"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Root / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_024"
+  },
+  {
+    "id": "deriv_adv_066",
+    "question": "Both 'apparent' and 'apparition' derive from the same Latin compound verb. Which English noun refers to a ghost or phantom?",
+    "options": ["transparent", "apparition", "apparatus", "parentage"],
+    "answer": ["apparition"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Root / Comparative",
+    "dependency": "bonus_independent",
+    "group": "passage_024"
+  },
+  {
+    "id": "deriv_adv_067",
+    "question": "Give the English derivative of 'nuō, nuere, nuī, nutum' that means 'a nod, sign, or hint,' and often refers to a divine will or command.",
+    "answer": ["numen"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "tossup",
+    "group": "passage_025"
+  },
+  {
+    "id": "deriv_adv_068",
+    "question": "From the Latin compound 'abnuō', meaning 'to refuse by a nod,' give the English derivative that means to indicate refusal or deny something.",
+    "answer": ["abnegate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Root / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_025"
+  },
+  {
+    "id": "deriv_adv_069",
+    "question": "Which English derivative comes from the Latin compound 'innuō', meaning 'to nod or beckon to,' and refers to a subtle or indirect hint or suggestion?",
+    "options": ["innuendo", "numen", "abnegate", "admonition"],
+    "answer": ["innuendo"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Root / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_025"
+  },
+  {
+    "id": "deriv_adv_070",
+    "question": "Which of the following words does NOT share the same Latin root as the others?",
+    "options": ["human", "humor", "humane", "humility"],
+    "answer": ["humor"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Letter Distinction / What Doesn't Belong",
+    "dependency": "tossup",
+    "group": "passage_026"
+  },
+  {
+    "id": "deriv_adv_071",
+    "question": "Give the Latin root and meaning shared by 'humane', 'human', and 'humility'.",
+    "answer": ["humus — earth, ground", "earth", "ground"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Shared Root / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_026"
+  },
+  {
+    "id": "deriv_adv_072",
+    "question": "'Humor' and 'humid' derive instead from what distinct Latin root, and with what meaning?",
+    "answer": ["umor — moisture, fluid", "fluid", "moisture"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Contrast / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_026"
+  },
+  {
+    "id": "deriv_adv_073",
+    "question": "Which of the following words does NOT derive from the Latin verb 'cēdō' meaning 'to go' or 'yield'?",
+    "options": ["conceal", "recede", "concede", "proceed"],
+    "answer": ["conceal"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Letter Distinction / What Doesn't Belong",
+    "dependency": "tossup",
+    "group": "passage_027"
+  },
+  {
+    "id": "deriv_adv_074",
+    "question": "What is the meaning of the Latin verb 'cēdō', from which 'recede', 'concede', and 'proceed' derive?",
+    "answer": ["to go", "to yield", "to withdraw", "yield", "withdraw"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_027"
+  },
+  {
+    "id": "deriv_adv_075",
+    "question": "'Conceal' is deceptively similar in form to these 'cēdō' derivatives but instead comes from what Latin verb, and what does it mean?",
+    "answer": ["cēlō — to hide, conceal", "conceal", "hide"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Contrast / Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_027"
+  },
+  {
+    "id": "deriv_adv_076",
+    "question": "From the Latin verb celo and the prefix con- meaning 'thoroughly,' what is the English verb that means 'to prevent from being seen' or 'to hide'?",
+    "answer": ["conceal"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs and Meanings",
+    "dependency": "tossup",
+    "group": "passage_028",
+    "explanation": "'Conceal' from con- + celo means 'to hide thoroughly.' The verb celo gives English words relating to secrecy."
+  },
+  {
+    "id": "deriv_adv_077",
+    "question": "From the Latin verb cedo, meaning 'to yield,' and the prefix re- meaning 'back,' what is the English word for a period of economic contraction marked by a general decline in business activity?",
+    "answer": ["recession"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs and Meanings",
+    "dependency": "bonus_independent",
+    "group": "passage_028",
+    "explanation": "'Recession' from re- + cedo means 'to yield or go back,' describing temporary economic decline."
+  },
+  {
+    "id": "deriv_adv_078",
+    "question": "What is the English noun, derived from the perfect passive participle of cedo, that refers to the withdrawal of a state from a larger union?",
+    "answer": ["secession"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs and Meanings",
+    "dependency": "bonus_independent",
+    "group": "passage_028",
+    "explanation": "'Secession' from secedo ('to go apart') refers to formal withdrawal of a group from a larger body."
+  },
+  {
+    "id": "deriv_adv_079",
+    "question": "What English noun, referring to one who copies or mimics another, is a direct Latin derivative?",
+    "answer": ["imitator"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Deponent Verbs and Derivatives",
+    "dependency": "tossup",
+    "group": "passage_029",
+    "explanation": "'Imitator' derives from the deponent verb imitor, meaning 'to imitate, copy, or mimic.'"
+  },
+  {
+    "id": "deriv_adv_080",
+    "question": "Which of the following is the full set of principal parts for the Latin deponent verb imitor?",
+    "answer": ["imitor, imitari, imitatus sum"],
+    "options": [
+      "imitor, imitari, imitatus sum",
+      "imitor, imitare, imitatus sum",
+      "imitor, imitavi, imitatum",
+      "imitor, imitari, imitatus"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Deponent Verbs and Derivatives",
+    "dependency": "bonus_independent",
+    "group": "passage_029",
+    "explanation": "Imitor is a first-conjugation deponent verb: imitor, imitari, imitatus sum."
+  },
+  {
+    "id": "deriv_adv_081",
+    "question": "The Latin verb imitor can also mean 'to represent or portray.' Which Roman author was a known imitator of Thucydides?",
+    "answer": ["Sallust"],
+    "options": [
+      "Livy",
+      "Tacitus",
+      "Sallust",
+      "Cicero"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Deponent Verbs and Derivatives",
+    "dependency": "bonus_independent",
+    "group": "passage_029",
+    "explanation": "Sallust stylistically imitated Thucydides' concise, moralizing historical approach."
+  },
+  {
+    "id": "deriv_adv_082",
+    "question": "Certamen players are often said to have gloomy dispositions. Which English adjective derived from Saturn means 'gloomy' or 'morose'?",
+    "answer": ["saturnine"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Mythological Roots",
+    "dependency": "tossup",
+    "group": "passage_030",
+    "explanation": "'Saturnine' from the god Saturn refers to the melancholy temperament associated with his astrological influence."
+  },
+  {
+    "id": "deriv_adv_083",
+    "question": "Which of the following animals is best described as vermiform, and what is the Latin root meaning 'little worm' from which this term derives?",
+    "answer": ["worm; vermiculus"],
+    "options": [
+      "earthworm; vermiculus",
+      "caterpillar; vermiculus",
+      "worm; vermiculus",
+      "centipede; vermiculus"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns and Scientific Terms",
+    "dependency": "bonus_independent",
+    "group": "passage_030",
+    "explanation": "'Vermiform' means 'worm-shaped,' from vermiculus ('little worm'), applied to elongated, wormlike bodies."
+  },
+  {
+    "id": "deriv_adv_084",
+    "question": "What English word, referring to a bright red pigment originally produced from insects thought to be worms, is derived from the Latin noun vermiculus?",
+    "answer": ["vermilion"],
+    "options": [
+      "vermiform",
+      "vermilion",
+      "vermicelli",
+      "vermin"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns and Scientific Terms",
+    "dependency": "bonus_independent",
+    "group": "passage_030",
+    "explanation": "'Vermilion' from vermiculus ('little worm') because the red pigment was made from dried insects."
+  },
+  {
+    "id": "deriv_adv_085",
+    "question": "What English adjective, derived from sequor, describes someone who is excessively eager to please or obedient in a servile way?",
+    "answer": ["obsequious"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Verbs",
+    "dependency": "tossup",
+    "group": "passage_031",
+    "explanation": "'Obsequious' from sequor ('to follow') conveys someone who follows excessively, hence overly compliant."
+  },
+  {
+    "id": "deriv_adv_086",
+    "question": "The English adjective 'intrinsic,' describing something essential or inherent, is ultimately derived from the Latin preposition 'intrā' and the verb sequor. What is its literal etymological meaning?",
+    "answer": ["following within"],
+    "options": [
+      "internal following",
+      "following within",
+      "inherently following",
+      "leading within"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Latin Roots",
+    "dependency": "bonus_independent",
+    "group": "passage_031",
+    "explanation": "'Intrinsic' from intrā ('within') + sequor ('to follow') literally means 'following within,' emphasizing inherent quality."
+  },
+  {
+    "id": "deriv_adv_087",
+    "question": "The English word 'executioner' is derived from the Latin verb exsequor. Using this Latin root, explain its literal meaning.",
+    "answer": ["the one who follows through"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Latin Roots",
+    "dependency": "bonus_independent",
+    "group": "passage_031",
+    "explanation": "'Executioner' from exsequor ('to follow out') literally means 'the one who follows through' a sentence."
+  },
+  {
+    "id": "deriv_adv_088",
+    "question": "Choose the English word derived from the same Latin root as 'surreptitious'.",
+    "answer": ["surrogate"],
+    "options": [
+      "rage",
+      "ravishing",
+      "surrogate",
+      "repeat"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "tossup",
+    "group": "passage_032",
+    "explanation": "Both derive from Latin roots with 'sur-/sub-' prefix: 'surreptitious' (secretly seize), 'surrogate' (substitute)."
+  },
+  {
+    "id": "deriv_adv_089",
+    "question": "Choose the word derived from the same Latin root as 'ennui'.",
+    "answer": ["annoy"],
+    "options": [
+      "annul",
+      "annoy",
+      "annex",
+      "reconnoiter"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_032",
+    "explanation": "'Ennui' and 'annoy' both from 'inodiare' (to make hateful), leading to boredom or irritation."
+  },
+  {
+    "id": "deriv_adv_090",
+    "question": "Choose the English word derived from the same Latin root as 'multiply'.",
+    "answer": ["replenish"],
+    "options": [
+      "perplex",
+      "explosive",
+      "plain",
+      "replenish"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "bonus_independent",
+    "group": "passage_032",
+    "explanation": "'Multiply' and 'replenish' both from 'plere' (to fill): multiply emphasizes increasing, replenish emphasizes refilling."
+  },
+  {
+    "id": "deriv_adv_091",
+    "question": "From the same root as 'corpulent,' what English noun refers to a small, microscopic body or particle?",
+    "answer": ["corpuscle"],
+    "options": [
+      "corpus",
+      "corpuscle",
+      "corporeal",
+      "incorporate"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "tossup",
+    "group": "passage_033",
+    "explanation": "'Corpuscle' from 'corpus' ('body') with diminutive suffix '-cle' means a tiny body."
+  },
+  {
+    "id": "deriv_adv_092",
+    "question": "Analogy: Corpuscle is to tiny body as corporeal is to ____?",
+    "answer": ["physical body"],
+    "options": [
+      "physical body",
+      "abstract body",
+      "ghostly body",
+      "collective body"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Analogy",
+    "dependency": "bonus_independent",
+    "group": "passage_033",
+    "explanation": "'Corporeal' relates to the physical body, just as 'corpuscle' is a tiny body."
+  },
+  {
+    "id": "deriv_adv_093",
+    "question": "Antonym/Contrast: Which English word is least related in meaning to the Latin root 'corpus'?",
+    "answer": ["incorporate"],
+    "options": [
+      "corporeal",
+      "corpuscle",
+      "incorporate",
+      "corpus"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Antonym / Contrast",
+    "dependency": "bonus_independent",
+    "group": "passage_033",
+    "explanation": "'Incorporate' literally means 'to put into a body,' but in modern usage often refers to combining abstract concepts."
+  },
+  {
+    "id": "deriv_adv_094",
+    "question": "From what Latin verb and meaning do we derive the English words 'curfew' and 'handkerchief,' the latter an object used to cover the head?",
+    "answer": ["operiō — cover"],
+    "options": [
+      "patefaciō — open",
+      "cūrō — care for",
+      "operiō — cover",
+      "claudō — close"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "tossup",
+    "group": "passage_034",
+    "explanation": "'Curfew' (originally signaled covering fires) and 'handkerchief' (covers head/face) both derive from operiō."
+  },
+  {
+    "id": "deriv_adv_095",
+    "question": "Based on its etymology, a curfew historically signals the time to cover what domestic object?",
+    "answer": ["focus / hearth"],
+    "options": [
+      "window",
+      "door",
+      "focus / hearth",
+      "table"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link",
+    "dependency": "bonus_independent",
+    "group": "passage_034",
+    "explanation": "'Curfew' from French 'couvre-feu' ('cover fire'), referring to covering the hearth at a certain hour."
+  },
+  {
+    "id": "deriv_adv_096",
+    "question": "What English derivative of the Latin noun cūra can mean 'to clean or brighten the surface of something by rubbing it hard, typically with an abrasive or detergent'?",
+    "answer": ["scour"],
+    "options": [
+      "sculpt",
+      "scrutinize",
+      "scour",
+      "secure"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Verb Formation",
+    "dependency": "bonus_independent",
+    "group": "passage_034",
+    "explanation": "'Scour' from cūra (care/attention) extended to careful cleaning or polishing."
+  },
+  {
+    "id": "deriv_adv_097",
+    "question": "From what Latin verb meaning 'to burn' do we derive the English words 'flammable' and 'inflammatory'?",
+    "answer": ["flammō, flammāre — to burn"],
+    "options": [
+      "flammō, flammāre — to burn",
+      "frangō, frangere — to break",
+      "flagellō, flagellāre — to whip",
+      "flectō, flectere — to bend"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "tossup",
+    "group": "passage_035",
+    "explanation": "'Flammable' and 'inflammatory' come from flammō, meaning 'to burn.'"
+  },
+  {
+    "id": "deriv_adv_098",
+    "question": "Analogy: Flammable is to easily set on fire as inflammatory is to ____?",
+    "answer": ["provoking strong emotions or agitation"],
+    "options": [
+      "resistant to burning",
+      "cold and indifferent",
+      "provoking strong emotions or agitation",
+      "slow to react"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Analogy",
+    "dependency": "bonus_independent",
+    "group": "passage_035",
+    "explanation": "'Flammable' describes combustibility; 'inflammatory' describes arousing strong feelings, metaphorically 'setting minds on fire.'"
+  },
+  {
+    "id": "deriv_adv_099",
+    "question": "Which English noun, derived from the Latin verb frangō, means 'something broken or a small fragment'?",
+    "answer": ["fraction"],
+    "options": [
+      "fraction",
+      "fracture",
+      "fragile",
+      "fragment"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Semantic Link / Noun Formation",
+    "dependency": "bonus_independent",
+    "group": "passage_035",
+    "explanation": "'Fraction' from frangō (to break) refers to a part of a whole, emphasizing something broken off."
+  },
+  {
+    "id": "deriv_adv_100",
+    "question": "From the Latin verb putō, meaning 'to think,' give the English noun for a widely-held, but mistaken, belief.",
+    "answer": ["imputation"],
+    "options": [
+      "punctilious",
+      "imputation",
+      "impute",
+      "dispute"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Root Recognition",
+    "dependency": "tossup",
+    "group": "passage_036",
+    "explanation": "'Imputation' from putō ('to think, reckon') refers to assignment of responsibility or a mistaken belief."
+  },
+  {
+    "id": "deriv_adv_101",
+    "question": "From the Latin compound verb disputō, what is the English verb meaning 'to argue about' or 'to debate'?",
+    "answer": ["dispute"],
+    "options": [
+      "dispute",
+      "impute",
+      "refute",
+      "compute"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verb Derivative",
+    "dependency": "bonus_independent",
+    "group": "passage_036",
+    "explanation": "'Dispute' from disputō ('to argue, debate')."
+  },
+  {
+    "id": "deriv_adv_102",
+    "question": "Which of the following English words does **not** derive from the Latin verb putō ('to think')?",
+    "answer": ["computer"],
+    "options": [
+      "imputation",
+      "impute",
+      "dispute",
+      "computer"
+    ],
+    "topic": "Latin Derivatives",
+    "subtopic": "What Does Not Belong",
+    "dependency": "bonus_independent",
+    "group": "passage_036",
+    "explanation": "'Impute', 'dispute', 'imputation' from putō. 'Computer' from computō ('to calculate'), a different root."
+  },
+  {
+  "id": "deriv_adv_103",
+  "question": "The principal parts of laedō are a bit irregular. What is the reduplicative perfect tense of the verb mordeō, mordēre, 'to bite'?",
+  "answer": ["momordī"],
+  "topic": "Latin Derivatives",
+  "subtopic": "Irregular Verb Forms",
+  "dependency": "standalone",
+  "group": null,
+  "explanation": "The verb mordeō has reduplicative perfect 'momordī', following the pattern where the perfect is formed by reduplication."
+ },
+ {
+        "id": "deriv_adv_104",
+        "question": "Semantic analogy: mulier is to 'muliēbriter' as vir is to which English derivative adverb, meaning 'in a manly or masculine manner'?",
+        "answer": [
+            "virilely"
+        ],
+        "options": [
+            "viraciously",
+            "virulently",
+            "virilely",
+            "virility"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Analogies: Latin root → English meaning",
+        "explanation": "'Muliēbriter' from 'mulier' (woman); the masculine parallel is 'vir' → 'virilely.'",
+        "dependency": "tossup",
+        "group": "passage_039"
+  },
+  {
+        "id": "deriv_adv_105",
+        "question": "Multiple choice: The Latin noun 'avis' is the root of the English adjective 'auspicious'. Which of the following is NOT a correct derivative from the same root?",
+        "answer": ["auditory"],
+        "options": [
+            "auditory",
+            "aviary",
+            "auspice",
+            "avian"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Multiple Choice / Root Recognition",
+        "explanation": "'Aviary', 'auspice', 'avian' from 'avis' (bird). 'Auditory' from 'audīre' (to hear).",
+        "dependency": "bonus_independent",
+        "group": "passage_039"
+  },
+  {
+        "id": "deriv_adv_106",
+        "question": "From the Latin root 'avis', give an English word that refers to a person who studies birds and includes a hint from the Greek root 'ornith-' (bird).",
+        "answer": [
+            "ornithologist"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Ornithologist' combines Greek 'ornithos' (bird), conceptually linked to Latin 'avis.'",
+        "dependency": "bonus_independent",
+        "group": "passage_039"
+    },
+    {
+        "id": "deriv_adv_107",
+        "question": "From the Latin root 'piscis', give the English term for a scientific study of sharks and other cartilaginous fish.",
+        "answer": [
+            "selachology"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Selachology' from Greek 'selachos' (shark), conceptually connected to Latin 'piscis' for fish.",
+        "dependency": "bonus_independent",
+        "group": "passage_039"
+    },
+    {
+        "id": "deriv_adv_108",
+        "question": "Multiple choice: The Latin root 'piscis' is present in several English derivatives. Which of the following does NOT derive from 'piscis'?",
+        "answer": ["piscatory"],
+        "options": [
+            "piscatorial",
+            "piscivorous",
+            "piscine",
+            "piscatory"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Multiple Choice / Root Recognition",
+        "explanation": "'Piscatorial' (fishing), 'piscivorous' (fish-eating), 'piscine' (relating to fish) from 'piscis'. 'Piscatory' is rare/nonexistent.",
+        "dependency": "bonus_independent",
+        "group": "passage_039"
+    },
+    {
+        "id": "deriv_adv_109",
+        "question": "From the Latin root 'piscis', give an English word describing the study of fish in scientific biology.",
+        "answer": [
+            "ichthyology"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Ichthyology' from Greek 'ichthys' (fish), conceptually related to Latin 'piscis.'",
+        "dependency": "bonus_independent",
+        "group": "passage_039"
+    },
+    {
+        "id": "deriv_adv_110",
+        "question": "Which Latin adjective, meaning 'full of twists and turns', could describe a winding road?",
+        "answer": [
+            "tortuosa"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Recognition / Fill-in-the-blank",
+        "explanation": "'Tortuosa' means 'full of twists and turns', describing a winding road.",
+        "dependency": "tossup",
+        "group": "passage_041"
+    },
+    {
+        "id": "deriv_adv_111",
+        "question": "Semantic analogy / contrast: If a road described as 'recta' is straight, direct, and uncomplicated, then a 'tortuosa' road is ________?",
+        "answer": [
+            "winding",
+            "twisting",
+            "indirect"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Antonyms / Conceptual Contrast",
+        "explanation": "'Tortuosa' literally means 'full of twists and turns', the opposite of straight ('recta').",
+        "dependency": "bonus_independent",
+        "group": "passage_041"
+    },
+    {
+        "id": "deriv_adv_112",
+        "question": "From the Latin adjective 'tortuosa', give the English derivative that describes something winding, full of twists, or indirectly complicated.",
+        "answer": [
+            "tortuous"
+        ],
+        "options": [
+            "torture",
+            "tortuous",
+            "tortile",
+            "tortilla"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Tortuous' from 'tortuosa' describes literal curves or figurative complexity.",
+        "dependency": "bonus_independent",
+        "group": "passage_041"
+    },
+    {
+        "id": "deriv_adv_113",
+        "question": "From the Latin adverb 'muliēbriter', meaning 'in a feminine way', give the English adjective describing someone who acts in a distinctly womanly manner.",
+        "answer": [
+            "muliebral",
+            "muliebrile"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root → English",
+        "explanation": "'Muliebral' from 'muliēbriter' describes behavior characteristic of a woman.",
+        "dependency": "tossup",
+        "group": "passage_042"
+    },
+    {
+        "id": "deriv_adv_114",
+        "question": "Semantic analogy / contrast: If a person acts 'muliēbriter' (in a distinctly womanly way), then a person described as 'audax' would be ________?",
+        "answer": [
+            "bold",
+            "daring",
+            "courageous"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Antonyms / Conceptual Contrast",
+        "explanation": "'Audax' (bold/daring) contrasts with the delicate nuance implied by 'muliēbriter.'",
+        "dependency": "bonus_independent",
+        "group": "passage_042"
+    },
+    {
+        "id": "deriv_adv_115",
+        "question": "From the Latin adjective 'audax', meaning 'bold or daring', choose the correct English derivative.",
+        "answer": ["audacious"],
+        "options": [
+            "audible",
+            "audit",
+            "audacious",
+            "auditor"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Audacious' from 'audax' (bold). 'Audible', 'auditor', 'audit' from 'audīre' (to hear).",
+        "dependency": "bonus_independent",
+        "group": "passage_042"
+    },
+    {
+        "id": "deriv_adv_116",
+        "question": "From the Latin adjective 'plānus', meaning 'flat, level, even', give the English adjective describing something smooth or even in surface.",
+        "answer": [
+            "planar"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root → English",
+        "explanation": "'Planar' from 'plānus', describing a flat or level surface.",
+        "dependency": "tossup",
+        "group": "passage_043"
+    },
+    {
+        "id": "deriv_adv_117",
+        "question": "Analogy: If 'plānus' gives rise to 'planar' (flat or even), then 'rigidus' would give rise to which English adjective?",
+        "answer": [
+            "rigid",
+            "stiff",
+            "inflexible"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Analogy / Root → English",
+        "explanation": "'Rigidus' (stiff/inflexible) parallels how 'plānus' gives 'planar.'",
+        "dependency": "bonus_independent",
+        "group": "passage_043"
+    },
+    {
+        "id": "deriv_adv_118",
+        "question": "Which of the following is NOT derived from the Latin verb 'lūstrō, lūstrāre', meaning 'to purify or illuminate'?",
+        "answer": ["illustrate"],
+        "options": [
+            "lustrous",
+            "lustrate",
+            "luster",
+            "illustrate"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Multiple Choice / Root Recognition",
+        "explanation": "'Lustrate', 'lustrous', 'luster' from 'lūstrō'. 'Illustrate' from 'illustrare', a different root.",
+        "dependency": "bonus_independent",
+        "group": "passage_043"
+    },
+    {
+        "id": "deriv_adv_119",
+        "question": "Which of the following English derivatives comes from the Latin verb 'occupō' (with double 'c'), rather than 'opō' (single 'p')?",
+        "answer": ["occupy"],
+        "options": [
+            "oblige",
+            "occupy",
+            "oppose",
+            "opine"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Single vs Double Letter Root Distinction",
+        "explanation": "'Occupō' (to seize) gives 'occupy'. The others from different Latin roots.",
+        "dependency": "tossup",
+        "group": "passage_044"
+    },
+    {
+        "id": "deriv_adv_120",
+        "question": "Analogy / semantic connection: If 'victor' comes from 'vincō, vincere' (to conquer), then 'ductor' comes from which Latin verb and gives which English derivative?",
+        "answer": [
+            "ducō, ducere",
+            "conduct"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Analogy / Root → English",
+        "explanation": "'Vincō' gives 'victor'; 'ducō' gives 'ductor' (leader), giving rise to 'conduct.'",
+        "dependency": "bonus_independent",
+        "group": "passage_044"
+    },
+    {
+        "id": "deriv_adv_121",
+        "question": "From the Latin verb 'flagellō, flagellāre', meaning 'to whip or lash', give the English derivative meaning 'a severe or rigorous criticism'.",
+        "answer": [
+            "flagellation"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root → English Derivative",
+        "explanation": "'Flagellation' from 'flagellō' (to whip) refers to literal whipping or metaphorically severe criticism.",
+        "dependency": "bonus_independent",
+        "group": "passage_044"
+    },
+    {
+        "id": "deriv_adv_122",
+        "question": "From the Latin roots 'genus' (type, kind) and 'caedō, -ere' (to kill), give the English term for the systematic killing of a large group, especially based on ethnicity or nationality.",
+        "answer": [
+            "genocide"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Compound Roots → English",
+        "explanation": "'Genocide' combines 'genus' (type/kind) and 'caedō' (to kill).",
+        "dependency": "tossup",
+        "group": "passage_045"
+    },
+    {
+        "id": "deriv_adv_123",
+        "question": "Analogy: Just as 'fratricide' comes from 'frāter' (brother) + 'caedō' (to kill), which English word comes from 'pater' (father) + 'caedō' (to kill)?",
+        "answer": [
+            "patricide"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Analogy / Compound Root → English",
+        "explanation": "'Fratricide' = brother + kill; 'patricide' = father + kill.",
+        "dependency": "bonus_independent",
+        "group": "passage_045"
+    },
+    {
+        "id": "deriv_adv_124",
+        "question": "Multiple choice: Which of the following English words is NOT derived from 'caedō, -ere'?",
+        "answer": ["homicide"],
+        "options": [
+            "infanticide",
+            "suicide",
+            "regicide",
+            "homicide"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "MC / NOT Derived from a Root",
+        "explanation": "'Suicide', 'regicide', 'infanticide' involve 'caedō'. 'Homicide' from 'homo' + 'caedō', but root is more about 'man.'",
+        "dependency": "bonus_independent",
+        "group": "passage_045"
+    },
+    {
+        "id": "deriv_adv_125",
+        "question": "From the Latin roots GENUS (type, kind) and CAEDŌ, -ERE (to kill), what English word refers to the systematic killing of a racial, ethnic, or cultural group?",
+        "answer": [
+            "genocide"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Compound Roots → English",
+        "explanation": "'Genocide' from 'genus' (type) + 'caedō' (to kill).",
+        "dependency": "tossup",
+        "group": "passage_046"
+    },
+    {
+        "id": "deriv_adv_126",
+        "question": "Semantic contrast / antonym: If 'benevolent' comes from 'bene' (well) + 'volō' (wish), which Latin root + verb combination would form an English word meaning the opposite, 'malevolent'?",
+        "answer": [
+            "male + volō",
+            "male + volo"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Semantic Contrast / Antonyms",
+        "explanation": "'Benevolent' = good-wishing; 'malevolent' = ill-wishing.",
+        "dependency": "bonus_independent",
+        "group": "passage_046"
+    },
+    {
+        "id": "deriv_adv_127",
+        "question": "From the Latin root CAEDŌ, -ERE (to kill) and the prefix re-, what English word refers to a historical action of violently killing or massacring again?",
+        "answer": [
+            "recaedō",
+            "recaedo"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Prefixes + Roots → English",
+        "explanation": "Adding 're-' to 'caedō' produces a derivative meaning 'to kill again.'",
+        "dependency": "bonus_independent",
+        "group": "passage_046"
+    },
+    {
+        "id": "deriv_adv_128",
+        "question": "Which of the following English words, if any, does NOT belong with the others by derivation: 'accident,' 'cadence,' 'decay,' 'arcade'?",
+        "answer": ["arcade"],
+        "options": [
+            "accident",
+            "arcade",
+            "cadence",
+            "decay"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Multiple Choice / Root Recognition",
+        "explanation": "'Accident', 'cadence', 'decay' from 'cadere' (to fall). 'Arcade' from 'arcus' (bow).",
+        "dependency": "tossup",
+        "group": "passage_047"
+    },
+    {
+        "id": "deriv_adv_129",
+        "question": "From what Latin noun do we derive the English word 'arcade'?",
+        "answer": [
+            "arcus"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Arcade' from 'arcus' (bow).",
+        "dependency": "bonus_independent",
+        "group": "passage_047"
+    },
+    {
+        "id": "deriv_adv_130",
+        "question": "What English word, derived from 'cadō' (to fall) and combined with a verb meaning 'to prepare,' refers etymologically to a device designed to allow a person to fall without injury?",
+        "answer": [
+            "parachute"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Compound Derivatives",
+        "explanation": "'Parachute' from French 'para-' (shield) + Latin 'cadere' (to fall), literally 'protect from a fall.'",
+        "dependency": "bonus_dependent",
+        "group": "passage_047"
+    },
+    {
+        "id": "deriv_adv_131",
+        "question": "Benign, from Latin bene + gignere, means mild or harmless. In contrast, the word ______, from male + gignere, means to speak evil of or be evil in nature.",
+        "answer": [
+            "malign"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Analogies / Antonyms",
+        "explanation": "'Benign' and 'malign' both from 'gignere' (to beget), but 'bene' gives positive meaning, 'male' negative.",
+        "dependency": "tossup",
+        "group": "passage_048"
+    },
+    {
+        "id": "deriv_adv_132",
+        "question": "From the Latin root 'gignere', give an English word meaning 'to produce or bring about' that is related to creation or causation.",
+        "answer": [
+            "generate"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Generate' from 'gignere' (to beget/bring forth).",
+        "dependency": "bonus_independent",
+        "group": "passage_048"
+    },
+    {
+        "id": "deriv_adv_133",
+        "question": "Which Latin verb is the ultimate root of the English words 'benign', 'malign', and 'generate'?",
+        "answer": [
+            "gignere"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Identification",
+        "explanation": "All three trace to 'gignere' (to beget), combined with prefixes.",
+        "dependency": "bonus_independent",
+        "group": "passage_048"
+    },
+    {
+        "id": "deriv_adv_134",
+        "question": "What English verb, derived from the Latin noun 'ariēs' or the verb 'arietāre', means 'to strike or fall violently against something'?",
+        "answer": [
+            "arietate"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verb Derivatives / Military Action",
+        "explanation": "'Arietate' from 'ariēs' (battering ram) and 'arietāre' (to butt/batter).",
+        "dependency": "tossup",
+        "group": "passage_049"
+    },
+    {
+        "id": "deriv_adv_135",
+        "question": "What non-military definition exists for 'aciēs', given its connection to the adjective 'ācer'?",
+        "answer": [
+            "sharpness",
+            "keenness"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Multiple Meanings / Conceptual Connection",
+        "explanation": "'Aciēs' can also mean sharpness/keenness figuratively, stemming from 'ācer' (sharp/keen).",
+        "dependency": "bonus_independent",
+        "group": "passage_049"
+    },
+    {
+        "id": "deriv_adv_136",
+        "question": "From the Latin noun 'ariēs', meaning 'battering ram', give the English word derived from the related noun 'arietātiō' that refers to the act of forcefully butting, striking, or attacking.",
+        "answer": [
+            "arietation"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Meaning Connection / Root → English",
+        "explanation": "'Ariēs' gives 'arietātiō', the act of butting. 'Arietation' refers to forcefully striking/attacking.",
+        "dependency": "bonus_dependent",
+        "group": "passage_049"
+    },
+    {
+        "id": "deriv_adv_137",
+        "question": "What English verb, derived from the Latin 'frangō', means 'to break into pieces'?",
+        "answer": [
+            "fracture"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verb Derivatives / Breaking Action",
+        "explanation": "'Frangō' means 'to break'. 'Fracture' retains the sense of breaking into pieces.",
+        "dependency": "tossup",
+        "group": "passage_050"
+    },
+    {
+        "id": "deriv_adv_138",
+        "question": "Which English word is NOT derived from the Latin root 'frangō'?",
+        "options": [
+            "Fragile",
+            "Fraction",
+            "Fragment",
+            "Infraction",
+            "Infrared"
+        ],
+        "answer": [
+            "Infrared"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Multiple Meanings / Distractor Identification",
+        "explanation": "All except 'Infrared' derive from 'frangō'. 'Infrared' is unrelated.",
+        "dependency": "bonus_independent",
+        "group": "passage_050"
+    },
+    {
+        "id": "deriv_adv_139",
+        "question": "Analogy: fractus : fracture :: fragilis : ____",
+        "answer": [
+            "fragile"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Analogy / Root → English Connection",
+        "explanation": "'Fractus' (broken) gives 'fracture'; 'fragilis' (easily broken) gives 'fragile.'",
+        "dependency": "bonus_independent",
+        "group": "passage_050"
+    },
+    {
+        "id": "deriv_adv_140",
+        "question": "The Latin verb 'cūrō' is also the root for what English adjective that means 'in a hurry, done hastily'?",
+        "answer": [
+            "cursory"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjective Derivatives / Care → Hasty Action",
+        "explanation": "'Cūrō' (to take care of) gives 'cursory', meaning hastily done.",
+        "dependency": "tossup",
+        "group": "passage_051"
+    },
+    {
+        "id": "deriv_adv_141",
+        "question": "Which of the following English words is derived from 'currō' rather than 'cūrō'?",
+        "options": [
+            "Curative",
+            "Cure",
+            "Curriculum",
+            "Curator"
+        ],
+        "answer": [
+            "Curriculum"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Double vs Single Letter / Root Confusion",
+        "explanation": "'Curriculum' from 'currō' (to run). The others from 'cūrō' (to care for).",
+        "dependency": "bonus_independent",
+        "group": "passage_051"
+    },
+    {
+        "id": "deriv_adv_142",
+        "question": "Analogy: cūrō : cure :: currō : ____",
+        "answer": [
+            "course"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Analogy / Root → English Connection",
+        "explanation": "'Cūrō' gives 'cure'; 'currō' (to run) gives 'course.'",
+        "dependency": "bonus_independent",
+        "group": "passage_051"
+    },
+    {
+        "id": "deriv_adv_143",
+        "question": "Which Latin verb, meaning 'to stir or shake,' is the root of the English words 'perturb' and 'turbulent'?",
+        "answer": ["turbō, turbāre, turbāvī, turbātum", "turbō", "turbāre", "turbāvī", "turbātum"],
+        "options": [
+            "percutiō, percutere, percussī, percussum",
+            "molior, molīrī, molītus sum, molītum",
+            "turbō, turbāre, turbāvī, turbātum",
+            "commoveō, commovēre, commōvī, commōtum"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Advanced Verbs Expressing Motion or Disorder",
+        "explanation": "'Perturb' and 'turbulent' from 'turbō' (to stir/shake/confuse).",
+        "dependency": "tossup",
+        "group": "passage_051"
+    },
+    {
+        "id": "deriv_adv_144",
+        "question": "From which Latin adjective, meaning 'careless' or 'slack,' do the English words 'neglectful' and 'negligent' derive?",
+        "answer": ["neglēgens, neglēgentis","neglēgens", "neglēgentis" ],
+        "options": [
+            "remissus, remissa, remissum",
+            "immemor, immemoris",
+            "neglēgens, neglēgentis",
+            "inobservans, inobservantis"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjectives Expressing Moral or Attitudinal Qualities",
+        "explanation": "'Neglectful' and 'negligent' from 'neglēgens', literally 'not attentive.'",
+        "dependency": "bonus_independent",
+        "group": "passage_051"
+    },
+    {
+        "id": "deriv_adv_145",
+        "question": "From which Latin noun, meaning 'counsel' or 'advice,' do the English words 'consult' and 'counselor' derive?",
+        "answer": ["cōnsilium"],
+        "options": [
+            "cōnsilium",
+            "cōnspectus",
+            "cōnsuetūdō",
+            "cōnspicium"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Nouns Expressing Thought, Planning, or Advice",
+        "explanation": "'Consult' and 'counselor' from 'cōnsilium' (plan, advice, counsel).",
+        "dependency": "bonus_independent",
+        "group": "passage_051"
+    },
+    {
+        "id": "deriv_adv_146",
+        "question": "Which Latin verb, meaning 'to go astray or wander,' is the root of the English words 'errant' and 'error'?",
+        "answer": ["errō, errāre, errāvī, errātum","errō", "errāre", "errāvī", "errātum" ],
+        "options": [
+            "vagor, vagārī, vagātus sum, vagātum",
+            "aberrō, aberrāre, aberrāvī, aberrātum",
+            "errō, errāre, errāvī, errātum",
+            "incurro, incurrere, incurrī, incursum"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Advanced Verbs Expressing Deviation or Wandering",
+        "explanation": "'Errant' and 'error' from 'errō' (to wander, stray).",
+        "dependency": "tossup",
+        "group": "passage_052"
+    },
+    {
+        "id": "deriv_adv_147",
+        "question": "From which Latin adjective, meaning 'full of care or anxious,' do the English words 'solicitous' and 'solicitude' derive?",
+        "answer": ["sollicitus, sollicita, sollicitum", "sollicitus", "sollicita", "sollicitum"],
+        "options": [
+            "studiōsus, studiōsa, studiōsum",
+            "sollicitus, sollicita, sollicitum",
+            "anxius, anxia, anxium",
+            "cūriōsus, cūriōsa, cūriōsum"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjectives Expressing Emotional or Mental States",
+        "explanation": "'Solicitous' and 'solicitude' from 'sollicitus' (anxious/full of care).",
+        "dependency": "bonus_independent",
+        "group": "passage_052"
+    },
+    {
+        "id": "deriv_adv_148",
+        "question": "From which Latin noun, meaning 'trick, device, or cunning,' are the English words 'artifice' and 'artificial' derived?",
+        "answer": ["artificium"],
+        "options": [
+            "fingere",
+            "ingenium",
+            "ars",
+            "artificium"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Nouns Expressing Skill, Craft, or Deception",
+        "explanation": "'Artifice' and 'artificial' from 'artificium' (craft, skill, trickery).",
+        "dependency": "bonus_independent",
+        "group": "passage_052"
+    },
+    {
+        "id": "deriv_adv_149",
+        "question": "Which English adjectives or nouns are derived from the Latin noun genus, meaning 'kind'?",
+        "answer": ["jaunty", "genie", "genteel", "jaunty, genie and genteel", "jaunty, genie, genteel"],
+        "options": [
+            "genuine, genial, gentile",
+            "jaunty, genie, genteel",
+            "generic, generation, genus",
+            "geniality, generous, genius"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Noun → Adjective/Verb Derivatives",
+        "explanation": "'Jaunty', 'genie', 'genteel' from 'genus' (kind/type), reflecting semantic shift to character.",
+        "dependency": "tossup",
+        "group": "passage_052"
+    },
+    {
+        "id": "deriv_adv_150",
+        "question": "The English word 'impecunious,' meaning 'having little or no money,' is derived from which two Latin words?",
+        "answer": ["in and pecūnia"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Compound Word Derivation",
+        "explanation": "'Impecunious' from in- ('not') + pecūnia ('money').",
+        "dependency": "bonus_independent",
+        "group": "passage_052"
+    },
+    {
+        "id": "deriv_adv_151",
+        "question": "Which English noun is derived from the Latin noun lac?",
+        "answer": ["lettuce"],
+        "options": [
+            "lacquer",
+            "lactose",
+            "lettuce",
+            "lactate"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Recognition for Advanced Nouns",
+        "explanation": "'Lettuce' ultimately from 'lac', reflecting its etymological origin.",
+        "dependency": "bonus_independent",
+        "group": "passage_052"
+    },
+    {
+        "id": "deriv_adv_152",
+        "question": "What noun for a persistent sleep disorder is derived from the Latin word for 'sleep'?",
+        "answer": ["insomnia"],
+        "options": [
+            "narcolepsy",
+            "insomnia",
+            "somnambulism",
+            "hypnosis"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Nouns Derived from Somnus",
+        "explanation": "'Insomnia' from in- ('not') + somnus ('sleep'), literally 'not sleeping.'",
+        "dependency": "tossup",
+        "group": "passage_053"
+    },
+    {
+        "id": "deriv_adv_153",
+        "question": "What is the Latin noun for 'sleep,' from which we derive the English word 'insomnia'?",
+        "answer": ["somnus", "somni"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Recognition / Nouns",
+        "explanation": "'Insomnia' from 'somnus', the Latin noun for 'sleep.'",
+        "dependency": "bonus_independent",
+        "group": "passage_053"
+    },
+    {
+        "id": "deriv_adv_154",
+        "question": "Identify the English adjective derived from the Latin verb somniō, meaning 'to dream': ________",
+        "answer": ["somniferous"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjectives Derived from Verbs",
+        "explanation": "'Somniferous' from somniō ('to dream') + -ferous ('bearing'), meaning 'bringing sleep.'",
+        "dependency": "bonus_independent",
+        "group": "passage_053"
+    },
+    {
+        "id": "deriv_adv_155",
+        "question": "From the Latin deponent verb meaning 'to urge,' which English verb means 'to strongly encourage or persuade someone to do something'?",
+        "answer": ["exhort"],
+        "options": [
+            "advocate",
+            "urge",
+            "exhort",
+            "encourage"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs from Deponent Roots",
+        "explanation": "'Exhort' from deponent verb hortor, hortari, hortatus sum (to urge/encourage).",
+        "dependency": "tossup",
+        "group": "passage_054"
+    },
+    {
+        "id": "deriv_adv_156",
+        "question": "Give the principal parts of the Latin deponent verb from which we derive 'exhort'.",
+        "answer": ["hortor, hortari, hortatus sum"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Principal Parts of Deponent Verbs",
+        "explanation": "'Exhort' from hortor, hortari, hortatus sum.",
+        "dependency": "bonus_dependent",
+        "group": "passage_054"
+    },
+    {
+        "id": "deriv_adv_157",
+        "question": "Name an English adjective derived from the same Latin root as 'exhort' that describes language or behavior that is encouraging or urging.",
+        "answer": ["hortatory"],
+        "options": [
+            "encouraging",
+            "hortatory",
+            "exhortive",
+            "hortational"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjective Derivatives from Verbs",
+        "explanation": "'Hortatory' from hortor (to urge) refers to language intended to encourage.",
+        "dependency": "bonus_dependent",
+        "group": "passage_054"
+    },
+    {
+        "id": "deriv_adv_158",
+        "question": "Which English word derived from the Latin root loquor specifically refers to speaking in an evasive or roundabout way?",
+        "answer": ["circumlocution"],
+        "options": [
+            "elocution",
+            "allocution",
+            "loquacious",
+            "circumlocution"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Compound Nouns from Verbs",
+        "explanation": "'Circumlocution' from circum ('around') + loquor ('to speak'), literally 'speaking around.'",
+        "dependency": "tossup",
+        "group": "passage_055"
+    },
+    {
+        "id": "deriv_adv_159",
+        "question": "What does the Latin verb loquor mean, the root of circumlocution, elocution, allocution, and loquacious?",
+        "answer": ["to speak"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Recognition / Verbs",
+        "explanation": "'Loquor' is a deponent verb meaning 'to speak.'",
+        "dependency": "bonus_independent",
+        "group": "passage_055"
+    },
+    {
+        "id": "deriv_adv_160",
+        "question": "From the same root, which English word refers to a formal speech or discourse?",
+        "answer": ["allocution"],
+        "options": [
+            "eloquence",
+            "elocution",
+            "allocution",
+            "loquacity"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Nouns Derived from Verbs",
+        "explanation": "'Allocution' refers to a formal address, while 'elocution' refers to the art of public speaking.",
+        "dependency": "bonus_independent",
+        "group": "passage_055"
+    },
+    {
+        "id": "deriv_adv_161",
+        "question": "The English adjective 'pellucid' is derived from the Latin per and lūceō. What does the Latin verb lūceō mean?",
+        "answer": ["to shine"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Recognition / Verbs",
+        "explanation": "'Lūceō' means 'to shine'. 'Pellucid' literally 'through shining,' reflecting clarity.",
+        "dependency": "tossup",
+        "group": "passage_056"
+    },
+    {
+        "id": "deriv_adv_162",
+        "question": "What does the English adjective 'pellucid' mean?",
+        "answer": ["translucently clear", "translucent", "easily understandable"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjectives Derived from Verbs",
+        "explanation": "'Pellucid' describes something transparently clear, literally or figuratively.",
+        "dependency": "bonus_independent",
+        "group": "passage_056"
+    },
+    {
+        "id": "deriv_adv_163",
+        "question": "Which English adjective derived from pulcher describes someone or something having beauty?",
+        "answer": ["pulchritudinous"],
+        "options": [
+            "pulchorous",
+            "pulchritudinous",
+            "pulchral",
+            "pulchrescent"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjectives from Adjectives",
+        "explanation": "'Pulchritudinous' from pulchritude/pulcher describes possessing beauty.",
+        "dependency": "bonus_independent",
+        "group": "passage_056"
+    },
+    {
+        "id": "deriv_adv_164",
+        "question": "The noun 'vicissitude' comes from the Latin root vicis. In terms of its semantic field, what general concept does vicis convey?",
+        "answer": ["change", "alternation", "turn", "succession"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Recognition / Nouns",
+        "explanation": "'Vicis' conveys change, alternation, or succession.",
+        "dependency": "tossup",
+        "group": "passage_057"
+    },
+    {
+        "id": "deriv_adv_165",
+        "question": "Which English adjective derived from vicis refers to experiencing something indirectly or by substitution, often conveying the sense of empathy or representation?",
+        "answer": ["vicarious"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjectives / Semantic Nuance",
+        "explanation": "'Vicarious' from vicis implies acting in place of another or experiencing secondhand.",
+        "dependency": "bonus_independent",
+        "group": "passage_057"
+    },
+    {
+        "id": "deriv_adv_166",
+        "question": "From the same root, which English noun denotes a person who acts in place of another, such as a representative or a successor in office?",
+        "answer": ["vicar"],
+        "options": [
+            "vicarious",
+            "vicinal",
+            "vicar",
+            "vicissitude"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Nouns from Nouns / Semantic Precision",
+        "explanation": "'Vicar' from vicis refers to someone acting on behalf of another.",
+        "dependency": "bonus_independent",
+        "group": "passage_057"
+    },
+    {
+        "id": "deriv_adv_167",
+        "question": "The English verb 'repudiate' is derived from the Latin verb repudiō. What is the general meaning of repudiō in Latin?",
+        "answer": ["to reject", "to divorce", "to refuse"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Root Recognition / Verbs",
+        "explanation": "'Repudiate' from repudiō (to reject/divorce).",
+        "dependency": "tossup",
+        "group": "passage_058"
+    },
+    {
+        "id": "deriv_adv_168",
+        "question": "Name the Latin verb meaning 'to feel ashamed' from which both repudiō and impudēns are derived.",
+        "answer": ["pudēo", "pudeo", "pudere", "pudēre", "puduit"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Shared Roots / Semantic Connection",
+        "explanation": "Both 'repudiō' (to reject) and 'impudēns' (shameless) from 'pudēo' (to feel shame).",
+        "dependency": "bonus_independent",
+        "group": "passage_058"
+    },
+    {
+        "id": "deriv_adv_169",
+        "question": "From Latin ex + corium (skin), which English verb describes the act of severely criticizing, verbally stripping bare, or condemning harshly?",
+        "answer": ["excoriate"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs from Compounds",
+        "explanation": "'Excoriate' from ex (out) + corium (skin), literally 'to strip off skin,' figuratively 'to denounce severely.'",
+        "dependency": "bonus_independent",
+        "group": "passage_058"
+    },
+    {
+        "id": "deriv_adv_170",
+        "question": "From what Latin verb and its meaning is the English word 'redolent,' meaning strongly reminiscent or suggestive of something, derived?",
+        "answer": ["oleō", "oleo", "olēre"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs / Sensory Roots",
+        "explanation": "'Redolent' from oleō, olēre (to smell), extending metaphorically to anything strongly reminiscent.",
+        "dependency": "tossup",
+        "group": "passage_059"
+    },
+    {
+        "id": "deriv_adv_171",
+        "question": "What Latin verb, from which we derive the English adjective 'fragrant,' means 'to smell sweet'?",
+        "answer": ["frāgrō", "fragrance", "fragrance", "frāgrāre"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs / Sensory Roots",
+        "explanation": "'Fragrant' from frāgrō, frāgrāre (to smell sweet).",
+        "dependency": "bonus_independent",
+        "group": "passage_059"
+    },
+    {
+        "id": "deriv_adv_172",
+        "question": "From what two Latin words and their meanings do we get the English word 'olfactory,' pertaining to the sense of smell?",
+        "answer": ["olō (to smell) and faciō (to make or do)"],
+        "options": [
+            "odor and faciō",
+            "olō and faciō",
+            "oleō and frāgrō",
+            "olfacere and frāgrō"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Compound Roots / Sensory Terms",
+        "explanation": "'Olfactory' from olō (to smell) and faciō (to make/do), literally 'to make smell.'",
+        "dependency": "bonus_independent",
+        "group": "passage_059"
+    },
+    {
+        "id": "deriv_adv_173",
+        "question": "Give the Latin verb from which we derive the English word 'recumbent,' meaning lying down.",
+        "answer": ["cumbō", "cumbo", "cumbere"],
+        "options": [
+            "recumbō, recumbere",
+            "cumbō, cumbere",
+            "iaceō, iacēre",
+            "cubō, cubare"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs / Physical Position",
+        "explanation": "'Recumbent' from cumbō, cumbere.",
+        "dependency": "tossup",
+        "group": "passage_060"
+ },
+ {
+        "id": "deriv_adv_174",
+        "question": "What is the English adjective derived from the Latin noun pulvis, pulveris, meaning 'dust,' that means 'consisting of or resembling powder'?",
+        "answer": ["pulverulent"],
+        "options": [
+            "pulveric",
+            "pulverulent",
+            "pulverous",
+            "powdery"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Nouns → Adjectives / Sensory Description",
+        "explanation": "'Pulverulent' from pulvis, pulveris ('dust') refers to powder-like texture.",
+        "dependency": "bonus_independent",
+        "group": "passage_060"
+ },
+ {
+        "id": "deriv_adv_175",
+        "question": "The English word 'imbibe,' meaning 'to drink,' comes from what Latin verb?",
+        "answer": ["bibō", "bibere", "bibo"],
+        "options": [],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs / Actions",
+        "explanation": "'Imbibe' from bibō, bibere ('to drink').",
+        "dependency": "bonus_independent",
+        "group": "passage_060"
+ },
+ {
+        "id": "deriv_adv_176",
+        "question": "Fill in the blank: The English adjective meaning 'flowing sweetly or smoothly,' often applied to music or speech, ultimately derives from the Latin words mel, mellis ('honey') and fluo, fluere ('to flow'). This word is __________.",
+        "answer": ["mellifluous"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Metaphorical Extensions of Compound Roots",
+        "explanation": "'Mellifluous' from mel, mellis ('honey') and fluo, fluere ('to flow'), describing something flowing smoothly like honey.",
+        "dependency": "tossup",
+        "group": "passage_061"
+ },
+ {
+        "id": "deriv_adv_177",
+        "question": "What is the Latin phrase from which we derive the English word 'influenza,' originally thought to be caused by the influence of the heavens or influence of the stars?",
+        "answer": ["influentia coeli", "influentia caeli"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Historical and Medical Terminology",
+        "explanation": "'Influenza' from Medieval Latin 'influentia coeli' ('influence of the heavens'), later narrowed to 'influenza di freddo' (influence of cold).",
+        "dependency": "bonus_independent",
+        "group": "passage_061"
+ },
+ {
+        "id": "deriv_adv_178",
+        "question": "From the Latin effluere ('to flow out'), what English adjective describes a vapor or unpleasant odor emitted from a substance?",
+        "answer": ["effluvial"],
+        "options": [
+            "effusive",
+            "effluent",
+            "effluvial",
+            "efflorescent"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs → Adjectives / Sensory Description",
+        "explanation": "'Effluvial' from effluere ('to flow out') refers to an emission/exhalation, often with foul smell.",
+        "dependency": "bonus_independent",
+        "group": "passage_061"
+ },
+ {
+        "id": "deriv_adv_179",
+        "question": "In Juvenal's phrase 'odor lucri', he says 'bonus est odor ex re qualibet', meaning 'the smell of profit is good, from whatever it comes'. Which Latin verb, meaning 'to emit a scent' or 'to smell of', is the source of the English adjective 'redolent'?",
+        "answer": ["redolere"],
+        "options": [
+            "effluere",
+            "redolere",
+            "olere",
+            "odorare"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Classical Roots in Literature",
+        "explanation": "The verb redolere (from intensive red- and olere 'to smell') gives English redolent.",
+        "dependency": "tossup",
+        "group": "passage_062"
+ },
+ {
+        "id": "deriv_adv_180",
+        "question": "From the prefix re- and the element memor ('mind'), give the Latin verb meaning 'to recall' or 'to call to mind', the source of the English word 'reminisce'.",
+        "answer": ["reminiscor"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verb Formation",
+        "explanation": "Reminiscor from re- ('again') and memor ('mindful') means 'to remember again,' producing English reminisce.",
+        "dependency": "bonus_independent",
+        "group": "passage_062"
+ },
+ {
+        "id": "deriv_adv_181",
+        "question": "Besides redolent, what English noun, derived from the Latin verb olfacio ('to smell'), refers to the act or sense of smelling?",
+        "answer": ["olfaction"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Sensory Roots",
+        "explanation": "The verb olfacio ('to smell') gives English olfaction ('sense of smell') and olfactory.",
+        "dependency": "bonus_independent",
+        "group": "passage_062"
+ },
+ {
+        "id": "deriv_adv_182",
+        "question": "Derived from the Latin noun calx, calcis, meaning 'heel,' give the English word for a person who is stubbornly uncooperative and defiant.",
+        "answer": ["recalcitrant"],
+        "options": [
+            "caliginous",
+            "calcify",
+            "calcareous",
+            "recalcitrant"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Noun Compounds and Figurative Meaning",
+        "explanation": "From calx ('heel') comes recalcitrant, literally 'kicking back,' used figuratively for stubborn/defiant person.",
+        "dependency": "tossup",
+        "group": "passage_063"
+ },
+ {
+        "id": "deriv_adv_183",
+        "question": "Translate the Latin phrase ponere calculos, which literally means 'to place pebbles,' but figuratively refers to what action?",
+        "answer": ["to perform a computation", "to reckon", "a computation", "a calculation"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Idiomatic Expressions",
+        "explanation": "Ponere calculos refers to counting with pebbles on a counting board, giving rise to 'to compute/calculate.'",
+        "dependency": "bonus_independent",
+        "group": "passage_063"
+ },
+ {
+        "id": "deriv_adv_184",
+        "question": "A Roman proverb, calx super calcem, literally means 'heel on heel.' What is the English equivalent of this expression?",
+        "answer": ["closely following", "follow closely", "to follow closely", "to closely follow", "closely follow"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Proverbs and Figurative Meaning",
+        "explanation": "Calx super calcem conveys following closely behind, like one heel over another, used figuratively for rapid succession.",
+        "dependency": "bonus_independent",
+        "group": "passage_063"
+ },
+ {
+        "id": "deriv_adv_185",
+        "question": "What English noun, derived from the Latin verb subo, subere, means 'a state of extreme excitement or chaos'?",
+        "answer": ["turmoil"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs to Nouns / Emotional or Physical States",
+        "explanation": "The verb subo, subere ('to undergo, take up') is the root of 'turmoil,' describing disorder/agitation.",
+        "dependency": "tossup",
+        "group": "passage_064"
+ },
+ {
+        "id": "deriv_adv_186",
+        "question": "What English adjective, derived from the Latin verb turbo, turbare, means 'causing or characterized by violent or powerful emotional or physical activity'?",
+        "answer": ["turbulent"],
+        "options": [
+            "tumultuous",
+            "turbulent",
+            "tempestuous",
+            "tortuous"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs to Adjectives / Physical or Emotional States",
+        "explanation": "'Turbulent' from turbo, turbare ('to disturb, confuse'), describing chaotic/violent motion.",
+        "dependency": "bonus_independent",
+        "group": "passage_064"
+ },
+ {
+        "id": "deriv_adv_187",
+        "question": "What is the meaning of the Latin adjective turpis, turpe, from which we get the English word 'turpitude'?",
+        "answer": ["shameful"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Adjectives to Nouns / Moral or Ethical Terms",
+        "explanation": "Turpis, turpe ('shameful, ugly, base') gives 'turpitude,' meaning moral baseness/depravity.",
+        "dependency": "bonus_independent",
+        "group": "passage_064"
+ },
+ {
+        "id": "deriv_adv_188",
+        "question": "What is the meaning of the English noun 'insouciance,' which is derived from the Latin preposition in- and the Latin verb sollicitō, sollicitāre, meaning 'to disturb'?",
+        "answer": ["unconcern"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs and Prepositions to English Nouns",
+        "explanation": "'Insouciance' from in- (not) + sollicitō ('to disturb'), meaning undisturbed/unconcerned.",
+        "dependency": "tossup",
+        "group": "passage_065"
+ },
+ {
+        "id": "deriv_adv_189",
+        "question": "What English adjective, derived from the same Latin roots as 'insouciance,' means 'carefree' or 'unconcerned'?",
+        "answer": ["solicitous"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs and Prepositions to English Adjectives",
+        "explanation": "'Solicitous' from sollicitō, sollicitāre, though it shifted to mean attentively concerned/caring.",
+        "dependency": "bonus_independent",
+        "group": "passage_065"
+ },
+ {
+        "id": "deriv_adv_190",
+        "question": "What is the meaning of the Latin noun sollicitūdō, sollicitūdinis, from which we get the English word 'solicitude'?",
+        "answer": ["anxiety"],
+        "options": [
+            "attention",
+            "concern",
+            "anxiety",
+            "care"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Latin Nouns to English Abstract Nouns",
+        "explanation": "Sollicitūdō, sollicitūdinis ('anxiety, care, worry') is the root of 'solicitude.'",
+        "dependency": "bonus_independent",
+        "group": "passage_065"
+ },
+ {
+        "id": "deriv_adv_191",
+        "question": "What English adjective, derived from the Latin verb mūtō, mūtāre, 'to change,' is used to describe an animal that undergoes a transformation from larva to adult?",
+        "answer": ["mutable"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs to Adjectives",
+        "explanation": "'Mutable' from mūtō (to change) describes something capable of change, like metamorphosing animals.",
+        "dependency": "tossup",
+        "group": "passage_066"
+ },
+ {
+        "id": "deriv_adv_192",
+        "question": "What English word, derived from the Latin prefix per- and mūtō, means 'lasting for a very long time or for all time'?",
+        "answer": ["permanent"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Prefix + Verb to Adjective",
+        "explanation": "'Permanent' from per- ('through, for all') with mūtō ('to change'), literally 'not changing through all time.'",
+        "dependency": "bonus_independent",
+        "group": "passage_066"
+ },
+ {
+        "id": "deriv_adv_193",
+        "question": "What English noun, also from the Latin prefix per- and mūtō, refers to a person's tendency to perceive things in a certain way?",
+        "answer": ["permutation"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Prefix + Verb to Noun",
+        "explanation": "'Permutation' from per- and mūtō, literally 'thorough change,' in English can refer to rearrangement/variations.",
+        "dependency": "bonus_independent",
+        "group": "passage_066"
+ },
+ {
+        "id": "deriv_adv_194",
+        "question": "What English noun, derived from the Latin verb stringō, stringere, means 'a very thin, narrow, or stretched-out piece of something'?",
+        "answer": ["stringent"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs to English Nouns/Adjectives",
+        "explanation": "'Stringent' from stringō (to draw tight) describes something strict/tight/narrowly defined.",
+        "dependency": "tossup",
+        "group": "passage_067"
+ },
+ {
+        "id": "deriv_adv_195",
+        "question": "What English word, also from the Latin root stringō, refers to a type of ointment that has a powerful, constricting effect?",
+        "answer": ["astringent"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs to English Nouns/Adjectives",
+        "explanation": "'Astringent' from stringō (to draw tight), referring to substances that tighten tissue.",
+        "dependency": "bonus_independent",
+        "group": "passage_067"
+ },
+ {
+        "id": "deriv_adv_196",
+        "question": "What is the meaning of the Latin noun strēna, strēnae, from which we get the English word 'strenuous'?",
+        "answer": ["new year's gift"],
+        "options": [
+            "hardship",
+            "gift of wealth",
+            "new year's gift",
+            "laborious effort"
+        ],
+        "topic": "Latin Derivatives",
+        "subtopic": "Nouns to English Nouns/Adjectives",
+        "explanation": "Strēna ('New Year's gift') is the root of 'strenuous,' reflecting effort/vigor associated with giving/celebration.",
+        "dependency": "bonus_independent",
+        "group": "passage_067"
+ },
+ {
+        "id": "deriv_adv_197",
+        "question": "What English noun, derived from the Latin verb vertō, vertere, means 'the act of turning or revolving'?",
+        "answer": ["volition"],
+        "topic": "Latin Derivatives",
+        "subtopic": "Verbs to English Nouns/Adjectives",
+        "explanation": "'Volition' from velle (to wish), conceptually related to turning/choosing one's will.",
+        "dependency": "tossup",
+        "group": "passage_068"
+  },
+  {
+    "id": "deriv_adv_198",
+    "question": "What is the meaning of the Latin verb vōlō, velle, from which we derive the English noun 'volition'?",
+    "answer": ["to wish", "to will", "to want"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs to English Nouns/Adjectives",
+    "explanation": "Vōlō, velle means 'to wish' or 'to will', and gives us 'volition' (the power of choosing or willing).",
+    "dependency": "bonus_independent",
+    "group": "passage_068"
+  },
+  {
+    "id": "deriv_adv_199",
+    "question": "What English adjective, derived from the Latin verb vertō, vertere, means 'capable of or susceptible to being turned or changed'?",
+    "answer": ["versatile"],
+    "options": ["vertical", "vertebrate", "versatile", "vertiginous"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs to English Adjectives",
+    "explanation": "'Versatile' from vertō (to turn) literally means 'able to turn easily,' describing adaptability or diverse talents.",
+    "dependency": "bonus_independent",
+    "group": "passage_068"
+  },
+  {
+    "id": "deriv_adv_200",
+    "question": "From the Latin verb faciō, facere, meaning 'to make or do', which English word means 'something that helps bring about a result'?",
+    "answer": ["factor"],
+    "options": ["factory", "facet", "faction", "factor"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs to Nouns",
+    "explanation": "'Factor' from faciō (to make/do) literally means 'one who makes,' extended to mean an element contributing to a result.",
+    "dependency": "tossup",
+    "group": "passage_069"
+  },
+  {
+    "id": "deriv_adv_201",
+    "question": "From the same root, what English verb means 'to make something easier or help it progress'?",
+    "answer": ["facilitate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs to Verbs",
+    "explanation": "'Facilitate' from facilis (easy, itself from faciō) means 'to make easy,' helping something progress smoothly.",
+    "dependency": "bonus_independent",
+    "group": "passage_069"
+  },
+  {
+    "id": "deriv_adv_202",
+    "question": "Which English noun, derived from faciō, refers to the front or surface appearance of something?",
+    "answer": ["facade"],
+    "options": ["facade", "facet", "facility", "facsimile"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns from Verbs",
+    "explanation": "'Facade' from faciēs (face/appearance, from faciō) refers to the front of a building or superficial appearance.",
+    "dependency": "bonus_independent",
+    "group": "passage_069"
+  },
+  {
+    "id": "deriv_adv_203",
+    "question": "From the Latin verb tacēo, tacēre, meaning 'to be silent', which English adjective means 'understood without being stated'?",
+    "answer": ["tacit"],
+    "options": ["tactile", "tactic", "tacit", "taciturn"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs to Adjectives",
+    "explanation": "'Tacit' from tacēo (to be silent) describes something implied or understood without being openly expressed.",
+    "dependency": "tossup",
+    "group": "passage_070"
+  },
+  {
+    "id": "deriv_adv_204",
+    "question": "From the same root, what English adjective describes someone who is habitually silent or uncommunicative?",
+    "answer": ["taciturn"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Verbs",
+    "explanation": "'Taciturn' from tacēo (to be silent) describes someone reserved in speech, habitually quiet.",
+    "dependency": "bonus_independent",
+    "group": "passage_070"
+  },
+  {
+    "id": "deriv_adv_205",
+    "question": "Which English noun, derived from tacēo, refers to the quality of being unspoken or silent?",
+    "answer": ["taciturnity"],
+    "options": ["taciturnity", "tacitness", "silence", "reticence"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns from Verbs",
+    "explanation": "'Taciturnity' from tacēo (to be silent) refers to the state of being habitually reserved or uncommunicative.",
+    "dependency": "bonus_independent",
+    "group": "passage_070"
+  },
+  {
+    "id": "deriv_adv_206",
+    "question": "From the Latin adjective gravis, meaning 'heavy', which English verb means 'to move toward or be attracted to'?",
+    "answer": ["gravitate"],
+    "options": ["aggravate", "engrave", "gravid", "gravitate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives to Verbs",
+    "explanation": "'Gravitate' from gravis (heavy) literally means 'to be drawn by gravity,' extended to any strong attraction.",
+    "dependency": "tossup",
+    "group": "passage_071"
+  },
+  {
+    "id": "deriv_adv_207",
+    "question": "From the same root, what English adjective means 'serious or solemn in manner'?",
+    "answer": ["grave"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Adjectives",
+    "explanation": "'Grave' from gravis (heavy) extended metaphorically to describe serious, weighty matters or demeanor.",
+    "dependency": "bonus_independent",
+    "group": "passage_071"
+  },
+  {
+    "id": "deriv_adv_208",
+    "question": "Which English verb, derived from gravis, means 'to make worse or more severe'?",
+    "answer": ["aggravate"],
+    "options": ["gravitate", "engrave", "gravid", "aggravate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs from Adjectives",
+    "explanation": "'Aggravate' from ad- (to) + gravis (heavy) literally means 'to make heavier,' hence to worsen a situation.",
+    "dependency": "bonus_independent",
+    "group": "passage_071"
+  },
+  {
+    "id": "deriv_adv_209",
+    "question": "From the Latin verb claudō, claudere, meaning 'to close', which English verb means 'to shut out or keep from entering'?",
+    "answer": ["exclude"],
+    "options": ["include", "conclude", "seclude", "exclude"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Exclude' from ex- (out) + claudō (to close) literally means 'to close out,' preventing entry or participation.",
+    "dependency": "tossup",
+    "group": "passage_072"
+  },
+  {
+    "id": "deriv_adv_210",
+    "question": "From the same root, what English verb means 'to end or bring to a close'?",
+    "answer": ["conclude"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Conclude' from con- (together) + claudō (to close) literally means 'to close together,' hence to finish.",
+    "dependency": "bonus_independent",
+    "group": "passage_072"
+  },
+  {
+    "id": "deriv_adv_211",
+    "question": "Which English verb, derived from claudō, means 'to isolate or shut away from others'?",
+    "answer": ["seclude"],
+    "options": ["exclude", "include", "seclude", "conclude"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Seclude' from se- (apart) + claudō (to close) means 'to close off apart,' isolating from company.",
+    "dependency": "bonus_independent",
+    "group": "passage_072"
+  },
+  {
+    "id": "deriv_adv_212",
+    "question": "From the Latin noun mors, mortis, meaning 'death', which English adjective means 'subject to death'?",
+    "answer": ["mortal"],
+    "options": ["mortal", "morbid", "morose", "mordant"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns to Adjectives",
+    "explanation": "'Mortal' from mors (death) describes anything subject to death, especially humans as opposed to gods.",
+    "dependency": "tossup",
+    "group": "passage_073"
+  },
+  {
+    "id": "deriv_adv_213",
+    "question": "From the same root, what English noun refers to the state of being subject to death?",
+    "answer": ["mortality"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns from Nouns",
+    "explanation": "'Mortality' from mors (death) refers to the condition of being mortal or the death rate in a population.",
+    "dependency": "bonus_independent",
+    "group": "passage_073"
+  },
+  {
+    "id": "deriv_adv_214",
+    "question": "Which English adjective, derived from mors, means 'characterized by an abnormal interest in disturbing subjects like death'?",
+    "answer": ["morbid"],
+    "options": ["morbid", "mortal", "moribund", "mordant"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Nouns",
+    "explanation": "'Morbid' from morbus (disease, related to mors) describes unhealthy fascination with death or disease.",
+    "dependency": "bonus_independent",
+    "group": "passage_073"
+  },
+  {
+    "id": "deriv_adv_215",
+    "question": "From the Latin verb currō, currere, meaning 'to run', which English noun means 'a happening or event'?",
+    "answer": ["occurrence"],
+    "options": ["current", "courier", "cursor", "occurrence"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs to Nouns",
+    "explanation": "'Occurrence' from ob- (toward) + currō (to run) literally 'running toward,' describing an event that happens.",
+    "dependency": "tossup",
+    "group": "passage_074"
+  },
+  {
+    "id": "deriv_adv_216",
+    "question": "From the same root, what English noun refers to a flow of water or electricity?",
+    "answer": ["current"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns from Verbs",
+    "explanation": "'Current' from currō (to run) describes something flowing or running, whether water, electricity, or events.",
+    "dependency": "bonus_independent",
+    "group": "passage_074"
+  },
+  {
+    "id": "deriv_adv_217",
+    "question": "Which English verb, derived from currō, means 'to happen at the same time'?",
+    "answer": ["concur"],
+    "options": ["occur", "concur", "recur", "incur"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Concur' from con- (together) + currō (to run) means 'to run together,' hence to happen simultaneously or agree.",
+    "dependency": "bonus_independent",
+    "group": "passage_074"
+  },
+  {
+    "id": "deriv_adv_218",
+    "question": "From the Latin verb premō, premere, meaning 'to press', which English verb means 'to hold back or restrain'?",
+    "answer": ["repress"],
+    "options": ["repress", "depress", "impress", "compress"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Repress' from re- (back) + premō (to press) means 'to press back,' restraining or suppressing something.",
+    "dependency": "tossup",
+    "group": "passage_075"
+  },
+  {
+    "id": "deriv_adv_219",
+    "question": "From the same root, what English verb means 'to push down or make sad'?",
+    "answer": ["depress"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Depress' from de- (down) + premō (to press) literally 'to press down,' physically or emotionally.",
+    "dependency": "bonus_independent",
+    "group": "passage_075"
+  },
+  {
+    "id": "deriv_adv_220",
+    "question": "Which English verb, derived from premō, means 'to make a positive impact or influence'?",
+    "answer": ["impress"],
+    "options": ["repress", "impress", "depress", "suppress"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Impress' from in- (in/on) + premō (to press) means 'to press upon,' making a lasting mark or effect.",
+    "dependency": "bonus_independent",
+    "group": "passage_075"
+  },
+  {
+    "id": "deriv_adv_221",
+    "question": "From the Latin verb rumpō, rumpere, meaning 'to break', which English verb means 'to break into suddenly'?",
+    "answer": ["irrupt"],
+    "options": ["erupt", "disrupt", "irrupt", "corrupt"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Irrupt' from in- (in) + rumpō (to break) means 'to break in,' entering forcibly or suddenly.",
+    "dependency": "tossup",
+    "group": "passage_076"
+  },
+  {
+    "id": "deriv_adv_222",
+    "question": "From the same root, what English verb means 'to break out or burst forth'?",
+    "answer": ["erupt"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Erupt' from e- (out) + rumpō (to break) means 'to break out,' as volcanoes or sudden violence does.",
+    "dependency": "bonus_independent",
+    "group": "passage_076"
+  },
+  {
+    "id": "deriv_adv_223",
+    "question": "Which English verb, derived from rumpō, means 'to break apart or interrupt'?",
+    "answer": ["disrupt"],
+    "options": ["erupt", "corrupt", "disrupt", "abrupt"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Disrupt' from dis- (apart) + rumpō (to break) means 'to break apart,' interrupting normal flow.",
+    "dependency": "bonus_independent",
+    "group": "passage_076"
+  },
+  {
+    "id": "deriv_adv_224",
+    "question": "From the Latin verb surgō, surgere, meaning 'to rise', which English noun means 'a doctor who performs operations'?",
+    "answer": ["surgeon"],
+    "options": ["insurgent", "surgeon", "resurgent", "surging"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs to Nouns",
+    "explanation": "'Surgeon' from chirurgia (hand-work), related to surgō through the sense of 'rising up' to perform operations.",
+    "dependency": "tossup",
+    "group": "passage_077"
+  },
+  {
+    "id": "deriv_adv_225",
+    "question": "From the same root, what English noun means 'a sudden powerful increase'?",
+    "answer": ["surge"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns from Verbs",
+    "explanation": "'Surge' from surgō (to rise) describes a sudden upward movement, whether of water, power, or emotion.",
+    "dependency": "bonus_independent",
+    "group": "passage_077"
+  },
+  {
+    "id": "deriv_adv_226",
+    "question": "Which English adjective, derived from surgō, means 'rising again into life or prominence'?",
+    "answer": ["resurgent"],
+    "options": ["resurgent", "insurgent", "urgent", "detergent"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Verbs",
+    "explanation": "'Resurgent' from re- (again) + surgō (to rise) describes something rising again after decline.",
+    "dependency": "bonus_independent",
+    "group": "passage_077"
+  },
+  {
+    "id": "deriv_adv_227",
+    "question": "From the Latin verb valeō, valēre, meaning 'to be strong', which English verb means 'to be successful in a competition'?",
+    "answer": ["prevail"],
+    "options": ["avail", "prevail", "valiant", "validate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Compound Verbs",
+    "explanation": "'Prevail' from prae- (before) + valeō (to be strong) means 'to be stronger,' hence to triumph.",
+    "dependency": "tossup",
+    "group": "passage_078"
+  },
+  {
+    "id": "deriv_adv_228",
+    "question": "From the same root, what English noun means 'the quality of being brave'?",
+    "answer": ["valor"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns from Verbs",
+    "explanation": "'Valor' from valeō (to be strong) refers to strength of mind in facing danger, courage.",
+    "dependency": "bonus_independent",
+    "group": "passage_078"
+  },
+  {
+    "id": "deriv_adv_229",
+    "question": "Which English adjective, derived from valeō, means 'possessing or showing courage'?",
+    "answer": ["valiant"],
+    "options": ["vacant", "valid", "valiant", "valuable"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Verbs",
+    "explanation": "'Valiant' from valeō (to be strong) describes someone brave and courageous in facing difficulties.",
+    "dependency": "bonus_independent",
+    "group": "passage_078"
+  },
+  {
+    "id": "deriv_adv_230",
+    "question": "From the Latin verb vincō, vincere, meaning 'to conquer', which English adjective means 'impossible to defeat'?",
+    "answer": ["invincible"],
+    "options": ["vincible", "invincible", "convinced", "provincial"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjectives from Verbs",
+    "explanation": "'Invincible' from in- (not) + vincō (to conquer) means 'not conquerable,' unable to be defeated.",
+    "dependency": "tossup",
+    "group": "passage_079"
+  },
+  {
+    "id": "deriv_adv_231",
+    "question": "From the same root, what English noun means 'the one who wins'?",
+    "answer": ["victor"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Nouns from Verbs",
+    "explanation": "'Victor' from vincō (to conquer) is the direct Latin noun meaning 'conqueror' or 'winner.'",
+    "dependency": "bonus_independent",
+    "group": "passage_079"
+  },
+  {
+    "id": "deriv_adv_232",
+    "question": "Which English verb, derived from vincō, means 'to overcome and take control of'?",
+    "answer": ["vanquish"],
+    "options": ["convince", "evince", "vanquish", "province"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Verbs from Verbs",
+    "explanation": "'Vanquish' from vincō (to conquer) means to defeat thoroughly in battle or competition.",
+    "dependency": "bonus_independent",
+    "group": "passage_079"
+  }
+]

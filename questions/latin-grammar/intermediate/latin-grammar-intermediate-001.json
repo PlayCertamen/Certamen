@@ -1,0 +1,2582 @@
+[
+ {
+  "id": "gram_int_001",
+  "question": "Give the ablative singular for the Latin phrase celeris manus.",
+  "answer": ["celeri manu"],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement and Cases",
+  "group": "passage_001",
+  "dependency": "tossup",
+  "explanation": "The adjective celeris agrees with manus in gender, number, and case; the ablative singular is celeri manu."
+ },
+ {
+  "id": "gram_int_002",
+  "question": "Change celeri manu to the plural.",
+  "answer": ["celeribus manibus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement and Cases",
+  "group": "passage_001",
+  "dependency": "bonus_dependent",
+  "explanation": "Both adjective and noun take regular 3rd and 4th declension plural endings: celeribus manibus."
+ },
+ {
+  "id": "gram_int_003",
+  "question": "Change celeribus manibus to the genitive.",
+  "answer": "celerium manuum",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement and Cases",
+  "group": "passage_001",
+  "dependency": "bonus_dependent",
+  "options": ["celeris manibus", "celerium manum", "celerium manuum", "celerum manuum"],
+  "explanation": "The 3rd declension adjective takes -ium in the genitive plural, and manus becomes manuum."
+ },
+{
+  "id": "gram_int_004",
+  "question": "Using only two words, translate the subordinate clause in this sentence into Latin: The soldiers attacked when the signal had been given.",
+  "answer": ["signo dato"],
+  "topic": "Latin Grammar",
+  "subtopic": "Ablative Absolute",
+  "group": "passage_002",
+  "dependency": "tossup",
+  "explanation": "The clause 'when the signal had been given' is rendered by an ablative absolute: signo dato."
+},
+{
+  "id": "gram_int_005",
+  "question": "Using only two words, translate the subordinate clause in this sentence into Latin: When the soldiers were running, the enemy followed.",
+  "answer": ["militibus currentibus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Ablative Absolute",
+  "group": "passage_002",
+  "dependency": "bonus_independent",
+  "explanation": "The ablative absolute with the present participle expresses a simultaneous action: militibus currentibus."
+},
+{
+  "id": "gram_int_006",
+  "question": "Using only one word, translate the subordinate clause in this sentence into Latin: We who are about to die salute you.",
+  "answer": "morituri",
+  "topic": "Latin Grammar",
+  "subtopic": "Participles",
+  "group": "passage_002",
+  "dependency": "bonus_independent",
+  "options": ["morientes", "morituri", "morituri sumus", "moriturae"],
+  "explanation": "The future active participle of morior is moriturus, moritura, moriturum; here, 'morituri' (those about to die) agrees with 'nos'."
+},
+{
+  "id": "gram_int_007",
+  "question": "Make the phrase haec suavis domus ablative.",
+  "answer": ["hac suavi domu", "hac suavi domo"],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement and Cases",
+  "group": "passage_003",
+  "dependency": "tossup",
+  "explanation": "The ablative singular of 'haec suavis domus' is 'hac suavi domu' or 'hac suavi domo'; the adjective agrees with the noun."
+},
+{
+  "id": "gram_int_008",
+  "question": "Make hac suavi domu plural.",
+  "answer": ["his suavibus domibus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement and Cases",
+  "group": "passage_003",
+  "dependency": "bonus_independent",
+  "explanation": "Both the adjective and noun take the regular 3rd and 4th declension plural endings: his suavibus domibus."
+},
+{
+  "id": "gram_int_009",
+  "question": "Make his suavibus domibus genitive.",
+  "answer": "horum suavium domuum",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement and Cases",
+  "group": "passage_003",
+  "dependency": "bonus_independent",
+  "options": ["horum suavium domuum", "his suavibus domibus", "haec suavi domus", "horum suavium domibus"],
+  "explanation": "The 3rd declension adjective takes -ium in the genitive plural, and 'domus' becomes 'domuum' in the 4th declension genitive plural."
+},
+{
+  "id": "gram_int_010",
+  "question": "Many words in Latin can be a noun and a verb. Translate the form duces into English two different ways.",
+  "answer": ["the leaders", "you will lead"],
+  "topic": "Latin Grammar",
+  "subtopic": "Nouns and Verbs",
+  "group": "passage_004",
+  "dependency": "tossup",
+  "explanation": "Duces can be the nominative plural of dux ('the leaders') or the future tense of duco ('you will lead')."
+},
+{
+  "id": "gram_int_011",
+  "question": "Now do the same thing for regi.",
+  "answer": ["for the king","to the king", "to be ruled"],
+  "topic": "Latin Grammar",
+  "subtopic": "Nouns and Verbs",
+  "group": "passage_004",
+  "dependency": "bonus_independent",
+  "explanation": "Regi can be the dative of rex ('to/for the king') or the present passive infinitive of rego ('to be ruled')."
+},
+{
+  "id": "gram_int_012",
+  "question": "Now do the same thing for fero (with one R) and ferro (with two Rs).",
+  "answer": ["fero — I bring, carry, bear", "ferro — with iron / a sword"],
+  "topic": "Latin Grammar",
+  "subtopic": "Nouns and Verbs / Spelling Distinctions",
+  "group": "passage_004",
+  "dependency": "bonus_independent",
+  "options": ["fero — I bring, carry, bear; ferro — with iron / a sword", "ferro — I bring, carry, bear; fero — with iron / a sword", "fero — you will lead; ferro — the leaders", "ferro — to/for the king; fero — to be ruled"],
+  "explanation": "Fero (1 R) is a verb meaning 'I bring, carry, bear'; ferro (2 Rs) is a noun meaning 'with iron' or 'a sword'."
+},
+{
+  "id": "gram_int_013",
+  "question": "Using the verb fero, say in Latin: Marcus, bring the wagon quickly to the Forum.",
+  "answer": [
+    "Marce, fer carrum celeriter ad forum",
+    "Marce, fer raedam celeriter ad forum",
+    "Marce, fer carpentum celeriter ad forum",
+    "Marce, fer cisium celeriter ad forum"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Imperatives",
+  "group": "passage_005",
+  "dependency": "tossup",
+  "explanation": "The imperative of fero is 'fer'; the noun for wagon has multiple synonyms: carrum, raedam, carpentum, cisium. 'Celeriter ad forum' expresses 'quickly to the Forum'."
+},
+{
+  "id": "gram_int_014",
+  "question": "Say in Latin: Julia, don't lead the animals through the mountains.",
+  "answer": [
+    "Iulia, noli ducere animalia per montes"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Imperatives / Negative Commands",
+  "group": "passage_005",
+  "dependency": "bonus_independent",
+  "explanation": "The negative imperative uses 'noli' + infinitive: 'noli ducere'. The prepositional phrase 'per montes' means 'through the mountains'."
+},
+{
+  "id": "gram_int_015",
+  "question": "Say in Latin: Aurelius, don't believe Lucius. Take the money.",
+  "answer": [
+    "Aureli, noli credere Lucio. Cape pecuniam"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Imperatives / Negative Commands",
+  "group": "passage_005",
+  "dependency": "bonus_independent",
+  "explanation": "Use 'noli' + infinitive for the negative command: 'noli credere Lucio'. The positive command 'take the money' is 'cape pecuniam'."
+},
+{
+  "id": "gram_int_016",
+  "question": "For the verb caedo, give the 2nd person plural, present, passive subjunctive.",
+  "answer": ["caedamini"],
+  "topic": "Latin Grammar",
+  "subtopic": "Subjunctive / Passive",
+  "group": "passage_006",
+  "dependency": "tossup",
+  "explanation": "The present passive subjunctive for 2nd person plural of caedo is 'caedamini'."
+},
+{
+  "id": "gram_int_017",
+  "question": "Change caedamini to the perfect.",
+  "answer": "caesi sitis",
+  "topic": "Latin Grammar",
+  "subtopic": "Perfect Passive Subjunctive",
+  "group": "passage_006",
+  "dependency": "bonus_independent",
+  "options": [
+    "caesi sitis",
+    "caese sitis",
+    "caesi sunt",
+    "caesi estis"
+  ],
+  "explanation": "The perfect passive subjunctive is formed with the perfect participle + present subjunctive of sum: 'caesi sitis'."
+},
+{
+  "id": "gram_int_018",
+  "question": "Change caesi sitis to the active.",
+  "answer": "cecideritis",
+  "topic": "Latin Grammar",
+  "subtopic": "Perfect Active Subjunctive",
+  "group": "passage_006",
+  "dependency": "bonus_independent",
+  "options": [
+    "caedetis",
+    "cecideritis",
+    "caesistis",
+    "cecideritis sunt"
+  ],
+  "explanation": "The corresponding perfect active subjunctive for 2nd person plural is 'cecideritis', derived from the perfect stem 'cecid-' and the active ending '-eritis'."
+},
+{
+  "id": "gram_int_019",
+  "question": "Translate the following sentence into English: Publius erat tam timidus ut non pugnare posset.",
+  "answer": "Publius was so afraid that he could not fight",
+  "topic": "Latin Grammar",
+  "subtopic": "Result Clauses",
+  "group": "passage_007",
+  "dependency": "tossup",
+  "options": [
+    "Publius fought despite being afraid",
+    "Publius was so timid that he could not fight",
+    "Publius could fight because he was brave",
+    "Publius was so afraid that he could not fight"
+  ],
+  "explanation": "The clause 'ut non pugnare posset' expresses the result of Publius being very timid, translated as 'that he could not fight'."
+},
+{
+  "id": "gram_int_020",
+  "question": "Identify the use of the subjunctive in that sentence.",
+  "answer": ["result", "result clause"],
+  "topic": "Latin Grammar",
+  "subtopic": "Result Clauses",
+  "group": "passage_007",
+  "dependency": "bonus_independent",
+  "explanation": "The subjunctive 'posset' appears in a result clause, introduced by 'ut'."
+},
+{
+  "id": "gram_int_021",
+  "question": "Identify the use of the subjunctive in this sentence: Quintus a patre quaerit cur caelum caeruleum sit.",
+  "answer": "indirect question",
+  "topic": "Latin Grammar",
+  "subtopic": "Indirect Questions",
+  "group": "passage_007",
+  "dependency": "bonus_independent",
+  "options": [
+    "indirect question",
+    "result clause",
+    "purpose clause",
+    "relative clause"
+  ],
+  "explanation": "The subjunctive 'sit' appears in an indirect question: 'Quintus asks why the sky is blue.'"
+},
+{
+  "id": "gram_int_022",
+  "question": "Translate into English: imperator captīvum interficī iussit.",
+  "answer": "The commander ordered the prisoner to be killed",
+  "topic": "Latin Grammar",
+  "subtopic": "Accusative + Infinitive",
+  "group": "passage_008",
+  "dependency": "tossup",
+  "options": [
+    "The commander ordered the prisoner to be killed",
+    "The general commanded the soldiers to fight",
+    "The prisoner was killed by the commander",
+    "The commander wanted to fight the prisoner"
+  ],
+  "explanation": "The verb 'iussit' takes an accusative + infinitive construction: 'captīvum interficī'."
+},
+{
+  "id": "gram_int_023",
+  "question": "Translate: tantā cum sapientiā loquitur ut hominēs semper audiant.",
+  "answer": "He speaks with such great wisdom that people always listen",
+  "topic": "Latin Grammar",
+  "subtopic": "Result Clauses",
+  "group": "passage_008",
+  "dependency": "bonus_independent",
+  "options": [
+    "He speaks with such great wisdom that people always listen",
+    "He speaks so wisely that people sometimes listen",
+    "He speaks with so much power that people obey",
+    "He speaks and people never listen"
+  ],
+  "explanation": "'ut hominēs semper audiant' expresses the result of 'tantā cum sapientiā loquitur'."
+},
+{
+  "id": "gram_int_024",
+  "question": "Translate: propter malam tempestatem ex portū navigāre noluimus.",
+  "answer": "Because of the bad weather we did not want to sail out of the harbor",
+  "topic": "Latin Grammar",
+  "subtopic": "Causal Clauses",
+  "group": "passage_008",
+  "dependency": "bonus_independent",
+  "options": [
+    "Because of the bad weather we did not want to sail out of the harbor",
+    "Because of the storm we sailed despite the weather",
+    "We wanted to sail because of the good weather",
+    "The weather was bad so we sailed immediately"
+  ],
+  "explanation": "'Propter malam tempestatem' indicates the reason (causal clause) for not sailing."
+},
+{
+  "id": "gram_int_025",
+  "question": "What do the verbs fidō, soleō, gaudeō, and audeō have in common grammatically?",
+  "answer": "semi-deponent",
+  "topic": "Latin Grammar",
+  "subtopic": "Semi-Deponent Verbs",
+  "group": "passage_009",
+  "dependency": "tossup",
+  "options": [
+    "deponent",
+    "semi-deponent",
+    "irregular",
+    "impersonal"
+  ],
+  "explanation": "These verbs are semi-deponent: they have passive forms with active meanings in some tenses."
+},
+{
+  "id": "gram_int_026",
+  "question": "Complete this analogy: fidō : fidēs :: gaudeō : ________.",
+  "answer": "gaudium",
+  "topic": "Latin Grammar",
+  "subtopic": "Verb-Derivative Analogies",
+  "group": "passage_009",
+  "dependency": "bonus_independent",
+  "options": [
+    "gaudium",
+    "gaudebis",
+    "audax",
+    "audiō"
+  ],
+  "explanation": "'fidō' (I trust) is related to 'fidēs' (faith); similarly, 'gaudeō' (I rejoice) is related to 'gaudium' (joy)."
+},
+{
+  "id": "gram_int_027",
+  "question": "Complete this analogy: fidō : fidēlis :: audeō : ________.",
+  "answer": [
+    "audax",
+    "Audax",
+    "audax (bold)",
+    "audax - bold",
+    "bold"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Verb-Derivative Analogies",
+  "group": "passage_009",
+  "dependency": "bonus_independent",
+  "explanation": "'fidō' (I trust) gives the adjective 'fidēlis' (faithful); similarly, 'audeō' (I dare) gives 'audax' (bold, daring). Multiple formulations of 'audax' are acceptable."
+},
+{
+  "id": "gram_int_028",
+  "question": "Give a deponent Latin verb meaning 'to encourage'.",
+  "answer": [
+    "hortor",
+    "Hortor",
+    "hortor (to encourage)",
+    "hortor - to encourage"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent Verbs",
+  "group": "passage_010",
+  "dependency": "tossup",
+  "explanation": "'Hortor' is a deponent verb meaning 'to encourage'. Multiple formulations of the answer are acceptable."
+},
+{
+  "id": "gram_int_029",
+  "question": "Give a deponent Latin verb meaning 'to feed upon'.",
+  "answer": "vescor",
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent Verbs",
+  "group": "passage_010",
+  "dependency": "bonus_independent",
+  "options": [
+    "vescor",
+    "hortor",
+    "nanciscor",
+    "adipiscor"
+  ],
+  "explanation": "'Vescor' is a deponent verb meaning 'to feed upon' or 'to eat'."
+},
+{
+  "id": "gram_int_030",
+  "question": "Give a deponent Latin verb meaning 'to obtain'.",
+  "answer": [
+    "nanciscor",
+    "potior",
+    "adipiscor",
+    "nanciscor / potior / adipiscor",
+    "Nanciscor",
+    "Potior",
+    "Adipiscor"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent Verbs",
+  "group": "passage_010",
+  "dependency": "bonus_independent",
+  "explanation": "'Nanciscor', 'potior', and 'adipiscor' are all deponent verbs meaning 'to obtain'. Multiple valid formulations are acceptable."
+},
+{
+  "id": "gram_int_031",
+  "question": "What is the case and use of rēx in the following sentence: 'Rēge ā cīvibus interfectō, rēs pūblica condita est'?",
+  "answer": "ablative absolute",
+  "topic": "Latin Grammar",
+  "subtopic": "Case & Use",
+  "group": "passage_011",
+  "dependency": "tossup",
+  "options": [
+    "accusative direct object",
+    "genitive of possession",
+    "ablative absolute",
+    "dative indirect object"
+  ],
+  "explanation": "'Rēge ā cīvibus interfectō' is an ablative absolute indicating the circumstances under which the republic was founded."
+},
+{
+  "id": "gram_int_032",
+  "question": "Now give the case and use of rēx in this sentence: 'Urbs post mortem rēgis ab hostibus oppugnāta est.'",
+  "answer": "genitive of possession",
+  "topic": "Latin Grammar",
+  "subtopic": "Case & Use",
+  "group": "passage_011",
+  "dependency": "bonus_independent",
+  "options": [
+    "ablative absolute",
+    "dative indirect object",
+    "genitive of possession",
+    "accusative direct object"
+  ],
+  "explanation": "'Rēgis' is genitive showing possession: the city after the death of the king."
+},
+{
+  "id": "gram_int_033",
+  "question": "Now give the case and use of rēx in this sentence: 'Rēge hōc nihil crūdelius invenīrī potest.'",
+  "answer": [
+    "ablative of comparison",
+    "ablative comparison",
+    "ablative for comparison"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Case & Use",
+  "group": "passage_011",
+  "dependency": "bonus_independent",
+  "explanation": "'Rēge hōc' is ablative used for comparison: nothing more cruel can be found than this king."
+},
+{
+  "id": "gram_int_034",
+  "question": "Which of the following verbs does not belong based on meaning: caedō, interficiō, necō, cēlō?",
+  "answer": "cēlō",
+  "topic": "Latin Grammar",
+  "subtopic": "Meaning / Semantic Categories",
+  "group": "passage_012",
+  "dependency": "tossup",
+  "options": [
+    "caedō",
+    "interficiō",
+    "cēlō",
+    "necō"
+  ],
+  "explanation": "'Caedō', 'interficiō', and 'necō' all mean to kill or strike; 'cēlō' means 'to hide', so it does not belong."
+},
+{
+  "id": "gram_int_035",
+  "question": "Which of the following verbs does not belong by meaning: hortor, imperō, moneō, patior?",
+  "answer": [
+    "patior",
+    "Patior",
+    "patior - to suffer",
+    "Patior - to suffer / endure"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Meaning / Semantic Categories",
+  "group": "passage_012",
+  "dependency": "bonus_independent",
+  "explanation": "'Hortor', 'imperō', and 'moneō' all involve giving commands or advice; 'patior' means 'to suffer / endure', so it does not belong. Multiple formulations are acceptable."
+},
+{
+  "id": "gram_int_036",
+  "question": "Which of the following verbs does not belong by grammatical usage: soleō, audeō, temptō, lacrimō?",
+  "answer": "lacrimō",
+  "topic": "Latin Grammar",
+  "subtopic": "Grammar / Syntactic Behavior",
+  "group": "passage_012",
+  "dependency": "bonus_independent",
+  "options": [
+    "soleō",
+    "audeō",
+    "lacrimō",
+    "temptō"
+  ],
+  "explanation": "'Soleō', 'audeō', and 'temptō' can take an infinitive; 'lacrimō' does not take an infinitive, so it does not belong."
+},
+{
+  "id": "gram_int_037",
+  "question": "Identify and correct the mistake in the following Latin sentence: 'Rēx nūntiāvit exercitūs hostium veniunt.'",
+  "answer": "veniunt should be venīre",
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Forms / Sequence of Tenses",
+  "group": "passage_013",
+  "dependency": "tossup",
+  "options": [
+    "nūntiāvit should be nūntiāverat",
+    "veniunt should be venīre",
+    "exercitūs should be exercitūrum",
+    "hostium should be hostēs"
+  ],
+  "explanation": "'Venīre' is the correct infinitive following 'nūntiāvit'; 'veniunt' is present indicative and incorrect here."
+},
+{
+  "id": "gram_int_038",
+  "question": "Identify and correct the mistake, if any, in the following Latin sentence: 'Caesar mīlitibus imperāvit ut urbem oppugnāre.'",
+  "answer": "oppugnāre should be oppugnārent",
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Forms / Subjunctive",
+  "group": "passage_013",
+  "dependency": "bonus_independent",
+  "options": [
+    "imperāvit should be imperāvisset",
+    "oppugnāre should be oppugnārent",
+    "urbem should be urbis",
+    "mīlitibus should be mīlitum"
+  ],
+  "explanation": "After 'ut', a verb of command in the main clause takes the **subjunctive**: 'oppugnārent', not the infinitive 'oppugnāre'."
+},
+{
+  "id": "gram_int_039",
+  "question": "Identify and correct the mistake, if any, in the following Latin sentence: 'Mārcus carmina pulchra scrīpsit, quae populō Rōmānō placēbat.'",
+  "answer": "placēbat should be placēbant",
+  "topic": "Latin Grammar",
+  "subtopic": "Agreement / Relative Clauses",
+  "group": "passage_013",
+  "dependency": "bonus_independent",
+  "options": [
+    "scrīpsit should be scrīberat",
+    "carmina should be carmen",
+    "placēbat should be placēbant",
+    "populō should be populī"
+  ],
+  "explanation": "'Carmina' is plural, so the relative clause verb must agree: 'placēbant' instead of singular 'placēbat'."
+},
+{
+  "id": "gram_int_040",
+  "question": "caedō : caedamini :: I lead : ?",
+  "answer": [
+    "i am led",
+    "i am being led",
+    "caedamini",
+    "you are led",
+    "you are being led"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent / Passive Forms",
+  "group": "passage_014",
+  "dependency": "tossup",
+  "explanation": "'Caedamini' is 2nd person plural, present, passive subjunctive — analogous to 'I am led' or 'you are led/being led'."
+},
+{
+  "id": "gram_int_041",
+  "question": "caedamini : caesī/ae/a sitis :: I am led : ?",
+  "answer": [
+    "i have been struck",
+    "i have been killed",
+    "caesī sitis",
+    "caesī ae sitis",
+    "caesī a sitis"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Perfect Passive",
+  "group": "passage_014",
+  "dependency": "bonus_independent",
+  "explanation": "'Caesī/ae/a sitis' is perfect passive, analogous to 'I have been struck'."
+},
+{
+  "id": "gram_int_042",
+  "question": "Caesī sitis : cecideritis :: I have been struck : ?",
+  "answer": [
+    "you will have fallen",
+    "cecideritis",
+    "you fell",
+    "you have fallen"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Perfect Active",
+  "group": "passage_014",
+  "dependency": "bonus_independent",
+  "explanation": "'Cecideritis' is perfect active, 2nd person plural — analogous to 'you will have fallen'."
+},
+{
+  "id": "gram_int_043",
+  "question": "Change the phrase 'vetus fēmina' to the ablative singular.",
+  "answer": "vetere fēminā",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective + Noun / Ablative",
+  "group": "passage_015",
+  "dependency": "tossup",
+  "options": [
+    "vetere fēminā",
+    "vetere fēmina",
+    "veteribus fēminīs",
+    "veterum fēminārum"
+  ],
+  "explanation": "'Vetus fēmina' in ablative singular is 'vetere fēminā'. Other options are plausible forms in different cases or numbers."
+},
+{
+  "id": "gram_int_044",
+  "question": "Change the phrase 'vetere fēminā' to the ablative plural.",
+  "answer": "veteribus fēminīs",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective + Noun / Ablative",
+  "group": "passage_015",
+  "dependency": "bonus_independent",
+  "options": [
+    "veteribus fēminīs",
+    "veterum fēminārum",
+    "vetere fēmina",
+    "veteribus fēminās"
+  ],
+  "explanation": "'Vetere fēminā' in ablative plural is 'veteribus fēminīs'. Other options are plausible forms in different cases or numbers."
+},
+{
+  "id": "gram_int_045",
+  "question": "Change the phrase 'veteribus fēminīs' to the genitive plural.",
+  "answer": "veterum fēminārum",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective + Noun / Genitive",
+  "group": "passage_015",
+  "dependency": "bonus_independent",
+  "options": [
+    "veterum fēminārum",
+    "veteribus fēminīs",
+    "vetere fēminā",
+    "veteribus fēminās"
+  ],
+  "explanation": "'Veteribus fēminīs' (ablative plural) in genitive plural is 'veterum fēminārum'. Other options are plausible forms in different cases or numbers."
+},
+{
+  "id": "gram_int_046",
+  "question": "Using a passive periphrastic, say in Latin: 'We must see the city!'",
+  "answer": [
+    "nōbīs urbs videnda est",
+    "nobis urbs videnda est"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Passive Periphrastic",
+  "group": "passage_016",
+  "dependency": "tossup",
+  "explanation": "'We must see the city!' is expressed as 'nōbīs urbs videnda est' using the passive periphrastic; plain Latin without macrons is also accepted."
+},
+{
+  "id": "gram_int_047",
+  "question": "Using 'tam', say in Latin: 'Where is that city, whose walls are so tall?'",
+  "answer": "ubi est illa urbs cūius mūrī tam altī sunt",
+  "topic": "Latin Grammar",
+  "subtopic": "Relative Clauses / Tam",
+  "group": "passage_016",
+  "dependency": "bonus_independent",
+  "options": [
+    "ubi est illa urbs cūius mūrī tam altī sunt",
+    "ubi est illa urbs cūius mūrī altī sunt",
+    "ubi est illa urbs tam altī sunt",
+    "ubi est illa urbs cūius mūrī tam alti est"
+  ],
+  "explanation": "'Whose walls are so tall' is correctly expressed as 'cūius mūrī tam altī sunt'. Other options are plausible errors in agreement or word order."
+},
+{
+  "id": "gram_int_048",
+  "question": "Using a passive periphrastic, say in Latin: 'I believe that I must kill you.'",
+  "answer": "crēdō tē mihi interficiendum esse",
+  "topic": "Latin Grammar",
+  "subtopic": "Passive Periphrastic / Pronouns",
+  "group": "passage_016",
+  "dependency": "bonus_independent",
+  "options": [
+    "crēdō tē mihi interficiendum esse",
+    "crēdō tē mihi interficiendam esse",
+    "crēdō tē tibi interficiendum esse",
+    "crēdō tibi mihi interficiendum esse"
+  ],
+  "explanation": "Correct passive periphrastic with 'mihi' as agent is 'crēdō tē mihi interficiendum esse'. Other options contain errors in gender, case, or agent placement."
+},
+{
+  "id": "gram_int_052",
+  "question": "Translate into English: 'Mārcus novem diēs per silvam celeriter currēbat.'",
+  "answer": [
+    "Marcus was running quickly through the forest for nine days",
+    "Marcus ran quickly through the forest for nine days"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Tense / Translation",
+  "group": "passage_018",
+  "dependency": "tossup",
+  "explanation": "'Currēbat' is imperfect tense; 'was running' or 'ran' are both acceptable translations."
+},
+{
+  "id": "gram_int_053",
+  "question": "Translate: 'Hoc iter faciēbat quod frāter ā leōnibus captus erat.'",
+  "answer": "He was making this journey because his brother had been captured by lions",
+  "topic": "Latin Grammar",
+  "subtopic": "Relative Clauses / Translation",
+  "group": "passage_018",
+  "dependency": "bonus_independent",
+  "options": [
+    "He was making this journey because his brother had been captured by lions",
+    "He made this journey although his brother had been captured by lions",
+    "He is making this journey because his brother will be captured by lions",
+    "He had made this journey before his brother had been captured by lions"
+  ],
+  "explanation": "Correct translation is 'He was making this journey because his brother had been captured by lions'. Other options contain errors in tense, causality, or sequence."
+},
+{
+  "id": "gram_int_054",
+  "question": "Translate: 'Sī Mārcus frātrem inveniet, nēmō Mārcō laetior erit.'",
+  "answer": "If Marcus finds his brother, no one will be happier than Marcus",
+  "topic": "Latin Grammar",
+  "subtopic": "Conditional Clauses / Translation",
+  "group": "passage_018",
+  "dependency": "bonus_independent",
+  "options": [
+    "If Marcus finds his brother, no one will be happier than Marcus",
+    "If Marcus will find his brother, no one would be happier than Marcus",
+    "If Marcus found his brother, no one will be happier than Marcus",
+    "If Marcus had found his brother, no one would be happier than Marcus"
+  ],
+  "explanation": "'Inveniet' is future indicative; the correct translation is 'If Marcus finds his brother, no one will be happier than Marcus'. Other options are incorrect due to tense mismatch."
+},
+{
+  "id": "gram_int_055",
+  "question": "Distinguish in meaning between 'hortus' and 'portus'.",
+  "answer": [
+    "garden and port",
+    "garden / port",
+    "hortus: garden, portus: port"
+  ],
+  "topic": "Latin Vocabulary / Distinctions",
+  "subtopic": "Nouns / Meaning",
+  "group": "passage_019",
+  "dependency": "tossup",
+  "explanation": "'Hortus' means 'garden', 'portus' means 'port'. Multiple ways of expressing this distinction in English are acceptable."
+},
+{
+  "id": "gram_int_056",
+  "question": "Distinguish in meaning between 'molestus' and 'scelestus'.",
+  "answer": [
+    "annoying and criminal",
+    "annoying / criminal",
+    "molestus: annoying, scelestus: criminal",
+    "annoying and wicked",
+    "molestus: annoying, scelestus: wicked"
+  ],
+  "topic": "Latin Vocabulary / Distinctions",
+  "subtopic": "Adjectives / Meaning",
+  "group": "passage_019",
+  "dependency": "bonus_independent",
+  "explanation": "'Molestus' means 'annoying', 'scelestus' means 'criminal' or 'wicked'; multiple equivalent translations are accepted."
+},
+{
+  "id": "gram_int_057",
+  "question": "Distinguish in meaning between 'pretium' and 'praemium'.",
+  "answer": [
+    "price and reward",
+    "price / reward",
+    "pretium: price, praemium: reward"
+  ],
+  "topic": "Latin Vocabulary / Distinctions",
+  "subtopic": "Nouns / Meaning",
+  "group": "passage_019",
+  "dependency": "bonus_independent",
+  "explanation": "'Pretium' means 'price', 'praemium' means 'reward'. Multiple ways of writing the distinction in English are accepted."
+},
+{
+  "id": "gram_int_058",
+  "question": "Give the comparative and superlative forms for the adjective 'fortis'.",
+  "answer": [
+    "fortior, fortissimus",
+    "fortior; fortissimus",
+    "fortior - fortissimus"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjectives / Comparative & Superlative",
+  "group": "passage_020",
+  "dependency": "tossup",
+  "explanation": "'Fortis' forms the comparative as 'fortior' and the superlative as 'fortissimus'. Different punctuation formats are accepted."
+},
+{
+  "id": "gram_int_059",
+  "question": "Give the comparative and superlative forms for the adjective 'similis'.",
+  "answer": [
+    "similior, simillimus",
+    "similior; simillimus",
+    "similior - simillimus"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjectives / Comparative & Superlative",
+  "group": "passage_020",
+  "dependency": "bonus_independent",
+  "explanation": "'Similis' forms the comparative as 'similior' and the superlative as 'simillimus'. Variations in punctuation are acceptable."
+},
+{
+  "id": "gram_int_060",
+  "question": "Change the adjective 'bonum' to the comparative and superlative.",
+  "answer": ["melius, optimus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Irregular Adjectives / Comparative & Superlative",
+  "group": "passage_020",
+  "dependency": "bonus_independent",
+  "options": [
+    "melius, optimus",
+    "melior, optimus",
+    "bonus, optimus",
+    "bonum, melior"
+  ],
+  "explanation": "'Bonum' is irregular: the correct comparative is 'melius' and the superlative is 'optimus'. Other options contain errors in form or order."
+},
+{
+  "id": "gram_int_061",
+  "question": "The deponent verbs potior, fruor, vescor, fungor, and ūtor all take objects in what case?",
+  "answer": [
+    "ablative",
+    "the ablative"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent Verbs / Case Usage",
+  "group": "passage_021",
+  "dependency": "tossup",
+  "explanation": "These deponent verbs all take the ablative case for their objects."
+},
+{
+  "id": "gram_int_062",
+  "question": "What case follows many compound and intransitive verbs, such as crēdō and impōnō?",
+  "answer": "dative",
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Usage / Case Following",
+  "group": "passage_021",
+  "dependency": "bonus_independent",
+  "options": [
+    "dative",
+    "accusative",
+    "ablative",
+    "genitive"
+  ],
+  "explanation": "Many compound and intransitive verbs take the dative case for the object. Other options are common cases but incorrect here."
+},
+{
+  "id": "gram_int_063",
+  "question": "Other than the accusative, what Latin case can be used for the objects of the verbs meminī ('to remember') and oblīvīscor ('to forget')?",
+  "answer": "genitive",
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Usage / Case Following",
+  "group": "passage_021",
+  "dependency": "bonus_independent",
+  "options": [
+    "genitive",
+    "dative",
+    "ablative",
+    "nominative"
+  ],
+  "explanation": "Verbs like meminī and oblīvīscor can take the genitive for their objects in addition to the accusative. Other options are incorrect."
+},
+{
+  "id": "gram_int_064",
+  "question": "In the sentence 'Horatius carried a longer sword than Manlius,' translate 'longer sword.'",
+  "answer": [
+    "longiorem gladium",
+    "longius ferrum",
+    "longiōrem gladium",
+    "longius ferrum"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Comparatives / Translation",
+  "group": "passage_022",
+  "dependency": "tossup",
+  "explanation": "'Longer sword' can be translated as 'longiorem gladium' or 'longius ferrum'. Variations in macron use are acceptable."
+},
+{
+  "id": "gram_int_065",
+  "question": "In that same sentence, translate 'than Manlius' into Latin in two distinct ways.",
+  "answer": [
+    "Manlio",
+    "quam Manlius"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Comparatives / Translation",
+  "group": "passage_022",
+  "dependency": "bonus_independent",
+  "explanation":"'Than Manlius' can be expressed as 'Manlio' (dative of comparison) or 'quam Manlius'. Both are correct."
+},
+{
+  "id": "gram_int_066",
+  "question": "Now say in Latin, 'Manlius has a bigger sword.'",
+  "answer": [
+    "Manlius longiorem gladium habet",
+    "Manlius longius ferrum habet"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Comparatives / Translation",
+  "group": "passage_022",
+  "dependency": "bonus_independent",
+  "explanation":"Both 'Manlius longiorem gladium habet' and 'Manlius longius ferrum habet' are valid translations for 'Manlius has a bigger sword.'"
+},
+{
+  "id": "gram_int_067",
+  "question": "Which of the following words does not belong because of its part of speech: aliter, ter, heri, iter, quater?",
+  "answer": "iter",
+  "topic": "Latin Grammar",
+  "subtopic": "Parts of Speech / Distinctions",
+  "group": "passage_023",
+  "dependency": "tossup",
+  "options": [
+    "aliter",
+    "iter",
+    "heri",
+    "quater"
+  ],
+  "explanation": "'Iter' is a noun, while the others are adverbs of time or number."
+},
+{
+  "id": "gram_int_068",
+  "question": "Which of the following words does not belong because of its part of speech: ultrō, lātrō, intrō, mōnstrō?",
+  "answer": "ultrō",
+  "topic": "Latin Grammar",
+  "subtopic": "Parts of Speech / Distinctions",
+  "group": "passage_023",
+  "dependency": "bonus_independent",
+  "options": [
+    "ultrō",
+    "lātrō",
+    "intrō",
+    "mōnstrō"
+  ],
+  "explanation": "'Ultrō' is an adverb, whereas 'lātrō', 'intrō', and 'mōnstrō' are verbs."
+},
+{
+  "id": "gram_int_069",
+  "question": "Of the words ultrō, lātrō, intrō, mōnstrō, which one or ones can also be a noun form?",
+  "answer": "lātrō & mōnstrō",
+  "topic": "Latin Grammar",
+  "subtopic": "Parts of Speech / Noun Forms",
+  "group": "passage_023",
+  "dependency": "bonus_independent",
+  "options": [
+    "lātrō & mōnstrō",
+    "ultrō & intrō",
+    "intrō & mōnstrō",
+    "ultrō & lātrō"
+  ],
+  "explanation": "'Lātrō' and 'mōnstrō' can also function as nouns. 'Ultrō' and 'intrō' cannot."
+},
+{
+  "id": "gram_int_070",
+  "question": "What kind of Latin sentence has clauses called the protasis and the apodosis?",
+  "answer": [
+    "conditional",
+    "a conditional sentence"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Conditional Sentences / Structure",
+  "group": "passage_024",
+  "dependency": "tossup",
+  "explanation": "Conditional sentences have two main clauses: the protasis (if-clause) and the apodosis (then-clause)."
+},
+{
+  "id": "gram_int_071",
+  "question": "In which type of conditional sentence is the imperfect subjunctive found in both the protasis and the apodosis?",
+  "answer": [
+    "present contrary to fact",
+    "present contrary-to-fact",
+    "contrary to fact (present)"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Conditional Sentences / Types",
+  "group": "passage_024",
+  "dependency": "bonus_independent",
+  "explanation": "In present contrary-to-fact conditionals, both clauses use the imperfect subjunctive to indicate something that is not true in the present."
+},
+{
+  "id": "gram_int_072",
+  "question": "What type of conditional sentence expresses a past contrary-to-fact situation, often using the pluperfect subjunctive in both protasis and apodosis?",
+  "answer": [
+    "past contrary to fact",
+    "past contrary-to-fact",
+    "past contrā factum"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Conditional Sentences / Types",
+  "group": "passage_024",
+  "dependency": "bonus_independent",
+  "explanation": "A past contrary-to-fact conditional expresses a situation that did not happen in the past, typically using pluperfect subjunctives in both clauses."
+},
+{
+  "id": "gram_int_073",
+  "question": "What two-word Latin phrase can be translated with the single word 'masterpiece'?",
+  "answer": [
+    "magnum opus",
+    "magnum opūs"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Phrases / Translation",
+  "group": "passage_025",
+  "dependency": "tossup",
+  "explanation": "'Magnum opus' literally means 'great work' and is used to refer to a masterpiece."
+},
+{
+  "id": "gram_int_074",
+  "question": "What two-word Latin phrase can be translated by the single word 'intrinsically'?",
+  "answer": [
+    "per se"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Phrases / Translation",
+  "group": "passage_025",
+  "dependency": "bonus_independent",
+  "explanation":"'Per se' literally means 'through itself' and is used to mean 'intrinsically' or 'by itself'."
+},
+{
+  "id": "gram_int_075",
+  "question": "What three-word Latin phrase can be translated in English as simply 'a necessity'?",
+  "answer": [
+    "sine quā nōn"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Phrases / Translation",
+  "group": "passage_025",
+  "dependency": "bonus_independent",
+  "explanation":"'Sine quā nōn' literally means 'without which not', referring to something essential or necessary."
+},
+{
+  "id": "gram_int_076",
+  "question": "According to its Latin root, how much of something would be gone if you 'decimated' it?",
+  "answer": [
+    "one-tenth",
+    "a tenth",
+    "1/10"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Roots / Meaning",
+  "group": "passage_026",
+  "dependency": "tossup",
+  "explanation": "'Decimare' comes from 'decem', meaning ten; to decimate is to destroy one-tenth of something."
+},
+{
+  "id": "gram_int_077",
+  "question": "According to its Latin root, what would be left if you were to 'pulverize' something?",
+  "answer": [
+    "dust",
+    "powder"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Roots / Meaning",
+  "group": "passage_026",
+  "dependency": "bonus_independent",
+  "explanation":"'Pulverizare' comes from 'pulvis', meaning dust; to pulverize is to reduce to dust."
+},
+{
+  "id": "gram_int_078",
+  "question": "According to its Latin root, what specifically is destroyed when something is 'obliterated'?",
+  "answer": [
+    "letters",
+    "writing",
+    "inscriptions"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Roots / Meaning",
+  "group": "passage_026",
+  "dependency": "bonus_independent",
+  "explanation":"'Oblitterare' literally means 'to erase letters'; when something is obliterated, its letters or writing are destroyed."
+},
+{
+  "id": "gram_int_079",
+  "question": "Make the phrase 'mare lātum' genitive plural.",
+  "answer": [
+    "marium lātōrum",
+    "mariūm lātōrum"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjectives / Case Forms",
+  "group": "passage_027",
+  "dependency": "tossup",
+  "explanation": "'Mare' is neuter; genitive plural uses 'marium', and the adjective agrees: 'lātōrum'."
+},
+{
+  "id": "gram_int_080",
+  "question": "Change 'marium lātōrum' to the ablative singular.",
+  "answer": [
+    "mari lātō",
+    "marī lātō"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Adjectives / Case Forms",
+  "group": "passage_027",
+  "dependency": "bonus_independent",
+  "explanation": "Ablative singular neuter for 'mare' is 'mari'; adjective agrees in gender, number, and case: 'lātō'."
+},
+{
+  "id": "gram_int_081",
+  "question": "Put the phrase 'these broad seas' into the accusative plural.",
+  "answer": "haec maria lāta",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjectives / Case Forms",
+  "group": "passage_027",
+  "dependency": "bonus_independent",
+  "options": [
+    "haec maria lāta",
+    "hae maria lāta",
+    "haec maria lātā",
+    "haec maris lāta"
+  ],
+  "explanation": "'Haec' (these) and 'maria' (neuter plural) in accusative plural; adjective 'lāta' agrees in gender, number, and case."
+},
+{
+  "id": "gram_int_082",
+  "question": "Which of the following, if any, is derived from the Latin adjective meaning 'golden'? auspicious, auricular, oriole, auriform, aura",
+  "answer": "oriole",
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Derivatives / Adjectives",
+  "group": "passage_028",
+  "dependency": "tossup",
+  "options": [
+    "oriole",
+    "auricular",
+    "auspicious",
+    "auriform"
+  ],
+  "explanation": "'Oriole' comes from Latin 'aurum' (gold), meaning 'golden'; the other words have different Latin roots."
+},
+{
+  "id": "gram_int_083",
+  "question": "From what noun with what meaning are auricular and auriform derived?",
+  "answer": [
+    "auris / ear"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Derivatives / Nouns",
+  "group": "passage_028",
+  "dependency": "bonus_independent",
+  "explanation":"'Auricular' and 'auriform' come from 'auris', meaning 'ear', describing ear-related forms."
+},
+{
+  "id": "gram_int_084",
+  "question": "The English word 'aura' is also a Latin word. What does that Latin word mean?",
+  "answer": [
+    "breeze"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Derivatives / Nouns",
+  "group": "passage_028",
+  "dependency": "bonus_independent",
+  "explanation":"'Aura' in Latin means 'breeze' or 'gentle wind'; the English borrowing keeps the sense of air or atmosphere."
+},
+{
+  "id": "gram_int_085",
+  "question": "Use a participle to express the subordinate clause for the sentence, 'While she was listening to the poet, Aurelia saw her friend Flavia.'",
+  "answer": [
+    "audiēns poetam",
+    "audiens poetam"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Participles / Subordinate Clauses",
+  "group": "passage_029",
+  "dependency": "tossup",
+  "explanation": "The present active participle 'audiēns' (listening) expresses the action happening simultaneously with the main clause."
+},
+{
+  "id": "gram_int_086",
+  "question": "Use a participle to express the subordinate clause in this sentence: After the messengers were sent, Sulla returned to the dinner party.",
+  "answer": "nuntiīs missīs",
+  "topic": "Latin Grammar",
+  "subtopic": "Participles / Subordinate Clauses",
+  "group": "passage_029",
+  "dependency": "bonus_independent",
+  "options": [
+    "nuntiīs missīs",
+    "nuntiīs mittentibus",
+    "nuntiīs mittentīs",
+    "nuntius missus"
+  ],
+  "explanation": "The perfect passive participle 'missīs' (having been sent) expresses the completed action before the main clause. Distractors include present participle or singular forms."
+},
+{
+  "id": "gram_int_087",
+  "question": "Use a participle to express the subordinate clause in this sentence: The hunter captured the bird that was about to fly.",
+  "answer": [
+    "avem volatūram",
+    "avem volaturam"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Participles / Subordinate Clauses",
+  "group": "passage_029",
+  "dependency": "bonus_independent",
+  "explanation": "The future active participle 'volatūram' (about to fly) expresses an action that is imminent relative to the main verb."
+},
+{
+  "id": "gram_int_088",
+  "question": "Give the nominative, genitive, and gender for the Latin noun meaning 'hope.'",
+  "answer": "spēs, spēī, f.",
+  "topic": "Latin Grammar",
+  "subtopic": "Nouns / Forms",
+  "group": "passage_030",
+  "dependency": "tossup",
+  "options": [
+    "spēs, spēī, f.",
+    "spes, spei, m.",
+    "spēs, spēī, n.",
+    "spes, spei, f."
+  ],
+  "explanation": "'Spēs' is nominative singular, 'spēī' is genitive singular, and the noun is feminine."
+},
+{
+  "id": "gram_int_089",
+  "question": "What is the meaning of the well-known Latin phrase 'dē gustibus nōn disputandum'?",
+  "answer": [
+    "you shouldn't argue about taste",
+    "there is no accounting for taste"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Phrases / Translation",
+  "group": "passage_030",
+  "dependency": "bonus_independent",
+  "explanation":"'Dē gustibus nōn disputandum' literally means 'about tastes, one must not argue.'"
+},
+{
+  "id": "gram_int_090",
+  "question": "What Latin phrase encourages a person to exercise both mind and body?",
+  "answer": "mens sāna in corpore sānō",
+  "topic": "Latin Grammar",
+  "subtopic": "Latin Phrases / Translation",
+  "group": "passage_030",
+  "dependency": "bonus_independent",
+  "options": [
+    "mens sāna in corpore sānō",
+    "mens sana in corpore sano",
+    "mens sanus in corpore sano",
+    "mens sana in corpore sānō"
+  ],
+  "explanation":"'Mens sāna in corpore sānō' translates as 'a healthy mind in a healthy body,' encouraging both mental and physical exercise."
+},
+{
+  "id": "gram_int_091",
+  "question": "What do all of the following prepositions have in common? Circiter, iūxtā, ob, ante.",
+  "answer": "they all take accusatives",
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions / Case Usage",
+  "group": "passage_031",
+  "dependency": "tossup",
+  "options": [
+    "they all take accusatives",
+    "they all take ablatives",
+    "they all take genitives",
+    "they all take dative"
+  ],
+  "explanation": "All of these prepositions govern the accusative case."
+},
+{
+  "id": "gram_int_092",
+  "question": "Which of the following prepositions is NOT used with the accusative? Praeter, prope, prae, propter, post.",
+  "answer": "prae",
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions / Case Usage",
+  "group": "passage_031",
+  "dependency": "bonus_independent",
+  "options": [
+    "prope",
+    "propter",
+    "prae",
+    "praeter"
+  ],
+  "explanation":"'Prae' is used with the ablative case, not the accusative. The others govern the accusative."
+},
+{
+  "id": "gram_int_093",
+  "question": "What is the meaning of the preposition ergā?",
+  "answer": [
+    "towards"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions / Translation",
+  "group": "passage_031",
+  "dependency": "bonus_independent",
+  "explanation":"'Ergā' means 'towards' and governs the accusative case."
+},
+{
+  "id": "gram_int_094",
+  "question": "Translate into Latin: The swords have been carried to the commander by the prisoners.",
+  "answer": ["gladiī portāta ad ducī ā captīvīs ferrentur"],
+  "topic": "Latin Grammar",
+  "subtopic": "Passive Voice / Translation",
+  "group": "passage_032",
+  "dependency": "tossup",
+  "options": [
+    "gladiī portāta ad ducī ā captīvīs ferrentur",
+    "gladiī portāta ā captīvīs ad ducī ferrentur",
+    "gladiī portāta ad ducī ā captīvīs feruntur",
+    "gladiī portātus ad ducī ā captīvīs ferrentur"
+  ],
+  "explanation": "The passive periphrastic 'portāta ... ferrentur' correctly conveys 'have been carried' with proper agreement and word order."
+},
+{
+  "id": "gram_int_095",
+  "question": "What is the Latin verb at the ultimate root of 'constant'?",
+  "answer": [
+    "stō",
+    "sto"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Derivatives / Roots",
+  "group": "passage_032",
+  "dependency": "bonus_independent",
+  "explanation": "'Stō' means 'to stand,' giving rise to English derivatives such as 'constant' and 'stable.'"
+},
+{
+  "id": "gram_int_096",
+  "question": "What English verb, a derivative of stō, means 'to cease or stop'?",
+  "answer": [
+    "desist"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Derivatives / Translation",
+  "group": "passage_032",
+  "dependency": "bonus_independent",
+  "explanation":"'Desist' comes from Latin 'desistō,' literally 'stand away from,' meaning to stop or cease."
+},
+{
+  "id": "gram_int_097",
+  "question": "What English derivative of stō means 'expensive'?",
+  "answer": [
+    "costly"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Derivatives / Translation",
+  "group": "passage_033",
+  "dependency": "tossup",
+  "explanation": "'Costly' comes from Latin 'cōnstō' ('to stand firm'), originally meaning something of high value or cost."
+},
+{
+  "id": "gram_int_098",
+  "question": "Say in Latin 'we will be sent.'",
+  "answer": [
+    "mittēmur",
+    "mittemur"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Future Passive / Translation",
+  "group": "passage_033",
+  "dependency": "bonus_independent",
+  "explanation":"Future passive of 'mittō' (to send) for first person plural is 'mittēmur'."
+},
+{
+  "id": "gram_int_099",
+  "question": "Say in Latin 'I will be captured.'",
+  "answer": [
+    "capiar"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Future Passive / Translation",
+  "group": "passage_033",
+  "dependency": "bonus_independent",
+  "explanation":"Future passive of 'capiō' (to capture) for first person singular is 'capiar'."
+},
+{
+  "id": "gram_int_100",
+  "question": "Say in Latin 'you (singular) are being heard.'",
+  "answer": [
+    "audīris",
+    "audiris"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Present Passive / Translation",
+  "group": "passage_034",
+  "dependency": "tossup",
+  "explanation": "'Audīris' is the second person singular present passive of 'audiō', meaning 'you are being heard.'"
+},
+{
+  "id": "gram_int_101",
+  "question": "What derivative of the Latin adjective meaning 'equal' means 'clothing'?",
+  "answer": "apparel",
+  "topic": "Latin Grammar",
+  "subtopic": "Derivatives / Translation",
+  "group": "passage_034",
+  "dependency": "bonus_independent",
+  "options": [
+    "garment",
+    "apparel",
+    "parity",
+    "equate"
+  ],
+  "explanation": "'Apparel' comes from Latin 'ad parāre', meaning 'to prepare, put in order', eventually giving the sense of clothing."
+},
+{
+  "id": "gram_int_102",
+  "question": "What derivative of the Latin adjective meaning 'full' means 'to fill or build up again'?",
+  "answer": [
+    "replenish"
+  ],
+  "topic": "Latin Grammar",
+  "subtopic": "Derivatives / Translation",
+  "group": "passage_034",
+  "dependency": "bonus_independent",
+  "explanation":"'Replenish' comes from Latin 'plēnus' (full), with the prefix 're-' meaning 'again', literally 'make full again.'"
+},
+  {
+    "id": "deriv_int_103",
+    "question": "What derivative of the Latin adjective meaning 'dutiful' means 'to make amends for; to relieve a burden of guilt'?",
+    "answer": ["expiate"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Adjective Derivatives",
+    "explanation": "The Latin adjective pius ('dutiful, devout') gives the English derivative 'expiate', meaning to atone or make amends.",
+    "dependency": "tossup",
+    "group": "passage_035"
+  },
+  {
+    "id": "deriv_int_104",
+    "question": "In what case would the noun 'Clodius' be in the following sentence: 'I don't think that anyone believes Clodius'?",
+    "answer": "dative",
+    "topic": "Latin Grammar",
+    "subtopic": "Cases",
+    "explanation": "The verb 'believe' takes an indirect object in Latin, so 'Clodius' would be in the dative case.",
+    "dependency": "bonus_independent",
+    "group": "passage_035",
+    "options": ["dative", "genitive", "accusative", "ablative"]
+  },
+  {
+    "id": "deriv_int_105",
+    "question": "What tense of the infinitive would be required to translate the verb 'lie' into Latin for this sentence: 'I knew that Clodius was lying'?",
+    "answer": "present",
+    "topic": "Latin Grammar",
+    "subtopic": "Infinitives",
+    "options": ["perfect", "present", "future", "imperfect"],
+    "explanation": "In indirect statement, 'was lying' is contemporaneous with the main verb 'knew', so the present infinitive of 'lie' is required.",
+    "dependency": "bonus_independent",
+    "group": "passage_035"
+  },
+  {
+    "id": "deriv_int_106",
+    "question": "Translate the infinitive into Latin for this sentence: 'We were told that Clodia and Metella had been discovered.'",
+    "answer": ["inventās esse", "repertās esse"],
+    "topic": "Latin Grammar",
+    "subtopic": "Infinitives / Indirect Statement",
+    "explanation": "In indirect statement, the perfect passive infinitive is used to show 'had been discovered'. Both 'inventās esse' and 'repertās esse' are correct.",
+    "dependency": "tossup",
+    "group": "passage_036"
+  },
+  {
+    "id": "deriv_int_107",
+    "question": "How many forms in the present tense conjugation of the verb nōlō, nōlle consist of two separate words?",
+    "answer": "three",
+    "topic": "Latin Grammar",
+    "subtopic": "Irregular Verbs",
+    "options": ["one", "three", "two", "four"],
+    "explanation": "The present tense of nōlō is irregular: nōlō, nōn vīs, nōn vult, nōlīmus, nōn vultis, nōlunt. Three forms (nōn vīs, nōn vult, nōn vultis) consist of two separate words.",
+    "dependency": "bonus_independent",
+    "group": "passage_036"
+  },
+  {
+    "id": "deriv_int_108",
+    "question": "How many forms in the present tense conjugation of the verb mālō, mālle consist of two separate words?",
+    "answer": "zero",
+    "topic": "Latin Grammar",
+    "subtopic": "Irregular Verbs",
+    "options": ["one", "two", "zero", "three"],
+    "explanation": "The present tense of mālō is entirely single-word forms: mālō, māvīs, māvit, mālumus, māvultis, mālunt. None consist of two words.",
+    "dependency": "bonus_independent",
+    "group": "passage_036"
+  },
+  {
+    "id": "deriv_int_109",
+    "question": "Identify the only one-word participle that exists for the verb nōlō.",
+    "answer": ["nōlēns"],
+    "topic": "Latin Grammar",
+    "subtopic": "Participles",
+    "explanation": "The present participle of nōlō is irregular and only exists as 'nōlēns' (refusing, unwilling).",
+    "dependency": "tossup",
+    "group": "passage_037"
+  },
+  {
+    "id": "deriv_int_110",
+    "question": "Which of the following words, if any, is NOT derived from the Latin noun 'caput': chassis, biceps, capital, achievement?",
+    "answer": "chassis",
+    "topic": "Latin Derivatives",
+    "subtopic": "Noun Derivatives",
+    "options": ["chassis", "biceps", "capital", "achievement"],
+    "explanation": "'Chassis' is from French and ultimately Greek; the other words are derived from Latin 'caput' meaning 'head'.",
+    "dependency": "bonus_independent",
+    "group": "passage_037"
+  },
+  {
+    "id": "deriv_int_111",
+    "question": "Which of these words is also derived from 'caput': carnage, capacity, recuperate, handkerchief?",
+    "answer": "handkerchief",
+    "topic": "Latin Derivatives",
+    "subtopic": "Noun Derivatives",
+    "options": ["carnage", "capacity", "recuperate", "handkerchief"],
+    "explanation": "'Handkerchief' ultimately derives from 'caput' (head, covering); the other words do not.",
+    "dependency": "bonus_independent",
+    "group": "passage_037"
+  },
+  {
+    "id": "deriv_int_112",
+    "question": "Make the phrase 'haec culina' ablative singular.",
+    "answer": ["hāc culīnā"],
+    "topic": "Latin Grammar",
+    "subtopic": "Noun Declensions",
+    "explanation": "The ablative singular of 'haec culina' is 'hāc culīnā'.",
+    "dependency": "tossup",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_113",
+    "question": "Make 'hīc culīna' plural.",
+    "answer": ["hīc culīnae"],
+    "topic": "Latin Grammar",
+    "subtopic": "Noun Declensions",
+    "explanation": "The plural of 'hīc culīna' (nominative) is 'hīc culīnae'.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_114",
+    "question": "Make 'hōs culīnōs' genitive.",
+    "answer": "hōrum culīnōrum",
+    "topic": "Latin Grammar",
+    "subtopic": "Noun Declensions",
+    "options": ["hōrum culīnōrum", "hōrum culīnīs", "hōrum culīnōs", "hōrum culīnārum"],
+    "explanation": "The genitive plural of 'hōs culīnōs' is 'hōrum culīnōrum'.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_115",
+    "question": "What Latin noun with what meaning is the root of the word 'carnage'?",
+    "answer": ["carō / flesh", "carō / meat"],
+    "topic": "Latin Derivatives",
+    "subtopic": "Noun Roots",
+    "explanation": "'Carnage' comes from Latin 'carō, carnis', meaning 'flesh' or 'meat'.",
+    "dependency": "tossup",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_116",
+    "question": "With what are all of the following terms associated: olla, tumulus, rogus, imāginēs, cenotaphium, and columbārium?",
+    "answer": "death",
+    "topic": "Latin Derivatives",
+    "subtopic": "Vocabulary / Funerary Terms",
+    "options": ["death", "burial", "funerals", "celebrations"],
+    "explanation": "All these terms relate to death, burial practices, and funerary monuments in Roman culture.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_117",
+    "question": "Make the Latin phrase 'ācris aciēs' ablative singular.",
+    "answer": "ācrī aciē",
+    "topic": "Latin Grammar",
+    "subtopic": "Noun Declensions",
+    "options": ["ācrī aciē", "ācris aciē", "ācrī aciēs", "ācris aciēbus"],
+    "explanation": "The ablative singular of 'ācris aciēs' is 'ācrī aciē'.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_118",
+    "question": "Change this Latin sentence to the plural: Māter est bona.",
+    "answer": "mātrēs sunt bonae",
+    "topic": "Latin Grammar",
+    "subtopic": "Number Agreement / Sentences",
+    "options": ["māterēs sunt bonae", "mātrēs sunt bonae", "mātrēs est bonae", "māter est bonae"],
+    "explanation": "The plural of 'Māter est bona' is 'Mātrēs sunt bonae', changing both subject and adjective to plural.",
+    "dependency": "tossup",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_119",
+    "question": "Change this Latin sentence to the plural: Iter est malum.",
+    "answer": ["itinera sunt mala"],
+    "topic": "Latin Grammar",
+    "subtopic": "Number Agreement / Sentences",
+    "explanation": "The plural of 'Iter est malum' is 'Itinera sunt mala'.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_120",
+    "question": "Change this Latin sentence to the singular: Vīna sunt dulcia.",
+    "answer": "vīnum est dulce",
+    "topic": "Latin Grammar",
+    "subtopic": "Number Agreement / Sentences",
+    "options": ["vīna sunt dulce", "vīnum est dulce", "vīnum sunt dulcia", "vīna est dulcia"],
+    "explanation": "The singular of 'Vīna sunt dulcia' is 'Vīnum est dulce', changing both subject and adjective to singular.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_121",
+    "question": "Translate into English: mūrus vīgintī pedum.",
+    "answer": ["a twenty-foot wall"],
+    "topic": "Latin Grammar",
+    "subtopic": "Translation / Sentences",
+    "explanation": "'mūrus' means 'wall' and 'vīgintī pedum' literally means 'twenty feet'.",
+    "dependency": "tossup",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_122",
+    "question": "Translate into English: tribūnī amīcī nōbīs sunt.",
+    "answer": "the tribunes are friendly to us",
+    "topic": "Latin Grammar",
+    "subtopic": "Translation / Sentences",
+    "options": ["the friends are friendly to us", "the tribunes are friendly to us", "the tribunes are against us", "we are friends to the tribunes"],
+    "explanation": "'Tribūnī' = 'tribunes', 'amīcī' = 'friendly', 'nōbīs' = 'to us'.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+    "id": "deriv_int_123",
+    "question": "Translate into English: mē Imperātōrem salūtāvērunt.",
+    "answer": "they hailed (greeted) me as emperor",
+    "topic": "Latin Grammar",
+    "subtopic": "Translation / Sentences",
+    "options": ["they saluted the emperor", "they hailed (greeted) me as emperor", "I greeted the emperor", "they were hailed by the emperor"],
+    "explanation": "'Mē' = 'me', 'Imperātōrem' = 'emperor', 'salūtāvērunt' = 'they greeted/hailed'.",
+    "dependency": "bonus_independent",
+    "group": "passage_038"
+  },
+  {
+  "id": "gram_int_124",
+  "question": "Make the phrase 'duae aciēs ācrēs' ablative.",
+  "answer": ["duābus aciēbus ācribus", "duabus aciebus acribus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Ablative Case",
+  "dependency": "tossup",
+  "group": "passage_038",
+  "explanation": "Both 'duae' and 'ācrēs' change to the ablative plural feminine endings '-bus' and '-ibus' respectively, forming 'duābus aciēbus ācribus'."
+ },
+ {
+  "id": "gram_int_125",
+  "question": "'JCL is a wonderful organization, so I took Spanish.' What two-word Latin phrase can best be used to describe that nonsensical comment?",
+  "options": [
+    "ad hoc",
+    "nōn sequitur",
+    "cum grānō salis",
+    "de facto"
+  ],
+  "answer": "nōn sequitur",
+  "topic": "Latin Grammar",
+  "subtopic": "Logical Phrases",
+  "dependency": "bonus_independent",
+  "group": "passage_038",
+  "explanation": "The Latin phrase 'nōn sequitur' means 'it does not follow,' used to describe a statement or conclusion that doesn't logically connect to what preceded it."
+ },
+ {
+  "id": "gram_int_126",
+  "question": "What is the comparative form of the adjective 'celer, celeris, celere'?",
+  "answer": ["celerior"],
+  "topic": "Latin Grammar",
+  "subtopic": "Comparatives and Superlatives",
+  "dependency": "bonus_independent",
+  "group": "passage_038",
+  "explanation": "The comparative of 'celer' is formed by adding '-ior' to the base, producing 'celerior', meaning 'swifter'."
+ },
+ {
+  "id": "gram_int_127",
+  "question": "Give the Latin for 'by means of chance' or 'by luck.'",
+  "answer": ["forte"],
+  "topic": "Latin Grammar",
+  "subtopic": "Ablative of Means / Manner",
+  "dependency": "tossup",
+  "group": "passage_039",
+  "explanation": "The adverb 'forte' comes from 'fors, fortis' meaning 'chance' and is used idiomatically for 'by chance' or 'by luck'."
+ },
+ {
+  "id": "gram_int_128",
+  "question": "Which of the following prepositions regularly takes the ablative case?",
+  "options": ["ad", "in", "prope", "per"],
+  "answer": "in",
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions and Cases",
+  "dependency": "bonus_independent",
+  "group": "passage_039",
+  "explanation": "The preposition 'in' takes the ablative when expressing location or rest (e.g., 'in urbe'), but the accusative when expressing motion (e.g., 'in urbem')."
+ },
+ {
+  "id": "gram_int_129",
+  "question": "What is the Latin comparative form of the adverb 'bene'?",
+  "answer": ["melius"],
+  "topic": "Latin Grammar",
+  "subtopic": "Adverbs: Comparison",
+  "dependency": "bonus_independent",
+  "group": "passage_039",
+  "explanation": "The comparative of 'bene' ('well') is 'melius' ('better'), from the same root as 'melior'."
+ },
+ {
+  "id": "gram_int_130",
+  "question": "How do you say 'eye' in Latin?",
+  "answer": ["oculus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Body Parts Vocabulary",
+  "dependency": "tossup",
+  "group": "passage_040",
+  "explanation": "The Latin noun 'oculus' means 'eye' and is a second declension masculine noun."
+ },
+ {
+  "id": "gram_int_131",
+  "question": "How do you say 'tongue' in Latin?",
+  "answer": ["lingua"],
+  "topic": "Latin Grammar",
+  "subtopic": "Body Parts Vocabulary",
+  "dependency": "bonus_independent",
+  "group": "passage_040",
+  "explanation": "The Latin noun 'lingua' means 'tongue' or 'language' and is a first declension feminine noun."
+ },
+ {
+  "id": "gram_int_132",
+  "question": "How do you say 'finger' in Latin?",
+  "answer": ["digitus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Body Parts Vocabulary",
+  "dependency": "bonus_independent",
+  "group": "passage_040",
+  "explanation": "The Latin noun 'digitus' means 'finger' or 'toe' and is a second declension masculine noun."
+ },
+ {
+  "id": "gram_int_133",
+  "question": "Change momordērunt to the passive form.",
+  "answer": ["morsī sunt", "morsae sunt", "morsa sunt"],
+  "topic": "Latin Grammar",
+  "subtopic": "Voice: Active and Passive",
+  "dependency": "tossup",
+  "group": "passage_041",
+  "explanation": "The perfect passive form of momordērunt ('they bit') is morsī sunt, agreeing in gender and number with its subject."
+},
+{
+  "id": "gram_int_134",
+  "question": "Make morsī sunt imperfect.",
+  "answer": ["mordēbantur"],
+  "topic": "Latin Grammar",
+  "subtopic": "Tense Formation",
+  "dependency": "bonus_independent",
+  "group": "passage_041",
+  "explanation": "The imperfect passive of mordeō ('to bite') is mordēbantur, meaning 'they were being bitten.'"
+},
+{
+  "id": "gram_int_135",
+  "question": "Make mordēbantur subjunctive.",
+  "answer": ["mordērentur"],
+  "topic": "Latin Grammar",
+  "subtopic": "Mood: Subjunctive",
+  "dependency": "bonus_independent",
+  "group": "passage_041",
+  "explanation": "The imperfect subjunctive passive is formed by adding the passive endings to the present infinitive: mordēre → mordērentur."
+},
+{
+  "id": "gram_int_136",
+  "question": "In the sentence canes qui uxores non oppugnaverunt sunt timidi, what case is uxores?",
+  "options": ["nominative", "genitive", "accusative", "ablative"],
+  "answer": "accusative",
+  "topic": "Latin Grammar",
+  "subtopic": "Cases and Syntax",
+  "dependency": "tossup",
+  "group": "passage_042",
+  "explanation": "Uxores is the direct object of oppugnaverunt ('attacked'), and therefore in the accusative case."
+},
+{
+  "id": "gram_int_137",
+  "question": "What degree is the adjective facillimus?",
+  "options": ["superlative", "comparative", "positive", "dative"],
+  "answer": "superlative",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjectives: Degrees of Comparison",
+  "dependency": "bonus_independent",
+  "group": "passage_042",
+  "explanation": "Facillimus is the superlative degree of facilis ('easy'), formed irregularly by doubling the l before -imus."
+},
+{
+  "id": "gram_int_138",
+  "question": "Amici, necesse est vobis __________ ingens flumen transire. Which form correctly completes the sentence?",
+  "options": ["ille", "illud", "illum", "illius"],
+  "answer": "illud",
+  "topic": "Latin Grammar",
+  "subtopic": "Demonstrative Pronouns",
+  "dependency": "bonus_independent",
+  "group": "passage_042",
+  "explanation": "The neuter demonstrative illud agrees with flumen, a neuter noun, making it the correct choice."
+},
+{
+  "id": "gram_int_139",
+  "question": "Noli interficere regem, ___________!",
+  "options": ["Salvius meum", "Salvi mi", "Salvius meus", "Salvio meo"],
+  "answer": "Salvius meus",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement / Vocative",
+  "dependency": "tossup",
+  "group": "passage_043",
+  "explanation": "The vocative singular of a second declension masculine noun like Salvius is the same as the nominative; the possessive adjective must agree in gender, number, and case: 'Salvius meus' = 'my Salvius.'"
+},
+{
+  "id": "gram_int_140",
+  "question": "___________ leo pastorem, qui in silva ambulabat, non petivit.",
+  "options": ["saevo", "saevi", "saevus", "saevorum"],
+  "answer": "saevus",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement / Case",
+  "dependency": "bonus_independent",
+  "group": "passage_043",
+  "explanation": "The adjective 'saevus' must agree with 'leo', nominative singular masculine. Therefore, the correct form is 'saevus leo.'"
+},
+{
+  "id": "gram_int_141",
+  "question": "Pastor ___________ oves in campo vidit.",
+  "options": ["bonus", "boni", "bonum", "bonae"],
+  "answer": "bonus",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjective Agreement / Case",
+  "dependency": "bonus_independent",
+  "group": "passage_043",
+  "explanation": "The adjective 'bonus' modifies 'pastor', which is nominative singular masculine; 'bonus pastor' = 'the good shepherd.'"
+},
+{
+  "id": "gram_int_142",
+  "question": "Which of the following prepositions does not belong with the others? Infrā, circum, ob, praeter, causā.",
+  "options": ["infrā", "circum", "ob", "praeter", "causā"],
+  "answer": "causā",
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions and Cases",
+  "dependency": "tossup",
+  "group": "passage_044",
+  "explanation": "All prepositions except causā are standard prepositions with an object in a case; causā is used as a postposition with the genitive, often after a gerund or gerundive."
+},
+{
+  "id": "gram_int_143",
+  "question": "What other word is used in the same way as causā, often with the genitive of gerunds and gerundives?",
+  "options": ["grātiā", "propter", "ob", "per"],
+  "answer": "grātiā",
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions and Cases",
+  "dependency": "bonus_independent",
+  "group": "passage_044",
+  "explanation": "Like causā, grātiā is a postposition that follows a noun in the genitive to indicate purpose or reason ('for the sake of')."
+},
+{
+  "id": "gram_int_144",
+  "question": "Which of the following adjectives does not take the genitive case? Cupidus, studiōsus, inimīcus, avidus, plēnus",
+  "options": ["cupidus", "studiōsus", "inimīcus", "avidus", "plēnus"],
+  "answer": "inimīcus",
+  "topic": "Latin Grammar",
+  "subtopic": "Adjectives and Case Usage",
+  "dependency": "bonus_independent",
+  "group": "passage_044",
+  "explanation": "All the adjectives except inimīcus commonly take the genitive to indicate object or cause. Inimīcus takes the dative case."
+},
+{
+  "id": "gram_int_145",
+  "question": "cūr : why :: cor : ?",
+  "options": ["brain", "heart", "tongue", "eye"],
+  "answer": "heart",
+  "topic": "Latin Grammar",
+  "subtopic": "Vocabulary Analogy",
+  "dependency": "tossup",
+  "group": "passage_045",
+  "explanation": "Cūr is 'why', and cor is 'heart'. The other options are body parts, so the student must know the exact meaning."
+},
+{
+  "id": "gram_int_146",
+  "question": "amō : love :: emō : ?",
+  "options": ["sing", "buy", "jump", "fear"],
+  "answer": "buy",
+  "topic": "Latin Grammar",
+  "subtopic": "Vocabulary Analogy",
+  "dependency": "bonus_independent",
+  "group": "passage_045",
+  "explanation": "Amō means 'to love' and emō means 'to buy'. The other options are unrelated actions, making students recall the correct meaning."
+},
+{
+  "id": "gram_int_147",
+  "question": "petō : seek / beg / ask :: putō : ?",
+  "options": ["eat", "think", "sleep", "run"],
+  "answer": "think",
+  "topic": "Latin Grammar",
+  "subtopic": "Vocabulary Analogy",
+  "dependency": "bonus_independent",
+  "group": "passage_045",
+  "explanation": "Petō means 'to seek / beg / ask', while putō means 'to think'. Distractors are unrelated verbs, so only 'think' is correct."
+},
+{
+  "id": "gram_int_148",
+  "question": "Translate this sentence into English: mandāvit mīlitibus ut decem mīlia passuum iter facerent.",
+  "options": [
+    "He commanded the soldiers to fight for 10 miles",
+    "He ordered the soldiers to make a journey / march for 10 miles",
+    "The soldiers ran away for 10 miles",
+    "He persuaded the soldiers to retreat 10 miles"
+  ],
+  "answer": "He ordered the soldiers to make a journey / march for 10 miles",
+  "topic": "Latin Grammar",
+  "subtopic": "Indirect Command / Translation",
+  "dependency": "tossup",
+  "group": "passage_046",
+  "explanation": "Mandāvit + ut + subjunctive forms an indirect command: 'He ordered the soldiers to march for 10 miles.'"
+},
+{
+  "id": "gram_int_149",
+  "question": "Translate this sentence into English: mīsit mīlitīs quī castra ponerent.",
+  "options": [
+    "He sent soldiers to build a camp",
+    "He sent soldiers to pitch / set up camp",
+    "He sent soldiers to prepare a fort",
+    "He sent soldiers to establish a camp"
+  ],
+  "answer": "He sent soldiers to pitch / set up camp",
+  "topic": "Latin Grammar",
+  "subtopic": "Indirect Command / Translation",
+  "dependency": "bonus_independent",
+  "group": "passage_046",
+  "explanation": "Mīsit + relative clause in subjunctive expresses purpose or indirect command: 'He sent soldiers to pitch camp.' All options include 'sent soldiers' and a camp-related action, so students must know the precise meaning of 'ponere castra.'"
+},
+{
+  "id": "gram_int_150",
+  "question": "Translate this sentence into English: multī sunt quī tē ament.",
+  "answer": ["There are many who (would) love you", "There are many who would love you","There are many who will love you"],
+  "topic": "Latin Grammar",
+  "subtopic": "Relative Clause / Translation",
+  "dependency": "bonus_independent",
+  "group": "passage_046",
+  "explanation": "The relative clause 'quī tē ament' describes 'multī', translating as either 'There are many who (would) love you' or 'There are many who will love you.' Both are correct English equivalents of the Latin present subjunctive."
+},
+{
+  "id": "gram_int_151",
+  "question": "What use of the ablative case is found in the following sentence? Mīlitēs Rōmānī maximā virtūte erant.",
+  "answer": ["description", "quality"],
+  "topic": "Latin Grammar",
+  "subtopic": "Ablative Case",
+  "dependency": "tossup",
+  "group": "passage_047",
+  "explanation": "The ablative 'maximā virtūte' describes the quality of the Roman soldiers; this is an ablative of description/quality."
+},
+{
+  "id": "gram_int_152",
+  "question": "Give all the principal parts of the Latin verb meaning 'lose' that is a compound of a Latin verb meaning 'send'.",
+  "answer": ["āmittō, āmittere, āmisī, āmissum", "amitto, amittere, amisi, amissum"],
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Principal Parts",
+  "dependency": "bonus_independent",
+  "group": "passage_047",
+  "explanation": "The verb 'āmittō' is composed of 'ā-' + 'mittō' ('send'), and its principal parts are āmittō, āmittere, āmisī, āmissum. Both versions with and without macrons are acceptable."
+},
+{
+  "id": "gram_int_153",
+  "question": "Give the perfect tense third-person singular of 'faciō, facere'.",
+  "answer": ["fēcit", "fecit"],
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Tense Formation",
+  "dependency": "bonus_independent",
+  "group": "passage_047",
+  "explanation": "The perfect tense third-person singular of 'faciō, facere' is 'fēcit', meaning 'he/she/it did' or 'made.' Both macron and non-macron spellings are accepted."
+},
+{
+  "id": "gram_int_154",
+  "question": "Make the phrase 'haec culīna' ablative singular.",
+  "answer": ["hāc culīnā", "hac culina"],
+  "topic": "Latin Grammar",
+  "subtopic": "Ablative Case",
+  "dependency": "tossup",
+  "group": "passage_048",
+  "explanation": "The ablative singular of 'haec culīna' uses the endings '-ā' for the noun and 'hāc' for the demonstrative, producing 'hāc culīnā'. Both macron and non-macron versions are acceptable."
+},
+{
+  "id": "gram_int_155",
+  "question": "Make 'hāc culīnā' plural.",
+  "answer": ["hae culīnae", "hae culinae"],
+  "topic": "Latin Grammar",
+  "subtopic": "Noun Pluralization",
+  "dependency": "bonus_independent",
+  "group": "passage_048",
+  "explanation": "The plural of 'hāc culīnā' is 'hae culīnae' (nominative plural). Both macron and non-macron forms are valid."
+ },
+ {
+  "id": "gram_int_156",
+  "question": "Make 'hīs culīnīs' genitive plural.",
+  "options": [
+    "hīs culīnīs",
+    "hārum culīnārum",
+    "hīs culīnārum",
+    "hārum culīnīs"
+  ],
+  "answer": "hārum culīnārum",
+  "topic": "Latin Grammar",
+  "subtopic": "Genitive Case",
+  "dependency": "bonus_independent",
+  "group": "passage_048",
+  "explanation": "The genitive plural of 'hīs culīnīs' is 'hārum culīnārum', indicating possession. Both macron and non-macron forms are acceptable."
+ },
+ {
+  "id": "gram_int_157",
+  "question": "Give the correct form of the verb precor, precārī for the following sentence: 'Nōs, discipulī linguae Latīnae, [blank] in templō.' In other words, give the 1st person plural, present passive-looking form.",
+  "answer": ["precāmur", "precamur"],
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent Verbs / Present Tense",
+  "dependency": "tossup",
+  "group": "passage_049",
+  "explanation": "Precor is a deponent verb; in the 1st person plural present indicative, it takes the form 'precāmur' meaning 'we pray.' Both macron and non-macron spellings are acceptable."
+ },
+ {
+  "id": "gram_int_158",
+  "question": "Make the 1st person plural present form 'precāmur' into perfect tense.",
+  "options": [
+    "precāmur",
+    "precātī/-ae/-a sumus",
+    "precant",
+    "precāvimus"
+  ],
+  "answer": "precātī/-ae/-a sumus",
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent Verbs / Perfect Tense",
+  "dependency": "bonus_independent",
+  "group": "passage_049",
+  "explanation": "The perfect tense of the deponent verb precor is formed using the perfect participle plus the appropriate form of 'sum'. 'Precātī/-ae/-a sumus' is the 1st person plural perfect form. Both macron and non-macron spellings are acceptable."
+},
+{
+  "id": "gram_int_159",
+  "question": "Give the correct form of the verb precor for the following sentence: 'Multae magistrae arbitrantur discipulōs [blank] in templīs.'",
+  "answer": ["precārī", "precari"],
+  "topic": "Latin Grammar",
+  "subtopic": "Deponent Verbs / Infinitive",
+  "dependency": "bonus_independent",
+  "group": "passage_049",
+  "explanation": "The infinitive of the deponent verb precor is 'precārī', used here as the object of 'arbitrantur' (they think). Both macron and non-macron spellings are accepted."
+},
+{
+  "id": "deriv_int_160",
+  "question": "Of the words cornū, negōtium, corpus, flōs, and vēr, which does NOT belong by gender, being a masculine noun that means 'flower'?",
+  "answer": ["flōs", "flos"],
+  "topic": "Latin Grammar",
+  "subtopic": "Noun Gender",
+  "dependency": "tossup",
+  "group": "passage_050",
+  "explanation": "'Flōs' is masculine and means 'flower,' unlike the other nouns in the list, which are neuter."
+},
+{
+  "id": "deriv_int_161",
+  "question": "Define the other four words: cornū, negōtium, corpus, and vēr.",
+  "options": [
+    "horn, duty, corpse, summer",
+    "horn, {task / business}, body, spring",
+    "ear, task, body, vernal",
+    "corn, occupation, corpse, ver"
+  ],
+  "answer": "horn, {task / business}, body, spring",
+  "topic": "Latin Grammar",
+  "subtopic": "Noun Meaning",
+  "dependency": "bonus_independent",
+  "group": "passage_050",
+  "explanation": "'Cornū' = horn, 'negōtium' = task or business, 'corpus' = body, and 'vēr' = spring."
+},
+{
+  "id": "deriv_int_162",
+  "question": "Give the meaning and gender of hiems.",
+  "options": [
+    "summer; masculine",
+    "winter; feminine",
+    "autumn; neuter",
+    "spring; feminine"
+  ],
+  "answer": "winter; feminine",
+  "topic": "Latin Grammar",
+  "subtopic": "Noun Gender",
+  "dependency": "bonus_independent",
+  "group": "passage_050",
+  "explanation": "'Hiems' means 'winter' and is a feminine noun in Latin."
+ },
+ {
+  "id": "deriv_int_163",
+  "question": "What compound of dō, dare is a synonym of amittō?",
+  "answer": ["perdō", "perdo"],
+  "topic": "Latin Derivatives",
+  "subtopic": "Compound Verbs",
+  "dependency": "tossup",
+  "group": "passage_051",
+  "explanation": "'Perdō' is formed from 'per-' + 'dō' and means 'to destroy, lose,' making it a synonym of 'amittō'."
+ },
+ {
+  "id": "deriv_int_164",
+  "question": "What compound of mittō is commonly used with indirect commands?",
+  "answer": ["permittō", "permitto"],
+  "topic": "Latin Derivatives",
+  "subtopic": "Compound Verbs",
+  "dependency": "bonus_independent",
+  "group": "passage_051",
+  "explanation": "'Permittō' is formed from 'per-' + 'mittō', meaning 'to allow, permit,' and is commonly used with indirect commands."
+ },
+ {
+  "id": "deriv_int_165",
+  "question": "What compound of mittō, meaning 'to send forward or transmit,' is related to messages or communication?",
+  "answer": ["trānsmittō", "transmitto"],
+  "topic": "Latin Derivatives",
+  "subtopic": "Compound Verbs",
+  "dependency": "bonus_independent",
+  "group": "passage_051",
+  "explanation": "'Trānsmittō' is formed from 'trān-' + 'mittō', meaning 'to send across, forward, or transmit,' often used in contexts of messages or communication. Both macron and non-macron forms are acceptable."
+ },
+ {
+  "id": "deriv_int_166",
+  "question": "Based on the Latin word amicus (amīcī, m.), which combination correctly gives 'friendship' as a noun and 'friendly' as an adjective?",
+  "options": [
+    "amīcitia and amīcus",
+    "amicitia and amīcī",
+    "amīcitia and amīcissimus",
+    "amīcus and amīcissimus"
+  ],
+  "answer": "amīcitia and amīcissimus",
+  "topic": "Latin Derivatives",
+  "subtopic": "Vocabulary: Friends and Enemies",
+  "dependency": "tossup",
+  "group": "passage_052",
+  "explanation": "'Amīcitia' is the noun for 'friendship,' and 'amīcissimus' is the superlative adjective meaning 'very friendly.' Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "deriv_int_167",
+  "question": "Which Latin noun meaning 'enemy' is the root of the English word 'hostile'?",
+  "options": [
+    "inimīcus",
+    "hostis",
+    "adversarius",
+    "bellator"
+  ],
+  "answer": "hostis",
+  "topic": "Latin Derivatives",
+  "subtopic": "Vocabulary: Friends and Enemies",
+  "dependency": "bonus_independent",
+  "group": "passage_052",
+  "explanation": "'Hostis' is the Latin noun for 'enemy' and is the root of the English word 'hostile.' Players must recall the Latin form; the English derivative is just a clue."
+ },
+ {
+  "id": "deriv_int_168",
+  "question": "Give the Latin word for a personal enemy, which gives us the English word 'inimical'.",
+  "options": [
+    "hostis",
+    "inimīcus",
+    "adversarius",
+    "belliger"
+  ],
+  "answer": "inimīcus",
+  "topic": "Latin Derivatives",
+  "subtopic": "Vocabulary: Friends and Enemies",
+  "dependency": "bonus_independent",
+  "group": "passage_052",
+  "explanation": "'Inimīcus' is the Latin word for a personal enemy, giving us the English adjective 'inimical.' Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "gram_int_169",
+  "question": "Which Latin preposition expresses 'for/on behalf of' and takes the ablative case?",
+  "options": [
+    "per",
+    "post",
+    "prō",
+    "contra"
+  ],
+  "answer": "prō",
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions",
+  "dependency": "tossup",
+  "group": "passage_053",
+  "explanation": "'Prō' expresses support or agency, meaning 'for' or 'on behalf of,' and it governs the ablative case."
+ },
+ {
+  "id": "gram_int_170",
+  "question": "Which Latin preposition expresses motion through something and takes the accusative case?",
+  "answer": ["per"],
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions",
+  "dependency": "bonus_independent",
+  "group": "passage_053",
+  "explanation": "'Per' indicates motion through or by means of something and takes the accusative."
+ },
+ {
+  "id": "gram_int_171",
+  "question": "Which Latin preposition expresses 'after' or 'behind' and takes the accusative case?",
+  "answer": ["post"],
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions",
+  "dependency": "bonus_independent",
+  "group": "passage_053",
+  "explanation": "'Post' indicates position after or behind and takes the accusative case."
+ },
+ {
+  "id": "num_int_172",
+  "question": "Provide the Latin word for the number 13.",
+  "answer": ["tredecim"],
+  "topic": "Latin Grammar",
+  "subtopic": "Numbers",
+  "dependency": "tossup",
+  "group": "passage_054",
+  "explanation": "'Tredecim' is the Latin cardinal number for 13. Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "num_int_173",
+  "question": "Give the Latin for the ordinal number 'thirteenth.'",
+  "answer": ["decimus tertius", "tertium decimum"],
+  "topic": "Latin Grammar",
+  "subtopic": "Numbers",
+  "dependency": "bonus_independent",
+  "group": "passage_054",
+  "explanation": "The ordinal for 13 can be expressed as 'decimus tertius' or 'tertium decimum.' Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "num_int_174",
+  "question": "What is the Latin word for 'how many'?",
+  "answer": ["quot"],
+  "topic": "Latin Grammar",
+  "subtopic": "Numbers",
+  "dependency": "bonus_independent",
+  "group": "passage_054",
+  "explanation": "'Quot' is the Latin interrogative used to ask 'how many.' Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "vocab_int_175",
+  "question": "Which Latin noun, feminine and ending in -tiō, means 'plot' or 'conspiracy'?",
+  "answer": ["coniūrātiō"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Nouns",
+  "dependency": "tossup",
+  "group": "passage_055",
+  "explanation": "'Coniūrātiō' is a feminine noun ending in -tiō, meaning 'plot' or 'conspiracy.' Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "vocab_int_176",
+  "question": "Provide the Latin perfect passive participle meaning 'wounded' or 'injured.'",
+  "answer": ["vulnerātus", "vulneratus"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Adjectives",
+  "dependency": "bonus_independent",
+  "group": "passage_055",
+  "explanation": "'Vulnerātus' is the perfect passive participle of 'vulnerō,' meaning 'wounded' or 'injured.' Students must recall the participial form, not just the English meaning."
+ },
+ {
+  "id": "vocab_int_177",
+  "question": "Which neuter Latin noun refers to a place where metals are extracted and gives its English derivative 'metal'?",
+  "answer": ["metallum"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Nouns",
+  "dependency": "bonus_independent",
+  "group": "passage_055",
+  "explanation": "'Metallum' is a neuter noun meaning 'mine' or 'metal,' and is the root of the English word 'metal.' This requires knowledge of classical usage and derivation."
+ },
+ {
+  "id": "vocab_int_178",
+  "question": "Which neuter Latin noun, ending in -um, would a Roman officer most likely refer to when discussing the chains that held captives?",
+  "answer": ["vinculum", "vincula"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Nouns",
+  "dependency": "tossup",
+  "group": "passage_056",
+  "explanation": "'Vinculum' (plural 'vincula') is a neuter noun meaning 'chain' or 'bond.' The morphological clue (-um ending, neuter) helps distinguish it from other nouns. Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "vocab_int_179",
+  "question": "Give the Latin noun for a Roman administrative region, typically governed by a proconsul or propraetor.",
+  "answer": ["prōvincia", "provincia"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Nouns",
+  "dependency": "bonus_independent",
+  "group": "passage_056",
+  "explanation": "'Prōvincia' is feminine, meaning 'province.' This question requires knowledge of Roman political terminology as well as noun gender and ending."
+ },
+ {
+  "id": "vocab_int_180",
+  "question": "Which Latin adjective, often used to describe a wild beast or a fierce enemy, means 'cruel, savage, or fierce'?",
+  "answer": ["atrox", "atrocis"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Adjectives",
+  "dependency": "bonus_independent",
+  "group": "passage_056",
+  "explanation": "'Atrox' is a third-declension adjective meaning 'cruel' or 'fierce.' The genitive form 'atrocis' may also appear in texts. Context helps players choose the right adjective."
+ },
+ {
+  "id": "vocab_int_181",
+  "question": "Which Latin adjective, plural masculine and often used in classical texts, means 'some' or 'several'?",
+  "answer": ["nonnullī", "nonnulli"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Adjectives",
+  "dependency": "tossup",
+  "group": "passage_057",
+  "explanation": "'Nonnullī' is a plural masculine adjective meaning 'some' or 'several.' Contextually, it appears in classical texts referring to unspecified members of a group. Both macron and non-macron forms are accepted."
+ },
+ {
+  "id": "vocab_int_182",
+  "question": "Which Latin verb, a compound of trahō, would a Roman general most likely use to describe pulling troops or equipment back from a dangerous situation on the battlefield?",
+  "answer": ["retrahere", "retractare"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Verbs",
+  "dependency": "bonus_independent",
+  "group": "passage_057",
+  "explanation": "'Retrahere' is the infinitive of the verb meaning 'to drag back' or 'pull back,' formed as a compound of 'trahō.' The battlefield context requires students to select the correct verb based on practical usage."
+ },
+ {
+  "id": "vocab_int_183",
+  "question": "Which Latin reflexive phrase would a Roman commander use to indicate that his soldiers were withdrawing safely to a fortified position?",
+  "answer": ["sē recipere", "se recipere"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Verbs / Reflexive",
+  "dependency": "bonus_independent",
+  "group": "passage_057",
+  "explanation": "'Sē recipere' is a reflexive phrase meaning 'to recover,' 'to withdraw,' or 'to retreat safely.' The context clue (fortified position) requires understanding of reflexive pronouns and practical verb usage."
+ },
+ {
+  "id": "gram_int_187",
+  "question": "Which Latin adverb would a Roman historian most likely use to introduce a contrasting event?",
+  "options": [
+    "tandem",
+    "tamen",
+    "statim",
+    "interim"
+  ],
+  "answer": "tamen",
+  "topic": "Latin Grammar",
+  "subtopic": "Adverbs",
+  "dependency": "tossup",
+  "group": "passage_059",
+  "explanation": "'Tamen' means 'however' or 'nevertheless,' often introducing a contrast. 'Tandem' means 'finally,' 'statim' means 'immediately,' and 'interim' means 'meanwhile.'"
+ },
+ {
+  "id": "gram_int_188",
+  "question": "Name one irregular Latin verb that takes the dative case, commonly used with the person affected rather than the direct object.",
+  "options": [
+    "credo",
+    "faveo",
+    "laudo",
+    "amo"
+  ],
+  "answer": "faveo",
+  "topic": "Latin Grammar",
+  "subtopic": "Verbs with Special Functions",
+  "dependency": "bonus_independent",
+  "group": "passage_059",
+  "explanation": "'Faveo' is an irregular verb taking a dative for the person affected. Both macron (faveō) and non-macron (faveo) forms are accepted, but here the option matches the non-macron form."
+ },
+ {
+  "id": "gram_int_189",
+  "question": "What case follows the preposition praeter, and what is its typical meaning?",
+  "options": [
+    "ablative; beyond",
+    "accusative; besides or except",
+    "dative; to",
+    "genitive; of"
+  ],
+  "answer": "accusative; besides or except",
+  "topic": "Latin Grammar",
+  "subtopic": "Prepositions",
+  "dependency": "bonus_independent",
+  "group": "passage_059",
+  "explanation": "'Praeter' governs the accusative case and generally means 'besides' or 'except.' This pairing is a common Latin preposition-rule combination."
+ },
+ {
+  "id": "gram_int_190",
+  "question": "Which of the following Latin words could best describe a small group of Romans rather than a single person?",
+  "options": [
+    "retrahere",
+    "se recipere",
+    "nonnulli",
+    "alius"
+  ],
+  "answer": "nonnulli",
+  "topic": "Latin Vocabulary",
+  "subtopic": "Quantifiers and Pronouns",
+  "dependency": "tossup",
+  "group": "passage_060",
+  "explanation": "'Nonnulli' means 'some' or 'several,' referring to multiple people. The other options are verbs or singular pronouns."
+ },
+ {
+  "id": "gram_int_191",
+  "question": "If a general shouts 'retrahite signa!' to his troops, what is he ordering them to do?",
+  "options": [
+    "drag the standards back",
+    "advance the standards",
+    "guard the standards",
+    "hide the standards"
+  ],
+  "answer": "drag the standards back",
+  "topic": "Latin Vocabulary",
+  "subtopic": "Compound Verbs of Trahere",
+  "dependency": "bonus_independent",
+  "group": "passage_060",
+  "explanation": "'Retrāhere' means 'to drag back' or 'pull back,' from 'trahere' (to drag) with the prefix 're-' meaning 'back.'"
+ },
+ {
+  "id": "gram_int_192",
+  "question": "In military Latin, what does the idiom 'sē recipere' most often mean?",
+  "options": [
+    "to retreat or withdraw",
+    "to surrender",
+    "to regroup and counterattack",
+    "to hand oneself over"
+  ],
+  "answer": "to retreat or withdraw",
+  "topic": "Latin Vocabulary",
+  "subtopic": "Idiomatic Phrases",
+  "dependency": "bonus_independent",
+  "group": "passage_060",
+  "explanation": "The phrase 'sē recipere' literally means 'to take oneself back,' often used of troops retreating to a safe position."
+ },
+ {
+  "id": "gram_int_193",
+  "question": "Complete the following analogy: altior : altus :: melior : _____.",
+  "answer": ["bonus"],
+  "topic": "Latin Grammar",
+  "subtopic": "Comparatives and Superlatives",
+  "explanation": "Melior is the comparative form of bonus, whose irregular superlative is optimus and adverb is bene.",
+  "group": "passage_061",
+  "dependency": "tossup"
+ },
+ {
+  "id": "gram_int_194",
+  "question": "Complete the following analogy: altius : altissimē :: minus : _____.",
+  "options": ["minimē", "minimum", "minor", "minimus"],
+  "answer": "minimē",
+  "topic": "Latin Grammar",
+  "subtopic": "Comparatives and Superlatives",
+  "explanation": "Minus is the comparative of parum; its irregular superlative adverb is minimē.",
+  "group": "passage_061",
+  "dependency": "bonus_independent"
+ },
+ {
+  "id": "gram_int_195",
+  "question": "Complete the following analogy: altus : altissimē :: grācilis : _____.",
+  "options": ["grācilissimē", "grāciliter", "grācilissimī", "tenuissimē"],
+  "answer": "grācilissimē",
+  "topic": "Latin Grammar",
+  "subtopic": "Comparatives and Superlatives",
+  "explanation": "Grācilis forms its superlative adverb regularly as grācilissimē, just as altus forms altissimē.",
+  "group": "passage_061",
+  "dependency": "bonus_independent"
+ },
+ {
+  "id": "gram_int_196",
+  "question": "Differentiate in meaning between lepus and lupus, the former of which is an animal also known as a cunīculus.",
+  "options": ["Hare and Wolf", "Rabbit and Dog", "Hare and Dog", "Rabbit and Wolf"],
+  "answer": "Hare and Wolf",
+  "topic": "Latin Grammar",
+  "subtopic": "Animal Vocabulary",
+  "explanation": "Lepus refers to a hare (sometimes called cunīculus), while lupus refers to a wolf.",
+  "group": "passage_062",
+  "dependency": "tossup"
+ },
+ {
+  "id": "gram_int_197",
+  "question": "What is the dative singular of the word lepus?",
+  "answer": ["leporī"],
+  "topic": "Latin Grammar",
+  "subtopic": "Third Declension Nouns",
+  "explanation": "Lepus, leporis is a third declension noun with dative singular leporī.",
+  "group": "passage_062",
+  "dependency": "bonus_dependent"
+ },
+ {
+  "id": "gram_int_198",
+  "question": "What is the genitive plural of the word lupus?",
+  "answer": ["lupōrum"],
+  "topic": "Latin Grammar",
+  "subtopic": "Second Declension Nouns",
+  "explanation": "Lupus is a second declension masculine noun with genitive plural lupōrum.",
+  "group": "passage_062",
+  "dependency": "bonus_independent"
+ },
+ {
+  "id": "gram_int_199",
+  "question": "Translate this sentence into English: Multī hominēs in agrīs laborābant.",
+  "answer": ["Many people were working in the fields", "Many men were working in the fields"],
+  "topic": "Latin Grammar",
+  "subtopic": "Translation",
+  "explanation": "Multī hominēs is nominative plural (many people/men), laborābant is imperfect active (were working), in agrīs is ablative of place (in the fields).",
+  "group": "passage_063",
+  "dependency": "tossup"
+ },
+ {
+  "id": "gram_int_200",
+  "question": "What case and number is the word 'agrīs' in the sentence: Multī hominēs in agrīs laborābant?",
+  "options": ["Ablative plural", "Dative plural", "Ablative singular", "Nominative plural"],
+  "answer": "Ablative plural",
+  "topic": "Latin Grammar",
+  "subtopic": "Cases and Declensions",
+  "explanation": "Agrīs is the ablative plural of ager, agrī, used here with the preposition 'in' to show location.",
+  "group": "passage_063",
+  "dependency": "bonus_dependent"
+ },
+ {
+  "id": "gram_int_201",
+  "question": "What tense and voice is the verb 'laborābant'?",
+  "options": ["Imperfect active", "Present active", "Imperfect passive", "Perfect active"],
+  "answer": "Imperfect active",
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Forms",
+  "explanation": "Laborābant is the third person plural imperfect active indicative of laborō.",
+  "group": "passage_063",
+  "dependency": "bonus_independent"
+ },
+ {
+  "id": "gram_int_202",
+  "question": "What Latin word meaning 'already' or 'now' is often used with the perfect tense?",
+  "answer": ["iam"],
+  "topic": "Latin Vocabulary",
+  "subtopic": "Adverbs",
+  "explanation": "Iam commonly appears with perfect tense verbs to emphasize completion.",
+  "group": "passage_064",
+  "dependency": "tossup"
+ },
+ {
+  "id": "gram_int_203",
+  "question": "Translate: Rēx iam vēnit.",
+  "answer": ["The king has already come", "The king already came"],
+  "topic": "Latin Grammar",
+  "subtopic": "Translation",
+  "explanation": "Rēx (king) is the subject, iam (already) is an adverb, vēnit is perfect tense (has come/came).",
+  "group": "passage_064",
+  "dependency": "bonus_dependent"
+ },
+ {
+  "id": "gram_int_204",
+  "question": "Give the present active infinitive of the verb veniō.",
+  "answer": ["venīre"],
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Forms",
+  "explanation": "Veniō, venīre, vēnī, ventum - to come. The present active infinitive is venīre.",
+  "group": "passage_064",
+  "dependency": "bonus_independent"
+ },
+ {
+  "id": "gram_int_205",
+  "question": "What construction in Latin uses the accusative case with an infinitive to express indirect statement?",
+  "answer": ["Indirect statement", "Accusative and infinitive", "Indirect discourse"],
+  "topic": "Latin Grammar",
+  "subtopic": "Syntax",
+  "explanation": "The accusative-infinitive construction is used in Latin for indirect statements after verbs of saying, thinking, perceiving.",
+  "group": "passage_065",
+  "dependency": "tossup"
+ },
+ {
+  "id": "gram_int_206",
+  "question": "Translate: Dīcō tē esse bonum.",
+  "answer": ["I say that you are good"],
+  "topic": "Latin Grammar",
+  "subtopic": "Indirect Statement",
+  "explanation": "Dīcō (I say) + tē (you, accusative) + esse (to be, infinitive) + bonum (good) = I say that you are good.",
+  "group": "passage_065",
+  "dependency": "bonus_dependent"
+ },
+ {
+  "id": "gram_int_207",
+  "question": "In the sentence 'Dīcō tē esse bonum,' what is the case and use of 'tē'?",
+  "options": ["Accusative, subject of indirect statement", "Dative, indirect object", "Ablative, agent", "Accusative, direct object"],
+  "answer": "Accusative, subject of indirect statement",
+  "topic": "Latin Grammar",
+  "subtopic": "Indirect Statement",
+  "explanation": "Tē is accusative and serves as the subject of the infinitive esse in the indirect statement.",
+  "group": "passage_065",
+  "dependency": "bonus_independent"
+ },
+ {
+  "id": "gram_int_208",
+  "question": "What is the perfect active infinitive of the verb amō?",
+  "answer": ["amāvisse"],
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Forms",
+  "explanation": "The perfect active infinitive is formed from the perfect stem + isse. Amō → amāv- + isse = amāvisse.",
+  "group": "passage_066",
+  "dependency": "tossup"
+ },
+ {
+  "id": "gram_int_209",
+  "question": "Translate: Dīxit sē librōs legisse.",
+  "answer": ["He said that he had read the books", "She said that she had read the books"],
+  "topic": "Latin Grammar",
+  "subtopic": "Indirect Statement",
+  "explanation": "Dīxit (said) + sē (himself/herself, reflexive) + librōs (books, accusative) + legisse (perfect infinitive of legō) = said that he/she had read the books.",
+  "group": "passage_066",
+  "dependency": "bonus_dependent"
+ },
+ {
+  "id": "gram_int_210",
+  "question": "Give the future active infinitive of the verb portō.",
+  "answer": ["portātūrum esse", "portātūram esse", "portātūrum/-am/-um esse"],
+  "topic": "Latin Grammar",
+  "subtopic": "Verb Forms",
+  "explanation": "The future active infinitive uses the future active participle + esse. Portō → portātūrus esse (masculine).",
+  "group": "passage_066",
+  "dependency": "bonus_independent"
+ }
+]
+
+
+
+
+

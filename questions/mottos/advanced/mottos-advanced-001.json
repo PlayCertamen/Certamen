@@ -1,0 +1,1484 @@
+[
+  {
+    "id": "motto_adv_001",
+    "question": "Of Columbia, Dartmouth, the University of Mississippi, and Johns Hopkins, which is the only institution whose motto does NOT derive from the Bible, but is instead the phrase 'prō scientiā et sapientiā'?",
+    "answer": [
+      "University of Mississippi"
+    ],
+    "options": [
+      "Columbia",
+      "Dartmouth", 
+      "University of Mississippi",
+      "Johns Hopkins"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_001",
+    "dependency": "tossup",
+    "explanation": "The University of Mississippi's motto 'prō scientiā et sapientiā' (for knowledge and wisdom) is secular in origin, unlike Columbia's 'In lumine Tuo videbimus lumen' (Psalm 36:9), Dartmouth's 'Vox clāmantis in dēsertō' (Isaiah/John the Baptist), and Johns Hopkins' 'Vēritās vōs līberābit' (John 8:32)."
+  },
+  {
+    "id": "motto_adv_002",
+    "question": "Of the Ivy Leagues not mentioned in the toss-up — Harvard, Yale, Princeton, Brown, UPenn, and Cornell — which is the only one with a motto derived directly from a specific classical Latin source?",
+    "answer": [
+      "UPenn",
+      "University of Pennsylvania",
+      "Penn"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_001",
+    "dependency": "bonus_independent",
+    "explanation": "UPenn's motto 'Leges sine moribus vanae' (Laws without morals are useless) comes from Horace's Odes. The other Ivy mottos are either Biblical (Harvard's 'Veritas,' Yale's 'Lux et veritas,' Princeton's 'Dei sub numine viget') or non-classical in origin."
+  },
+  {
+    "id": "motto_adv_003",
+    "question": "UPenn's motto 'Leges sine moribus vanae' is taken from the works of which Roman lyric poet?",
+    "answer": ["Horace"],
+    "options": [
+      "Virgil",
+      "Ovid",
+      "Horace",
+      "Catullus"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Sources",
+    "group": "passage_001",
+    "dependency": "bonus_independent",
+    "explanation": "The motto comes from Horace's Odes (Book III, Ode 24, line 35). Horace was emphasizing that laws are meaningless without the moral character ('mores') to support them."
+  },
+  {
+    "id": "motto_adv_004",
+    "question": "What three-letter abbreviation is described here? 'Hoc scrībitur cum probēs vēram esse prōpositiōnem mathēmaticam, et indicat tē dēmōnstrāsse quod dēmōnstrārī oportuerit?'",
+    "answer": [
+      "Q.E.D.",
+      "QED",
+      "Q.E.D",
+      "quod erat demonstrandum"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Latin Abbreviations",
+    "group": "passage_002",
+    "dependency": "tossup",
+    "explanation": "Q.E.D. stands for 'quod erat dēmōnstrandum' (which was to be demonstrated). It's written at the end of mathematical proofs to indicate the proposition has been proven."
+  },
+  {
+    "id": "motto_adv_005",
+    "question": "What is the full Latin for the legal abbreviation nol. pros., which conveys a plaintiff or prosecutor's choice to end a legal action?",
+    "answer": [
+      "nōlō prosequī",
+      "nōlle prosequī",
+      "nolo prosequi",
+      "nolle prosequi"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Legal Latin Abbreviations",
+    "group": "passage_002",
+    "dependency": "bonus_independent",
+    "explanation": "Nōlle/nōlō prosequī means 'to be unwilling to pursue.' It's a formal legal declaration that the prosecutor or plaintiff will not continue with the case."
+  },
+  {
+    "id": "motto_adv_006",
+    "question": "What is the full Latin for the abbreviation A.A.S., which you might find on a tombstone next to a number?",
+    "answer": [
+      "annō aetātis suae",
+      "anno aetatis suae"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Funerary Abbreviations",
+    "group": "passage_002",
+    "dependency": "bonus_independent",
+    "explanation": "Annō aetātis suae means 'in the year of his/her age.' It's used on tombstones to indicate the age at which the person died (e.g., A.A.S. 45 = died at age 45)."
+  },
+  {
+    "id": "motto_adv_007",
+    "question": "What sort of people popularized the song 'gaudeāmus igitur,' become known by a Latin word that literally means 'nourished,' and can receive so-called 'Latin honors' such as summā cum laude?",
+    "answer": [
+      "students",
+      "undergraduate students",
+      "undergraduates",
+      "graduates",
+      "alumni"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Academic Latin",
+    "group": "passage_003",
+    "dependency": "tossup",
+    "explanation": "'Gaudeāmus igitur' is a traditional student song. The word 'alumni' comes from Latin 'alumnus' (nourished one/foster child). Latin honors like summā cum laude are awarded to graduating students."
+  },
+  {
+    "id": "motto_adv_008",
+    "question": "University students are often attached to their school's Latin mottoes. What is the Latin motto of Dartmouth College?",
+    "answer": [
+      "vōx clāmantis in dēsertō",
+      "vox clamantis in deserto"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_003",
+    "dependency": "bonus_independent",
+    "explanation": "'Vōx clāmantis in dēsertō' means 'a voice crying out in the wilderness,' a Biblical phrase from Isaiah and the Gospels referring to John the Baptist."
+  },
+  {
+    "id": "motto_adv_009",
+    "question": "What West Coast school has the Latin motto 'palmam quī meruit ferat'?",
+    "answer": ["University of Southern California"],
+    "options": [
+      "Stanford University",
+      "UC Berkeley",
+      "UCLA",
+      "University of Southern California"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_003",
+    "dependency": "bonus_independent",
+    "explanation": "USC's motto 'palmam quī meruit ferat' means 'let whoever earns the palm bear it.' The palm branch was a classical symbol of victory and achievement."
+  },
+  {
+    "id": "motto_adv_010",
+    "question": "What author, writing primarily in Asclepiadic, Alcaic, and Sapphic meters, addresses his patron Maecenas and encourages readers to 'love golden moderation' and 'seize the day'?",
+    "answer": [
+      "Horace",
+      "Quintus Horatius Flaccus",
+      "Horatius"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_004",
+    "dependency": "tossup",
+    "explanation": "Horace's Odes contain famous phrases like 'carpe diem' (seize the day) and 'aurea mediocritas' (golden mean/moderation). He dedicated much of his work to his patron Maecenas and wrote in various Greek lyric meters."
+  },
+  {
+    "id": "motto_adv_011",
+    "question": "Iambī was the Latin name for what other work of Horace, which borrows more from Archilochus than Alcaeus and contains an inverted propempticon wishing ill on Maevius?",
+    "answer": [
+      "Epodes"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Literature",
+    "group": "passage_004",
+    "dependency": "bonus_independent",
+    "explanation": "The Epodes (also called Iambi) were Horace's early work in iambic meter, following the Greek poet Archilochus. Epode 10 is a famous inverted propempticon (bon voyage poem) cursing Maevius's sea journey rather than blessing it."
+  },
+  {
+    "id": "motto_adv_012",
+    "question": "In a major Horatian work, Horace cites what author as his inspiration, saying that he 'rubbed the city down with much salt' despite his disordered compositional style?",
+    "answer": ["Lucilius"],
+    "options": [
+      "Ennius",
+      "Lucilius",
+      "Juvenal",
+      "Persius"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Literature",
+    "group": "passage_004",
+    "dependency": "bonus_independent",
+    "explanation": "In his Satires, Horace praises Lucilius as the founder of Roman satire. The phrase about 'rubbing the city down with much salt' refers to Lucilius's sharp wit and satirical criticism, though Horace notes his lack of polish."
+  },
+  {
+    "id": "motto_adv_013",
+    "question": "What epic poet gave us the phrases 'love conquers all,' 'fortune favors the bold,' and 'I fear the Greeks even when bearing gifts'?",
+    "answer": [
+      "Virgil",
+      "Publius Vergilius Maro",
+      "Vergil",
+      "Vergilius"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_005",
+    "dependency": "tossup",
+    "explanation": "Virgil's works are the source of countless famous quotations: 'omnia vincit amor' (love conquers all) from Eclogue 10, 'audentēs fortūna iuvat' (fortune favors the bold) from the Aeneid, and 'timeō Danaōs et dōna ferentēs' (I fear the Greeks even bearing gifts) also from the Aeneid."
+  },
+  {
+    "id": "motto_adv_014",
+    "question": "Before writing his epic, Virgil composed what pastoral work in which he includes the phrase 'Arcadiā egō' and depicts singing contests between shepherds?",
+    "answer": ["Eclogues"],
+    "options": [
+      "Aeneid",
+      "Georgics",
+      "Eclogues",
+      "Metamorphoses"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Literature",
+    "group": "passage_005",
+    "dependency": "bonus_independent",
+    "explanation": "The Eclogues (also called Bucolics) are Virgil's pastoral poems featuring shepherds in idealized Arcadian settings. The phrase 'et in Arcadiā egō' (even in Arcadia, I [death] am present) became famous in art and literature."
+  },
+  {
+    "id": "motto_adv_015",
+    "question": "What three-word Virgilian phrase from the Georgics, meaning 'work conquers all,' has been adopted as the motto of Oklahoma and appears on numerous school and organizational seals?",
+    "answer": [
+      "labor omnia vincit",
+      "labor omnia vicit"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_005",
+    "dependency": "bonus_independent",
+    "explanation": "The phrase 'labor omnia vincit' (work/toil conquers all) comes from Virgil's Georgics (Book 1, line 145-146). It celebrates the power of persistent effort and has become a popular motto, including for the state of Oklahoma and many educational institutions."
+  },
+  {
+    "id": "motto_adv_016",
+    "question": "What Roman satirist gave us the phrases 'bread and circuses,' 'a sound mind in a sound body,' and 'who will guard the guards themselves'?",
+    "answer": [
+      "Juvenal",
+      "Decimus Junius Juvenalis"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_006",
+    "dependency": "tossup",
+    "explanation": "Juvenal's Satires contain many famous phrases: 'panem et circenses' (bread and circuses) about appeasing the masses, 'mens sana in corpore sano' (a sound mind in a sound body), and 'quis custodiet ipsos custodes' (who will guard the guards themselves) about corruption and power."
+  },
+  {
+    "id": "motto_adv_017",
+    "question": "Juvenal wrote sixteen poems in what literary genre, following in the footsteps of Horace and Lucilius?",
+    "answer": ["Satires"],
+    "options": [
+      "Epigrams",
+      "Satires",
+      "Odes",
+      "Elegies"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Literature",
+    "group": "passage_006",
+    "dependency": "bonus_independent",
+    "explanation": "Juvenal wrote sixteen satires in the tradition of Roman satirical poetry established by Lucilius and refined by Horace. His satires are known for their harsh tone and moral indignation."
+  },
+  {
+    "id": "motto_adv_018",
+    "question": "What contemporary of Juvenal wrote witty epigrams and coined the phrase 'non est vivere, sed valere vita est,' meaning 'life is not just being alive, but being well'?",
+    "answer": [
+      "Martial",
+      "Marcus Valerius Martialis"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_006",
+    "dependency": "bonus_independent",
+    "explanation": "Martial was famous for his epigrams—short, witty poems often with satirical bite. His phrase about vita (life/health) emphasizes quality of life over mere existence, a theme common in his work."
+  },
+  {
+    "id": "motto_adv_019",
+    "question": "What is the literal meaning of the Latin abbreviation H.I.S. or, in later years, H.J.S.? You would usually see it inscribed on tombstones.",
+    "answer": [
+      "here lies buried",
+      "hic iacet sepultus",
+      "hic jacet sepultus"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Funerary Abbreviations",
+    "group": "passage_007",
+    "dependency": "tossup",
+    "explanation": "H.I.S. (or H.J.S. using the 'j' spelling) stands for 'hic iacet sepultus' (here lies buried). This abbreviation was commonly carved on tombstones to mark the location of the deceased's remains."
+  },
+  {
+    "id": "motto_adv_020",
+    "question": "Give the Latin phrase for 'May he rest in peace.'",
+    "answer": ["requiescat in pace"],
+    "options": [
+      "requiescit in pace",
+      "requiescant in pace",
+      "requiescat in pace",
+      "requiescat in pacem"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Funerary Phrases",
+    "group": "passage_007",
+    "dependency": "bonus_independent",
+    "explanation": "Requiescat in pace (R.I.P.) means 'may he/she rest in peace.' The subjunctive mood 'requiescat' expresses a wish, and 'in pace' uses the ablative case for 'in peace.'"
+  },
+  {
+    "id": "motto_adv_021",
+    "question": "What four-word Latin phrase, abbreviated as S.T.T.L., is often inscribed on Roman tombstones as a wish that 'may the earth lie lightly upon you'?",
+    "answer": [
+      "sit tibi terra levis"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Funerary Phrases",
+    "group": "passage_007",
+    "dependency": "bonus_independent",
+    "explanation": "Sit tibi terra levis (may the earth lie lightly upon you) was a common Roman funerary blessing. It expressed the hope that the deceased would rest comfortably in their grave."
+  },
+  {
+    "id": "motto_adv_022",
+    "question": "What Latin phrase describes a duty or position one takes on by virtue of being elected to a particular office?",
+    "answer": [
+      "ex officio"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Latin Phrases",
+    "group": "passage_008",
+    "dependency": "tossup",
+    "explanation": "Ex officio means 'from the office' or 'by virtue of office.' It describes a role or power someone holds automatically because of their position, such as a university president serving ex officio on all committees."
+  },
+  {
+    "id": "motto_adv_023",
+    "question": "What is the Latin phrase for 'sincerely' or 'from the heart'?",
+    "answer": [
+      "ex animo",
+      "ex animō"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Latin Phrases",
+    "group": "passage_008",
+    "dependency": "bonus_independent",
+    "explanation": "Ex animo literally means 'from the soul/spirit.' It's used to express sincerity or heartfelt emotion, similar to how we might say 'from the heart' in English."
+  },
+  {
+    "id": "motto_adv_024",
+    "question": "What Latin phrase, meaning 'without preparation' or 'on the spur of the moment,' describes a speech or performance given impromptu?",
+    "answer": ["ex tempore"],
+    "options": [
+      "ex libris",
+      "ex cathedra",
+      "ex tempore",
+      "ex gratia"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Latin Phrases",
+    "group": "passage_008",
+    "dependency": "bonus_independent",
+    "explanation": "Ex tempore means 'from the time' or 'on the spur of the moment.' It describes something done without prior preparation, especially speeches or performances delivered impromptu."
+  },
+  {
+    "id": "motto_adv_025",
+    "question": "Tombstone Latin is sometimes grim. Translate this inscription found on a Roman gravestone near a road: 'Viator, viator! Quod tu es, ego fui; quod nunc sum, et tu eris.'",
+    "answer": [
+      "Traveller, traveller! What you are, I was; what I am now, you also will be.",
+      "Traveler, traveler! What you are, I was; what I am now, you also will be.",
+      "Traveller! What you are, I was; what I am now, you will be.",
+      "Traveler! What you are, I was; what now I am, you will be."
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Funerary Inscriptions",
+    "group": "passage_009",
+    "dependency": "tossup",
+    "explanation": "This memento mori inscription reminds travelers that death comes to all. The deceased tells passersby that they were once alive like them, and the living will one day be dead like the deceased."
+  },
+  {
+    "id": "motto_adv_026",
+    "question": "This fellow must have a delightful soul with a keen sense of humor. Translate his tomb inscription: 'Vixi quem ad modum volui; quare mortuus sum, nescio.'",
+    "answer": ["I lived how I wanted; why I'm dead I don't know."],
+    "options": [
+      "I lived when I wanted; why I am dead I don't know.",
+      "I wanted to live; why I died I don't know.",
+      "I lived how I wanted; why I'm dead I don't know.",
+      "I lived for whom I wanted; why I am dead I don't know."
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Funerary Inscriptions",
+    "group": "passage_009",
+    "dependency": "bonus_independent",
+    "explanation": "This humorous epitaph shows the deceased lived life on their own terms and expresses puzzlement about their own death, maintaining levity even in their final message. 'Quem ad modum' means 'how' or 'in what way.'"
+  },
+  {
+    "id": "motto_adv_027",
+    "question": "This inscription, a common one, may have a Christian meaning. Translate: 'Ego cum eo eo eo.'",
+    "answer": [
+      "I am going there with him.",
+      "I go there with him.",
+      "I am going to that place with him.",
+      "I go to that place with him."
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Funerary Inscriptions",
+    "group": "passage_009",
+    "dependency": "bonus_independent",
+    "explanation": "This wordplay inscription uses three different meanings of 'eo': pronoun (him), adverb (there), and verb (I go). The Christian interpretation suggests going to heaven with Christ."
+  },
+  {
+    "id": "motto_adv_028",
+    "question": "If you saw a bottle that said q.i.d., you might be able to give me the Latin abbreviation and tell me what it means.",
+    "answer": [
+      "quater in die",
+      "quater in diē",
+      "four times a day",
+      "4 times a day",
+      "quater in die, four times a day",
+      "quater in diē, four times a day",
+      "quater in die, 4 times a day",
+      "quater in diē, 4 times a day",
+      "quater in die and four times a day",
+      "quater in diē and four times a day",
+      "quater in die and 4 times a day",
+      "quater in diē and 4 times a day",
+      "quater in die / four times a day",
+      "quater in diē / four times a day",
+      "quater in die / 4 times a day",
+      "quater in diē / 4 times a day"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_010",
+    "dependency": "tossup",
+    "explanation": "Q.i.d. stands for 'quater in die' (four times a day). This abbreviation is commonly used in medical prescriptions to indicate how frequently a patient should take medication."
+  },
+  {
+    "id": "motto_adv_029",
+    "question": "What kind of number is quater?",
+    "answer": ["numerical adverb"],
+    "options": [
+      "cardinal number",
+      "ordinal number",
+      "numerical adverb",
+      "distributive number"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Latin Grammar",
+    "group": "passage_010",
+    "dependency": "bonus_independent",
+    "explanation": "Quater is a numerical adverb meaning 'four times.' Other numerical adverbs include semel (once), bis (twice), ter (three times), etc. They indicate repetition rather than quantity or order."
+  },
+  {
+    "id": "motto_adv_030",
+    "question": "Now give me the distributive of this number.",
+    "answer": [
+      "quaterni",
+      "quaternī"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Latin Grammar",
+    "group": "passage_010",
+    "dependency": "bonus_independent",
+    "explanation": "Quaternī is the distributive number meaning 'four each' or 'four at a time.' Distributive numbers indicate division into groups (singulī, bīnī, ternī, quaternī, etc.)."
+  },
+  {
+    "id": "motto_adv_031",
+    "question": "Which of the following Latin abbreviations can be replaced with i.e. in footnotes: cf., ibid., s.v., viz.?",
+    "answer": ["viz."],
+    "options": [
+      "cf.",
+      "ibid.",
+      "s.v.",
+      "viz."
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Scholarly Abbreviations",
+    "group": "passage_011",
+    "dependency": "tossup",
+    "explanation": "Viz. (videlicet) means 'namely' or 'that is to say,' making it interchangeable with i.e. (id est). Cf. means 'compare,' ibid. means 'in the same place,' and s.v. means 'under the word.'"
+  },
+  {
+    "id": "motto_adv_032",
+    "question": "If you're reading a scholarly article and see 'cf. Virgil, Aeneid 2.1-5,' the author wants you to compare their argument with Virgil's passage. What Latin verb, meaning 'compare' or 'bring together,' does 'cf.' abbreviate?",
+    "answer": [
+      "confer",
+      "cōnfer"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Scholarly Abbreviations",
+    "group": "passage_011",
+    "dependency": "bonus_independent",
+    "explanation": "Cf. stands for 'confer,' the imperative form of 'conferre' (to bring together, compare). It instructs the reader to consult or compare another source or argument."
+  },
+  {
+    "id": "motto_adv_033",
+    "question": "A lazy scholar repeatedly writes 'Ovid, Metamorphoses 1.45. Ovid, Metamorphoses 1.47. Ovid, Metamorphoses 1.52.' What Latin word, abbreviated 'ibid.,' could elegantly replace these repetitions to mean 'in the same place'?",
+    "answer": [
+      "ibidem",
+      "ibīdem"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Scholarly Abbreviations",
+    "group": "passage_011",
+    "dependency": "bonus_independent",
+    "explanation": "Ibid. (ibidem) means 'in the same place' and allows scholars to avoid repeating full citations when referencing the same source consecutively, just with different page or line numbers."
+  },
+  {
+    "id": "motto_adv_034",
+    "question": "Give the Latin motto that references the city of Venice and was later adopted by the state of Idaho.",
+    "answer": [
+      "estō perpetua",
+      "esto perpetua",
+      "estō perpetuā",
+      "esto perpetuā"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City and State Mottos",
+    "group": "passage_012",
+    "dependency": "tossup",
+    "explanation": "Estō perpetua means 'may she be eternal' or 'let her be everlasting.' The phrase was originally spoken about Venice and was later adopted by Idaho as its state motto, expressing the wish for eternal existence."
+  },
+  {
+    "id": "motto_adv_035",
+    "question": "A 13th-century pope wrote the poetic lines 'Nīteris incassum nāvem submergere Petrī / fluctuat at numquam mergitur illa ratis.' In the 15th century, what European city shortened those lines to 'fluctuat nec mergitur' and made that their motto?",
+    "answer": ["Paris"],
+    "options": [
+      "London",
+      "Rome",
+      "Paris",
+      "Venice"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City and State Mottos",
+    "group": "passage_012",
+    "dependency": "bonus_independent",
+    "explanation": "Paris adopted 'fluctuat nec mergitur' (she is tossed by the waves but does not sink) as its motto. The phrase originally referred to Peter's boat/church but was adapted by Paris to symbolize the city's resilience, represented by a ship on its coat of arms."
+  },
+  {
+    "id": "motto_adv_036",
+    "question": "Architect Daniel Burnham was in charge of designing and implementing over 60 parks and gardens in what American city in keeping with its Latin motto, 'urbs in hortō'?",
+    "answer": [
+      "Chicago"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City and State Mottos",
+    "group": "passage_012",
+    "dependency": "bonus_independent",
+    "explanation": "Chicago's motto 'urbs in hortō' means 'city in a garden.' Daniel Burnham's 1909 Plan of Chicago emphasized parks and green spaces, creating a comprehensive system that fulfilled this civic ideal of integrating nature into urban design."
+  },
+  {
+    "id": "motto_adv_037",
+    "question": "When Oliver Cromwell founded the Ironsides cavalry regiment in 1645, he chose the motto 'Deus Nobiscum Quis Contra' from Romans 8:31. However, the regiment's modern descendant, the Royal Tank Regiment, shortened this to what three-word Latin motto meaning 'fear naught'?",
+    "answer": [
+      "nil timendum",
+      "nīl timendum"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Military Mottos",
+    "group": "passage_013",
+    "dependency": "tossup",
+    "explanation": "The original motto 'Deus Nobiscum Quis Contra' (God with us, who against us?) reflected Cromwell's religious fervor. By the 20th century, the Royal Tank Regiment adopted 'Nil Timendum' (nothing to be feared) as a more secular expression of military courage."
+  },
+  {
+    "id": "motto_adv_038",
+    "question": "The U.S. Marine Corps motto 'Semper Fidelis' replaced what earlier motto in 1883, which translates as 'by sea, by land' and is still used by the Royal Marines?",
+    "answer": ["per mare per terram"],
+    "options": [
+      "semper paratus",
+      "fortis et liber",
+      "per mare per terram",
+      "pro patria"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Military Mottos",
+    "group": "passage_013",
+    "dependency": "bonus_independent",
+    "explanation": "Before 1883, the U.S. Marines used several mottos including 'Per Mare Per Terram' (by sea, by land), which emphasized their amphibious nature. 'Semper Fidelis' (always faithful) was chosen to emphasize loyalty and has become iconic."
+  },
+  {
+    "id": "motto_adv_039",
+    "question": "What Latin phrase meaning 'who dares wins' was adopted by the British SAS in 1941 and has since been used by over 30 special forces units worldwide?",
+    "answer": [
+      "qui audet adipiscitur",
+      "qui audet adipīscitur",
+      "who dares wins"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Military Mottos",
+    "group": "passage_013",
+    "dependency": "bonus_independent",
+    "explanation": "The SAS founder David Stirling chose 'Qui Audet Adipiscitur' in 1941 to embody the regiment's daring ethos. The motto has become so influential that special forces from Australia to Zimbabwe have adopted variations of it."
+  },
+  {
+    "id": "motto_adv_040",
+    "question": "What three-word Latin phrase appears on the Great Seal of the United States and on U.S. currency, meaning 'out of many, one'?",
+    "answer": [
+      "e pluribus unum",
+      "ē plūribus ūnum"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "National Mottos",
+    "group": "passage_014",
+    "dependency": "tossup",
+    "explanation": "E Pluribus Unum (out of many, one) was adopted in 1782 as part of the Great Seal of the United States. It represents the union of the thirteen original colonies into one nation and appears on all U.S. coins."
+  },
+  {
+    "id": "motto_adv_041",
+    "question": "The Great Seal also features a second Latin motto on the reverse side, beneath the unfinished pyramid. What three-word phrase meaning 'a new order of the ages' appears there?",
+    "answer": ["novus ordo seclorum"],
+    "options": [
+      "annuit coeptis",
+      "novus ordo seclorum",
+      "deo vindice",
+      "sic semper tyrannis"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "National Mottos",
+    "group": "passage_014",
+    "dependency": "bonus_independent",
+    "explanation": "Novus Ordo Seclorum (a new order of the ages) was inspired by Virgil's Eclogue 4. It symbolizes the beginning of a new era with the founding of the United States and appears on the one-dollar bill."
+  },
+  {
+    "id": "motto_adv_042",
+    "question": "What two-word Latin phrase meaning 'He has favored our undertakings' appears above the pyramid on the reverse of the Great Seal?",
+    "answer": [
+      "annuit coeptis",
+      "annuit coeptīs"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "National Mottos",
+    "group": "passage_014",
+    "dependency": "bonus_independent",
+    "explanation": "Annuit Coeptis (He has favored our undertakings) also comes from Virgil, specifically the Aeneid (Book 9, line 625). It expresses the belief that Providence has blessed the American endeavor."
+  },
+  {
+    "id": "motto_adv_043",
+    "question": "Three U.S. states—Virginia, Michigan, and New Mexico—all draw their mottos from which Roman epic poet who wrote about destiny and the founding of civilizations?",
+    "answer": [
+      "Virgil",
+      "Vergil",
+      "Publius Vergilius Maro"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "State Mottos",
+    "group": "passage_015",
+    "dependency": "tossup",
+    "explanation": "Virgil's themes of destiny, struggle, and founding new societies resonated with American states. Virginia uses 'Sic Semper Tyrannis,' Michigan 'Si Quaeris Peninsulam Amoenam Circumspice,' and New Mexico 'Crescit Eundo' (from the Aeneid)."
+  },
+  {
+    "id": "motto_adv_044",
+    "question": "New Mexico's motto 'Crescit Eundo' means 'it grows as it goes' and comes from Lucretius's De Rerum Natura, though Virgil used similar phrasing. What natural phenomenon was Lucretius describing—lightning, a thunderbolt, wind, or an earthquake?",
+    "answer": ["thunderbolt"],
+    "options": [
+      "lightning",
+      "thunderbolt",
+      "wind",
+      "earthquake"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "State Mottos",
+    "group": "passage_015",
+    "dependency": "bonus_independent",
+    "explanation": "Lucretius used 'crescit eundo' to describe how a thunderbolt gains strength as it travels through the air. New Mexico adopted this to symbolize the state's growth and westward expansion."
+  },
+  {
+    "id": "motto_adv_045",
+    "question": "What Virginia state motto, meaning 'thus always to tyrants,' did assassin John Wilkes Booth shout after shooting President Lincoln at Ford's Theatre in 1865?",
+    "answer": [
+      "sic semper tyrannis",
+      "sic semper tyrannīs"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "State Mottos",
+    "group": "passage_015",
+    "dependency": "bonus_independent",
+    "explanation": "John Wilkes Booth shouted 'Sic Semper Tyrannis' after shooting Lincoln, attempting to justify his act using Virginia's state motto. The phrase has a complex history—both celebrating freedom from tyranny and being invoked by those committing violence."
+  },
+  {
+    "id": "motto_adv_046",
+    "question": "What European city, whose Latin motto is 'fluctuat nec mergitur' meaning 'tossed by waves but not sunk,' hosted the 2024 Summer Olympics?",
+    "answer": [
+      "Paris"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City Mottos",
+    "group": "passage_016",
+    "dependency": "tossup",
+    "explanation": "Paris's motto 'fluctuat nec mergitur' (she is tossed by waves but does not sink) symbolizes the city's resilience. The motto features a ship, which appears on Paris's coat of arms, representing the city's historical connection to the Seine River."
+  },
+  {
+    "id": "motto_adv_047",
+    "question": "What former Olympic host city has the Latin motto 'Domine, dīrige nōs'?",
+    "answer": ["London"],
+    "options": [
+      "Athens",
+      "Rome",
+      "London",
+      "Barcelona"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City Mottos",
+    "group": "passage_016",
+    "dependency": "bonus_independent",
+    "explanation": "London's motto 'Domine, dīrige nōs' (Lord, guide us) has been the city's official motto since at least the 16th century. London has hosted the Summer Olympics three times: 1908, 1948, and 2012."
+  },
+  {
+    "id": "motto_adv_048",
+    "question": "What country, which had a sole qualifying athlete who did not have far to travel to Paris for the Olympics, has the Latin motto 'Deō iuvante'?",
+    "answer": [
+      "Monaco"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "National Mottos",
+    "group": "passage_016",
+    "dependency": "bonus_independent",
+    "explanation": "Monaco's motto 'Deō iuvante' means 'with God's help.' The tiny principality, located on the French Riviera close to Paris, typically sends very small delegations to the Olympics due to its limited population."
+  },
+  {
+    "id": "motto_adv_049",
+    "question": "Forms of what Latin noun appear at the end of Emory University's motto, as well as in the mottos of UMich and UChicago — artēs, [blank], vēritās and crēscat [blank], vīta excōlātur?",
+    "answer": [
+      "scientia",
+      "scientiam"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_017",
+    "dependency": "tossup",
+    "explanation": "Scientia (knowledge) appears in multiple university mottos: Emory's 'Cor prudentis possidebit scientiam,' Michigan's 'Artes, Scientia, Veritas,' and Chicago's 'Crescat scientia; vita excolatur.' This reflects the universities' shared commitment to knowledge and learning."
+  },
+  {
+    "id": "motto_adv_050",
+    "question": "Forms of what Latin noun are contained in the mottos of the Royal Air Force and Kansas?",
+    "answer": [
+      "astrum",
+      "astra"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Military and State Mottos",
+    "group": "passage_017",
+    "dependency": "bonus_independent",
+    "explanation": "Astrum (star) appears in the RAF's 'Per Ardua ad Astra' (through adversity to the stars) and Kansas's 'Ad Astra per Aspera' (to the stars through difficulties). Both mottos symbolize striving toward lofty goals despite challenges."
+  },
+  {
+    "id": "motto_adv_051",
+    "question": "Forms of what Latin noun are contained in the mottos of London and the University of Oxford?",
+    "answer": ["dominus"],
+    "options": [
+      "lux",
+      "deus",
+      "dominus",
+      "veritas"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City and University Mottos",
+    "group": "passage_017",
+    "dependency": "bonus_independent",
+    "explanation": "Dominus (Lord) appears in London's 'Domine, dīrige nōs' (Lord, guide us) and Oxford's 'Dominus illuminatio mea' (The Lord is my light, from Psalm 27). Both reflect Christian influence on these historic institutions."
+  },
+  {
+    "id": "motto_adv_052",
+    "question": "With what frequency should one take a medicine labeled q.h., given that its unabbreviated form is quāque hōrā?",
+    "answer": [
+      "every hour",
+      "hourly",
+      "each hour",
+      "once an hour",
+      "once every hour"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_018",
+    "dependency": "tossup",
+    "explanation": "Q.h. stands for 'quaque hora' (every hour). This abbreviation tells patients or medical staff to administer medication at hourly intervals, more frequently than the common q.i.d. (four times daily)."
+  },
+  {
+    "id": "motto_adv_053",
+    "question": "A 17th-century formal text called the 'Medical Institutions' describes the fundamental principle of modern medicine as being that 'contrāria contrāriīs cūrantur.' Translate this phrase.",
+    "answer": ["opposites are cured by opposites"],
+    "options": [
+      "like cures like",
+      "opposites are cured by opposites",
+      "prevention is better than cure",
+      "similar things heal similar things"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Latin",
+    "group": "passage_018",
+    "dependency": "bonus_independent",
+    "explanation": "Contraria contrariis curantur (opposites are cured by opposites) is the principle of allopathic medicine—treating disease with remedies that produce opposite effects. This contrasts with homeopathy's 'similia similibus curantur' (like cures like)."
+  },
+  {
+    "id": "motto_adv_054",
+    "question": "Differentiate in meaning between the medical abbreviations o.s. and a.s.",
+    "answer": [
+      "left eye, left ear",
+      "left eye and left ear",
+      "in the left eye, in the left ear",
+      "in the left eye and in the left ear",
+      "left eye / left ear",
+      "o.s. is left eye, a.s. is left ear",
+      "o.s. is left eye and a.s. is left ear"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_018",
+    "dependency": "bonus_independent",
+    "explanation": "O.s. stands for 'oculus sinister' (left eye) while a.s. stands for 'auris sinistra' (left ear). These abbreviations help medical professionals specify exactly where to apply treatments, preventing confusion between body parts."
+  },
+  {
+    "id": "motto_adv_055",
+    "question": "Who penned, 'Sollicitae tu causa, pecunia, vitae'?",
+    "answer": ["Propertius"],
+    "options": [
+      "Plautus",
+      "Propertius",
+      "Seneca",
+      "Cato"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_019",
+    "dependency": "tossup",
+    "explanation": "Propertius wrote 'Sollicitae tu causa, pecunia, vitae' (You, money, are the cause of an anxious life) in his Elegies (3.7.1). This reflects the elegiac poet's critique of materialism and how the pursuit of wealth corrupts life's simple pleasures."
+  },
+  {
+    "id": "motto_adv_056",
+    "question": "Who wrote 'fortuna caeca est'?",
+    "answer": ["Cicero"],
+    "options": [
+      "Lucretius",
+      "Terentius",
+      "Cicero",
+      "Ovid"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_019",
+    "dependency": "bonus_independent",
+    "explanation": "Cicero wrote 'fortuna caeca est' (fortune is blind) in his De Amicitia. The phrase expresses the Roman philosophical view that fortune distributes its favors randomly, without regard to merit or justice."
+  },
+  {
+    "id": "motto_adv_057",
+    "question": "The motto of Vermont can be 'stella quarta decima fulgeat.' What does this mean?",
+    "answer": [
+      "May the 14th star shine bright",
+      "May the fourteenth star shine bright",
+      "May the 14th star shine brightly",
+      "May the fourteenth star shine brightly",
+      "Let the 14th star shine bright",
+      "Let the fourteenth star shine bright",
+      "Let the 14th star shine brightly",
+      "Let the fourteenth star shine brightly",
+      "May the fourteenth star shine",
+      "May the 14th star shine"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "State Mottos",
+    "group": "passage_019",
+    "dependency": "bonus_independent",
+    "explanation": "Vermont's motto 'Stella quarta decima fulgeat' (May the fourteenth star shine bright) refers to Vermont being the 14th state admitted to the Union in 1791. The 'star' represents Vermont's place on the American flag."
+  },
+  {
+    "id": "motto_adv_058",
+    "question": "Which Baltimore university's motto is 'Veritas vos liberabit,' taken from John 8:32?",
+    "answer": ["Johns Hopkins"],
+    "options": [
+      "University of Maryland",
+      "Johns Hopkins",
+      "Loyola Maryland",
+      "Towson University"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_020",
+    "dependency": "tossup",
+    "explanation": "Johns Hopkins University's motto 'Veritas vos liberabit' (The truth will set you free) comes from the Gospel of John. This reflects the university's commitment to free inquiry and the pursuit of truth through research and scholarship."
+  },
+  {
+    "id": "motto_adv_059",
+    "question": "Which Chicago-area university's motto is 'Quaecumque sunt vera,' meaning 'Whatsoever things are true' from Philippians 4:8?",
+    "answer": ["Northwestern"],
+    "options": [
+      "University of Chicago",
+      "DePaul University",
+      "Northwestern",
+      "Loyola Chicago"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_020",
+    "dependency": "bonus_independent",
+    "explanation": "Northwestern University's motto 'Quaecumque sunt vera' (Whatsoever things are true) comes from Paul's letter to the Philippians, encouraging focus on truth, honor, justice, and virtue. Founded by Methodists in 1851, Northwestern chose this biblical phrase to guide its educational mission."
+  },
+  {
+    "id": "motto_adv_060",
+    "question": "Which Florida college's motto is 'Vires, Artes, Mores,' meaning 'Strength, Skill, Character'?",
+    "answer": ["Florida State"],
+    "options": [
+      "Florida State",
+      "University of Florida",
+      "University of Central Florida",
+      "Miami University"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_020",
+    "dependency": "bonus_independent",
+    "explanation": "Florida State University's motto 'Vires, Artes, Mores' represents the three pillars of FSU education: physical strength, intellectual skills, and moral character. This triad reflects a classical liberal arts approach to developing well-rounded graduates."
+  },
+  {
+    "id": "motto_adv_061",
+    "question": "What is the meaning of the motto of Brooklyn College, 'nil sine magnō labōre'?",
+    "answer": [
+      "nothing without great labor",
+      "nothing without great work",
+      "nothing without hard work",
+      "nothing without much labor",
+      "nothing without much work",
+      "nothing is accomplished without great labor",
+      "nothing is achieved without great labor"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_021",
+    "dependency": "tossup",
+    "explanation": "Brooklyn College's motto 'Nil sine magno labore' (nothing without great labor) comes from Horace's Satires (1.9.59-60). It emphasizes that meaningful achievement requires significant effort and dedication, reflecting the college's commitment to academic rigor."
+  },
+  {
+    "id": "motto_adv_062",
+    "question": "What is the meaning of the motto of Dartmouth College, 'vox clamantis in desertō'?",
+    "answer": ["The voice of one crying in the wilderness"],
+    "options": [
+      "The voice of one crying in the wilderness",
+      "A voice calling from the desert",
+      "One who calls out in desolate places",
+      "The cry of the wilderness"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_021",
+    "dependency": "bonus_independent",
+    "explanation": "Dartmouth's motto 'Vox clamantis in deserto' (The voice of one crying in the wilderness) comes from Isaiah 40:3 and the Gospels' description of John the Baptist. Dartmouth, founded to educate Native Americans, saw itself as bringing enlightenment to the frontier wilderness."
+  },
+  {
+    "id": "motto_adv_063",
+    "question": "What is the meaning of the motto of Wellesley College, 'nōn ministrārī sed ministrāre'?",
+    "answer": [
+      "not to be served, but to serve",
+      "not to be served but to serve",
+      "not to be ministered to, but to minister",
+      "not to be ministered to but to minister"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "University Mottos",
+    "group": "passage_021",
+    "dependency": "bonus_independent",
+    "explanation": "Wellesley's motto 'Non ministrari sed ministrare' (Not to be served, but to serve) comes from Matthew 20:28, where Jesus says he came to serve rather than be served. This motto emphasizes service and leadership through helping others, central to Wellesley's mission of educating women leaders."
+  },
+  {
+    "id": "motto_adv_064",
+    "question": "Give the Latin motto of Boston.",
+    "answer": ["Sicut patribus, sit Deus nobis"],
+    "options": [
+      "Spes anchora vitae",
+      "Sicut patribus, sit Deus nobis",
+      "Domine dirige nos",
+      "Sub umbra floreo"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City Mottos",
+    "group": "passage_022",
+    "dependency": "tossup",
+    "explanation": "Boston's motto 'Sicut patribus, sit Deus nobis' (God be with us, as He was with our fathers) reflects the Puritan founders' belief that divine providence guided their settlement. The motto appears on the city seal and connects Boston's founding to biblical covenant theology."
+  },
+  {
+    "id": "motto_adv_065",
+    "question": "Now give the Latin motto of our northern neighbors, Canada.",
+    "answer": [
+      "a mari usque ad mare",
+      "ā marī usque ad mare",
+      "a mari usque ad mare",
+      "from sea to sea"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "National Mottos",
+    "group": "passage_022",
+    "dependency": "bonus_independent",
+    "explanation": "Canada's motto 'A Mari usque ad Mare' (From sea to sea) comes from Psalm 72:8 and refers to Canada's vast territory stretching from the Atlantic to the Pacific Ocean. It was adopted in 1921 and appears on the Canadian coat of arms."
+  },
+  {
+    "id": "motto_adv_066",
+    "question": "Not only does Canada have a Latin motto, but some of its provinces do. Newfoundland and Labrador has as its motto 'Quaerite prīmum regnum Deī.' Translate that.",
+    "answer": [
+      "seek first the kingdom of God",
+      "seek ye first the kingdom of God",
+      "seek first the kingdom of God",
+      "seek first God's kingdom",
+      "seek ye first God's kingdom"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Provincial Mottos",
+    "group": "passage_022",
+    "dependency": "bonus_independent",
+    "explanation": "Newfoundland and Labrador's motto 'Quaerite primum regnum Dei' (Seek first the kingdom of God) comes from Matthew 6:33. It reflects the province's deep Christian heritage and the centrality of faith in the community's identity and values."
+  },
+  {
+    "id": "motto_adv_067",
+    "question": "To whom did Suetonius attribute the phrase 'teneo te, Africa'?",
+    "answer": ["Julius Caesar"],
+    "options": [
+      "Octavian Augustus Caesar",
+      "Julius Caesar",
+      "Terentius",
+      "Trajan"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_023",
+    "dependency": "tossup",
+    "explanation": "Suetonius records that Julius Caesar stumbled while disembarking in Africa and turned the potential bad omen into a victory declaration by grasping the soil and shouting 'Teneo te, Africa!' (I hold you, Africa!). This occurred during his 46 BC campaign against Pompeian forces."
+  },
+  {
+    "id": "motto_adv_068",
+    "question": "Augustus reportedly gave what command on his deathbed to those who gathered to see him?",
+    "answer": [
+      "acta est fabula, plaudite",
+      "acta est fābula, plaudite",
+      "acta est fabula plaudite",
+      "acta est fābula plaudite",
+      "the play is over, applaud",
+      "the play is over applaud",
+      "acta est fabula, plaudite, the play is over, applaud",
+      "acta est fābula, plaudite, the play is over, applaud",
+      "acta est fabula, plaudite / the play is over, applaud",
+      "acta est fābula, plaudite / the play is over, applaud",
+      "acta est fabula, plaudite and the play is over, applaud",
+      "acta est fābula, plaudite and the play is over, applaud"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_023",
+    "dependency": "bonus_independent",
+    "explanation": "Suetonius records that Augustus asked those present, 'Acta est fabula, plaudite!' (The play is over, applaud!), comparing his life to a theatrical performance. This reflects Roman funeral customs where actors often wore masks of the deceased and performed scenes from their life."
+  },
+  {
+    "id": "motto_adv_069",
+    "question": "Which famously extravagant emperor is said to have declared, just before his suicide, 'Qualis artifex pereo'?",
+    "answer": ["Nero"],
+    "options": [
+      "Caligula",
+      "Nero",
+      "Elagabalus",
+      "Commodus"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_023",
+    "dependency": "bonus_independent",
+    "explanation": "Suetonius records that Nero's last words were 'Qualis artifex pereo!' (What an artist dies in me!), lamenting the loss of his own theatrical and musical talents. This dramatic declaration captures Nero's notorious self-regard and his identity as a performing artist."
+  },
+  {
+    "id": "motto_adv_070",
+    "question": "What pragmatic emperor, when criticized by his son Titus for taxing the urine collected from public latrines for use in tanning leather, held up a gold coin and asked 'Does it smell?' using the phrase 'Pecunia non olet'?",
+    "answer": ["Vespasian"],
+    "options": [
+      "Tiberius",
+      "Vespasian",
+      "Hadrian",
+      "Trajan"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_024",
+    "dependency": "tossup",
+    "explanation": "Vespasian's 'Pecunia non olet' (Money doesn't stink) became proverbial for accepting revenue regardless of its unseemly source. The urine tax was actually quite lucrative since urine's ammonia content made it valuable for the fulling (cleaning and whitening) of cloth and tanning industries."
+  },
+  {
+    "id": "motto_adv_071",
+    "question": "What emperor, infamous for his cruel and erratic behavior, adopted 'Oderint dum metuant' as his personal governing philosophy, choosing to rule through terror rather than seeking approval?",
+    "answer": [
+      "Caligula",
+      "Gaius Caligula",
+      "Gaius"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_024",
+    "dependency": "bonus_independent",
+    "explanation": "Caligula's adoption of 'Oderint dum metuant' (Let them hate, so long as they fear) marked a dramatic shift from Augustus's principle of ruling through popularity and consent."
+  },
+  {
+    "id": "motto_adv_072",
+    "question": "The phrase 'Oderint dum metuant' comes from which Roman playwright, whose tragedies were admired by Caligula?",
+    "answer": [
+      "Lucius Accius",
+      "Accius"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Literature",
+    "group": "passage_024",
+    "dependency": "bonus_independent",
+    "explanation": "Lucius Accius (170-86 BC) was a Roman tragedian whose works were known for their violent and intense language. The phrase 'Oderint dum metuant' comes from his lost tragedy Atreus."
+  },
+  {
+    "id": "motto_adv_073",
+    "question": "What Augustan poet wrote 'Aequam memento rebus in arduis servare mentem' in his Odes, advising readers to maintain a calm mind in difficult circumstances?",
+    "answer": [
+      "Horace",
+      "Quintus Horatius Flaccus",
+      "Horatius"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_025",
+    "dependency": "tossup",
+    "explanation": "Horace wrote this Stoic advice in Odes 2.3. The phrase 'Aequam memento rebus in arduis servare mentem' (remember to keep an even mind in difficult situations) reflects the Stoic philosophy that influenced much of Horace's mature poetry."
+  },
+  {
+    "id": "motto_adv_074",
+    "question": "What two-word Latin phrase did Ovid use in his Tristia to cryptically describe the two causes of his banishment to Tomis by Augustus?",
+    "answer": [
+      "carmen et error",
+      "a poem and a mistake",
+      "carmen et error, a poem and a mistake",
+      "carmen et error / a poem and a mistake",
+      "carmen et error and a poem and a mistake",
+      "a poem and a mistake, carmen et error",
+      "a poem and a mistake / carmen et error",
+      "a poem and a mistake and carmen et error"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_025",
+    "dependency": "bonus_independent",
+    "explanation": "Ovid used the phrase 'carmen et error' in Tristia 2.207 to explain his exile in 8 AD. While the 'carmen' likely refers to his Ars Amatoria, Ovid never specified what the 'error' was, leaving it one of classical literature's enduring mysteries."
+  },
+  {
+    "id": "motto_adv_075",
+    "question": "Cicero wrote 'Omnium rerum principia parva sunt' in his philosophical work De Finibus. What does this phrase mean?",
+    "answer": [
+      "the beginnings of all things are small",
+      "all things have small beginnings",
+      "the origins of all things are small",
+      "all things start small",
+      "the beginnings of everything are small"
+    ],
+    "options": [
+      "all roads lead to Rome",
+      "the beginnings of all things are small",
+      "time flies when you're having fun",
+      "great oaks from little acorns grow"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_025",
+    "dependency": "bonus_independent",
+    "explanation": "Cicero wrote this observation in De Finibus Bonorum et Malorum. The phrase 'Omnium rerum principia parva sunt' became proverbial in Latin for describing how great things grow from small beginnings."
+  },
+  {
+    "id": "motto_adv_076",
+    "question": "What three-word Latin phrase, meaning 'time, the devourer of all things,' does Ovid write in Book 15 of his Metamorphoses during Pythagoras's philosophical discourse on transformation and change?",
+    "answer": [
+      "Tempus edax rerum",
+      "tempus edax rerum"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_026",
+    "dependency": "tossup",
+    "explanation": "Ovid's 'Tempus edax rerum' appears in the Metamorphoses during Pythagoras's philosophical discourse on transformation. The phrase perfectly encapsulates the work's central theme—that time consumes and transforms everything, from Daphne into laurel to mortals into constellations."
+  },
+  {
+    "id": "motto_adv_077",
+    "question": "The Stoic proverb 'Dum spiro, spero'—while I breathe, I hope—embodies which fundamental Stoic principle: that virtue alone ensures happiness, that one should accept fate, that rational thought conquers passion, or that life itself justifies continued effort?",
+    "answer": ["that life itself justifies continued effort"],
+    "options": [
+      "that virtue alone ensures happiness",
+      "that one should accept fate",
+      "that rational thought conquers passion",
+      "that life itself justifies continued effort"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Philosophical Quotations",
+    "group": "passage_026",
+    "dependency": "bonus_independent",
+    "explanation": "'Dum spiro, spero' reflects the Stoic teaching that as long as one lives, there remains opportunity for virtue, growth, and fulfillment of one's rational nature. The phrase connects breath (life) with hope, suggesting that existence itself provides grounds for continued moral effort."
+  },
+  {
+    "id": "motto_adv_078",
+    "question": "What three-word Latin phrase, meaning 'the die is cast,' did Caesar utter as he crossed the Rubicon River in 49 BC, committing his army to civil war?",
+    "answer": [
+      "Alea iacta est",
+      "alea iacta est",
+      "Alea jacta est",
+      "alea jacta est"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Historical Quotations",
+    "group": "passage_026",
+    "dependency": "bonus_independent",
+    "explanation": "Caesar's 'Alea iacta est' (the die is cast) signified his irrevocable decision. By crossing the Rubicon with his legion, he violated Roman law forbidding generals from bringing armies into Italy proper, making civil war inevitable. The phrase became proverbial for passing the point of no return."
+  },
+  {
+    "id": "motto_adv_079",
+    "question": "Many cities in both Europe and North America have Latin mottoes. What American city has the motto 'Speramus meliora; resurget cineribus'—We hope for better things; it shall rise from the ashes?",
+    "answer": [
+      "Detroit"
+    ],
+    "options": [],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City Mottos",
+    "group": "passage_027",
+    "dependency": "tossup",
+    "explanation": "Detroit adopted 'Speramus meliora; resurget cineribus' after the devastating fire of 1805 that destroyed most of the city. The phoenix-like imagery proved prophetic for Detroit's cycles of industrial rise, decline, and ongoing renewal—making it one of America's most evocative city mottos."
+  },
+  {
+    "id": "motto_adv_080",
+    "question": "What city has the motto 'Domine dirige nos'?",
+    "answer": [
+      "London"
+    ],
+    "options": [],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City Mottos",
+    "group": "passage_027",
+    "dependency": "bonus_independent",
+    "explanation": "'Domine dirige nos' (O Lord, guide us) is the motto of the City of London. This biblical phrase (from Psalm 5:8) has been the city's official motto since at least the 16th century and appears on the City of London's coat of arms."
+  },
+  {
+    "id": "motto_adv_081",
+    "question": "What city has the motto 'Sicut patribus sit deus nobis'?",
+    "answer": [
+      "Boston"
+    ],
+    "options": [],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "City Mottos",
+    "group": "passage_027",
+    "dependency": "bonus_independent",
+    "explanation": "'Sicut patribus sit deus nobis' (As God was with our fathers, may He be with us) is Boston's official motto. Adopted in 1822, it reflects the city's Puritan heritage and the founders' religious convictions, linking Boston's present to its colonial past."
+  },
+  {
+    "id": "motto_adv_082",
+    "question": "Which Roman lyric poet wrote 'Vivamus, mea Lesbia, atque amemus'—Let us live, my Lesbia, and let us love—the opening line of his famous Poem 5?",
+    "answer": [
+      "Catullus",
+      "Gaius Valerius Catullus"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_028",
+    "dependency": "tossup",
+    "explanation": "Catullus's Poem 5 (Carmen 5) is one of the most famous love poems in Latin literature. The opening 'Vivamus, mea Lesbia, atque amemus' captures the carpe diem theme—urging his lover Lesbia to seize the day and ignore the gossip of stern old men."
+  },
+  {
+  "id": "motto_adv_083",
+  "question": "Which Roman satirist wrote the phrase 'Quis custodiet ipsos custodes?' in Satire 6, raising a timeless question about accountability and oversight of those in power?",
+  "answer": [
+    "Juvenal",
+    "Decimus Junius Juvenalis"
+  ],
+  "topic": "Mottos, Abbreviations and Quotes",
+  "subtopic": "Classical Quotations",
+  "group": "passage_028",
+  "dependency": "bonus_independent",
+  "explanation": "Juvenal's question 'Quis custodiet ipsos custodes?' (Who will guard the guardians themselves?) from Satire 6 has become proverbial in discussions of political philosophy and checks on power."
+ },
+  {
+    "id": "motto_adv_084",
+    "question": "The Latin phrase 'Beati pauperes spiritu'—Blessed are the poor in spirit—begins which famous biblical sermon delivered by Jesus that commends spiritual over material wealth?",
+    "answer": [
+      "the Sermon on the Mount",
+      "Sermon on the Mount",
+      "the Beatitudes",
+      "Beatitudes"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Biblical Quotations",
+    "group": "passage_028",
+    "dependency": "bonus_independent",
+    "explanation": "The Beatitudes (Matthew 5:3-12) open Jesus's Sermon on the Mount with a series of blessings that reverse worldly values. 'Beati pauperes spiritu' emphasizes humility and spiritual dependence on God rather than material wealth or earthly power."
+  },
+  {
+    "id": "motto_adv_085",
+    "question": "What Latin phrase, meaning 'Plato is my friend, but truth is a greater friend,' did Aristotle invoke when breaking with his teacher over the Theory of Forms?",
+    "answer": [
+      "Amicus Plato sed major amicus veritas",
+      "Amicus Plato, sed magis amica veritas",
+      "Amicus Plato sed maior amicus veritas"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Philosophical Quotations",
+    "group": "passage_029",
+    "dependency": "tossup",
+    "explanation": "Though Aristotle studied under Plato for twenty years at the Academy, he rejected key Platonic doctrines like the Theory of Forms. This phrase (likely apocryphal) captures Aristotle's willingness to challenge even his most revered teacher when intellectual honesty demanded it—a principle central to philosophical inquiry."
+  },
+  {
+    "id": "motto_adv_086",
+    "question": "St. Augustine wrote 'Humanum fuit errare'—the error was human. What Latin adjective did he use in his Sermons to describe those who persist in error with stubbornness?",
+    "answer": [
+      "diabolicum",
+      "diabolical"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Philosophical Quotations",
+    "group": "passage_029",
+    "dependency": "bonus_independent",
+    "explanation": "St. Augustine in Sermon 164.14 wrote: 'Humanum fuit errare, diabolicum est per animositatem in errore manere'—The error was human, but to persist in error through stubbornness is diabolical. This Christian Latin maxim emphasizes that moral failing lies not in the initial mistake but in refusing to correct it."
+  },
+  {
+    "id": "motto_adv_087",
+    "question": "The maxim 'Nosce te ipsum'—Know thyself—was inscribed at the entrance to the Temple of which Greek god at Delphi, where it served as a warning against hubris and a call to self-examination?",
+    "answer": [
+      "Apollo",
+      "Phoebus",
+      "Phoebus Apollo"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Philosophical Quotations",
+    "group": "passage_029",
+    "dependency": "bonus_independent",
+    "explanation": "'Nosce te ipsum' (Greek: γνῶθι σεαυτόν) was one of the Delphic maxims inscribed at Apollo's temple. Socrates famously adopted it as central to his philosophy, using it to emphasize the examined life. At Delphi, it reminded mortals of their limitations before the god of prophecy and truth."
+  },
+  {
+    "id": "motto_adv_088",
+    "question": "What work by Cato the Elder highlights Quintus Caedicius's deeds, gets its title because it covers the founding of various Italian cities, and was the first work of history in Latin prose?",
+    "answer": [
+      "Origines"
+    ],
+    "options": [
+      "De Agri Cultura",
+      "Historiae",
+      "Origines",
+      "Annales"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Literature",
+    "group": "passage_030",
+    "dependency": "tossup",
+    "explanation": "Cato the Elder's 'Origines' (Origins) was groundbreaking as the first major historical work written in Latin prose rather than Greek. The seven-book work traced the founding of Rome and other Italian cities, emphasizing Roman and Italian virtue over Greek influences."
+  },
+  {
+    "id": "motto_adv_089",
+    "question": "In which work did Cato the Elder give advice to his son, including the maxim 'rem tene, verba sequentur'—have the contents clear, and the words will come of themselves?",
+    "answer": [
+      "Praecepta ad Filium",
+      "Praecepta ad Fīlium",
+      "Precepts for His Son",
+      "Ad Filium"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_030",
+    "dependency": "bonus_independent",
+    "explanation": "Cato's 'Praecepta ad Filium' (Precepts for His Son) offered practical wisdom on rhetoric, agriculture, and virtue. The maxim 'rem tene, verba sequentur' became foundational to Roman rhetorical theory—emphasizing substance over style, a distinctly Roman approach contrasting with Greek rhetorical flourishes."
+  },
+  {
+    "id": "motto_adv_090",
+    "question": "What three-word Latin phrase did Cato the Elder conclude every speech to the Senate with—regardless of the topic—reflecting his deep-seated fear of Rome's ancient rival?",
+    "answer": [
+      "Carthago delenda est",
+      "Ceterum censeo Carthaginem esse delendam",
+      "Carthage must be destroyed",
+      "Carthago delenda est / Carthage must be destroyed"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Historical Quotations",
+    "group": "passage_030",
+    "dependency": "bonus_independent",
+    "explanation": "Cato's obsessive repetition of 'Carthago delenda est' (Carthage must be destroyed) after visiting Carthage in 153 BC helped precipitate the Third Punic War. His famous gesture of dropping fresh Carthaginian figs in the Senate—showing how close the rival city remained—epitomized Roman determination to eliminate their greatest threat."
+  },
+  {
+    "id": "motto_adv_091",
+    "question": "What Latin phrase, abbreviated 'O.U.' on medical prescriptions, means 'both eyes'?",
+    "answer": [
+      "oculus uterque"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_031",
+    "dependency": "tossup",
+    "explanation": "'Oculus uterque' (both eyes) is abbreviated O.U. on prescriptions, distinguishing it from O.D. (oculus dexter, right eye) and O.S. (oculus sinister, left eye). These Latin abbreviations remain standard in ophthalmology despite efforts to replace them with English equivalents due to safety concerns."
+  },
+  {
+    "id": "motto_adv_092",
+    "question": "The medical abbreviation 'a.c.' derives from what two-word Latin phrase meaning 'before meals'?",
+    "answer": [
+      "ante cenas",
+      "ante cenam"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_031",
+    "dependency": "bonus_independent",
+    "explanation": "'Ante cenas' (before meals) abbreviated as 'a.c.' instructs taking medication on an empty stomach, typically 30 minutes to 1 hour before eating. This timing is crucial for medications whose absorption is affected by food, contrasting with 'p.c.' (post cenas, after meals)."
+  },
+  {
+    "id": "motto_adv_093",
+    "question": "What Latin phrase, abbreviated 'o.h.' or 'omn. h.' on prescriptions, directs hourly medication administration?",
+    "answer": [
+      "omni hora"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_031",
+    "dependency": "bonus_independent",
+    "explanation": "'Omni hora' (every hour) directs hourly medication administration for conditions requiring constant therapeutic levels. Related abbreviations include 'q.h.' (quaque hora, every hour) and variations like 'q.4h.' (every 4 hours), all deriving from Latin temporal expressions still used in modern pharmacology."
+  },
+  {
+    "id": "motto_adv_094",
+    "question": "If a doctor prescribes medication to be taken twice daily, what three-letter abbreviation derived from the Latin phrase 'bis in die' would appear on the prescription?",
+    "answer": [
+      "b.i.d.",
+      "b.i.d",
+      "bid"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_032",
+    "dependency": "tossup",
+    "explanation": "'Bis in die' (twice a day) is abbreviated as 'b.i.d.' on prescriptions, typically indicating morning and evening doses approximately 12 hours apart. Related abbreviations include 't.i.d.' (ter in die, three times daily) and 'q.i.d.' (quater in die, four times daily)."
+  },
+  {
+    "id": "motto_adv_095",
+    "question": "What abbreviation on prescriptions directs taking medication at bedtime?",
+    "answer": [
+      "h.s.",
+      "h.s",
+      "hs"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_032",
+    "dependency": "bonus_independent",
+    "explanation": "'Hora somni' (at the hour of sleep) abbreviated as 'h.s.' indicates bedtime administration. This timing is used for medications that work overnight, cause drowsiness, or need to be taken on an empty stomach after the day's final meal."
+  },
+  {
+    "id": "motto_adv_096",
+    "question": "What Latin phrase, abbreviated 'o.m.' on prescriptions, instructs taking medication every morning?",
+    "answer": [
+      "omni mane",
+      "every morning"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Medical Abbreviations",
+    "group": "passage_032",
+    "dependency": "bonus_independent",
+    "explanation": "'Omni mane' (every morning) directs morning-only administration for medications whose effects are needed during waking hours or which work best when taken early in the day. This contrasts with 'o.n.' (omni nocte, every night) for evening administration."
+  },
+  {
+    "id": "motto_adv_097",
+    "question": "Forms of what Latin word can be found in the phrase 'ēheu fugācēs lābuntur [blank]' and as the 'A' in the abbreviation 'A.D.'?",
+    "answer": [
+      "annus",
+      "annī",
+      "annō",
+      "anni",
+      "anno"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_033",
+    "dependency": "tossup",
+    "explanation": "The phrase 'ēheu fugācēs lābuntur annī' (alas, the fleeting years slip by) comes from Horace's Odes (II.14). 'Annus' also appears in 'Anno Domini' (in the year of our Lord), abbreviated as A.D., the system for numbering years in the Christian calendar."
+  },
+  {
+    "id": "motto_adv_098",
+    "question": "What word fills the blank in '[blank] dat quī cito dat,' reinforcing the idea that those who give swiftly proverbially give more than once?",
+    "answer": [
+      "bis"
+    ],
+    "options": [
+      "semel",
+      "ter",
+      "bis",
+      "saepe"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_033",
+    "dependency": "bonus_independent",
+    "explanation": "'Bis dat quī cito dat' (He gives twice who gives quickly) emphasizes that prompt generosity has double value—the gift itself plus the kindness of swift assistance. This proverb, attributed to Publilius Syrus, influenced later expressions like 'he gives twice who gives quickly.'"
+  },
+  {
+    "id": "motto_adv_099",
+    "question": "What word fills the blank in '[blank] aurum probat, miseria fortēs virōs,' comparing how adversity tests strong people to a blacksmith's process?",
+    "answer": [
+      "ignis",
+      "fire"
+    ],
+    "topic": "Mottos, Abbreviations and Quotes",
+    "subtopic": "Classical Quotations",
+    "group": "passage_033",
+    "dependency": "bonus_independent",
+    "explanation": "'Ignis aurum probat, miseria fortēs virōs' (Fire tests gold, adversity tests strong men) uses the metallurgical process of refining gold as a metaphor for how hardship reveals true character. This Stoic-influenced saying appears in various forms throughout Latin literature."
+  }
+]

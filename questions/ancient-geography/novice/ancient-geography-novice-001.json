@@ -1,0 +1,3143 @@
+[
+  {
+    "id": "geo_nov_001",
+    "question": "Fill in the blank: The Roman city of Aquae Sulis is known today as ________ in Britain.",
+    "answer": [
+      "Bath"
+    ],
+    "explanation": "Aquae Sulis (modern Bath) was sacred to the goddess Sulis Minerva, and its hot springs still produce over one million liters of water daily at 46\u00b0C.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_001",
+    "dependency": "tossup",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_002",
+    "question": "Which modern country contains the site of ancient Aquae Sextiae?",
+    "answer": "France",
+    "options": [
+      "Germany",
+      "Italy",
+      "France",
+      "Spain"
+    ],
+    "explanation": "The city's name evolved from 'Aquae Sextiae' to 'Aix,' and its thermal springs still flow at 34\u00b0C after 2,100 years.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_001",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_003",
+    "question": "Fill in the blank: The ancient city of Aquincum is in the modern city of ________.",
+    "answer": [
+      "Budapest"
+    ],
+    "explanation": "With 40,000 inhabitants, Aquincum was larger than medieval Budapest and featured a working Roman aqueduct that functioned for centuries.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_001",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_004",
+    "question": "Which ancient city corresponds to modern-day Orange in France?",
+    "answer": "Arausio",
+    "options": [
+      "Nemausus",
+      "Augusta Treverorum",
+      "Aelia Capitolina",
+      "Arausio"
+    ],
+    "explanation": "The theater's massive stage wall stands 121 feet high, and Emperor Augustus called it one of the finest theaters in the Empire.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_002",
+    "dependency": "tossup",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_005",
+    "question": "Fill in the blank: Augusta Treverorum is the ancient name for ________ in Germany.",
+    "answer": [
+      "Trier"
+    ],
+    "explanation": "Constantine the Great resided in this city, which boasts the massive Porta Nigra gate\u2014the largest Roman city gate north of the Alps.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_002",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_006",
+    "question": "Which ancient city was located in modern-day Scotland?",
+    "answer": "Caledonia",
+    "options": [
+      "Hibernia",
+      "Caledonia",
+      "Lusitania",
+      "Helvetia"
+    ],
+    "explanation": "The fierce Caledonian tribes were never permanently conquered by Rome, making this the northernmost frontier of the Empire.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_002",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_007",
+    "question": "Fill in the blank: Carrhae, the site of a major Roman defeat, is modern-day ________ in Turkey.",
+    "answer": [
+      "Haran"
+    ],
+    "explanation": "In 53 BC, Crassus lost seven legions (20,000 men) to Parthian cavalry here in Rome's worst military disaster.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_003",
+    "dependency": "tossup",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_008",
+    "question": "Which ancient city in Spain was known as Carthago Nova?",
+    "answer": "Cartagena",
+    "options": [
+      "Merida",
+      "Cartagena",
+      "Barcelona",
+      "Cadiz"
+    ],
+    "explanation": "Founded by Hasdrubal in 228 BC, the harbor could shelter 200 warships and served as Hannibal's base before his Italian campaign.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_003",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_009",
+    "question": "Fill in the blank: Colonia Agrippina is now called ________ in Germany.",
+    "answer": [
+      "Cologne"
+    ],
+    "explanation": "Named after Agrippina the Younger (Nero's mother), who was born there, the city's name evolved from 'Colonia' to modern 'Cologne.'",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_003",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_010",
+    "question": "Which modern city was known as Colonia Camulodunum in Roman Britain?",
+    "answer": "Colchester",
+    "options": [
+      "York",
+      "London",
+      "Gloucester",
+      "Colchester"
+    ],
+    "explanation": "Queen Boudica destroyed the city so thoroughly in 60 CE that a red ash layer from the burning still marks the destruction.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_004",
+    "dependency": "tossup",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_011",
+    "question": "Fill in the blank: The island of Corcyra is now called ________.",
+    "answer": [
+      "Corfu"
+    ],
+    "explanation": "This powerful Greek colony's naval dispute with Corinth helped trigger the Peloponnesian War in 431 BC.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_004",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_012",
+    "question": "Which ancient city in Spain was called Emerita Augusta?",
+    "answer": "Merida",
+    "options": [
+      "Lisbon",
+      "Toledo",
+      "Barcelona",
+      "Merida"
+    ],
+    "explanation": "Founded for retired veterans in 25 BC, its Roman bridge across the Guadiana River (2,575 feet long) is still in daily use.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_004",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_013",
+    "question": "Fill in the blank: The Roman province of Lusitania corresponds roughly to modern-day ________.",
+    "answer": [
+      "Portugal"
+    ],
+    "explanation": "Named after fierce Lusitanian warriors who resisted Rome under leader Viriathus, the province covered most of modern Portugal.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_005",
+    "dependency": "tossup",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_014",
+    "question": "Which ancient city was called Nemausus by the Romans?",
+    "answer": "Nimes",
+    "options": [
+      "Nimes",
+      "Paris",
+      "Marseille",
+      "Nice"
+    ],
+    "explanation": "Home to the Maison Carr\u00e9e temple, the city's name inspired the denim fabric 'de N\u00eemes' (from N\u00eemes).",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_005",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_015",
+    "question": "Fill in the blank: The city of Nicaea is now called ________ in France.",
+    "answer": [
+      "Nice"
+    ],
+    "explanation": "Founded by Greeks around 350 BC and named after Nike (Victory), commemorating a victory over the Ligurian tribes.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_005",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_016",
+    "question": "Which ancient Libyan city was known as Oea?",
+    "answer": "Tripoli",
+    "options": [
+      "Tripoli",
+      "Benghazi",
+      "Leptis Magna",
+      "Sabratha"
+    ],
+    "explanation": "One of three Phoenician cities forming 'Tripolitania' (Three Cities), Oea became a hub for trans-Saharan trade in gold and slaves.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_006",
+    "dependency": "tossup",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_017",
+    "question": "Fill in the blank: The ancient city of Olisipo is modern-day ________.",
+    "answer": [
+      "Lisbon"
+    ],
+    "explanation": "According to legend, the city was founded by Ulysses (Odysseus) after the Trojan War, and its deep harbor made it a premier Atlantic port.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_006",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_018",
+    "question": "Which ancient city in Italy was called Patavium?",
+    "answer": "Padua",
+    "options": [
+      "Pisa",
+      "Parma",
+      "Pavia",
+      "Padua"
+    ],
+    "explanation": "One of Rome's wealthiest cities, famous for wool and horses, it was the birthplace of historian Livy in 59 BC.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_006",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_019",
+    "question": "Fill in the blank: The Roman city of Philadelphia is modern-day ________ in Jordan.",
+    "answer": [
+      "Amman"
+    ],
+    "explanation": "Refounded by Ptolemy II Philadelphus around 250 BC, the city sat on the ancient King's Highway connecting Arabia to Syria.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_007",
+    "dependency": "tossup",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_020",
+    "question": "Which ancient city corresponds to modern Vienna in Austria?",
+    "answer": "Vindobona",
+    "options": [
+      "Vindobona",
+      "Aquincum",
+      "Augusta Treverorum",
+      "Arausio"
+    ],
+    "explanation": "Emperor Marcus Aurelius died here in 180 CE while campaigning against Germanic tribes, and the camp's outline remains visible in Vienna's streets.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "group": "passage_007",
+    "dependency": "bonus_independent",
+    "subtopic": "Roman Empire"
+  },
+  {
+    "id": "geo_nov_021",
+    "question": "In which geographic region of Gaul was Aquae Sextiae located?",
+    "answer": "Gallia Narbonensis",
+    "options": [
+      "Gallia Aquitania",
+      "Gallia Belgica",
+      "Gallia Lugdunensis",
+      "Gallia Narbonensis"
+    ],
+    "explanation": "Rome's oldest Gallic province (established 121 BC), called simply 'Provincia' (The Province), gave us the modern name 'Provence.'",
+    "topic": "Provinces & Regions",
+    "subtopic": "Gaul/Provence",
+    "group": "passage_007",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_022",
+    "question": "Which major Roman aqueduct supplied water to Nemausus?",
+    "answer": "Pont du Gard",
+    "options": [
+      "Aqua Marcia",
+      "Aqua Claudia",
+      "Segovia Aqueduct",
+      "Pont du Gard"
+    ],
+    "explanation": "This three-tiered aqueduct bridge stands 160 feet tall and transported water over 31 miles with a gradient of just 1 in 3,000.",
+    "topic": "Infrastructure",
+    "subtopic": "Gaul/Provence",
+    "group": "passage_008",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_023",
+    "question": "On which river is Augusta Treverorum (Trier) located?",
+    "answer": "Moselle",
+    "options": [
+      "Main",
+      "Moselle",
+      "Danube",
+      "Rhine"
+    ],
+    "explanation": "The valley has produced wine since Romans planted vineyards in the 1st century CE, and poet Ausonius praised its beauty in 'Mosella.'",
+    "topic": "Rivers",
+    "subtopic": "Germania/Rhine",
+    "group": "passage_008",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_024",
+    "question": "At the confluence of which two rivers was Vindobona strategically positioned?",
+    "answer": "Danube and Wien",
+    "options": [
+      "Rhine and Moselle",
+      "Inn and Salzach",
+      "Danube and Wien",
+      "Danube and Drava"
+    ],
+    "explanation": "The Wien River junction with the Danube created a strategic crossing point that made this location vital for defense and trade routes.",
+    "topic": "Rivers",
+    "subtopic": "Danube Frontier",
+    "group": "passage_008",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_025",
+    "question": "Which river flows through Colonia Camulodunum (Colchester)?",
+    "answer": "Colne",
+    "options": [
+      "Avon",
+      "Colne",
+      "Severn",
+      "Thames"
+    ],
+    "explanation": "The navigable Colne River flowing to the North Sea, combined with coastal proximity, made this an ideal location for Rome's first British capital.",
+    "topic": "Rivers",
+    "subtopic": "Britannia",
+    "group": "passage_009",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_026",
+    "question": "Which mountain range formed the eastern boundary of Lusitania?",
+    "answer": "Sistema Central",
+    "options": [
+      "Sierra Nevada",
+      "Pyrenees",
+      "Cantabrian Mountains",
+      "Sistema Central"
+    ],
+    "explanation": "Reaching over 8,000 feet in elevation, these mountains created a natural defensive barrier separating Lusitania from Tarraconensis to the east.",
+    "topic": "Mountains",
+    "subtopic": "Hispania",
+    "group": "passage_009",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_027",
+    "question": "Which major river flows through the ancient province of Lusitania?",
+    "answer": "Tagus",
+    "options": [
+      "Douro",
+      "Guadalquivir",
+      "Tagus",
+      "Ebro"
+    ],
+    "explanation": "The Iberian Peninsula's longest river at 645 miles, its deep estuary at Olisipo (Lisbon) provided an excellent natural harbor.",
+    "topic": "Rivers",
+    "subtopic": "Hispania",
+    "group": "passage_009",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_028",
+    "question": "Which sea borders the Tripolitanian cities of Oea, Sabratha, and Leptis Magna?",
+    "answer": "Mediterranean Sea",
+    "options": [
+      "Mediterranean Sea",
+      "Ionian Sea",
+      "Adriatic Sea",
+      "Red Sea"
+    ],
+    "explanation": "The strategic coastal position where trans-Saharan trade routes reached the sea allowed control of commerce between sub-Saharan Africa and the Mediterranean.",
+    "topic": "Seas & Straits",
+    "subtopic": "Africa",
+    "group": "passage_010",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_029",
+    "question": "In which geographic region of Italy is Patavium (Padua) located?",
+    "answer": "Venetia",
+    "options": [
+      "Etruria",
+      "Venetia",
+      "Latium",
+      "Campania"
+    ],
+    "explanation": "The northeastern region between the Alps and Po River was one of Italy's richest agricultural areas, watered by Alpine rivers.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_010",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_030",
+    "question": "In which modern country are most of the Decapolis cities located?",
+    "answer": "Jordan",
+    "options": [
+      "Jordan",
+      "Israel",
+      "Lebanon",
+      "Syria"
+    ],
+    "explanation": "These Greco-Roman cities formed a league for trade and mutual defense in the region between Damascus and the Dead Sea.",
+    "topic": "Cities & Regions",
+    "subtopic": "Near East",
+    "group": "passage_010",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_031",
+    "question": "Which Decapolis city is located in the Zarqa River valley northeast of Philadelphia?",
+    "answer": "Gerasa",
+    "options": [
+      "Gerasa",
+      "Scythopolis",
+      "Philadelphia",
+      "Damascus"
+    ],
+    "explanation": "Sitting in a well-watered valley, its location on trade routes between Arabia and Syria made it one of the most prosperous Decapolis cities.",
+    "topic": "Cities & Regions",
+    "subtopic": "Near East",
+    "group": "passage_011",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_032",
+    "question": "Fill in the blank: The ancient city of Aelia Capitolina was built on the ruins of ________.",
+    "answer": [
+      "Jerusalem",
+      "Hierosolyma"
+    ],
+    "explanation": "Emperor Hadrian rebuilt Jerusalem as Aelia Capitolina after crushing the Bar Kokhba revolt in 135 CE, renaming it after himself (Aelius Hadrianus).",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Near East",
+    "group": "passage_011",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_033",
+    "question": "Which ancient Phoenician city corresponds to modern Tyre in Lebanon?",
+    "answer": "Tyrus",
+    "options": [
+      "Byblos",
+      "Sidon",
+      "Berytus",
+      "Tyrus"
+    ],
+    "explanation": "Tyrus (modern Tyre) was a major Phoenician port famous for producing purple dye from murex snails, a color so expensive only royalty could afford it.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Near East",
+    "group": "passage_011",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_034",
+    "question": "On which river was Rome founded?",
+    "answer": "Tiber",
+    "options": [
+      "Tiber",
+      "Po",
+      "Rubicon",
+      "Arno"
+    ],
+    "explanation": "Rome was built on seven hills along the Tiber River, which flows 252 miles through central Italy to the Tyrrhenian Sea.",
+    "topic": "Rivers",
+    "subtopic": "Italy",
+    "group": "passage_012",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_035",
+    "question": "Fill in the blank: The Roman port city at the mouth of the Tiber was called ________.",
+    "answer": [
+      "Ostia"
+    ],
+    "explanation": "Ostia served as Rome's main harbor and gateway to the Mediterranean, handling grain shipments from Egypt and trade goods from across the empire.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Italy",
+    "group": "passage_012",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_036",
+    "question": "What is the longest river in Italy?",
+    "answer": "Po",
+    "options": [
+      "Tiber",
+      "Po",
+      "Adige",
+      "Arno"
+    ],
+    "explanation": "The Po River flows 405 miles across northern Italy through the fertile Po Valley, once called Padus by the Romans.",
+    "topic": "Rivers",
+    "subtopic": "Italy",
+    "group": "passage_012",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_037",
+    "question": "Which volcano destroyed Pompeii in 79 CE?",
+    "answer": "Vesuvius",
+    "options": [
+      "Vesuvius",
+      "Stromboli",
+      "Etna",
+      "Vulcano"
+    ],
+    "explanation": "Mount Vesuvius's catastrophic eruption buried Pompeii under 20 feet of ash and pumice, preserving the city for nearly 2,000 years.",
+    "topic": "Mountains",
+    "subtopic": "Italy",
+    "group": "passage_013",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_038",
+    "question": "What mountain range runs along the length of the Italian peninsula?",
+    "answer": "Apennines",
+    "options": [
+      "Apennines",
+      "Pyrenees",
+      "Carpathians",
+      "Alps"
+    ],
+    "explanation": "The Apennine Mountains form Italy's 'backbone,' stretching 750 miles from Liguria in the north to Calabria in the south.",
+    "topic": "Mountains",
+    "subtopic": "Italy",
+    "group": "passage_013",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_039",
+    "question": "What mountain range separates Italy from the rest of Europe?",
+    "answer": "Alps",
+    "options": [
+      "Dolomites",
+      "Pyrenees",
+      "Apennines",
+      "Alps"
+    ],
+    "explanation": "The Alps form a 750-mile arc across northern Italy, with peaks reaching over 15,000 feet, famously crossed by Hannibal with war elephants in 218 BC.",
+    "topic": "Mountains",
+    "subtopic": "Italy",
+    "group": "passage_013",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_040",
+    "question": "What large island lies south of Italy?",
+    "answer": "Sicily",
+    "options": [
+      "Sicily",
+      "Corsica",
+      "Crete",
+      "Sardinia"
+    ],
+    "explanation": "Sicily is the Mediterranean's largest island at 9,900 square miles, known for Mount Etna and the cities of Syracuse and Agrigentum.",
+    "topic": "Islands",
+    "subtopic": "Italy",
+    "group": "passage_014",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_041",
+    "question": "What strait separates Sicily from mainland Italy?",
+    "answer": "Strait of Messina",
+    "options": [
+      "Dardanelles",
+      "Strait of Gibraltar",
+      "Strait of Messina",
+      "Bosporus"
+    ],
+    "explanation": "The Strait of Messina is only 2 miles wide at its narrowest point, where legend placed the sea monsters Scylla and Charybdis.",
+    "topic": "Seas & Straits",
+    "subtopic": "Italy",
+    "group": "passage_014",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_042",
+    "question": "Fill in the blank: The region containing Rome and its earliest territory was called ________.",
+    "answer": [
+      "Latium"
+    ],
+    "explanation": "Latium in central Italy was home to the Latins, Rome's founding people, and gave its name to the Latin language.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_014",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_043",
+    "question": "What mountain is considered the home of the Greek gods?",
+    "answer": "Olympus",
+    "options": [
+      "Ida",
+      "Olympus",
+      "Helicon",
+      "Parnassus"
+    ],
+    "explanation": "Mount Olympus rises 9,570 feet in northern Greece, where Zeus and the twelve Olympian gods were believed to dwell above the clouds.",
+    "topic": "Mountains",
+    "subtopic": "Greece",
+    "group": "passage_015",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_044",
+    "question": "What mountain range runs through Greece from northwest to southeast?",
+    "answer": "Pindus",
+    "options": [
+      "Balkans",
+      "Rhodope",
+      "Pindus",
+      "Apennines"
+    ],
+    "explanation": "The Pindus Mountains form Greece's 'spine,' reaching 8,650 feet at Mount Smolikas and dividing eastern and western Greece.",
+    "topic": "Mountains",
+    "subtopic": "Greece",
+    "group": "passage_015",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_045",
+    "question": "In which Greek city was the famous oracle of Apollo located?",
+    "answer": "Delphi",
+    "options": [
+      "Dodona",
+      "Athens",
+      "Delphi",
+      "Olympia"
+    ],
+    "explanation": "Delphi on Mount Parnassus housed the Pythia priestess who delivered Apollo's prophecies, making it the most important oracle in the ancient world.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_015",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_046",
+    "question": "What sea lies east of mainland Greece?",
+    "answer": "Aegean",
+    "options": [
+      "Adriatic",
+      "Tyrrhenian",
+      "Aegean",
+      "Ionian"
+    ],
+    "explanation": "The Aegean Sea contains over 2,000 islands and was the cradle of Greek civilization, named after King Aegeus of Athens.",
+    "topic": "Seas & Straits",
+    "subtopic": "Greece",
+    "group": "passage_016",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_047",
+    "question": "What peninsula contains Sparta, Corinth, and other city-states?",
+    "answer": "Peloponnesus",
+    "options": [
+      "Boeotia",
+      "Attica",
+      "Chalcidice",
+      "Peloponnesus"
+    ],
+    "explanation": "The Peloponnesus (Pelops' Island) forms southern Greece, connected to the mainland by the narrow Isthmus of Corinth.",
+    "topic": "Regions",
+    "subtopic": "Greece",
+    "group": "passage_016",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_048",
+    "question": "Which region of Greece contained the city of Thebes?",
+    "answer": "Boeotia",
+    "options": [
+      "Boeotia",
+      "Thessaly",
+      "Attica",
+      "Laconia"
+    ],
+    "explanation": "Boeotia in central Greece was home to Thebes, which briefly dominated Greece in the 4th century BC under Epaminondas.",
+    "topic": "Regions",
+    "subtopic": "Greece",
+    "group": "passage_016",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_049",
+    "question": "What city-state in Laconia was known for its military society?",
+    "answer": "Sparta",
+    "options": [
+      "Sparta",
+      "Thebes",
+      "Athens",
+      "Corinth"
+    ],
+    "explanation": "Sparta's rigorous military training (agoge) began at age 7, creating Greece's most feared warriors who fought at Thermopylae.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_017",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_050",
+    "question": "Which Greek city is famous for the Parthenon?",
+    "answer": "Athens",
+    "options": [
+      "Thebes",
+      "Sparta",
+      "Athens",
+      "Corinth"
+    ],
+    "explanation": "Athens built the Parthenon (447-432 BC) on the Acropolis to honor Athena, housing a 40-foot gold and ivory statue by Phidias.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_017",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_051",
+    "question": "Fill in the blank: The peninsula containing Athens is called ________.",
+    "answer": [
+      "Attica"
+    ],
+    "explanation": "Attica extends into the Aegean Sea southeast of Boeotia, with Athens dominating the region's politics and culture.",
+    "topic": "Regions",
+    "subtopic": "Greece",
+    "group": "passage_017",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_052",
+    "question": "What large island lies south of the Peloponnesus?",
+    "answer": "Crete",
+    "options": [
+      "Rhodes",
+      "Cyprus",
+      "Crete",
+      "Lesbos"
+    ],
+    "explanation": "Crete, the largest Greek island at 3,200 square miles, was home to the Minoan civilization and the legendary King Minos and his labyrinth.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_018",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_053",
+    "question": "Fill in the blank: The narrow water passage at Constantinople is called the ________.",
+    "answer": [
+      "Bosporus"
+    ],
+    "explanation": "The Bosporus Strait connects the Black Sea to the Sea of Marmara, making Constantinople strategically vital for controlling trade between Europe and Asia.",
+    "topic": "Seas & Straits",
+    "subtopic": "Greece",
+    "group": "passage_018",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_054",
+    "question": "Which narrow strait connects the Aegean Sea to the Sea of Marmara?",
+    "answer": "Dardanelles",
+    "options": [
+      "Hellespont",
+      "Bosporus",
+      "Dardanelles",
+      "Strait of Otranto"
+    ],
+    "explanation": "The Dardanelles (ancient Hellespont) is where Xerxes built his bridge of boats to invade Greece in 480 BC, and where Leander swam to visit Hero.",
+    "topic": "Seas & Straits",
+    "subtopic": "Greece",
+    "group": "passage_018",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_055",
+    "question": "What sea lies between Greece and Turkey?",
+    "answer": "Aegean",
+    "options": [
+      "Ionian",
+      "Aegean",
+      "Adriatic",
+      "Black Sea"
+    ],
+    "explanation": "The Aegean Sea served as the highway of Greek civilization, with over 2,000 islands facilitating trade and colonization throughout the Mediterranean.",
+    "topic": "Seas & Straits",
+    "subtopic": "Greece",
+    "group": "passage_019",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_056",
+    "question": "What city founded by Alexander lies at the mouth of the Nile?",
+    "answer": "Alexandria",
+    "options": [
+      "Alexandria",
+      "Memphis",
+      "Thebes",
+      "Cairo"
+    ],
+    "explanation": "Founded in 331 BC, Alexandria became the Mediterranean's greatest city, boasting the famous Lighthouse and Library that held 700,000 scrolls.",
+    "topic": "Cities",
+    "subtopic": "Egypt",
+    "group": "passage_019",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_057",
+    "question": "Fill in the blank: The ancient capital of Upper Egypt was ________.",
+    "answer": [
+      "Thebes"
+    ],
+    "explanation": "Thebes in southern Egypt reached its zenith during the New Kingdom, featuring the temples of Karnak and Luxor and the Valley of the Kings.",
+    "topic": "Cities",
+    "subtopic": "Egypt",
+    "group": "passage_019",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_058",
+    "question": "Which desert lies west of the Nile River in Egypt?",
+    "answer": "Libyan Desert",
+    "options": [
+      "Arabian Desert",
+      "Libyan Desert",
+      "Nubian Desert",
+      "Sinai Desert"
+    ],
+    "explanation": "The Libyan Desert forms part of the Sahara, covering 170,000 square miles of western Egypt with sand seas reaching 500 feet high.",
+    "topic": "Deserts",
+    "subtopic": "Egypt",
+    "group": "passage_020",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_059",
+    "question": "What desert lies between the Nile and the Red Sea?",
+    "answer": "Arabian Desert",
+    "options": [
+      "Nubian Desert",
+      "Sinai Desert",
+      "Arabian Desert",
+      "Syrian Desert"
+    ],
+    "explanation": "The Arabian Desert in eastern Egypt was traversed by ancient trade routes carrying gold, emeralds, and goods from the Red Sea to the Nile.",
+    "topic": "Deserts",
+    "subtopic": "Egypt",
+    "group": "passage_020",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_060",
+    "question": "Fill in the blank: The peninsula between the Gulf of Suez and Gulf of Aqaba is ________.",
+    "answer": [
+      "Sinai"
+    ],
+    "explanation": "The triangular Sinai Peninsula bridges Africa and Asia, where Moses received the Ten Commandments at Mount Sinai according to tradition.",
+    "topic": "Regions",
+    "subtopic": "Egypt",
+    "group": "passage_020",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_061",
+    "question": "What ancient city was the capital of the Persian Empire under Darius?",
+    "answer": "Persepolis",
+    "options": [
+      "Babylon",
+      "Susa",
+      "Persepolis",
+      "Ecbatana"
+    ],
+    "explanation": "Persepolis in southwestern Iran was built by Darius I starting in 518 BC, featuring massive stone platforms and the magnificent Apadana audience hall with 72 columns.",
+    "topic": "Cities",
+    "subtopic": "Persia",
+    "group": "passage_021",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_062",
+    "question": "Which Persian city served as the administrative capital?",
+    "answer": "Susa",
+    "options": [
+      "Susa",
+      "Babylon",
+      "Ecbatana",
+      "Pasargadae"
+    ],
+    "explanation": "Susa in southwestern Iran housed the Persian royal archives and served as the empire's administrative hub, connected by the Royal Road to Sardis.",
+    "topic": "Cities",
+    "subtopic": "Persia",
+    "group": "passage_021",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_063",
+    "question": "Fill in the blank: The ancient highway connecting Susa to Sardis was called the ________ Road.",
+    "answer": [
+      "Royal"
+    ],
+    "explanation": "The Royal Road stretched 1,600 miles across the Persian Empire, with royal messengers covering it in 7 days using relay stations every 14 miles.",
+    "topic": "Roads",
+    "subtopic": "Persia",
+    "group": "passage_021",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_064",
+    "question": "What mountain range separates the Iranian plateau from Mesopotamia?",
+    "answer": "Zagros",
+    "options": [
+      "Elburz",
+      "Hindu Kush",
+      "Zagros",
+      "Caucasus"
+    ],
+    "explanation": "The Zagros Mountains stretch 900 miles along western Iran, reaching 14,000 feet and forming a natural barrier between Persia and Mesopotamia.",
+    "topic": "Mountains",
+    "subtopic": "Persia",
+    "group": "passage_022",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_065",
+    "question": "Which mountain range runs along the southern shore of the Caspian Sea?",
+    "answer": "Elburz",
+    "options": [
+      "Taurus",
+      "Elburz",
+      "Zagros",
+      "Caucasus"
+    ],
+    "explanation": "The Elburz Mountains in northern Iran peak at Mount Damavand (18,605 feet), a dormant volcano and the highest point in the Middle East.",
+    "topic": "Mountains",
+    "subtopic": "Persia",
+    "group": "passage_022",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_066",
+    "question": "Fill in the blank: The two rivers of Mesopotamia are the Tigris and the ________.",
+    "answer": [
+      "Euphrates"
+    ],
+    "explanation": "The Euphrates flows 1,740 miles from Turkey through Syria and Iraq, forming with the Tigris the 'Fertile Crescent' cradle of civilization.",
+    "topic": "Rivers",
+    "subtopic": "Mesopotamia",
+    "group": "passage_022",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_067",
+    "question": "What ancient Mesopotamian city was famous for its Hanging Gardens?",
+    "answer": "Babylon",
+    "options": [
+      "Ur",
+      "Babylon",
+      "Nineveh",
+      "Uruk"
+    ],
+    "explanation": "Babylon on the Euphrates featured the Hanging Gardens (one of the Seven Wonders), the massive Ishtar Gate, and Hammurabi's law code.",
+    "topic": "Cities",
+    "subtopic": "Mesopotamia",
+    "group": "passage_023",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_068",
+    "question": "Which Assyrian city was the capital under Sennacherib?",
+    "answer": "Nineveh",
+    "options": [
+      "Nineveh",
+      "Assur",
+      "Nimrud",
+      "Dur-Sharrukin"
+    ],
+    "explanation": "Nineveh on the Tigris River became the world's largest city by 700 BC with 120,000 people, featuring Sennacherib's palace and a library of 30,000 tablets.",
+    "topic": "Cities",
+    "subtopic": "Mesopotamia",
+    "group": "passage_023",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_069",
+    "question": "Fill in the blank: The ancient Sumerian city famous for its ziggurat was ________.",
+    "answer": [
+      "Ur"
+    ],
+    "explanation": "Ur in southern Mesopotamia (c. 2100 BC) featured a massive stepped ziggurat dedicated to the moon god Nanna, rising 64 feet with three staircases.",
+    "topic": "Cities",
+    "subtopic": "Mesopotamia",
+    "group": "passage_023",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_070",
+    "question": "What fertile region lies between the Tigris and Euphrates rivers?",
+    "answer": "Mesopotamia",
+    "options": [
+      "Levant",
+      "Mesopotamia",
+      "Anatolia",
+      "Arabia"
+    ],
+    "explanation": "Mesopotamia (meaning 'between rivers' in Greek) saw the rise of Sumer, Akkad, Babylon, and Assyria, inventing writing, law codes, and the wheel.",
+    "topic": "Regions",
+    "subtopic": "Mesopotamia",
+    "group": "passage_024",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_071",
+    "question": "Which sea lies west of the Levant?",
+    "answer": "Mediterranean",
+    "options": [
+      "Red Sea",
+      "Mediterranean",
+      "Dead Sea",
+      "Caspian Sea"
+    ],
+    "explanation": "The Mediterranean Sea borders the Levantine coast, facilitating Phoenician maritime trade that spread the alphabet and purple dye across the ancient world.",
+    "topic": "Seas & Straits",
+    "subtopic": "Levant",
+    "group": "passage_024",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_072",
+    "question": "Fill in the blank: The ancient Phoenician city famous for its purple dye was ________.",
+    "answer": [
+      "Tyre"
+    ],
+    "explanation": "Tyre on the Lebanese coast produced royal purple dye from murex snails (12,000 snails per gram), founding colonies including Carthage in 814 BC.",
+    "topic": "Cities",
+    "subtopic": "Levant",
+    "group": "passage_024",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_073",
+    "question": "What ancient Phoenician city is now Beirut?",
+    "answer": "Berytus",
+    "options": [
+      "Byblos",
+      "Berytus",
+      "Sidon",
+      "Aradus"
+    ],
+    "explanation": "Berytus (Beirut) was a prominent Phoenician port that later housed a famous Roman law school, training jurists who compiled Justinian's legal codes.",
+    "topic": "Cities",
+    "subtopic": "Levant",
+    "group": "passage_025",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_074",
+    "question": "Which Phoenician city gave its name to the Bible?",
+    "answer": "Byblos",
+    "options": [
+      "Tyre",
+      "Sidon",
+      "Byblos",
+      "Aradus"
+    ],
+    "explanation": "Byblos (Gebal) exported Egyptian papyrus to Greece, giving us 'biblos' (book) and ultimately 'Bible,' and is one of the world's oldest continuously inhabited cities.",
+    "topic": "Cities",
+    "subtopic": "Levant",
+    "group": "passage_025",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_075",
+    "question": "Fill in the blank: The ancient Israelite fortress that fell to Rome in 73 CE was ________.",
+    "answer": [
+      "Masada"
+    ],
+    "explanation": "Masada's plateau fortress overlooking the Dead Sea was the site of 960 Jewish zealots' last stand against Rome, ending in mass suicide rather than surrender.",
+    "topic": "Cities",
+    "subtopic": "Levant",
+    "group": "passage_025",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_076",
+    "question": "What body of water lies between modern Israel and Jordan?",
+    "answer": "Dead Sea",
+    "options": [
+      "Red Sea",
+      "Sea of Galilee",
+      "Dead Sea",
+      "Gulf of Aqaba"
+    ],
+    "explanation": "The Dead Sea at 1,410 feet below sea level is Earth's lowest point, with 34% salinity making it impossible for fish to survive but easy for swimmers to float.",
+    "topic": "Seas & Straits",
+    "subtopic": "Levant",
+    "group": "passage_026",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_077",
+    "question": "Which river flows through the Sea of Galilee into the Dead Sea?",
+    "answer": "Jordan",
+    "options": [
+      "Jordan",
+      "Orontes",
+      "Litani",
+      "Yarmouk"
+    ],
+    "explanation": "The Jordan River flows 156 miles from Mount Hermon through the Sea of Galilee to the Dead Sea, descending 2,000 feet from source to mouth.",
+    "topic": "Rivers",
+    "subtopic": "Levant",
+    "group": "passage_026",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_078",
+    "question": "Fill in the blank: The mountain range running through Lebanon is called the ________ Mountains.",
+    "answer": [
+      "Lebanon"
+    ],
+    "explanation": "The Lebanon Mountains parallel the Mediterranean coast, reaching 10,131 feet at Qurnat as Sawda, famous for their ancient cedar forests.",
+    "topic": "Mountains",
+    "subtopic": "Levant",
+    "group": "passage_026",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_079",
+    "question": "What ancient region in Turkey was home to the Hittite Empire?",
+    "answer": "Anatolia",
+    "options": [
+      "Cappadocia",
+      "Anatolia",
+      "Cilicia",
+      "Phrygia"
+    ],
+    "explanation": "Anatolia (modern Turkey) was the Hittite heartland from 1600-1200 BC, where they pioneered iron-working and challenged Egyptian power at Kadesh.",
+    "topic": "Regions",
+    "subtopic": "Anatolia",
+    "group": "passage_027",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_080",
+    "question": "Which ancient city in western Anatolia was destroyed in the Trojan War?",
+    "answer": "Troy",
+    "options": [
+      "Ephesus",
+      "Troy",
+      "Miletus",
+      "Pergamon"
+    ],
+    "explanation": "Troy (Ilium) near the Dardanelles was besieged for ten years according to Homer's Iliad, with archaeology revealing nine settlement layers spanning 4,000 years.",
+    "topic": "Cities",
+    "subtopic": "Anatolia",
+    "group": "passage_027",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_081",
+    "question": "Fill in the blank: The wealthy ancient city with the Temple of Artemis was ________.",
+    "answer": [
+      "Ephesus"
+    ],
+    "explanation": "Ephesus on the Aegean coast housed the Temple of Artemis (one of the Seven Wonders), measuring 377 feet long with 127 columns 60 feet high.",
+    "topic": "Cities",
+    "subtopic": "Anatolia",
+    "group": "passage_027",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_082",
+    "question": "What mountain range runs along the northern coast of Turkey?",
+    "answer": "Pontic",
+    "options": [
+      "Taurus",
+      "Pontic",
+      "Caucasus",
+      "Zagros"
+    ],
+    "explanation": "The Pontic Mountains parallel the Black Sea coast of Turkey, reaching 12,917 feet and creating a barrier between the coast and interior plateau.",
+    "topic": "Mountains",
+    "subtopic": "Anatolia",
+    "group": "passage_028",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_083",
+    "question": "Which mountain range runs through southern Turkey?",
+    "answer": "Taurus",
+    "options": [
+      "Anti-Taurus",
+      "Amanus",
+      "Taurus",
+      "Pontic"
+    ],
+    "explanation": "The Taurus Mountains form Turkey's southern spine, reaching 12,251 feet at Mount Demirkaz\u0131k and separating the Anatolian plateau from the Mediterranean.",
+    "topic": "Mountains",
+    "subtopic": "Anatolia",
+    "group": "passage_028",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_084",
+    "question": "Fill in the blank: The capital of the Lydian Kingdom where coins were invented was ________.",
+    "answer": [
+      "Sardis"
+    ],
+    "explanation": "Sardis in western Anatolia was capital of wealthy King Croesus, who minted the world's first true coins in electrum (gold-silver alloy) around 600 BC.",
+    "topic": "Cities",
+    "subtopic": "Anatolia",
+    "group": "passage_028",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_085",
+    "question": "What ancient North African city was Rome's greatest rival?",
+    "answer": "Carthage",
+    "options": [
+      "Alexandria",
+      "Carthage",
+      "Cyrene",
+      "Leptis Magna"
+    ],
+    "explanation": "Carthage in Tunisia dominated western Mediterranean trade from 650 BC until Rome destroyed it in 146 BC after three Punic Wars, salting the earth.",
+    "topic": "Cities",
+    "subtopic": "North Africa",
+    "group": "passage_029",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_086",
+    "question": "Which mountain range runs through northwestern Africa?",
+    "answer": "Atlas",
+    "options": [
+      "Ahaggar",
+      "Atlas",
+      "Tibesti",
+      "Rif"
+    ],
+    "explanation": "The Atlas Mountains stretch 1,600 miles through Morocco, Algeria, and Tunisia, reaching 13,671 feet and separating the Mediterranean from the Sahara.",
+    "topic": "Mountains",
+    "subtopic": "North Africa",
+    "group": "passage_029",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_087",
+    "question": "Fill in the blank: The ancient Greek colony in Libya founded in 630 BC was ________.",
+    "answer": [
+      "Cyrene"
+    ],
+    "explanation": "Cyrene in northeastern Libya became wealthy exporting silphium (an extinct medicinal plant so valuable it appeared on Cyrenian coins) and horses.",
+    "topic": "Cities",
+    "subtopic": "North Africa",
+    "group": "passage_029",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_088",
+    "question": "What desert covers most of North Africa?",
+    "answer": "Sahara",
+    "options": [
+      "Kalahari",
+      "Arabian",
+      "Sahara",
+      "Libyan"
+    ],
+    "explanation": "The Sahara Desert spans 3.6 million square miles, roughly the size of the United States, transforming from savanna to desert around 3000 BC due to climate shifts.",
+    "topic": "Deserts",
+    "subtopic": "North Africa",
+    "group": "passage_030",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_089",
+    "question": "Which Roman emperor's birthplace was Leptis Magna in Libya?",
+    "answer": "Septimius Severus",
+    "options": [
+      "Trajan",
+      "Septimius Severus",
+      "Hadrian",
+      "Marcus Aurelius"
+    ],
+    "explanation": "Septimius Severus (193-211 CE) was born in Leptis Magna, which he lavishly rebuilt with monuments, making it one of North Africa's most beautiful cities.",
+    "topic": "Cities",
+    "subtopic": "North Africa",
+    "group": "passage_030",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_090",
+    "question": "Fill in the blank: The mountain pass Hannibal crossed to invade Italy was in the ________ mountains.",
+    "answer": [
+      "Alps"
+    ],
+    "explanation": "Hannibal crossed the Alps in 218 BC with 38,000 troops and 37 elephants, losing half his army to avalanches, cold, and hostile tribes.",
+    "topic": "Mountains",
+    "subtopic": "Europe",
+    "group": "passage_030",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_091",
+    "question": "What region in northwestern Greece was home to the Oracle of Dodona?",
+    "answer": "Epirus",
+    "options": [
+      "Thessaly",
+      "Epirus",
+      "Boeotia",
+      "Arcadia"
+    ],
+    "explanation": "Epirus in northwestern Greece housed the Oracle of Dodona, Zeus's oldest oracle site where priests interpreted the rustling of sacred oak leaves.",
+    "topic": "Regions",
+    "subtopic": "Greece",
+    "group": "passage_031",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_092",
+    "question": "Fill in the blank: The central Greek region known for its plains and horses was ________.",
+    "answer": [
+      "Thessaly"
+    ],
+    "explanation": "Thessaly's fertile plains produced the finest cavalry in Greece, and the region was home to the cities of Larissa, Pharsalus, and Pella.",
+    "topic": "Regions",
+    "subtopic": "Greece",
+    "group": "passage_031",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_093",
+    "question": "Which mountainous region in the central Peloponnesus was known for its rustic population?",
+    "answer": "Arcadia",
+    "options": [
+      "Arcadia",
+      "Laconia",
+      "Argolid",
+      "Elis"
+    ],
+    "explanation": "Arcadia's isolated mountain valleys preserved ancient customs, and the region became idealized in literature as a pastoral paradise.",
+    "topic": "Regions",
+    "subtopic": "Greece",
+    "group": "passage_031",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_094",
+    "question": "What mountain in Boeotia separated Athens from Thebes?",
+    "answer": "Cithaeron",
+    "options": [
+      "Parnassus",
+      "Helicon",
+      "Cithaeron",
+      "Taygetus"
+    ],
+    "explanation": "Mount Cithaeron marked the border between Attica and Boeotia, and was where Oedipus was abandoned as an infant according to legend.",
+    "topic": "Mountains",
+    "subtopic": "Greece",
+    "group": "passage_032",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_095",
+    "question": "Fill in the blank: The mountain sacred to Apollo and the Muses was ________.",
+    "answer": [
+      "Parnassus"
+    ],
+    "explanation": "Mount Parnassus rises 8,061 feet above Delphi, sacred to Apollo and the Muses, with the Castalian Spring flowing from its slopes.",
+    "topic": "Mountains",
+    "subtopic": "Greece",
+    "group": "passage_032",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_096",
+    "question": "Which Greek site was famous for naval battle between Octavian and Antony?",
+    "answer": "Actium",
+    "options": [
+      "Salamis",
+      "Actium",
+      "Thermopylae",
+      "Pharsalus"
+    ],
+    "explanation": "The Battle of Actium (31 BC) off northwestern Greece saw Octavian defeat Antony and Cleopatra, leading to Augustus becoming Rome's first emperor.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_032",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_097",
+    "question": "What Greek sanctuary hosted the ancient Olympic Games?",
+    "answer": "Olympia",
+    "options": [
+      "Delphi",
+      "Delos",
+      "Olympia",
+      "Dodona"
+    ],
+    "explanation": "Olympia in the western Peloponnesus hosted the Olympic Games every four years from 776 BC, featuring a massive gold and ivory statue of Zeus.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_033",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_098",
+    "question": "Fill in the blank: The Bronze Age palace complex ruled by Agamemnon was at ________.",
+    "answer": [
+      "Mycenae"
+    ],
+    "explanation": "Mycenae in the Argolid dominated Greece from 1600-1100 BC, featuring massive cyclopean walls and the famous Lion Gate.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_033",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_099",
+    "question": "Which wealthy Greek city controlled the isthmus connecting the Peloponnesus to mainland Greece?",
+    "answer": "Corinth",
+    "options": [
+      "Argos",
+      "Corinth",
+      "Megara",
+      "Sicyon"
+    ],
+    "explanation": "Corinth's strategic position on the isthmus made it wealthy from trade, and the city founded colonies including Syracuse in Sicily.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_033",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_100",
+    "question": "What narrow pass was the site of the famous Spartan last stand in 480 BC?",
+    "answer": "Thermopylae",
+    "options": [
+      "Marathon",
+      "Thermopylae",
+      "Plataea",
+      "Mycale"
+    ],
+    "explanation": "At Thermopylae (Hot Gates), 300 Spartans under King Leonidas held off the Persian army for three days before being outflanked and killed.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_034",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_101",
+    "question": "Fill in the blank: Jason's ship, the Argo, departed from the port city of ________.",
+    "answer": [
+      "Iolcus"
+    ],
+    "explanation": "Iolcus in Thessaly was ruled by King Pelias, who sent Jason to retrieve the Golden Fleece from Colchis with his crew of Argonauts.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_034",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_102",
+    "question": "Which city was the capital of ancient Macedonia?",
+    "answer": "Pella",
+    "options": [
+      "Thessalonica",
+      "Pella",
+      "Aegae",
+      "Amphipolis"
+    ],
+    "explanation": "Pella became Macedonia's capital under King Archelaus and was the birthplace of Alexander the Great and where Aristotle tutored him.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_034",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_103",
+    "question": "What major Macedonian port city was named after Alexander's half-sister?",
+    "answer": "Thessalonica",
+    "options": [
+      "Thessalonica",
+      "Philippi",
+      "Amphipolis",
+      "Potidaea"
+    ],
+    "explanation": "Thessalonica (modern Thessaloniki) was founded in 315 BC and named for Thessalonike, half-sister of Alexander the Great.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_035",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_104",
+    "question": "Fill in the blank: Caesar decisively defeated Pompey at the Battle of ________ in 48 BC.",
+    "answer": [
+      "Pharsalus"
+    ],
+    "explanation": "The Battle of Pharsalus in Thessaly saw Caesar's veteran legions crush Pompey's numerically superior force, effectively ending the Roman Civil War.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_035",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_105",
+    "question": "Which Cretan palace was the center of Minoan civilization?",
+    "answer": "Cnossus",
+    "options": [
+      "Phaistos",
+      "Cnossus",
+      "Mallia",
+      "Zakros"
+    ],
+    "explanation": "Cnossus (Knossos) was the largest Bronze Age palace on Crete, covering 6 acres with elaborate frescoes and the legendary labyrinth of the Minotaur.",
+    "topic": "Cities",
+    "subtopic": "Greece",
+    "group": "passage_035",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_106",
+    "question": "What island was the legendary home of Odysseus?",
+    "answer": "Ithaca",
+    "options": [
+      "Ithaca",
+      "Cephalonia",
+      "Zakynthos",
+      "Lefkada"
+    ],
+    "explanation": "Ithaca in the Ionian Sea was ruled by Odysseus, who spent 10 years returning there after the Trojan War in Homer's Odyssey.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_036",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_107",
+    "question": "Fill in the blank: The decisive Greek naval victory over Persia in 480 BC occurred near ________.",
+    "answer": [
+      "Salamis"
+    ],
+    "explanation": "The Battle of Salamis saw the Greek fleet under Themistocles lure the Persian navy into narrow straits and destroy 200 enemy ships.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_036",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_108",
+    "question": "Which island was sacred to Hephaestus and known for metalworking?",
+    "answer": "Lemnos",
+    "options": [
+      "Lemnos",
+      "Thasos",
+      "Samothrace",
+      "Imbros"
+    ],
+    "explanation": "Lemnos in the northern Aegean was associated with Hephaestus, the god of fire and metalworking, who was said to have landed there when thrown from Olympus.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_036",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_109",
+    "question": "What large Aegean island was home to the poets Sappho and Alcaeus?",
+    "answer": "Lesbos",
+    "options": [
+      "Chios",
+      "Samos",
+      "Lesbos",
+      "Rhodes"
+    ],
+    "explanation": "Lesbos near the Turkish coast was the birthplace of the lyric poets Sappho (c. 630-570 BC) and Alcaeus, and was a center of Greek culture.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_037",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_110",
+    "question": "Fill in the blank: Homer was said to have been born on the island of ________.",
+    "answer": [
+      "Chios"
+    ],
+    "explanation": "Ancient tradition placed Homer's birthplace on Chios, which also produced wealthy wine merchants and was known for its mastic trees.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_037",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_111",
+    "question": "Which small Aegean island was the birthplace of Apollo and Artemis?",
+    "answer": "Delos",
+    "options": [
+      "Naxos",
+      "Paros",
+      "Delos",
+      "Mykonos"
+    ],
+    "explanation": "Delos, just 2 square miles, was Apollo's sacred birthplace and hosted a major sanctuary, becoming the Delian League's treasury in the 5th century BC.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_037",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_112",
+    "question": "What is the largest island in the Cyclades group?",
+    "answer": "Naxos",
+    "options": [
+      "Naxos",
+      "Paros",
+      "Andros",
+      "Tinos"
+    ],
+    "explanation": "Naxos at 166 square miles is the Cyclades' largest island, known for marble quarries and as where Theseus abandoned Ariadne after escaping Crete.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_038",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_113",
+    "question": "Fill in the blank: Aphrodite's cult center in the southern Peloponnesus was on the island of ________.",
+    "answer": [
+      "Cythera"
+    ],
+    "explanation": "Cythera off Laconia's coast was sacred to Aphrodite, who was born from sea foam and first touched land there according to myth.",
+    "topic": "Islands",
+    "subtopic": "Greece",
+    "group": "passage_038",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_114",
+    "question": "What ancient name did the Romans give to Jerusalem after crushing the Bar Kokhba revolt?",
+    "answer": "Aelia Capitolina",
+    "options": [
+      "Hierosolyma",
+      "Aelia Capitolina",
+      "Caesarea Palestina",
+      "Joppa"
+    ],
+    "explanation": "Emperor Hadrian rebuilt Jerusalem as Aelia Capitolina in 135 CE, banning Jews from the city and building a temple to Jupiter on the Temple Mount.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Levant",
+    "group": "passage_038",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_115",
+    "question": "Which ancient Greek city became Constantinople and is now Istanbul?",
+    "answer": "Byzantium",
+    "options": [
+      "Nicomedia",
+      "Byzantium",
+      "Chalcedon",
+      "Chrysopolis"
+    ],
+    "explanation": "Byzantium's strategic location led Constantine to refound it as Constantinople in 330 CE, serving as capital of the Byzantine Empire for 1,100 years.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Anatolia",
+    "group": "passage_039",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_116",
+    "question": "Fill in the blank: The Roman fortress city of Eburacum is modern ________.",
+    "answer": [
+      "York"
+    ],
+    "explanation": "Eburacum in northern Britain was a major Roman legionary base where Emperor Septimius Severus died in 211 CE and Constantine was proclaimed emperor in 306 CE.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_039",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_117",
+    "question": "Which Italian region was known to the Romans as Etruria?",
+    "answer": "Tuscany",
+    "options": [
+      "Umbria",
+      "Tuscany",
+      "Latium",
+      "Campania"
+    ],
+    "explanation": "Etruria (modern Tuscany) was home to the Etruscans, whose advanced civilization influenced early Rome before being conquered in the 4th-3rd centuries BC.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Italy",
+    "group": "passage_039",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_118",
+    "question": "What ancient Phoenician port city is now Cadiz, Spain?",
+    "answer": "Gades",
+    "options": [
+      "Gades",
+      "Tingis",
+      "Malaca",
+      "Abdera"
+    ],
+    "explanation": "Gades was founded by Phoenicians around 1100 BC, making it one of Europe's oldest cities, and served as a base for Carthaginian expansion.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_040",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_119",
+    "question": "Fill in the blank: The Roman name for France was ________.",
+    "answer": [
+      "Gallia"
+    ],
+    "explanation": "Gallia (Gaul) was divided into Gallia Cisalpina, Transalpina, and later Narbonensis, Aquitania, Lugdunensis, and Belgica after Caesar's conquest.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_040",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_120",
+    "question": "Which Roman city in Britain is now Gloucester?",
+    "answer": "Glevum",
+    "options": [
+      "Glevum",
+      "Venta",
+      "Corinium",
+      "Aquae Sulis"
+    ],
+    "explanation": "Glevum was founded as a colonia for retired legionaries around 96-98 CE, strategically located on the River Severn in western Britain.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_040",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_121",
+    "question": "What ancient city in Turkey was the site of the Mausoleum, one of the Seven Wonders?",
+    "answer": "Halicarnassus",
+    "options": [
+      "Ephesus",
+      "Pergamon",
+      "Halicarnassus",
+      "Miletus"
+    ],
+    "explanation": "Halicarnassus (modern Bodrum) housed the Mausoleum of King Mausolus, a 135-foot tomb so magnificent it gave us the word 'mausoleum.'",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Anatolia",
+    "group": "passage_041",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_122",
+    "question": "Fill in the blank: The Roman name for Switzerland was ________.",
+    "answer": [
+      "Helvetia"
+    ],
+    "explanation": "Helvetia was named for the Helvetii tribe, which Julius Caesar defeated when they attempted to migrate westward in 58 BC.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_041",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_123",
+    "question": "Which island did the Romans call Hibernia?",
+    "answer": "Ireland",
+    "options": [
+      "Ireland",
+      "Britain",
+      "Corsica",
+      "Sicily"
+    ],
+    "explanation": "Hibernia (Ireland) was never conquered by Rome, though Roman artifacts show trade contacts, and the geographer Ptolemy mapped its coastline.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_041",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_124",
+    "question": "What ancient name did Romans give to the Ebro River in Spain?",
+    "answer": "Hiberus",
+    "options": [
+      "Hiberus",
+      "Tagus",
+      "Baetis",
+      "Durius"
+    ],
+    "explanation": "The Hiberus (Ebro) River flows 565 miles across northern Spain and was the boundary between Roman and Carthaginian spheres in the Ebro Treaty of 226 BC.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_042",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_125",
+    "question": "Fill in the blank: The Roman name for Spain was ________.",
+    "answer": [
+      "Hispania"
+    ],
+    "explanation": "Hispania was divided into provinces including Hispania Tarraconensis, Baetica, and Lusitania, producing emperors Trajan, Hadrian, and Marcus Aurelius.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_042",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_126",
+    "question": "Which French city was the Roman administrative capital of Gaul called Lugdunum?",
+    "answer": "Lyons",
+    "options": [
+      "Paris",
+      "Lyons",
+      "Marseille",
+      "Bordeaux"
+    ],
+    "explanation": "Lugdunum (Lyon) was founded in 43 BC at the confluence of the Rhone and Saone rivers, becoming Gaul's most important city and birthplace of Emperor Claudius.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_042",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_127",
+    "question": "What ancient city is modern-day Paris?",
+    "answer": "Lutetia",
+    "options": [
+      "Lutetia",
+      "Durocortorum",
+      "Augustodunum",
+      "Cenabum"
+    ],
+    "explanation": "Lutetia Parisiorum was a small Gallo-Roman town on an island in the Seine, overshadowed by other Gallic cities until becoming France's capital.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_043",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_128",
+    "question": "Fill in the blank: The ancient Greek colony that became Marseille was ________.",
+    "answer": [
+      "Massilia"
+    ],
+    "explanation": "Massilia was founded by Greeks from Phocaea around 600 BC, becoming a major Mediterranean trading port and remaining allied with Rome.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_043",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_129",
+    "question": "Which Italian city was the ancient Roman Mediolanum?",
+    "answer": "Milan",
+    "options": [
+      "Milan",
+      "Turin",
+      "Genoa",
+      "Bologna"
+    ],
+    "explanation": "Mediolanum (Milan) became capital of the Western Roman Empire under Maximian in 286 CE and where Constantine issued the Edict of Milan in 313 CE.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Italy",
+    "group": "passage_043",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_130",
+    "question": "What ancient Greek city is now Naples, Italy?",
+    "answer": "Neapolis",
+    "options": [
+      "Pompeii",
+      "Neapolis",
+      "Cumae",
+      "Paestum"
+    ],
+    "explanation": "Neapolis (New City) was founded by Greek colonists around 600 BC, maintaining Greek culture and language even under Roman rule.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Italy",
+    "group": "passage_044",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_131",
+    "question": "Fill in the blank: The ancient Ammonite city that became modern Amman was called ________.",
+    "answer": [
+      "Philadelphia"
+    ],
+    "explanation": "Philadelphia was founded by Ptolemy II Philadelphus in the 3rd century BC on the site of the Ammonite capital Rabbath Ammon, becoming a Decapolis city.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Levant",
+    "group": "passage_044",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_132",
+    "question": "Which ancient name did Greeks give to the Black Sea?",
+    "answer": "Pontus Euxinus",
+    "options": [
+      "Pontus Euxinus",
+      "Mare Internum",
+      "Propontis",
+      "Aegean"
+    ],
+    "explanation": "Pontus Euxinus means 'Hospitable Sea' in Greek, an optimistic name for the stormy waters Greeks colonized from the 7th century BC onward.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Seas",
+    "group": "passage_044",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_133",
+    "question": "What ancient name was given to the Sea of Marmara?",
+    "answer": "Propontis",
+    "options": [
+      "Pontus",
+      "Hellespont",
+      "Propontis",
+      "Aegean"
+    ],
+    "explanation": "The Propontis (Before the Sea) connects the Black Sea to the Mediterranean through the Bosporus and Dardanelles straits.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Seas",
+    "group": "passage_045",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_134",
+    "question": "Fill in the blank: The Romans called the Rhine River ________.",
+    "answer": [
+      "Rhenus"
+    ],
+    "explanation": "The Rhenus (Rhine) formed the empire's northern frontier, with major fortifications and legionary bases along its 820-mile length from the Alps to the North Sea.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Rivers",
+    "group": "passage_045",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_135",
+    "question": "Which French river was known to Romans as the Rhodanus?",
+    "answer": "Rhone",
+    "options": [
+      "Loire",
+      "Seine",
+      "Rhone",
+      "Garonne"
+    ],
+    "explanation": "The Rhodanus (Rhone) flows 505 miles from the Swiss Alps to the Mediterranean, serving as a vital trade route for Roman Gaul.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Rivers",
+    "group": "passage_045",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_136",
+    "question": "What ancient name did Romans give to the Seine River?",
+    "answer": "Sequana",
+    "options": [
+      "Sequana",
+      "Mosa",
+      "Liger",
+      "Matrona"
+    ],
+    "explanation": "The Sequana (Seine) was named after a Celtic river goddess, and Lutetia (Paris) was built on an island in its waters.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Rivers",
+    "group": "passage_046",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_137",
+    "question": "Fill in the blank: Ancient Serdica is the modern city of ________.",
+    "answer": [
+      "Sofia"
+    ],
+    "explanation": "Serdica was founded by the Thracian Serdi tribe and became a major Roman city in the province of Thracia, now Bulgaria's capital Sofia.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_046",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_138",
+    "question": "Which Turkish city was the ancient Smyrna?",
+    "answer": "Izmir",
+    "options": [
+      "Izmir",
+      "Ankara",
+      "Antalya",
+      "Bursa"
+    ],
+    "explanation": "Smyrna (Izmir) on the Aegean coast was one of the cities claiming to be Homer's birthplace and an important center of early Christianity.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Anatolia",
+    "group": "passage_046",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_139",
+    "question": "What Romanian city on the Black Sea was ancient Tomi?",
+    "answer": "Constanta",
+    "options": [
+      "Constanta",
+      "Varna",
+      "Burgas",
+      "Odessa"
+    ],
+    "explanation": "Tomi (Constanta) was where the Roman poet Ovid was exiled in 8 CE by Emperor Augustus, spending his final years writing the Tristia.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_047",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_140",
+    "question": "Fill in the blank: The Roman military camp that became Vienna was called ________.",
+    "answer": [
+      "Vindobona"
+    ],
+    "explanation": "Vindobona was established around 15 CE as a legionary fortress on the Danube frontier, where Marcus Aurelius wrote parts of his Meditations.",
+    "topic": "Ancient Cities and Modern Equivalents",
+    "subtopic": "Roman Empire",
+    "group": "passage_047",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_141",
+    "question": "Fill in the blank: Drepanum is located on the island of ________.",
+    "answer": [
+      "Sicily"
+    ],
+    "explanation": "Drepanum (modern Trapani) sits on Sicily's western coast, serving as a major Carthaginian naval base during the Punic Wars.",
+    "topic": "Islands",
+    "subtopic": "Sicily",
+    "group": "passage_048",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_142",
+    "question": "Which coast of Sicily is Drepanum located on?",
+    "answer": "western",
+    "options": [
+      "eastern",
+      "northern",
+      "southern",
+      "western"
+    ],
+    "explanation": "Drepanum's location on Sicily's west coast made it strategically positioned for sea routes between North Africa and Italy.",
+    "topic": "Islands",
+    "subtopic": "Sicily",
+    "group": "passage_048",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_143",
+    "question": "Fill in the blank: A Roman sailing from Italy to Drepanum would travel through the ________ Sea.",
+    "answer": [
+      "Tyrrhenian"
+    ],
+    "explanation": "The Tyrrhenian Sea lies between the Italian peninsula and the islands of Sardinia, Corsica, and Sicily's western coast.",
+    "topic": "Seas & Straits",
+    "subtopic": "Sicily",
+    "group": "passage_048",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_144",
+    "question": "Which ancient city on Sicily was closest to the Italian mainland?",
+    "answer": "Messana",
+    "options": [
+      "Syracuse",
+      "Drepanum",
+      "Messana",
+      "Agrigentum"
+    ],
+    "explanation": "Messana (modern Messina) sits on the Strait of Messina, only 2 miles from the Italian mainland at its narrowest point.",
+    "topic": "Cities",
+    "subtopic": "Sicily",
+    "group": "passage_049",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_145",
+    "question": "Fill in the blank: The Italian region north of Latium where the Etruscans lived was ________.",
+    "answer": [
+      "Etruria"
+    ],
+    "explanation": "Etruria (modern Tuscany) was home to the advanced Etruscan civilization that influenced early Rome before being absorbed in the 4th-3rd centuries BC.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_049",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_146",
+    "question": "Which Italian region contains Rome?",
+    "answer": "Latium",
+    "options": [
+      "Etruria",
+      "Campania",
+      "Latium",
+      "Umbria"
+    ],
+    "explanation": "Latium in west-central Italy was the homeland of the Latin people and contained Rome, the region's dominant city-state.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_049",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_147",
+    "question": "What coastal region south of Latium contained Naples and Pompeii?",
+    "answer": "Campania",
+    "options": [
+      "Latium",
+      "Calabria",
+      "Campania",
+      "Apulia"
+    ],
+    "explanation": "Campania's fertile volcanic soil and strategic coastal location made it one of ancient Italy's wealthiest regions.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_050",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_148",
+    "question": "Fill in the blank: The mountainous region in central Italy inhabited by fierce tribes was ________.",
+    "answer": [
+      "Samnium"
+    ],
+    "explanation": "Samnium's mountain-dwelling tribes fought three wars (343-290 BC) against Rome before being conquered and incorporated into the republic.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_050",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_149",
+    "question": "Which Italian region forms the 'heel' of the boot?",
+    "answer": "Apulia",
+    "options": [
+      "Calabria",
+      "Apulia",
+      "Lucania",
+      "Bruttium"
+    ],
+    "explanation": "Apulia in southeastern Italy was known for grain production and the major port of Brundisium, gateway to Greece.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_050",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_150",
+    "question": "What region forms the 'toe' of Italy's boot?",
+    "answer": "Calabria",
+    "options": [
+      "Bruttium",
+      "Apulia",
+      "Lucania",
+      "Calabria"
+    ],
+    "explanation": "Calabria in Italy's far south was heavily colonized by Greeks, with cities like Rhegium facing Sicily across the strait.",
+    "topic": "Regions",
+    "subtopic": "Italy",
+    "group": "passage_051",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_151",
+    "question": "Fill in the blank: The small river that Julius Caesar crossed in 49 BC was the ________.",
+    "answer": [
+      "Rubicon"
+    ],
+    "explanation": "The Rubicon marked the boundary between Italy proper and Cisalpine Gaul, making its crossing an act of war against the Senate.",
+    "topic": "Rivers",
+    "subtopic": "Italy",
+    "group": "passage_051",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_152",
+    "question": "Which river in northern Italy was the site of a Roman victory over Hasdrubal in 207 BC?",
+    "answer": "Metaurus",
+    "options": [
+      "Rubicon",
+      "Trebia",
+      "Metaurus",
+      "Po"
+    ],
+    "explanation": "The Metaurus River in Umbria saw Hasdrubal's defeat, preventing him from joining Hannibal and turning the Second Punic War in Rome's favor.",
+    "topic": "Rivers",
+    "subtopic": "Italy",
+    "group": "passage_051",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_153",
+    "question": "What Etruscan city was located north of Rome?",
+    "answer": "Clusium",
+    "options": [
+      "Veii",
+      "Clusium",
+      "Tarquinii",
+      "Caere"
+    ],
+    "explanation": "Clusium (modern Chiusi) was ruled by Lars Porsena, who according to legend besieged Rome to restore the Tarquin kings around 508 BC.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_052",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_154",
+    "question": "Fill in the blank: The nearest Etruscan city to Rome was ________.",
+    "answer": [
+      "Veii"
+    ],
+    "explanation": "Veii, only 10 miles north of Rome, was conquered after a ten-year siege ending in 396 BC, nearly doubling Roman territory.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_052",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_155",
+    "question": "Which ancient city served as Rome's main seaport at the mouth of the Tiber?",
+    "answer": "Ostia",
+    "options": [
+      "Portus",
+      "Ostia",
+      "Antium",
+      "Terracina"
+    ],
+    "explanation": "Ostia was founded as Rome's port around 620 BC and handled grain shipments from Egypt and trade goods from across the Mediterranean.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_052",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_156",
+    "question": "What ancient Greek colony on the Bay of Naples claimed the oldest continuous settlement in Italy?",
+    "answer": "Cumae",
+    "options": [
+      "Neapolis",
+      "Cumae",
+      "Pompeii",
+      "Paestum"
+    ],
+    "explanation": "Cumae was founded around 740 BC by Greeks from Euboea, making it the first Greek colony in Italy and home to the famous Sibyl.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_053",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_157",
+    "question": "Fill in the blank: The city at the end of the Appian Way on Italy's southeast coast was ________.",
+    "answer": [
+      "Brundisium"
+    ],
+    "explanation": "Brundisium (modern Brindisi) was Italy's main port for travel to Greece, connected to Rome by the Via Appia.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_053",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_158",
+    "question": "Which wealthy Campanian city was Rome's second largest in Italy?",
+    "answer": "Capua",
+    "options": [
+      "Neapolis",
+      "Pompeii",
+      "Capua",
+      "Cumae"
+    ],
+    "explanation": "Capua's wealth and strategic location made it Italy's second city until it defected to Hannibal in 216 BC, leading to its harsh punishment by Rome.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_053",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_159",
+    "question": "What Greek city in southern Italy was Rome's first major conquest in Magna Graecia?",
+    "answer": "Tarentum",
+    "options": [
+      "Heraclea",
+      "Tarentum",
+      "Thurii",
+      "Croton"
+    ],
+    "explanation": "Tarentum (modern Taranto) was conquered in 272 BC after calling in King Pyrrhus of Epirus, whose costly victories gave us the term 'Pyrrhic victory.'",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_054",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_160",
+    "question": "Fill in the blank: Pyrrhus of Epirus first defeated Rome at the Battle of ________.",
+    "answer": [
+      "Heraclea"
+    ],
+    "explanation": "Heraclea in southern Italy was the site of Pyrrhus's first victory in 280 BC, where his elephants terrified the Roman legions.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_054",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_161",
+    "question": "Which Apulian city was the site of Hannibal's greatest victory in 216 BC?",
+    "answer": "Cannae",
+    "options": [
+      "Cannae",
+      "Asculum",
+      "Beneventum",
+      "Venusia"
+    ],
+    "explanation": "At Cannae, Hannibal's double envelopment destroyed a Roman army of 80,000, but he failed to march on Rome afterward.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_054",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_162",
+    "question": "What Samnite city did Rome defeat to end the Pyrrhic War?",
+    "answer": "Beneventum",
+    "options": [
+      "Maleventum",
+      "Beneventum",
+      "Caudium",
+      "Bovianum"
+    ],
+    "explanation": "After defeating Pyrrhus at Beneventum in 275 BC, Rome renamed it from 'Maleventum' (bad event) to 'Beneventum' (good event).",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_055",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_163",
+    "question": "Fill in the blank: The Greek colony in Lucania famous for its temples was ________.",
+    "answer": [
+      "Paestum"
+    ],
+    "explanation": "Paestum (Greek Poseidonia) preserves three magnificent Doric temples from the 6th-5th centuries BC, among the best-preserved Greek temples anywhere.",
+    "topic": "Cities",
+    "subtopic": "Italy",
+    "group": "passage_055",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_164",
+    "question": "Which of Rome's hills was the site of the earliest settlement?",
+    "answer": "Palatine",
+    "options": [
+      "Capitoline",
+      "Palatine",
+      "Aventine",
+      "Quirinal"
+    ],
+    "explanation": "Archaeological evidence confirms the Palatine Hill as Rome's first settlement site from the 8th century BC, later becoming the imperial residence district.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_055",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_165",
+    "question": "Fill in the blank: The hill that housed Rome's main temple to Jupiter was the ________.",
+    "answer": [
+      "Capitoline"
+    ],
+    "explanation": "The Capitoline Hill's Temple of Jupiter Optimus Maximus was Rome's most important religious site, where triumphing generals gave thanks.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_056",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_166",
+    "question": "Which Roman hill was traditionally associated with the plebeian class?",
+    "answer": "Aventine",
+    "options": [
+      "Esquiline",
+      "Viminal",
+      "Aventine",
+      "Caelian"
+    ],
+    "explanation": "The Aventine Hill was home to plebeian temples including those of Diana and Ceres, and where plebeians seceded from the patricians.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_056",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_167",
+    "question": "What was the largest of Rome's seven hills?",
+    "answer": "Esquiline",
+    "options": [
+      "Esquiline",
+      "Quirinal",
+      "Viminal",
+      "Palatine"
+    ],
+    "explanation": "The Esquiline Hill was Rome's largest, initially used for burials but later home to wealthy estates and Nero's Domus Aurea.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_056",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_168",
+    "question": "Fill in the blank: The hill associated with the Sabine settlement that merged with Rome was the ________.",
+    "answer": [
+      "Quirinal"
+    ],
+    "explanation": "The Quirinal Hill was named for the Sabine god Quirinus, and tradition held that Sabines lived here before merging with the Latin settlement on the Palatine.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_057",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_169",
+    "question": "Which of Rome's hills was the smallest?",
+    "answer": "Viminal",
+    "options": [
+      "Caelian",
+      "Janiculum",
+      "Viminal",
+      "Aventine"
+    ],
+    "explanation": "The Viminal Hill was Rome's smallest and least prominent, later becoming home to the Praetorian Guard's camp under Tiberius.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_057",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_170",
+    "question": "What Roman hill was named after an Alban king who settled there?",
+    "answer": "Caelian",
+    "options": [
+      "Aventine",
+      "Palatine",
+      "Caelian",
+      "Esquiline"
+    ],
+    "explanation": "The Caelian Hill was reportedly named for Caelius Vibenna, an Etruscan who helped Romulus and later gave his name to the hill.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_057",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_171",
+    "question": "Fill in the blank: The hill across the Tiber from Rome's seven hills was the ________.",
+    "answer": [
+      "Janiculum"
+    ],
+    "explanation": "The Janiculum Hill on the Tiber's west bank was outside Rome's original boundary but fortified to protect the city from Etruscan attack.",
+    "topic": "Geography of Rome",
+    "subtopic": "Seven Hills",
+    "group": "passage_058",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_172",
+    "question": "Which open area in Rome was used for military assemblies and voting?",
+    "answer": "Campus Martius",
+    "options": [
+      "Forum Romanum",
+      "Campus Martius",
+      "Circus Maximus",
+      "Forum Boarium"
+    ],
+    "explanation": "The Campus Martius (Field of Mars) was located between the Capitoline Hill and the Tiber, used for military training, elections, and later monumental buildings.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_058",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_173",
+    "question": "Fill in the blank: Rome's main public square and meeting place was the ________.",
+    "answer": [
+      "Forum"
+    ],
+    "explanation": "The Roman Forum was Rome's political, religious, and commercial center, located between the Palatine and Capitoline hills.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_058",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_174",
+    "question": "What is the modern name for the Flavian Amphitheater?",
+    "answer": "Colosseum",
+    "options": [
+      "Circus Maximus",
+      "Colosseum",
+      "Pantheon",
+      "Theater of Marcellus"
+    ],
+    "explanation": "The Flavian Amphitheater, built 70-80 CE by Vespasian and Titus, became known as the Colosseum from a colossal statue of Nero that stood nearby.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_059",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_175",
+    "question": "Fill in the blank: Rome's largest venue for chariot racing was the ________.",
+    "answer": [
+      "Circus Maximus"
+    ],
+    "explanation": "The Circus Maximus between the Palatine and Aventine hills could hold 150,000 spectators for chariot races that captivated ancient Rome.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_059",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_176",
+    "question": "Which Roman temple features a massive dome with an oculus?",
+    "answer": "Pantheon",
+    "options": [
+      "Temple of Venus",
+      "Pantheon",
+      "Temple of Vesta",
+      "Temple of Saturn"
+    ],
+    "explanation": "The Pantheon, rebuilt by Hadrian around 126 CE, features a 142-foot dome with a central oculus that remains the world's largest unreinforced concrete dome.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_059",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_177",
+    "question": "What was the name of Nero's massive palace complex?",
+    "answer": "Domus Aurea",
+    "options": [
+      "Domus Aurea",
+      "Domus Augustana",
+      "Domus Flavia",
+      "Domus Tiberiana"
+    ],
+    "explanation": "The Domus Aurea (Golden House) covered over 100 acres of central Rome after the Great Fire of 64 CE, featuring a colossal statue and artificial lake.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_060",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_178",
+    "question": "Fill in the blank: The largest public baths in Rome were the ________ of Caracalla.",
+    "answer": [
+      "Baths"
+    ],
+    "explanation": "The Baths of Caracalla (212-216 CE) covered 27 acres and could accommodate 1,600 bathers, with libraries, gardens, and exercise facilities.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_060",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_179",
+    "question": "Which emperor built Rome's largest bath complex?",
+    "answer": "Diocletian",
+    "options": [
+      "Trajan",
+      "Diocletian",
+      "Caracalla",
+      "Constantine"
+    ],
+    "explanation": "The Baths of Diocletian (298-306 CE) were even larger than Caracalla's, accommodating 3,000 bathers, and parts survive as the church of Santa Maria degli Angeli.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_060",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_180",
+    "question": "What massive circular tomb did Hadrian build for himself?",
+    "answer": "Hadrian's Mausoleum",
+    "options": [
+      "Mausoleum of Augustus",
+      "Tomb of Cecilia Metella",
+      "Hadrian's Mausoleum",
+      "Pyramid of Cestius"
+    ],
+    "explanation": "Hadrian's Mausoleum (135-139 CE) was later converted into a fortress called Castel Sant'Angelo, connected to the Vatican by a fortified corridor.",
+    "topic": "Geography of Rome",
+    "subtopic": "Monuments",
+    "group": "passage_061",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_181",
+    "question": "Fill in the blank: The Romans called the Danube River ________.",
+    "answer": [
+      "Danuvius"
+    ],
+    "explanation": "The Danuvius (Danube) formed Rome's northern frontier for much of its length, flowing 1,770 miles from Germany to the Black Sea.",
+    "topic": "Rivers",
+    "subtopic": "Mediterranean World",
+    "group": "passage_061",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_182",
+    "question": "Which river formed Egypt's lifeline?",
+    "answer": "Nilus",
+    "options": [
+      "Euphrates",
+      "Tigris",
+      "Nilus",
+      "Jordan"
+    ],
+    "explanation": "The Nilus (Nile) provided water, transportation, and annual flooding that enriched Egyptian agriculture for millennia.",
+    "topic": "Rivers",
+    "subtopic": "Mediterranean World",
+    "group": "passage_061",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_183",
+    "question": "What mountain range separates France from Spain?",
+    "answer": "Pyrenees",
+    "options": [
+      "Alps",
+      "Pyrenees",
+      "Apennines",
+      "Carpathians"
+    ],
+    "explanation": "The Pyrenees stretch 270 miles from the Atlantic to the Mediterranean, reaching 11,168 feet at Pico de Aneto.",
+    "topic": "Mountains",
+    "subtopic": "Mediterranean World",
+    "group": "passage_062",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_184",
+    "question": "Fill in the blank: The mountain range between the Black and Caspian Seas is the ________.",
+    "answer": [
+      "Caucasus"
+    ],
+    "explanation": "The Caucasus Mountains stretch 750 miles and reach 18,510 feet at Mount Elbrus, traditionally marking the boundary between Europe and Asia.",
+    "topic": "Mountains",
+    "subtopic": "Mediterranean World",
+    "group": "passage_062",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_185",
+    "question": "Which mountain in Phrygia was sacred to the goddess Cybele?",
+    "answer": "Ida",
+    "options": [
+      "Olympus",
+      "Ida",
+      "Parnassus",
+      "Tmolus"
+    ],
+    "explanation": "Mount Ida in Phrygia (modern Turkey) was the cult center of Cybele, the Great Mother goddess, whose worship spread throughout the Mediterranean.",
+    "topic": "Mountains",
+    "subtopic": "Mediterranean World",
+    "group": "passage_062",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_186",
+    "question": "What was Roman Britain's northernmost major city?",
+    "answer": "Eboracum",
+    "options": [
+      "Londinium",
+      "Eboracum",
+      "Camulodunum",
+      "Deva"
+    ],
+    "explanation": "Eboracum (York) was headquarters of the VI Legion and capital of Britannia Inferior, where Constantine was proclaimed emperor in 306 CE.",
+    "topic": "Cities",
+    "subtopic": "Mediterranean World",
+    "group": "passage_063",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_187",
+    "question": "Fill in the blank: Roman London was called ________.",
+    "answer": [
+      "Londinium"
+    ],
+    "explanation": "Londinium was founded around 47 CE and became Britannia's largest city and commercial center, rebuilt after Boudica destroyed it in 60 CE.",
+    "topic": "Cities",
+    "subtopic": "Mediterranean World",
+    "group": "passage_063",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_188",
+    "question": "Which Spanish city resisted Rome for eight months before mass suicide?",
+    "answer": "Numantia",
+    "options": [
+      "Saguntum",
+      "Numantia",
+      "Cartago Nova",
+      "Gades"
+    ],
+    "explanation": "Numantia's defenders held out against Scipio Aemilianus until 133 BC, when the starving population chose mass suicide over surrender.",
+    "topic": "Cities",
+    "subtopic": "Mediterranean World",
+    "group": "passage_063",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_189",
+    "question": "What Numidian city was the site of Scipio Africanus's victory over Hannibal?",
+    "answer": "Zama",
+    "options": [
+      "Zama",
+      "Carthage",
+      "Utica",
+      "Cirta"
+    ],
+    "explanation": "The Battle of Zama in 202 BC ended the Second Punic War, with Scipio's Roman legions decisively defeating Hannibal's army.",
+    "topic": "Cities",
+    "subtopic": "Mediterranean World",
+    "group": "passage_064",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_190",
+    "question": "Fill in the blank: The wealthy caravan city in the Syrian desert was ________.",
+    "answer": [
+      "Palmyra"
+    ],
+    "explanation": "Palmyra controlled trade routes between Rome and Persia, reaching its peak under Queen Zenobia before Aurelian conquered it in 272 CE.",
+    "topic": "Cities",
+    "subtopic": "Mediterranean World",
+    "group": "passage_064",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_191",
+    "question": "Which island group east of Spain included Majorca and Minorca?",
+    "answer": "Balearic",
+    "options": [
+      "Balearic",
+      "Lipari",
+      "Aegadian",
+      "Pontine"
+    ],
+    "explanation": "The Balearic Islands were famous for their slingers, who served as mercenaries in Carthaginian and later Roman armies.",
+    "topic": "Islands",
+    "subtopic": "Mediterranean World",
+    "group": "passage_064",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_192",
+    "question": "What large island lies north of Sardinia?",
+    "answer": "Corsica",
+    "options": [
+      "Elba",
+      "Corsica",
+      "Sicily",
+      "Malta"
+    ],
+    "explanation": "Corsica and Sardinia were Rome's first provinces outside Italy after the First Punic War, taken from Carthage in 238 BC.",
+    "topic": "Islands",
+    "subtopic": "Mediterranean World",
+    "group": "passage_065",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_193",
+    "question": "Fill in the blank: The large island south of Italy and west of Greece is ________.",
+    "answer": [
+      "Sardinia"
+    ],
+    "explanation": "Sardinia's mountainous interior was never fully pacified by Rome, with native tribes resisting conquest for centuries.",
+    "topic": "Islands",
+    "subtopic": "Mediterranean World",
+    "group": "passage_065",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_194",
+    "question": "Which island was home to the Colossus, one of the Seven Wonders?",
+    "answer": "Rhodes",
+    "options": [
+      "Cyprus",
+      "Crete",
+      "Rhodes",
+      "Delos"
+    ],
+    "explanation": "The Colossus of Rhodes, a 108-foot bronze statue of Helios, stood at the harbor entrance until an earthquake toppled it in 226 BC.",
+    "topic": "Islands",
+    "subtopic": "Mediterranean World",
+    "group": "passage_065",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_195",
+    "question": "What large island in the eastern Mediterranean was rich in copper?",
+    "answer": "Cyprus",
+    "options": [
+      "Crete",
+      "Cyprus",
+      "Rhodes",
+      "Lesbos"
+    ],
+    "explanation": "Cyprus's copper mines (giving the metal its name) made it wealthy, and the island was sacred to Aphrodite, born from sea foam nearby.",
+    "topic": "Islands",
+    "subtopic": "Mediterranean World",
+    "group": "passage_066",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_196",
+    "question": "Fill in the blank: The sea between Italy and the Balkans is the ________.",
+    "answer": [
+      "Adriatic"
+    ],
+    "explanation": "The Adriatic Sea extends 500 miles from Venice to the Strait of Otranto, serving as Rome's gateway to Greece and the eastern Mediterranean.",
+    "topic": "Seas & Straits",
+    "subtopic": "Mediterranean World",
+    "group": "passage_066",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_197",
+    "question": "Which sea lies between Italy and Sicily?",
+    "answer": "Tyrrhenian",
+    "options": [
+      "Adriatic",
+      "Ionian",
+      "Tyrrhenian",
+      "Ligurian"
+    ],
+    "explanation": "The Tyrrhenian Sea was named after the Tyrrhenians (Etruscans) and contained important islands including Sardinia and Corsica.",
+    "topic": "Seas & Straits",
+    "subtopic": "Mediterranean World",
+    "group": "passage_066",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_198",
+    "question": "What is the world's largest inland body of water?",
+    "answer": "Caspian",
+    "options": [
+      "Black Sea",
+      "Caspian",
+      "Aral Sea",
+      "Mediterranean"
+    ],
+    "explanation": "The Caspian Sea covers 149,000 square miles and lies below sea level, bordered by five modern countries including Russia and Iran.",
+    "topic": "Seas & Straits",
+    "subtopic": "Mediterranean World",
+    "group": "passage_067",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_199",
+    "question": "Fill in the blank: Rome's North African province was called ________.",
+    "answer": [
+      "Africa"
+    ],
+    "explanation": "The province of Africa (roughly modern Tunisia) was created after Carthage's destruction in 146 BC and became Rome's main grain supplier.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_067",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_200",
+    "question": "Which province in Asia Minor was Rome's first in the East?",
+    "answer": "Asia",
+    "options": [
+      "Bithynia",
+      "Asia",
+      "Syria",
+      "Cilicia"
+    ],
+    "explanation": "The province of Asia (western Turkey) was bequeathed to Rome by King Attalus III of Pergamum in 133 BC and became extremely wealthy.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_067",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_201",
+    "question": "What was the name of Rome's province in northern Italy?",
+    "answer": "Gallia Cisalpina",
+    "options": [
+      "Italia",
+      "Gallia Cisalpina",
+      "Liguria",
+      "Venetia"
+    ],
+    "explanation": "Gallia Cisalpina (Gaul this side of the Alps) was organized as a province after conquering the Po Valley, later incorporated fully into Italy.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_068",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_202",
+    "question": "Fill in the blank: Caesar's conquest of Gaul was in the province of Gallia ________.",
+    "answer": [
+      "Comata"
+    ],
+    "explanation": "Gallia Comata (Long-haired Gaul) or Tres Galliae referred to the three Gallic provinces Caesar conquered: Aquitania, Lugdunensis, and Belgica.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_068",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_203",
+    "question": "Which province on the Balkan coast gave its name to 'Dalmatian' dogs?",
+    "answer": "Illyricum",
+    "options": [
+      "Pannonia",
+      "Moesia",
+      "Illyricum",
+      "Thracia"
+    ],
+    "explanation": "Illyricum (roughly modern Croatia) was conquered to suppress piracy and protect the Italian coast, later split into Dalmatia and Pannonia.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_068",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_204",
+    "question": "What province in northern Turkey was added by Pompey?",
+    "answer": "Bithynia",
+    "options": [
+      "Pontus",
+      "Galatia",
+      "Bithynia",
+      "Cappadocia"
+    ],
+    "explanation": "Bithynia in northwest Turkey was bequeathed to Rome by its last king in 74 BC and combined with Pontus into one province.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_069",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_205",
+    "question": "Fill in the blank: The Roman province containing Antioch and Damascus was ________.",
+    "answer": [
+      "Syria"
+    ],
+    "explanation": "Syria was organized by Pompey in 64 BC after defeating Mithridates, becoming a crucial province guarding against Parthia.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_069",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_206",
+    "question": "Which province did Octavian personally annex after defeating Cleopatra?",
+    "answer": "Aegyptus",
+    "options": [
+      "Cyrenaica",
+      "Aegyptus",
+      "Arabia",
+      "Judaea"
+    ],
+    "explanation": "Aegyptus (Egypt) became Augustus's personal province in 30 BC, so wealthy that senators were forbidden to visit without permission.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_069",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_207",
+    "question": "What province was added by Claudius in 43 CE?",
+    "answer": "Britannia",
+    "options": [
+      "Britannia",
+      "Germania",
+      "Dacia",
+      "Arabia"
+    ],
+    "explanation": "Britannia was invaded by Claudius in 43 CE, though full conquest was never achieved and the province ended at Hadrian's Wall.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_070",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_208",
+    "question": "Fill in the blank: The Balkan province south of the Danube was ________.",
+    "answer": [
+      "Thracia"
+    ],
+    "explanation": "Thracia (roughly modern Bulgaria) was annexed by Claudius in 46 CE after centuries as a client kingdom.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_070",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_209",
+    "question": "Which trans-Danubian province was conquered by Trajan?",
+    "answer": "Dacia",
+    "options": [
+      "Dacia",
+      "Sarmatia",
+      "Germania",
+      "Noricum"
+    ],
+    "explanation": "Dacia (modern Romania) was conquered by Trajan in 106 CE for its gold mines, becoming Rome's only major province across the Danube.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_070",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_210",
+    "question": "What province between the Tigris and Euphrates was briefly held by Rome?",
+    "answer": "Mesopotamia",
+    "options": [
+      "Armenia",
+      "Mesopotamia",
+      "Assyria",
+      "Babylonia"
+    ],
+    "explanation": "Mesopotamia was annexed by Trajan in 116 CE but abandoned by Hadrian, then reconquered and lost several more times due to Parthian/Persian pressure.",
+    "topic": "Provinces",
+    "subtopic": "Roman Empire",
+    "group": "passage_071",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_211",
+    "question": "Fill in the blank: The coastal region of modern Lebanon was called ________.",
+    "answer": [
+      "Phoenicia"
+    ],
+    "explanation": "Phoenicia was the homeland of seafaring traders who founded colonies like Carthage and spread the alphabet throughout the Mediterranean.",
+    "topic": "Regions",
+    "subtopic": "Mediterranean World",
+    "group": "passage_071",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_212",
+    "question": "Which empire east of the Euphrates was Rome's great rival?",
+    "answer": "Parthia",
+    "options": [
+      "Parthia",
+      "Babylonia",
+      "Media",
+      "Armenia"
+    ],
+    "explanation": "The Parthian Empire ruled from the Euphrates to India from 247 BC-224 CE, inflicting major defeats on Rome including Carrhae in 53 BC.",
+    "topic": "Regions",
+    "subtopic": "Mediterranean World",
+    "group": "passage_071",
+    "dependency": "bonus_independent"
+  },
+  {
+    "id": "geo_nov_213",
+    "question": "What region on the Black Sea's eastern shore was the goal of Jason's quest?",
+    "answer": "Colchis",
+    "options": [
+      "Bithynia",
+      "Pontus",
+      "Colchis",
+      "Cappadocia"
+    ],
+    "explanation": "Colchis at the eastern end of the Black Sea was where Jason and the Argonauts sought the Golden Fleece, ruled by King Aeetes.",
+    "topic": "Regions",
+    "subtopic": "Mediterranean World",
+    "group": "passage_072",
+    "dependency": "tossup"
+  },
+  {
+    "id": "geo_nov_214",
+    "question": "Fill in the blank: The strait at the western end of the Mediterranean was called the Pillars of ________.",
+    "answer": [
+      "Heracles"
+    ],
+    "explanation": "The Pillars of Heracles (Strait of Gibraltar) marked the Mediterranean's western boundary, where Heracles set up columns during his tenth labor.",
+    "topic": "Seas & Straits",
+    "subtopic": "Mediterranean World",
+    "group": "passage_072",
+    "dependency": "bonus_independent"
+  }
+]
