@@ -2846,9 +2846,4 @@ body {
     padding: 0.6rem;
   }
 }
-/* Hide progress dots on desktop only */
-@media (min-width: 769px) {
-  .progress-indicator {
-    display: none;
-  }
-}
+
