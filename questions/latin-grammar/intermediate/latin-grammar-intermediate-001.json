@@ -125,7 +125,7 @@
 },
 {
   "id": "gram_int_013",
-  "question": "Using the verb fero, say in Latin: Marcus, bring the wagon quickly to the Forum.",
+  "question": "Using the verb fero, translate into Latin: Marcus, bring the wagon quickly to the Forum.",
   "answer": [
     "Marce, fer carrum celeriter ad forum",
     "Marce, fer raedam celeriter ad forum",
@@ -140,7 +140,7 @@
 },
 {
   "id": "gram_int_014",
-  "question": "Say in Latin: Julia, don't lead the animals through the mountains.",
+  "question": "Translate into Latin: Julia, don't lead the animals through the mountains.",
   "answer": [
     "Iulia, noli ducere animalia per montes"
   ],
@@ -152,7 +152,7 @@
 },
 {
   "id": "gram_int_015",
-  "question": "Say in Latin: Aurelius, don't believe Lucius. Take the money.",
+  "question": "Translate into Latin: Aurelius, don't believe Lucius. Take the money.",
   "answer": [
     "Aureli, noli credere Lucio. Cape pecuniam"
   ],
@@ -629,7 +629,7 @@
 },
 {
   "id": "gram_int_046",
-  "question": "Using a passive periphrastic, say in Latin: 'We must see the city!'",
+  "question": "Using a passive periphrastic, translate into Latin: 'We must see the city!'",
   "answer": [
     "nōbīs urbs videnda est",
     "nobis urbs videnda est"
@@ -642,7 +642,7 @@
 },
 {
   "id": "gram_int_047",
-  "question": "Using 'tam', say in Latin: 'Where is that city, whose walls are so tall?'",
+  "question": "Using 'tam', translate into Latin: 'Where is that city, whose walls are so tall?'",
   "answer": "ubi est illa urbs cūius mūrī tam altī sunt",
   "topic": "Latin Grammar",
   "subtopic": "Relative Clauses / Tam",
@@ -658,7 +658,7 @@
 },
 {
   "id": "gram_int_048",
-  "question": "Using a passive periphrastic, say in Latin: 'I believe that I must kill you.'",
+  "question": "Using a passive periphrastic, translate into Latin: 'I believe that I must kill you.'",
   "answer": "crēdō tē mihi interficiendum esse",
   "topic": "Latin Grammar",
   "subtopic": "Passive Periphrastic / Pronouns",
@@ -880,7 +880,7 @@
 },
 {
   "id": "gram_int_066",
-  "question": "Now say in Latin, 'Manlius has a bigger sword.'",
+  "question": "Translate into Latin, 'Manlius has a bigger sword.'",
   "answer": [
     "Manlius longiorem gladium habet",
     "Manlius longius ferrum habet"
@@ -1326,7 +1326,7 @@
 },
 {
   "id": "gram_int_098",
-  "question": "Say in Latin 'we will be sent.'",
+  "question": "Translate into Latin 'we will be sent.'",
   "answer": [
     "mittēmur",
     "mittemur"
@@ -1339,7 +1339,7 @@
 },
 {
   "id": "gram_int_099",
-  "question": "Say in Latin 'I will be captured.'",
+  "question": "Translate into Latin 'I will be captured.'",
   "answer": [
     "capiar"
   ],
@@ -1351,7 +1351,7 @@
 },
 {
   "id": "gram_int_100",
-  "question": "Say in Latin 'you (singular) are being heard.'",
+  "question": "Translate into Latin 'you (singular) are being heard.'",
   "answer": [
     "audīris",
     "audiris"
@@ -1682,7 +1682,7 @@
  },
  {
   "id": "gram_int_130",
-  "question": "How do you say 'eye' in Latin?",
+  "question": "Write 'eye' in Latin?",
   "answer": ["oculus"],
   "topic": "Latin Grammar",
   "subtopic": "Body Parts Vocabulary",
@@ -1692,7 +1692,7 @@
  },
  {
   "id": "gram_int_131",
-  "question": "How do you say 'tongue' in Latin?",
+  "question": "Write 'tongue' in Latin?",
   "answer": ["lingua"],
   "topic": "Latin Grammar",
   "subtopic": "Body Parts Vocabulary",
@@ -1702,7 +1702,7 @@
  },
  {
   "id": "gram_int_132",
-  "question": "How do you say 'finger' in Latin?",
+  "question": "Write 'finger' in Latin?",
   "answer": ["digitus"],
   "topic": "Latin Grammar",
   "subtopic": "Body Parts Vocabulary",
