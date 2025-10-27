@@ -23,7 +23,7 @@
   },
   {
     "id": "gram_nov_003",
-    "question": "Now say in Latin: 'The story is told.'",
+    "question": "Translate into Latin: 'The story is told.'",
     "answer": ["Fābula nārrātur"],
     "options": ["Fābula nārrābatur", "Fābula nārrābitur", "Fābula nārrātur", "Fābula nārrant"],
     "explanation": "Present passive indicative of 'nārrō' with singular subject 'fābula'.",
@@ -296,7 +296,7 @@
   },
   {
     "id": "gram_nov_029",
-    "question": "Now translate: 'The bad sailors were telling a bad story.'",
+    "question": "Translate into Latin: 'The bad sailors were telling a bad story.'",
     "answer": ["Malī nautae malam fābulam nārrābant"],
     "options": ["Malī nautae malam fābulam nārrant", "Fābula nārrātur", "Malī nautae malam fābulam nārrābant", "Nautae fābulam cēlābant"],
     "explanation": "'nārrābant' is imperfect active indicative; 'malī nautae' is masculine plural subject.",
@@ -307,7 +307,7 @@
   },
   {
     "id": "gram_nov_030",
-    "question": "Now say in Latin: 'The story is told.'",
+    "question": "Translate into Latin: 'The story is told.'",
     "answer": ["Fābula nārrātur"],
     "options": ["Nautae fābulam nārrant", "Fābula nārrābant", "Fābula nārrātur", "Fābula nārrant"],
     "explanation": "'nārrātur' is present passive indicative, third person singular.",
@@ -1016,7 +1016,7 @@
   },
   {
     "id": "gram_nov_097",
-    "question": "Now say in Latin: 'The water was being carried by the girls.'",
+    "question": "Translate into Latin: 'The water was being carried by the girls.'",
     "answer": ["Aqua ā puellīs portābātur"],
     "explanation": "Imperfect passive indicative, ablative of agent with ā + puellīs.",
     "dependency": "standalone",
@@ -1265,7 +1265,7 @@
 },
 {
   "id": "gram_nov_121",
-  "question": "Using an enclitic, say in Latin 'son and daughter'.",
+  "question": "Using an enclitic, translate into Latin 'son and daughter'.",
   "answer": ["filius filiaque"],
   "explanation": "The enclitic '-que' (and) attaches to the second word: 'filius filiaque' (son and daughter).",
   "dependency": "bonus_independent",
@@ -1421,7 +1421,7 @@
 },
  {
   "id": "gram_nov_136",
-  "question": "Say in Latin 'I forbid'.",
+  "question": "Translate into Latin 'I forbid'.",
   "answer": ["veto", "vetō"],
   "explanation": "'Vetō' is the first person singular present tense of 'vetāre' (to forbid).",
   "dependency": "bonus_independent",
