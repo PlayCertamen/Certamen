@@ -355,7 +355,7 @@
   },
   {
     "id": "gram_adv_025",
-    "question": "Say in Latin: 'it is raining.'",
+    "question": "Translate into Latin: 'it is raining.'",
     "answer": [
       "pluit"
     ],
@@ -367,7 +367,7 @@
   },
   {
     "id": "gram_adv_026",
-    "question": "Say in Latin: 'it snowed.'",
+    "question": "Translate into Latin: 'it snowed.'",
     "answer": ["ninxit"],
     "topic": "Latin Grammar",
     "subtopic": "Impersonal Verbs / Weather",
@@ -383,7 +383,7 @@
   },
   {
     "id": "gram_adv_027",
-    "question": "Say in Latin: 'the dew will fall.'",
+    "question": "Translate into Latin: 'the dew will fall.'",
     "answer": [
       "rōrabit",
       "rorabit"
@@ -1292,7 +1292,7 @@
   },
   {
     "id": "gram_adv_086",
-    "question": "Say, using a passive construction, 'He must write a book.'",
+    "question": "Using a passive construction, write. 'He must write a book.'",
     "answer": [
       "liber eī scrībendus est",
       "liber ei scribendus est",
@@ -1732,7 +1732,7 @@
   },
   {
     "id": "gram_adv_116",
-    "question": "Using a relative clause of purpose, say in Latin 'He sent an ambassador to look at the enemies' camp.'",
+    "question": "Using a relative clause of purpose, translate into Latin: 'He sent an ambassador to look at the enemies' camp.'",
     "answer": [
       "lēgātum mīsit quī hostium castra spectāret",
       "legatum misit qui hostium castra spectaret",
@@ -1895,12 +1895,12 @@
     "topic": "Latin Grammar",
     "subtopic": "Morphology / Numbers",
     "group": "passage_41",
-    "dependency": "bonus_independent",
+    "dependency": "bonus_dependent",
     "explanation": "Ter dēnī uses the Latin multiplication formula: ter (three times) × dēnī (tens) = 30. This formula combines an adverb indicating repetition with a distributive numeral to express multiplication."
   },
   {
     "id": "gram_adv_126",
-    "question": "Using the same formula for multiplication, say 'four times two.'",
+    "question": "Using the same formula for multiplication, write 'four times two.'",
     "answer": [
       "quater bīnī",
       "bis quaternī",
@@ -1911,7 +1911,7 @@
     "subtopic": "Morphology / Numbers",
     "group": "passage_41",
     "dependency": "bonus_dependent",
-    "explanation": "To say 'four times two' in Latin using the multiplication formula, you use quater (four times, adverb) with bīnī (two each, distributive). The alternative bis quaternī (two times four each) is also acceptable as it equals the same product."
+    "explanation": "To multiply 'four times two' in Latin using the multiplication formula, you use quater (four times, adverb) with bīnī (two each, distributive). The alternative bis quaternī (two times four each) is also acceptable as it equals the same product."
   },
   {
     "id": "gram_adv_127",
@@ -2689,7 +2689,7 @@
   },
   {
     "id": "gram_adv_193",
-    "question": "Say in Latin using currō: Let's run to the forum today!",
+    "question": "Write in Latin using currō: Let's run to the forum today!",
     "answer": ["hodiē ad forum currāmus"],
     "options": [
       "hodiē ad forum currimus",
@@ -2705,7 +2705,7 @@
   },
   {
     "id": "gram_adv_194",
-    "question": "Say in Latin using resistō: Let's always resist the enemies!",
+    "question": "Write in Latin using resistō: Let's always resist the enemies!",
     "answer": ["semper hostibus resistāmus"],
     "options": [
       "semper hostēs resistāmus",
@@ -2721,7 +2721,7 @@
   },
   {
     "id": "gram_adv_195",
-    "question": "Say in Latin using a common Latin idiom with faciō: Let's inform the queen immediately!",
+    "question": "Write in Latin using a common Latin idiom with faciō: Let's inform the queen immediately!",
     "answer": ["statim rēgīnam certiōrem faciāmus"],
     "options": [
       "statim rēgīnam certiōrem faciāmus",
