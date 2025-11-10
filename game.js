@@ -1,7 +1,7 @@
 console.log("JavaScript is working!");
 
 // ===== DEBUG MODE TOGGLE =====
-const DEBUG_MODE = true; // Set to true to enable debug logging, false to hide it
+const DEBUG_MODE = false; // Set to true to enable debug logging, false to hide it
 
 // ===== DEBUG TOOL - ADD THIS TO TOP OF GAME.JS =====
 
