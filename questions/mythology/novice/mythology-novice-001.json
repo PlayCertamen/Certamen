@@ -12,13 +12,19 @@
   {
     "id": "myth_nov_002",
     "question": "Which three items did Perseus receive to aid him against Medusa?",
-    "answer": ["Cap of invisibility, winged sandals, and a curved sword (harpe)"],
-    "explanation": "Perseus received magical items from the gods to fight Medusa, including Hermes' sandals, Hades' cap, and a sword.",
+    "options": [
+      "Cap of invisibility, winged sandals, and a curved sword",
+      "Golden fleece, bronze shield, and winged sandals",
+      "Trident, helmet of darkness, and magic bow",
+      "Silver sandals, golden sword, and cloak of flight"
+    ],
+    "answer": ["Cap of invisibility, winged sandals, and a curved sword"],
+    "explanation": "Perseus received the cap of invisibility from Hades, winged sandals and curved sword (harpe) from Hermes, to help him defeat Medusa.",
     "topic": "Mythology",
     "subtopic": "Perseus and Medusa",
     "dependency": "bonus_independent",
     "group": "passage_001"
-  },
+ },
   {
     "id": "myth_nov_003",
     "question": "What creatures sprang from Medusa's neck after she was slain?",
@@ -143,7 +149,7 @@
   {
     "id": "myth_nov_015",
     "question": "What did Hades lend to Perseus to help him escape the Gorgons?",
-    "answer": ["Helmet of invisibility","Helmet", "A helmet"],
+    "answer": ["Helmet of invisibility","Helmet", "cap of invisibility", "a cap", "A helmet"],
     "explanation": "The helmet of invisibility allowed Perseus to escape unseen after slaying Medusa.",
     "topic": "Mythology — Perseus",
     "subtopic": "Medusa Quest",
@@ -385,7 +391,7 @@
     "id": "myth_nov_037",
     "question": "Fill in the blank: Perseus' magical items included winged sandals, a reflective shield, a sickle, and the cap of _____.",
     "options": [],
-    "answer": "Invisibility",
+    "answer": ["Invisibility", "invisibility"],
     "explanation": "Hades' cap allowed Perseus to move unseen, which was essential in approaching the Gorgons.",
     "topic": "Mythology — Perseus",
     "subtopic": "Perseus' Magical Items",
@@ -867,7 +873,7 @@
   {
     "id": "myth_nov_082",
     "question": "Pegasus threw Bellerophon off his back when the hero asked him to perform what action?",
-    "answer": "Fly him to Olympus",
+    "answer": ["Fly him to Olympus", "Flew him to Olympus", "Fly to Olympus"],
     "explanation": "Bellerophon attempted to ride Pegasus to Olympus, angering the divine horse, which threw him off and foiled his ascent.",
     "topic": "Mythology – Bellerophon",
     "subtopic": "Pegasus and the Chimaera",
@@ -2896,9 +2902,13 @@
   },
   {
     "id": "myth_nov_227",
-    "question": "What gift did Poseidon offer to the citizens of the yet-unnamed city of Athens during his contest with Athena for patronage—a salt spring or, in some versions, a magnificent horse?",
+    "question": "What gift did Poseidon offer to the citizens of the yet-unnamed city of Athens during his contest with Athena for patronage?",
     "answer": [
       "salt spring",
+      "spring",
+      "water spring",
+      "a spring",
+      "a horse",
       "horse"
     ],
     "topic": "Mythology",
@@ -6046,7 +6056,12 @@
     "id": "myth_nov_434",
     "question": "What was unusual about the sacred seat upon which the Pythia sat when delivering Apollo's prophecies at Delphi?",
     "answer": [
-      "it had three legs"
+      "it had three legs",
+      "it had 3 legs",
+      "3 legs",
+      "three legs",
+      "it was three legged",
+      "it was a tripod"
     ],
     "topic": "Mythology",
     "subtopic": "Oracles and Prophecy",
@@ -6088,7 +6103,9 @@
     "id": "myth_nov_437",
     "question": "What immovable object, carved by Odysseus from a living olive tree still rooted in the ground, served as the final proof of his identity to the skeptical Penelope?",
     "answer": [
-      "their bed"
+      "their bed",
+      "a bed",
+      "bed"
     ],
     "topic": "Mythology",
     "subtopic": "Odysseus' Return",
@@ -6581,5 +6598,35 @@
     "group": null,
     "dependency": "standalone",
     "explanation": "Semele was consumed by Zeus' lightning when Hera, disguised as her nurse, tricked her into demanding to see his true divine form. Zeus rescued the unborn Dionysus from her womb and sewed him into his own thigh, making Dionysus 'the twice-born god'—later, Dionysus descended to the Underworld and brought his mother back to Olympus as the goddess Thyone."
-  }
+  },
+  {
+    "id": "myth_nov_473",
+    "question": "Which of the following four numbers is the largest: the number of legs on four centaurs; the number of eyes on the guardian Argus; the number of arms of the giant Geryon; or the number of noses on the Argonauts?",
+    "answer": ["The number of eyes on Argus", "Eyes on Argus", "Argus' eyes", "Argus eyes", "One hundred eyes", "100 eyes", "100", "Argus"],
+    "explanation": "Argus had 100 eyes (the largest), while four centaurs have 16 legs, Geryon had 6 arms, and the Argonauts had approximately 50 noses.",
+    "topic": "Mythology",
+    "subtopic": "Comparative Mythology",
+    "dependency": "tossup",
+    "group": "argus_001"
+ },
+ {
+    "id": "myth_nov_474",
+    "question": "For whom did Argus do a favor by guarding the maiden Io, after she was disguised as a cow?",
+    "answer": ["Hera", "Juno"],
+    "explanation": "Hera set Argus to guard Io, who had been transformed into a cow by Zeus to hide his affair.",
+    "topic": "Mythology",
+    "subtopic": "Argus and Io",
+    "dependency": "bonus_independent",
+    "group": "argus_001"
+ },
+ {
+    "id": "myth_nov_475",
+    "question": "Approximately how many noses did the Argonauts have?",
+    "answer": ["Fifty", "50", "Sixty", "60"],
+    "explanation": "The Argonauts numbered approximately 50 heroes (some sources say up to 60), giving them roughly 50-60 noses.",
+    "topic": "Mythology",
+    "subtopic": "Argonauts",
+    "dependency": "bonus_independent",
+    "group": "argus_001"
+ }
 ]
