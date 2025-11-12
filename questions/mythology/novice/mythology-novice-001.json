@@ -47,7 +47,7 @@
   },
   {
     "id": "myth_nov_005",
-    "question": "What happened to Semele as a result?",
+    "question": "What happened to Semele when she saw Zeus in his full glory?",
     "answer": ["She died", "She burned"],
     "explanation": "When Zeus appeared in his full divine glory with lightning and thunder, Semele was instantly killed by his divine fire.",
     "topic": "Mythology",
@@ -1019,7 +1019,7 @@
   {
     "id": "myth_nov_096",
     "question": "What did Pan create from the reeds of Syrinx to honor her?",
-    "answer": "panpipe",
+    "answer": ["panpipe", "pipe", "a pipe"],
     "explanation": "After Syrinx was transformed into reeds, Pan cut some of them and fashioned the first panpipe in her memory.",
     "topic": "Mythology – Pan and Syrinx",
     "subtopic": "Transformation Myths",
