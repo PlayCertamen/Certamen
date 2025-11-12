@@ -100,13 +100,13 @@ function getRandomTeamNames() {
 // CERTAMEN REPEAT-PREVENTION CONFIG
 // ===================================
 const CERTAMEN_TRACKING = {
-  GAMES_TO_TRACK: 15,          // Track last 15 games
+  GAMES_TO_TRACK: 5,           // Track last 5 games (reduced from 15)
   TRIADS_PER_GAME: 20,         // Number of triads per game (20 triads = 60 questions)
-  MIN_FRESH_TRIADS: 50,        // Minimum fresh triads needed to play
+  MIN_FRESH_TRIADS: 30,        // Minimum fresh triads needed (reduced from 50)
   STORAGE_KEY: 'recentCertamenPassages'
 };
 
-// Calculate total passages to block
+// Calculate total passages to block (now 5 * 20 = 100 instead of 300)
 CERTAMEN_TRACKING.MAX_BLOCKED = CERTAMEN_TRACKING.GAMES_TO_TRACK * CERTAMEN_TRACKING.TRIADS_PER_GAME;
 
 // ===================================
@@ -707,19 +707,36 @@ class QuestionLoader {
                                  Array.isArray(q.options) && 
                                  q.options.length > 0;
 
+          const correctIndex = hasValidOptions ? q.options.indexOf(Array.isArray(q.answer) ? q.answer[0] : q.answer) : 0;
+          
+          // ✨ VALIDATION: Warn if answer doesn't match any option
+          if (hasValidOptions && correctIndex === -1) {
+            console.warn(`⚠️ ANSWER MISMATCH in ${category}-${level} question ${index + 1}:`);
+            console.warn(`   Question: ${q.question}`);
+            console.warn(`   Answer: "${q.answer}"`);
+            console.warn(`   Options: [${q.options.join(', ')}]`);
+            console.warn(`   This question will be skipped or may cause errors.`);
+          }
+
           return {
             id: index + 1,
             type: hasValidOptions ? 'multiple-choice' : 'fill-in-blank',
             category: category,
             question: q.question,
             options: hasValidOptions ? q.options : [],
-            correct: hasValidOptions ? q.options.indexOf(Array.isArray(q.answer) ? q.answer[0] : q.answer) : 0,
+            correct: correctIndex,
             answer: q.answer,
             points: 10,
             explanation: q.explanation,
             dependency: q.dependency,
             group: q.group
           };
+        }).filter(q => {
+          // Filter out questions with invalid correct index
+          if (q.type === 'multiple-choice' && q.correct === -1) {
+            return false;
+          }
+          return true;
         }).map(q => this.shuffleQuestionOptions(q));
         
         // Apply dependency filtering
@@ -851,6 +868,7 @@ class CertamenGame {
     this.buzzingAllowed = false; // ✨ NEW: Prevent race condition - only allow buzzing during active question
     this.soloCountdownInterval = null; // ✨ Solo Certamen countdown timer
     this.soloTimeLeft = 0; // ✨ Solo Certamen countdown time remaining
+    this.isRestarting = false; // ✨ Prevent multiple rapid Play Again clicks
 
     // ADD THESE 6 LINES:
     this.bonusState = 'none';
@@ -1752,9 +1770,31 @@ async loadCertamenQuestions(level) {
     triadsByCategory[category].push(triad);
   });
   
-  // Shuffle each category's triads
+  // ✨ SMART SELECTION: Prioritize never-seen triads over recycled ones
+  // Track all-time triad usage (not just recent blocking)
+  const allTimeUsed = JSON.parse(
+    localStorage.getItem('certamen-all-time-triads') || '[]'
+  );
+  
   Object.keys(triadsByCategory).forEach(cat => {
-    triadsByCategory[cat] = this.shuffleArray(triadsByCategory[cat]);
+    const triads = triadsByCategory[cat];
+    
+    // Separate into never-seen and previously-seen
+    const neverSeen = triads.filter(triad => 
+      !allTimeUsed.includes(triad[0].group)
+    );
+    const previouslySeen = triads.filter(triad => 
+      allTimeUsed.includes(triad[0].group)
+    );
+    
+    // Shuffle each group separately
+    const shuffledNeverSeen = this.shuffleArray(neverSeen);
+    const shuffledPreviouslySeen = this.shuffleArray(previouslySeen);
+    
+    // Prioritize never-seen first, then previously-seen
+    triadsByCategory[cat] = [...shuffledNeverSeen, ...shuffledPreviouslySeen];
+    
+    console.log(`   🎲 ${cat}: ${neverSeen.length} never-seen, ${previouslySeen.length} recycled`);
   });
   
   // Select triads according to distribution
@@ -1769,6 +1809,9 @@ async loadCertamenQuestions(level) {
   // ✨ SMART INTERLEAVING: Prevent category clumping using weighted round-robin
   const interleavedTriads = this.interleaveTriadsByCategory(selectedByCategory);
   console.log(`🎮 Game limited to ${interleavedTriads.length} triads (${interleavedTriads.length * 3} questions total)`);
+  
+  // ✨ Store actual triad count for UI display
+  this.actualTriadCount = interleavedTriads.length;
   
   interleavedTriads.forEach(triad => {
     this.questions = this.questions.concat(triad);
@@ -1921,7 +1964,16 @@ saveCertamenPassages() {
   // Save to localStorage
   localStorage.setItem(CERTAMEN_TRACKING.STORAGE_KEY, JSON.stringify(trimmed));
   
-  console.log(`💾 Saved ${thisGamePassages.length} passages to tracking (${trimmed.length} total tracked)`);
+  // ✨ SMART SELECTION: Also track all-time usage for prioritization
+  const allTimeUsed = JSON.parse(
+    localStorage.getItem('certamen-all-time-triads') || '[]'
+  );
+  
+  // Add new passages to all-time tracker (don't remove old ones)
+  const updatedAllTime = [...new Set([...thisGamePassages, ...allTimeUsed])];
+  localStorage.setItem('certamen-all-time-triads', JSON.stringify(updatedAllTime));
+  
+  console.log(`💾 Saved ${thisGamePassages.length} passages to tracking (${trimmed.length} recent, ${updatedAllTime.length} all-time)`);
   console.log(`📊 Passage IDs saved:`, thisGamePassages.join(', '));
 }
 
@@ -2041,6 +2093,14 @@ markTriadAsUsed(groupName) {
     document.querySelector('.container').style.display = 'none';
     document.body.appendChild(this.createGameInterface(mode));
     
+    // Update progress display with actual triad count for certamen modes
+    if ((mode === 'certamen' || mode === 'certamen-solo') && this.actualTriadCount) {
+      const progressDisplay = document.getElementById('certamen-progress');
+      if (progressDisplay) {
+        progressDisplay.textContent = `Round 0 of ${this.actualTriadCount}`;
+      }
+    }
+    
     if (mode === 'certamen' || mode === 'certamen-solo') {
       // Check if hyperbuzz message has been seen this session
       const hasSeenThisSession = sessionStorage.getItem('hyperbuzz-seen');
@@ -2106,7 +2166,7 @@ createGameInterface(mode) {
     gameContainer.innerHTML = `
       <div class="game-header">
         <h2>${mode === 'certamen-solo' ? 'Solo Certamen' : mode.charAt(0).toUpperCase() + mode.slice(1)} Mode</h2>
-        ${(mode === 'certamen' || mode === 'certamen-solo') ? '<div id="certamen-progress" class="certamen-progress">Round 0 of 20</div>' : ''}
+        ${(mode === 'certamen' || mode === 'certamen-solo') ? '<div id="certamen-progress" class="certamen-progress">Round 0 of ...</div>' : ''}
         ${mode === 'practice' ? '<div id="question-progress" class="certamen-progress">Question 1 of ' + this.sessionSize + '</div>' : ''}
         <button id="back-to-setup" class="back-button">← Back to Setup</button>
       </div>
@@ -2269,7 +2329,6 @@ showSessionComplete() {
       </div>
       <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
         <button onclick="game.continueSession()" class="play-again-button explosive">Continue with 25 More</button>
-        <button onclick="game.returnToSetup()" class="change-settings-button">Change Settings</button>
       </div>
     </div>
   `;
@@ -2312,7 +2371,18 @@ showSessionComplete() {
     // Initialize lightning game variables on first run
     if (this.lightningStarted === undefined) {
       this.lightningStarted = true;
-      this.timeRemaining = 60; // 60 seconds total
+      
+      // Set timer duration based on difficulty level
+      if (selectedLevel === 'novice') {
+        this.timeRemaining = 60;
+      } else if (selectedLevel === 'intermediate') {
+        this.timeRemaining = 75;
+      } else if (selectedLevel === 'advanced') {
+        this.timeRemaining = 90;
+      } else {
+        this.timeRemaining = 60; // Default fallback
+      }
+      
       this.currentStreak = 0;
       this.longestStreak = 0;
       this.questionsAnswered = 0;
@@ -2322,7 +2392,7 @@ showSessionComplete() {
       this.updateTimerDisplay();
       this.startLightningTimer();
       
-      console.log('Lightning Round timer started - 60 seconds');
+      console.log(`Lightning Round timer started - ${this.timeRemaining} seconds (${selectedLevel} mode)`);
     }
 
     const questionCounter = document.getElementById('question-counter');
@@ -2363,9 +2433,25 @@ showSessionComplete() {
       const timerDisplay = timerValue.parentElement;
       timerDisplay.classList.remove('timer-warning', 'timer-critical');
       
-      if (this.timeRemaining <= 10) {
+      // Calculate proportional warning thresholds based on difficulty
+      let warningThreshold, criticalThreshold;
+      if (selectedLevel === 'novice') {
+        warningThreshold = 30;
+        criticalThreshold = 10;
+      } else if (selectedLevel === 'intermediate') {
+        warningThreshold = 37; // ~50% of 75
+        criticalThreshold = 13; // ~17% of 75
+      } else if (selectedLevel === 'advanced') {
+        warningThreshold = 45; // 50% of 90
+        criticalThreshold = 15; // ~17% of 90
+      } else {
+        warningThreshold = 30;
+        criticalThreshold = 10;
+      }
+      
+      if (this.timeRemaining <= criticalThreshold) {
         timerDisplay.classList.add('timer-critical');
-      } else if (this.timeRemaining <= 30) {
+      } else if (this.timeRemaining <= warningThreshold) {
         timerDisplay.classList.add('timer-warning');
       }
     } else {
@@ -2986,8 +3072,8 @@ handleLightningTextAnswer(question, input) {
           </div>
         </div>
         
-        <button onclick="game.returnToSetup()" class="play-again-button explosive">Play Again</button>
-        <a onclick="game.clearHighScores(); location.reload();" style="display: block; margin-top: 12px; color: rgba(255,255,255,0.4); cursor: pointer; font-size: 0.85rem; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Clear High Scores & Reload</a>
+        <button onclick="game.playAgainSameMode()" class="play-again-button explosive">Play Again</button>
+        <a onclick="game.clearHighScoresAndRefresh()" class="clear-scores-link">Clear High Scores</a>
       </div>
     `;
   }
@@ -3049,8 +3135,8 @@ startCertamenRound() {
     return;
   }
   
-  // ✨ CHECK IF GAME SHOULD END (completed 20 passages)
-  if (this.currentPassage >= CERTAMEN_TRACKING.TRIADS_PER_GAME) {
+  // ✨ CHECK IF GAME SHOULD END (completed all passages)
+  if (this.currentPassage >= (this.actualTriadCount || CERTAMEN_TRACKING.TRIADS_PER_GAME)) {
     console.log(`🏁 Game complete! Finished ${this.currentPassage} passages.`);
     this.endGame();
     return;
@@ -3068,7 +3154,7 @@ startCertamenRound() {
   // ✨ INCREMENT PASSAGE COUNTER when starting a new toss-up
   if (question.dependency === 'tossup') {
     this.currentPassage++;
-    console.log(`🎯 Starting passage ${this.currentPassage} of ${CERTAMEN_TRACKING.TRIADS_PER_GAME}`);
+    console.log(`🎯 Starting passage ${this.currentPassage} of ${this.actualTriadCount || CERTAMEN_TRACKING.TRIADS_PER_GAME}`);
     this.updateProgressDisplay();
     
     // ✨ FIX: Mark triad as used ONLY when actually displayed to user
@@ -3094,7 +3180,8 @@ startCertamenRound() {
 updateProgressDisplay() {
   const progressDisplay = document.getElementById('certamen-progress');
   if (progressDisplay && (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo')) {
-    progressDisplay.textContent = `Round ${this.currentPassage} of ${CERTAMEN_TRACKING.TRIADS_PER_GAME}`;
+    const triadCount = this.actualTriadCount || CERTAMEN_TRACKING.TRIADS_PER_GAME;
+    progressDisplay.textContent = `Round ${this.currentPassage} of ${triadCount}`;
   }
 }
 
@@ -3112,8 +3199,8 @@ startSoloCertamenRound() {
   // Score badge will remain if player has points
   this.updateSoloPlayerVisualState('normal');
   
-  // Check if game should end (completed 20 passages)
-  if (this.currentPassage >= CERTAMEN_TRACKING.TRIADS_PER_GAME) {
+  // Check if game should end (completed all passages)
+  if (this.currentPassage >= (this.actualTriadCount || CERTAMEN_TRACKING.TRIADS_PER_GAME)) {
     console.log(`🏁 Solo Certamen complete! Finished ${this.currentPassage} passages.`);
     this.endGameSolo();
     return;
@@ -3131,7 +3218,7 @@ startSoloCertamenRound() {
   // Increment passage counter when starting a new toss-up
   if (question.dependency === 'tossup') {
     this.currentPassage++;
-    console.log(`🎯 Starting passage ${this.currentPassage} of ${CERTAMEN_TRACKING.TRIADS_PER_GAME}`);
+    console.log(`🎯 Starting passage ${this.currentPassage} of ${this.actualTriadCount || CERTAMEN_TRACKING.TRIADS_PER_GAME}`);
     this.updateProgressDisplay();
     
     // Mark triad as used when actually displayed to user
@@ -3209,7 +3296,6 @@ endGame() {
       </div>
       <div class="victory-actions">
         <button onclick="game.playAgain()" class="play-again-button explosive">Play Again</button>
-        <button onclick="game.returnToSetup()" class="change-settings-button">Change Settings</button>
       </div>
     </div>
   `;
@@ -3257,12 +3343,11 @@ endGameSolo() {
         </div>
         <div class="final-score">
           <span class="team-rank">Triads Completed</span>
-          <span class="team-points">${CERTAMEN_TRACKING.TRIADS_PER_GAME} of ${CERTAMEN_TRACKING.TRIADS_PER_GAME}</span>
+          <span class="team-points">${this.currentPassage} of ${this.actualTriadCount || CERTAMEN_TRACKING.TRIADS_PER_GAME}</span>
         </div>
       </div>
       <div class="victory-actions">
         <button onclick="game.playAgainSolo()" class="play-again-button explosive">Play Again</button>
-        <button onclick="game.returnToSetup()" class="change-settings-button">Change Settings</button>
       </div>
     </div>
   `;
@@ -3300,6 +3385,81 @@ async playAgainSolo() {
   }
 }
 
+// Play Again for Timed/Practice modes - restart with same settings
+async playAgainSameMode() {
+  console.log('🔄 Play Again button clicked for Timed/Practice mode!');
+  
+  // Prevent multiple rapid clicks
+  if (this.isRestarting) {
+    console.log('⚠️ Already restarting, ignoring duplicate click');
+    return;
+  }
+  this.isRestarting = true;
+  
+  try {
+    console.log('🔄 Restarting game with same settings...');
+    console.log('📋 Categories:', selectedCategories);
+    console.log('📋 Level:', selectedLevel);
+    console.log('📋 Mode:', selectedMode);
+    
+    // CRITICAL: Clear ALL timers first to prevent overlapping games
+    if (this.lightningTimer) {
+      clearInterval(this.lightningTimer);
+      this.lightningTimer = null;
+      console.log('✅ Cleared lightning timer');
+    }
+    if (this.answerTimer) {
+      clearInterval(this.answerTimer);
+      this.answerTimer = null;
+    }
+    if (this.bonusTimer) {
+      clearInterval(this.bonusTimer);
+      this.bonusTimer = null;
+    }
+    if (this.nextRoundTimer) {
+      clearTimeout(this.nextRoundTimer);
+      this.nextRoundTimer = null;
+    }
+    
+    // Reset game state FIRST
+    this.gameState = 'setup';
+    
+    // Remove old game container completely
+    const oldGameContainer = document.querySelector('.game-container');
+    if (oldGameContainer) {
+      oldGameContainer.remove();
+      console.log('✅ Removed old game container');
+    }
+    
+    // Reset scores and progress
+    this.currentQuestion = 0;
+    this.playerScore = 0;
+    this.correctAnswers = 0;
+    this.incorrectAnswers = 0;
+    this.skippedQuestions = 0;
+    this.correctAnswersCount = 0;
+    this.questionsAnswered = 0;
+    this.currentStreak = 0;
+    this.longestStreak = 0;
+    this.timeRemaining = 0;
+    this.questions = [];
+    
+    // CRITICAL: Wait for DOM to fully update before starting new game
+    await new Promise(resolve => setTimeout(resolve, 100));
+    
+    // Use the global selected settings to restart the game
+    await this.startGame(selectedCategories, selectedLevel, selectedMode);
+    console.log('✅ Game restarted successfully');
+    
+    // Reset restart flag
+    this.isRestarting = false;
+  } catch (error) {
+    console.error('❌ Error in playAgainSameMode:', error);
+    this.isRestarting = false;
+    alert('Error restarting game: ' + error.message);
+  }
+}
+
 // ===================================
 // SOLO CERTAMEN COUNTDOWN TIMER
 // ===================================
@@ -3307,47 +3467,59 @@ async playAgainSolo() {
 startSoloCountdownTimer(duration) {
   console.log('⏰ Starting Solo Certamen countdown timer:', duration, 'seconds');
   
-  // Clear any existing timer
+  // Clear any existing timer interval
   this.clearSoloCountdownTimer();
   
   this.soloTimeLeft = duration;
-  const circumference = 2 * Math.PI * 30; // radius = 30 (smaller circle)
   
-  // Create timer HTML
-  const timerHTML = `
-    <div class="solo-countdown-timer" id="solo-countdown-timer">
-      <div class="solo-countdown-circle">
-        <svg class="solo-countdown-svg">
-          <circle class="solo-countdown-bg" cx="35" cy="35" r="30"></circle>
-          <circle class="solo-countdown-progress" id="solo-progress-ring" cx="35" cy="35" r="30"
-                  stroke-dasharray="${circumference}" stroke-dashoffset="0"></circle>
-        </svg>
-        <div class="solo-countdown-number" id="solo-countdown-number">${duration}</div>
+  // Check if timer already exists in DOM
+  let timer = document.getElementById('solo-buzz-timer');
+  
+  if (!timer) {
+    // Create timer if it doesn't exist
+    const timerHTML = `
+      <div class="solo-buzz-timer" id="solo-buzz-timer">
+        <span class="timer-icon">⏰</span>
+        <span class="timer-number" id="solo-timer-number">${duration}</span>
       </div>
-      <div class="solo-countdown-label">BUZZ</div>
-    </div>
-  `;
-  
-  // Insert timer into DOM
-  console.log('📍 Inserting timer into DOM...');
-  document.body.insertAdjacentHTML('beforeend', timerHTML);
+    `;
+    
+    // Insert timer into placeholder
+    console.log('📍 Inserting timer into placeholder...');
+    const placeholder = document.getElementById('timer-placeholder');
+    if (placeholder) {
+      placeholder.innerHTML = timerHTML;
+      console.log('✅ Timer inserted into placeholder');
+      timer = document.getElementById('solo-buzz-timer');
+    } else {
+      console.error('❌ Timer placeholder NOT found!');
+      return;
+    }
+  } else {
+    // Timer exists, just update the number
+    console.log('♻️ Reusing existing timer element');
+    const numberElement = document.getElementById('solo-timer-number');
+    if (numberElement) {
+      numberElement.textContent = duration;
+    }
+  }
   
   // Show timer with fade-in
-  const timer = document.getElementById('solo-countdown-timer');
   if (timer) {
-    console.log('✅ Timer element found in DOM');
+    console.log('✅ Timer element ready');
     setTimeout(() => {
       timer.classList.add('visible');
       console.log('✅ Added .visible class to timer');
     }, 50);
   } else {
-    console.error('❌ Timer element NOT found in DOM after insertion!');
+    console.error('❌ Timer element NOT found!');
+    return;
   }
   
   // Start countdown
   this.soloCountdownInterval = setInterval(() => {
     this.soloTimeLeft--;
-    this.updateSoloCountdownDisplay(circumference);
+    this.updateSoloCountdownDisplay();
     
     if (this.soloTimeLeft <= 0) {
       console.log('⏰ Solo countdown expired - moving to next question');
@@ -3356,27 +3528,19 @@ startSoloCountdownTimer(duration) {
   }, 1000);
 }
 
-updateSoloCountdownDisplay(circumference) {
-  const timer = document.getElementById('solo-countdown-timer');
-  const numberElement = document.getElementById('solo-countdown-number');
-  const progressRing = document.getElementById('solo-progress-ring');
+updateSoloCountdownDisplay() {
+  const numberElement = document.getElementById('solo-timer-number');
+  const timer = document.getElementById('solo-buzz-timer');
   
-  if (!numberElement || !progressRing || !timer) return;
+  if (!numberElement || !timer) return;
   
   // Update number
   numberElement.textContent = this.soloTimeLeft;
   
-  // Update circular progress
-  const progress = this.soloTimeLeft / 5; // Assuming 5 second duration
-  const offset = circumference * (1 - progress);
-  progressRing.style.strokeDashoffset = offset;
-  
-  // Update visual states based on time remaining
-  timer.classList.remove('warning', 'urgent');
-  
+  // Add warning class when time is running low
   if (this.soloTimeLeft <= 2) {
     timer.classList.add('urgent');
-  } else if (this.soloTimeLeft <= 4) {
+  } else if (this.soloTimeLeft <= 3) {
     timer.classList.add('warning');
   }
 }
@@ -3399,10 +3563,10 @@ clearSoloCountdownTimer() {
     this.soloCountdownInterval = null;
   }
   
-  const timer = document.getElementById('solo-countdown-timer');
+  const timer = document.getElementById('solo-buzz-timer');
   if (timer) {
     timer.classList.remove('visible');
-    setTimeout(() => timer.remove(), 300);
+    // Don't remove from DOM - just hide it to prevent layout shift
   }
 }
 
@@ -3456,6 +3620,7 @@ displayQuestion(question) {
   questionDisplay.innerHTML = `
     <div class="question-content">
      ${questionTypeLabel}
+     <div class="timer-placeholder" id="timer-placeholder"></div>
       <h3 id="question-text-display">${(this.gameMode === 'certamen' || this.gameMode === 'certamen-solo') ? '' : this.cleanQuestionText(question.question)}</h3>
       ${this.createAnswerOptions(question)}
     </div>
@@ -3649,12 +3814,23 @@ displayQuestion(question) {
 }
 
 finishReading(question) {
-  console.log('✅ Reading finished naturally - no one buzzed during reading');
+  console.log('✅ Reading finished naturally - checking if anyone buzzed');
   this.isReading = false;
   
   if (this.readingTimeout) {
     clearTimeout(this.readingTimeout);
     this.readingTimeout = null;
+  }
+  
+  // ✨ FIX: Don't start countdown if player already buzzed or timer expired
+  if (this.gameMode === 'certamen-solo' && this.soloPlayer.buzzed) {
+    console.log('⏭️ Player already buzzed - skipping countdown');
+    return;
+  }
+  
+  if (this.timerHasExpired) {
+    console.log('⏭️ Timer expired - skipping countdown');
+    return;
   }
   
   // CRITICAL: Ensure answer options are disabled during buffer period
@@ -3670,9 +3846,6 @@ finishReading(question) {
   }
 }
 
-  // [Rest of the methods remain the same - buzzing, teams, scoring, etc.]
-  // [Including all the existing Certamen logic, answer handling, etc.]
-  // [This is just showing the key changes for multi-category support]
 
   // ===================================
   // GAME FLOW & NAVIGATION  
@@ -3722,6 +3895,23 @@ nextQuestion() {
   if (this.bonusTimer) {
     clearInterval(this.bonusTimer);
     this.bonusTimer = null;
+  }
+  
+  // ✨ PREVENTATIVE FIX: Clear mode-specific countdown timers
+  if (this.gameMode === 'certamen-solo') {
+    this.clearSoloCountdownTimer();  // Solo Certamen 5-second countdown
+  } else if (this.gameMode === 'certamen') {
+    this.clearQuestionTimer();        // Regular Certamen 5-second buzz-in timer
+  }
+  
+  // ✨ ADDITIONAL SAFETY: Clear game flow timers that could trigger nextQuestion()
+  if (this.allEliminatedTimer) {
+    clearTimeout(this.allEliminatedTimer);
+    this.allEliminatedTimer = null;
+  }
+  if (this.bonusCompleteTimer) {
+    clearTimeout(this.bonusCompleteTimer);
+    this.bonusCompleteTimer = null;
   }
   
   this.hideVisualTimer();
@@ -3849,10 +4039,23 @@ returnToSetup() {
   
   this.gameState = 'setup';
 
+  // ENHANCED CLEANUP: Remove ALL game-related elements
   const gameContainer = document.querySelector('.game-container');
   if (gameContainer) {
     gameContainer.remove();
   }
+  
+  // Also remove any floating buzz buttons that might remain
+  const floatingBuzzButtons = document.querySelectorAll('[id^="floating-buzz"], #floating-solo-buzz');
+  floatingBuzzButtons.forEach(btn => btn.remove());
+  
+  // Remove any team cards or solo player cards that might remain
+  const teamCards = document.querySelectorAll('.team-card, #solo-player');
+  teamCards.forEach(card => card.remove());
+  
+  // Remove any leftover question displays or game-over screens
+  const gameOverScreens = document.querySelectorAll('.game-over, .question-container, .session-summary');
+  gameOverScreens.forEach(screen => screen.remove());
   
   document.querySelector('.container').style.display = 'block';
   
@@ -3918,6 +4121,22 @@ returnToSetup() {
       console.log('High scores and recent questions cleared');
     } catch (e) {
       console.warn('Could not clear high scores');
+    }
+  }
+
+  // Clear high scores and refresh the leaderboard display immediately
+  clearHighScoresAndRefresh() {
+    // Clear the scores from localStorage
+    this.clearHighScores();
+    
+    // Update in-memory high scores
+    this.highScores = [];
+    
+    // Update the leaderboard display immediately
+    const leaderboardList = document.querySelector('.leaderboard-list');
+    if (leaderboardList) {
+      leaderboardList.innerHTML = '<div class="no-scores">No high scores yet!</div>';
+      console.log('✅ Leaderboard display updated - showing empty state');
     }
   }
 
@@ -5217,8 +5436,8 @@ handleSoloBuzz() {
     this.stopReading();
   }
   
-  // Start 8-second answer timer for solo player
-  this.startQuestionTimer(8, 'tossup');
+  // Start 20-second answer timer for solo player
+  this.startQuestionTimer(20, 'tossup');
   
   this.updateSoloPlayerVisualState('buzzed-in');
   
