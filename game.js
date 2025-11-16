@@ -1,7 +1,7 @@
 console.log("JavaScript is working!");
 
 // ===== DEBUG MODE TOGGLE =====
-const DEBUG_MODE = false; // Set to true to enable debug logging, false to hide it
+const DEBUG_MODE = true; // Set to true to enable debug logging, false to hide it
 
 // ===== DEBUG TOOL - ADD THIS TO TOP OF GAME.JS =====
 
@@ -3572,16 +3572,35 @@ clearSoloCountdownTimer() {
 
 // Play again with same settings
 async playAgain() {
-  console.log('🔄 Starting new game with same settings...');
-  this.currentPassage = 0;
-  this.currentQuestion = 0;
-  this.teams.forEach(team => team.score = 0);
-  this.eliminatedTeams.clear();
-  this.teamBuzzedIn = null;
-  this.bonusWinningTeam = null;
+  console.log('🔄 Play Again Certamen button clicked!');
   
-  // Use the global selected settings
-  await this.startGame(selectedCategories, selectedLevel, selectedMode);
+  try {
+    console.log('🔄 Starting new certamen game with same settings...');
+    console.log('📋 Categories:', selectedCategories);
+    console.log('📋 Level:', selectedLevel);
+    console.log('📋 Mode:', selectedMode);
+    
+    // ✨ CRITICAL FIX: Reset game state to allow restart
+    this.gameState = 'setup';
+    
+    // Reset all game state
+    this.currentPassage = 0;
+    this.currentQuestion = 0;
+    this.teams.forEach(team => {
+      team.score = 0;
+      team.triadsCompleted = 0;
+    });
+    this.eliminatedTeams.clear();
+    this.teamBuzzedIn = null;
+    this.bonusWinningTeam = null;
+    
+    // Use the global selected settings
+    await this.startGame(selectedCategories, selectedLevel, selectedMode);
+    console.log('✅ New certamen game started successfully');
+  } catch (error) {
+    console.error('❌ Error in playAgain:', error);
+    alert('Error starting new game: ' + error.message);
+  }
 }
 
 // ===================================
@@ -3592,6 +3611,19 @@ displayQuestion(question) {
   this.questionStartTime = Date.now();
   
   const questionDisplay = document.getElementById('question-display');
+  
+  // ✅ CRITICAL: Make sure question container is visible
+  if (questionDisplay) {
+    questionDisplay.style.display = 'block';
+    questionDisplay.style.visibility = 'visible';
+  }
+  
+  // Also ensure parent container is visible
+  const questionContainer = document.querySelector('.question-container');
+  if (questionContainer) {
+    questionContainer.style.display = 'block';
+    questionContainer.style.visibility = 'visible';
+  }
   
   // 🔄 RESHUFFLE MC options in review mode to prevent position memorization
   if (this.retryMode && question.options && question.options.length > 0) {
@@ -3612,7 +3644,7 @@ displayQuestion(question) {
   if (this.gameMode === 'certamen-solo') {
     questionTypeLabel = '<div class="question-type">TOSSUP</div>';
   } else if (this.gameMode === 'certamen') {
-    questionTypeLabel = '<div class="question-type" style="display: none;">TOSSUP</div>';
+    questionTypeLabel = '<div class="question-type">TOSSUP</div>';
   } else {
     questionTypeLabel = `<div class="question-type">${this.getCategoryDisplayText(question.category)}</div>`;
   }
@@ -3620,11 +3652,18 @@ displayQuestion(question) {
   questionDisplay.innerHTML = `
     <div class="question-content">
      ${questionTypeLabel}
-     <div class="timer-placeholder" id="timer-placeholder"></div>
+     <div class="timer-placeholder" id="timer-placeholder">
+       <div class="question-timer-box" id="question-timer-box" style="visibility: hidden; min-width: 70px; min-height: 30px;">
+         <span class="timer-icon">⏰</span>
+         <span id="question-timer">0</span>
+       </div>
+     </div>
       <h3 id="question-text-display">${(this.gameMode === 'certamen' || this.gameMode === 'certamen-solo') ? '' : this.cleanQuestionText(question.question)}</h3>
       ${this.createAnswerOptions(question)}
     </div>
   `;
+  
+  console.log('✅ Question display updated and visible');
   
   this.setupAnswerHandlers(question);
   
@@ -3795,6 +3834,24 @@ displayQuestion(question) {
     }
   }
 
+  // Clear the question display immediately (for clean transitions)
+  clearQuestionDisplay() {
+    // Clear question text
+    const questionTextEl = document.getElementById('question-text-display');
+    if (questionTextEl) {
+      questionTextEl.textContent = '';
+    }
+    
+    // ✅ DON'T hide the container - just clear the content
+    // This prevents the "invisible question" bug
+    
+    // Hide bonus question container if visible
+    const bonusContainer = document.querySelector('.bonus-question-container');
+    if (bonusContainer) {
+      bonusContainer.style.display = 'none';
+    }
+  }
+
   stopReading() {
   // Only log and process if reading was actually active
   if (!this.isReading) {
@@ -3841,8 +3898,8 @@ finishReading(question) {
     // Solo Certamen: Use dedicated circular countdown timer
     this.startSoloCountdownTimer(5);
   } else {
-    // Regular Certamen: Use existing timer system
-    this.startQuestionTimer(5, 'buzz-in');
+    // Regular Certamen: 8-second initial buzz-in timer
+    this.startQuestionTimer(8, 'buzz-in');
   }
 }
 
@@ -3950,7 +4007,7 @@ nextQuestion() {
     
     if (buzzButton) {
       buzzButton.disabled = false;
-      buzzButton.classList.remove('buzzed-active', 'buzzed-inactive', 'eliminated');
+      buzzButton.classList.remove('buzzed-active', 'buzzed-inactive', 'eliminated', 'bonus-disabled');
       buzzButton.textContent = '🔔 BUZZ IN';
       buzzButton.style.background = '';
       buzzButton.style.color = '';
@@ -3958,7 +4015,7 @@ nextQuestion() {
     
     if (floatingButton) {
       floatingButton.disabled = false;
-      floatingButton.classList.remove('buzzed-active', 'buzzed-inactive', 'eliminated');
+      floatingButton.classList.remove('buzzed-active', 'buzzed-inactive', 'eliminated', 'bonus-disabled');
       floatingButton.textContent = team.name;
       floatingButton.style.background = '';
       floatingButton.style.color = '';
@@ -4416,6 +4473,9 @@ if (this.gameMode === 'certamen') {
   if (isCorrect) {
     // CORRECT ANSWER - Start bonus questions for winning team
     console.log('✅ CORRECT ANSWER - Starting bonus round');
+    
+    // ✅ DON'T clear display - let it transition naturally
+    
     this.bonusWinningTeam = this.teamBuzzedIn;
     
     // ✨ FIX: Set bonus state immediately to prevent race conditions
@@ -4450,6 +4510,9 @@ if (this.gameMode === 'certamen') {
   if (isCorrect) {
     // CORRECT ANSWER - Start bonus questions for solo player
     console.log('✅ CORRECT ANSWER - Starting bonus round');
+    
+    // ✅ DON'T clear display - let it transition naturally
+    
     this.bonusWinningTeam = 0; // Solo player is always index 0
     
     // ✨ FIX: Set bonus state immediately to prevent race conditions
@@ -4525,12 +4588,22 @@ continueAfterIncorrectAnswer() {
   if (availableTeams.length === 0) {
     // All teams eliminated - move to next question
     console.log('All teams eliminated - moving to next question');
+    
+    // Clear the question display immediately for clean transition
+    this.clearQuestionDisplay();
+    
     this.allEliminatedTimer = setTimeout(() => this.nextQuestion(), 1000);
     return;
   }
 
   // Reset for remaining teams
   this.teamBuzzedIn = null;
+  
+  // RESET THE QUESTION-TYPE LABEL back to "TOSSUP" for remaining teams
+  const questionTypeEl = document.querySelector('.question-type');
+  if (questionTypeEl) {
+    questionTypeEl.textContent = 'TOSSUP';
+  }
   
   // ✨ RE-ENABLE BUZZING for remaining teams - race condition fix
   this.buzzingAllowed = true;
@@ -4545,7 +4618,8 @@ continueAfterIncorrectAnswer() {
   // Show full question for remaining teams
   this.updateQuestionDisplay(question.question, false);
   
-  // START 5-SECOND BUZZ-IN TIMER FOR REMAINING TEAMS
+  // START 5-SECOND ROLLOVER BUZZ-IN TIMER 
+  // (Shorter than initial 8-second timer because teams have already seen the question)
   this.startQuestionTimer(5, 'buzz-in');
 }
 
@@ -4777,6 +4851,7 @@ updateSoloScoreDisplay() {
 
 // UNIFIED TIMER SYSTEM for both toss-ups and bonus questions
 startQuestionTimer(duration, timerType) {
+  console.log(`⏰ DEBUG: Starting ${timerType} timer for ${duration} seconds`);
   this.questionTimeLeft = duration;
   this.currentTimerType = timerType; // 'tossup', 'bonus', or 'buzz-in'
   
@@ -4784,23 +4859,25 @@ startQuestionTimer(duration, timerType) {
   // For bonus questions, this flag isn't used, but reset it anyway for consistency
   this.timerHasExpired = false;
   
-  // Create timer display
-  const questionContainer = document.querySelector('.question-container');
-  if (questionContainer) {
-    const timerBox = document.createElement('div');
-    timerBox.className = 'question-timer-box';
-    timerBox.id = 'question-timer-box';
+  // Get the timer box that was created in the question display HTML
+  let timerBox = document.getElementById('question-timer-box');
+  
+  if (timerBox) {
+    // Update timer content
     timerBox.innerHTML = `
       <span class="timer-icon">⏰</span>
       <span id="question-timer">${duration}</span>
     `;
+    timerBox.classList.remove('expired', 'timer-warning', 'timer-critical');
     
-    const questionType = questionContainer.querySelector('.question-type');
-    if (questionType) {
-      questionType.insertAdjacentElement('afterend', timerBox);
-    }
+    // Make timer visible
+    timerBox.style.visibility = 'visible';
+    console.log(`⏰ DEBUG: Timer box updated and made visible`);
+  } else {
+    console.warn(`⏰ DEBUG: Could not find timer box element`);
   }
   
+  console.log(`⏰ DEBUG: Starting interval countdown from ${duration} seconds`);
   this.questionTimer = setInterval(() => {
     this.questionTimeLeft--;
     this.updateQuestionTimerDisplay();
@@ -4917,10 +4994,11 @@ clearQuestionTimer() {
     this.questionTimer = null;
   }
   
-  // REMOVE the visual timer box from DOM
+  // HIDE the visual timer box instead of removing it (prevents jumping)
   const timerBox = document.getElementById('question-timer-box');
   if (timerBox) {
-    timerBox.remove();
+    timerBox.style.visibility = 'hidden'; // Hide but keep space reserved
+    console.log('⏰ DEBUG: Timer box hidden (space reserved)');
   }
 }
 
@@ -4953,11 +5031,20 @@ questionDisplay.innerHTML = `
   <div class="bonus-question-container">
     <div class="question-content">
       <div class="question-type">${questionTypeLabel}</div>
+      <div class="timer-placeholder" id="timer-placeholder">
+        <div class="question-timer-box" id="question-timer-box" style="visibility: hidden; min-width: 70px; min-height: 30px;">
+          <span class="timer-icon">⏰</span>
+          <span id="question-timer">0</span>
+        </div>
+      </div>
       <h3 id="question-text-display">${this.cleanQuestionText(bonusQuestion.question)}</h3>
       ${this.createAnswerOptions(bonusQuestion)}
     </div>
   </div>
 `;
+  
+  // Ensure question display is visible (in case it was hidden by clearQuestionDisplay)
+  questionDisplay.style.display = 'block';
   
   // Set up answer handlers for this bonus question
   this.setupAnswerHandlers(bonusQuestion);
@@ -5121,6 +5208,40 @@ disableAllBuzzers() {
   });
 }
 
+// ===================================
+// LEVENSHTEIN DISTANCE (Fuzzy Matching)
+// ===================================
+// Calculates the minimum number of single-character edits needed to change one word into another
+// Used to accept answers with typos (1 character difference)
+levenshteinDistance(str1, str2) {
+  const len1 = str1.length;
+  const len2 = str2.length;
+  
+  // Create a 2D array for dynamic programming
+  const matrix = Array(len1 + 1).fill(null).map(() => Array(len2 + 1).fill(0));
+  
+  // Initialize first row and column
+  for (let i = 0; i <= len1; i++) matrix[i][0] = i;
+  for (let j = 0; j <= len2; j++) matrix[0][j] = j;
+  
+  // Fill the matrix
+  for (let i = 1; i <= len1; i++) {
+    for (let j = 1; j <= len2; j++) {
+      if (str1[i - 1] === str2[j - 1]) {
+        matrix[i][j] = matrix[i - 1][j - 1]; // No change needed
+      } else {
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j] + 1,    // Deletion
+          matrix[i][j - 1] + 1,    // Insertion
+          matrix[i - 1][j - 1] + 1 // Substitution
+        );
+      }
+    }
+  }
+  
+  return matrix[len1][len2];
+}
+
 compareAnswers(userAnswer, correctAnswer) {
   // Safety checks for undefined/null values
   if (!userAnswer) {
@@ -5170,7 +5291,24 @@ normalizeAndCompare(userAnswer, correctAnswer) {
       .replace(/\s/g, ''); // Remove all spaces for number matching
   };
   
-  return normalizeAnswer(cleanUser) === normalizeAnswer(cleanCorrect);
+  const normalizedUser = normalizeAnswer(cleanUser);
+  const normalizedCorrect = normalizeAnswer(cleanCorrect);
+  
+  // Exact match after normalization
+  if (normalizedUser === normalizedCorrect) {
+    return true;
+  }
+  
+  // Fuzzy matching - accept answers within 1 character difference
+  // This catches common typos like "atlanta" → "Atalanta" or "clymenestra" → "Clytemnestra"
+  const distance = this.levenshteinDistance(normalizedUser, normalizedCorrect);
+  
+  if (distance <= 1) {
+    console.log(`✅ FUZZY MATCH: "${userAnswer}" accepted for "${correctAnswer}" (distance: ${distance})`);
+    return true;
+  }
+  
+  return false;
 }
 
 cleanQuestionText(questionText) {
@@ -5356,8 +5494,8 @@ handleBuzz(teamIndex) {
   // STOP ALL PULSING WHEN SOMEONE BUZZES
   this.stopBuzzButtonPulsing();
 
-  // ✨ START 8-SECOND TOSS-UP TIMER (reduced from 12 for faster pace)
-  this.startQuestionTimer(8, 'tossup');
+  // ✨ START 15-SECOND TOSS-UP TIMER (increased from 8 for better gameplay)
+  this.startQuestionTimer(15, 'tossup');
   
   this.updateTeamVisualState(teamIndex, 'buzzed-in');
   
@@ -5367,7 +5505,6 @@ handleBuzz(teamIndex) {
   // UPDATE THE YELLOW BADGE TO SHOW WHICH TEAM BUZZED IN
   const questionTypeEl = document.querySelector('.question-type');
   if (questionTypeEl) {
-    questionTypeEl.style.display = 'inline-block';
     questionTypeEl.textContent = `TEAM ${this.teams[teamIndex].name.toUpperCase()} - TOSSUP`;
   } 
  
@@ -5381,8 +5518,10 @@ handleBuzz(teamIndex) {
   
   // Re-enable answer options after buzz-in
   const answerButtons = document.querySelectorAll('.answer-option');
-  answerButtons.forEach(button => {
+  console.log(`🎮 DEBUG: Found ${answerButtons.length} answer buttons to enable after buzz-in`);
+  answerButtons.forEach((button, index) => {
     button.disabled = false;
+    console.log(`✅ DEBUG: Enabled button ${index}: "${button.textContent}" (disabled=${button.disabled})`);
   });
   
 // Also enable text input if it exists
@@ -5395,10 +5534,14 @@ if (answerInput) {
   answerInput.style.background = ''; // Reset background color
   answerInput.style.color = ''; // Reset text color
   answerInput.focus();
+  console.log('✅ DEBUG: Enabled text input field');
 }
 if (submitButton) {
   submitButton.disabled = false;
+  console.log('✅ DEBUG: Enabled submit button');
 }
+
+console.log('🎮 DEBUG: Answer options should now be clickable. Timer should be running.');
 } 
 
 handleSoloBuzz() {
