@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Certamen</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=22" />
+  <link rel="stylesheet" href="style.css?v=113" />
 </head>
 <body>
   <div class="bg-particles"></div>
@@ -100,7 +100,8 @@
             <span class="card-emoji">📖</span>
             <div class="card-title">Practice</div>
           </div>
-          <div class="option-card mode-option" data-mode="certamen">
+          <!-- Hidden: Local Certamen mode (use Multiplayer Certamen instead) -->
+          <div class="option-card mode-option" data-mode="certamen" style="display: none;">
             <span class="card-emoji">🏆</span>
             <div class="card-title">Certamen</div>
             <div class="card-subtitle">All Themes</div>
@@ -108,6 +109,11 @@
           <div class="option-card mode-option" data-mode="certamen-solo">
             <span class="card-emoji">💪</span>
             <div class="card-title">Solo Certamen</div>
+            <div class="card-subtitle">All Themes</div>
+          </div>
+          <div class="option-card mode-option" data-mode="certamen-multiplayer">
+            <span class="card-emoji">🌐</span>
+            <div class="card-title">Multiplayer Certamen</div>
             <div class="card-subtitle">All Themes</div>
           </div>
         </div>
@@ -127,6 +133,34 @@
     </div>
   </div>
 
+<!-- Multiplayer Host/Join Screen -->
+<div id="multiplayer-setup" class="multiplayer-screen" style="display: none;">
+  <div class="multiplayer-container">
+    <div class="multiplayer-header">
+      <h1 class="multiplayer-title">Multiplayer Certamen</h1>
+      <p class="multiplayer-subtitle">Play with 2 or 3 remote players</p>
+    </div>
+    
+    <div class="host-join-options">
+      <button class="host-join-btn host-btn" id="host-game-btn">
+        <span class="btn-emoji">🏛️</span>
+        <span class="btn-title">HOST GAME</span>
+        <span class="btn-description">Create a room and get a code to share</span>
+      </button>
+      
+      <button class="host-join-btn join-btn" id="join-game-btn">
+        <span class="btn-emoji">🚪</span>
+        <span class="btn-title">JOIN GAME</span>
+        <span class="btn-description">Enter a room code to join</span>
+      </button>
+    </div>
+    
+    <button class="back-to-setup-btn" id="back-to-setup">
+      ← Back to Setup
+    </button>
+  </div>
+</div>
+
 <!-- Confirmation Modal -->
 <div id="confirm-modal" class="modal-overlay">
   <div class="modal-box">
@@ -143,6 +177,44 @@
   </div>
 </div>
 
-  <script src="game.js"></script>
+<!-- Servers Resting Overlay (Firebase Quota Exhausted) -->
+<div id="servers-resting-overlay" class="servers-resting-overlay">
+  <!-- Stars container - populated by JS -->
+  <div class="rest-stars-container" id="rest-stars"></div>
+  
+  <!-- Shooting stars -->
+  <div class="rest-shooting-star rest-shooting-star-1"></div>
+  <div class="rest-shooting-star rest-shooting-star-2"></div>
+  
+  <!-- Moon -->
+  <div class="rest-moon-container">
+    <div class="rest-moon">
+      <div class="rest-moon-crater rest-crater-1"></div>
+      <div class="rest-moon-crater rest-crater-2"></div>
+      <div class="rest-moon-crater rest-crater-3"></div>
+      <div class="rest-moon-crater rest-crater-4"></div>
+    </div>
+  </div>
+  
+  <!-- Message Card -->
+  <div class="rest-message-card">
+    <span class="rest-moon-icon">🌙</span>
+    <h1 class="rest-title">Servers Are Resting</h1>
+    <p class="rest-message">
+      Our multiplayer servers have reached their daily limit.<br>
+      They'll be back fresh tomorrow.
+    </p>
+    
+    <div class="rest-alternatives-title">In the meantime, play</div>
+    <div class="rest-alternatives">
+      <a href="index.html" class="rest-alt-option"><span class="rest-option-emoji">🏛️</span> <span class="rest-option-text">Solo Certamen</span></a>
+      <a href="index.html" class="rest-alt-option"><span class="rest-option-emoji">📚</span> <span class="rest-option-text">Practice Mode</span></a>
+      <a href="index.html" class="rest-alt-option"><span class="rest-option-emoji">⏱️</span> <span class="rest-option-text">Timed Mode</span></a>
+    </div>
+  </div>
+</div>
+
+  <script src="game.js?v=113"></script>
+  <script type="module" src="multiplayer.js?v=113"></script>
 </body>
 </html>

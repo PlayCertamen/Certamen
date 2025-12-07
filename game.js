@@ -1,7 +1,7 @@
 console.log("JavaScript is working!");
 
 // ===== DEBUG MODE TOGGLE =====
-const DEBUG_MODE = false; // Set to true to enable debug logging, false to hide it
+const DEBUG_MODE = true; // Set to true to enable debug logging, false to hide it
 
 // ===== DEBUG TOOL - ADD THIS TO TOP OF GAME.JS =====
 
@@ -73,6 +73,76 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ===== END DEBUG TOOL =====
+
+
+// ===================================
+// DEBOUNCE UTILITIES
+// ===================================
+// Prevents rapid double-clicks from causing duplicate actions
+
+/**
+ * Creates a debounced version of a function that won't fire again
+ * until `delay` milliseconds have passed since the last call.
+ */
+function debounce(func, delay = 300) {
+  let timeoutId;
+  return function(...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
+/**
+ * Creates a throttled version of a function that can only fire once
+ * every `limit` milliseconds. First call fires immediately.
+ */
+function throttle(func, limit = 300) {
+  let lastCall = 0;
+  let lastResult;
+  return function(...args) {
+    const now = Date.now();
+    if (now - lastCall >= limit) {
+      lastCall = now;
+      lastResult = func.apply(this, args);
+    }
+    return lastResult;
+  };
+}
+
+/**
+ * Track button states to prevent double-clicks.
+ * Maps button identifiers to their last click timestamp.
+ */
+const buttonClickTracker = {
+  lastClicks: {},
+  
+  // Check if enough time has passed since last click (default 500ms)
+  canClick(buttonId, cooldownMs = 500) {
+    const now = Date.now();
+    const lastClick = this.lastClicks[buttonId] || 0;
+    if (now - lastClick < cooldownMs) {
+      console.log(`⏳ Button "${buttonId}" click blocked - cooldown active (${cooldownMs - (now - lastClick)}ms remaining)`);
+      return false;
+    }
+    this.lastClicks[buttonId] = now;
+    return true;
+  },
+  
+  // Reset a specific button's cooldown
+  reset(buttonId) {
+    delete this.lastClicks[buttonId];
+  },
+  
+  // Reset all cooldowns (e.g., when moving to next question)
+  resetAll() {
+    this.lastClicks = {};
+  }
+};
+
+// Make available globally for multiplayer.js
+window.buttonClickTracker = buttonClickTracker;
+
+// ===== END DEBOUNCE UTILITIES =====
 
 
 // ===================================
@@ -273,8 +343,8 @@ function isSelectionValid() {
   }
   
   // Different validation rules for different modes
-  if (selectedMode === 'certamen' || selectedMode === 'certamen-solo') {
-    // Certamen mode: Allow 6 categories (novice) or 7 categories (advanced with literature)
+  if (selectedMode === 'certamen' || selectedMode === 'certamen-solo' || selectedMode === 'certamen-multiplayer') {
+    // Certamen modes: Allow 6 categories (novice/intermediate) or 7 categories (advanced with literature)
     if (selectedLevel === 'novice' && selectedCategories.length === 6) {
       // Should be 6 categories without literature
       return !selectedCategories.includes('literature');
@@ -285,7 +355,7 @@ function isSelectionValid() {
       // Intermediate also uses 6 categories without literature
       return !selectedCategories.includes('literature');
     }
-    return false; // Invalid category count for Certamen mode
+    return false; // Invalid category count for Certamen modes
   } else {
     // Practice/Timed modes: limit to 3 categories max
     if (selectedCategories.length > 3) {
@@ -330,9 +400,9 @@ function updateSelection(type, value, element) {
     const categoryIndex = selectedCategories.indexOf(value);
     
     if (categoryIndex > -1) {
-      // Category is already selected - remove it (unless it's the last one in Certamen mode)
-      if (selectedMode === 'certamen' || selectedMode === 'certamen-solo') {
-        // In Certamen mode, don't allow deselection - always all categories
+      // Category is already selected - remove it (unless in any Certamen mode)
+      if (selectedMode === 'certamen' || selectedMode === 'certamen-solo' || selectedMode === 'certamen-multiplayer') {
+        // In Certamen modes, don't allow deselection - always all categories
         return;
       }
       
@@ -407,7 +477,8 @@ if (selectedCategories.includes('literature') && value !== 'advanced' && selecte
     
     element.classList.add('selected');
     
-    if (selectedMode === 'certamen' || selectedMode === 'certamen-solo') {
+    // Update categories for all certamen modes using the same function
+    if (selectedMode === 'certamen' || selectedMode === 'certamen-solo' || selectedMode === 'certamen-multiplayer') {
       updateCertamenCategories(value);
     }
     
@@ -416,8 +487,9 @@ if (selectedCategories.includes('literature') && value !== 'advanced' && selecte
     }, 800);
     
   } else if (type === 'mode') {
-    // ✨ TRANSITION LOGIC: Handle switching from Certamen to Practice/Timed
+    // ✨ TRANSITION LOGIC: Handle switching from Certamen modes to Practice/Timed
     const wasInCertamen = (selectedMode === 'certamen' || selectedMode === 'certamen-solo');
+    const wasInMultiplayerCertamen = (selectedMode === 'certamen-multiplayer');
     const goingToPracticeTimed = (value === 'practice' || value === 'timed');
     
     selectedMode = value;
@@ -425,8 +497,8 @@ if (selectedCategories.includes('literature') && value !== 'advanced' && selecte
     
     element.classList.add('selected');
     
-    // Clear categories when switching FROM Certamen TO Practice/Timed
-    if (wasInCertamen && goingToPracticeTimed) {
+    // Clear categories when switching FROM any Certamen mode TO Practice/Timed
+    if ((wasInCertamen || wasInMultiplayerCertamen) && goingToPracticeTimed) {
       console.log('🔄 Switching from Certamen to Practice/Timed - clearing category selections');
       selectedCategories = [];
       document.querySelectorAll('.category-option').forEach(btn => btn.classList.remove('selected'));
@@ -435,8 +507,8 @@ if (selectedCategories.includes('literature') && value !== 'advanced' && selecte
       toggleLiteratureMessage(false);
     }
     
-    // Auto-select categories when switching TO Certamen modes
-    if (value === 'certamen' || value === 'certamen-solo') {
+    // Auto-select categories when switching TO any Certamen mode
+    if (value === 'certamen' || value === 'certamen-solo' || value === 'certamen-multiplayer') {
       hideCategoryLimitMessage();
       if (selectedLevel) {
         updateCertamenCategories(selectedLevel);
@@ -492,8 +564,8 @@ function updateCategoryDisplay() {
     categoryEl.textContent = `${formattedNames.join(' + ')} (${selectedCategories.length} themes)`;
     hideCategoryLimitMessage(); // Only show when attempting 4th selection
   } else if (selectedCategories.length > 3) {
-    // For Certamen mode with many categories
-    if (selectedMode === 'certamen' || selectedMode === 'certamen-solo') {
+    // For Certamen modes with many categories
+    if (selectedMode === 'certamen' || selectedMode === 'certamen-solo' || selectedMode === 'certamen-multiplayer') {
       if (selectedCategories.includes('literature')) {
         categoryEl.textContent = 'All 7 themes';
       } else {
@@ -515,10 +587,10 @@ if (selectedCategories.length >= 3) {
 }
 // Update helper text
 const helperText = document.getElementById('category-helper');
-if (helperText && selectedMode !== 'certamen' && selectedMode !== 'certamen-solo') {
+if (helperText && selectedMode !== 'certamen' && selectedMode !== 'certamen-solo' && selectedMode !== 'certamen-multiplayer') {
   helperText.textContent = '(3 themes maximum for Timed and Practice modes)';
   helperText.classList.remove('limit-active');
-} else if (helperText && (selectedMode === 'certamen' || selectedMode === 'certamen-solo')) {
+} else if (helperText && (selectedMode === 'certamen' || selectedMode === 'certamen-solo' || selectedMode === 'certamen-multiplayer')) {
   helperText.textContent = 'All themes will be included';
 }
 }
@@ -841,7 +913,7 @@ class CertamenGame {
   constructor() {
     this.questions = [];
     this.currentQuestion = 0;
-    this.currentPassage = 0; // ✨ NEW: Track which passage/round (1-20) we're on in Certamen
+    this.currentPassage = 0; // ✨ Track which passage/round (1-20) we're on in Certamen
     this.teams = [];
     this.playerScore = 0;
     this.gameMode = '';
@@ -866,6 +938,7 @@ class CertamenGame {
     this.eliminatedTeams = new Set();
     this.lastBuzzTime = 0; // ✨ For debouncing buzz button clicks
     this.buzzingAllowed = false; // ✨ NEW: Prevent race condition - only allow buzzing during active question
+    console.log('🔴 DEBUG: buzzingAllowed set to FALSE (initialization)');
     this.soloCountdownInterval = null; // ✨ Solo Certamen countdown timer
     this.soloTimeLeft = 0; // ✨ Solo Certamen countdown time remaining
     this.isRestarting = false; // ✨ Prevent multiple rapid Play Again clicks
@@ -877,6 +950,7 @@ class CertamenGame {
     this.bonusQuestions = [];
     this.bonusTimeLeft = 0;
     this.bonusTimer = null;
+    this.bonusRoundEnding = false; // 🛡️ Guard flag to prevent double endBonusRound calls
 
     // Lightning Round state (Timed Mode)
     this.lightningStarted = undefined;
@@ -896,6 +970,15 @@ class CertamenGame {
     this.retryQuestionIndex = 0;
     this.retryThreshold = 3;
     this.retrySessionStartCount = 0;
+
+    // Multiplayer Certamen state
+    this.isMultiplayer = false;
+    this.isHost = false;
+    this.roomRef = null;
+    this.myPlayerId = null;
+    this.myTeamIndex = null;
+    this.multiplayerUnsubscribe = null;
+    this.lastProcessedBuzzTimestamp = null; // Track last processed buzz to prevent duplicates
     this.retrySessionMastered = 0;
     this.retrySessionType = 'all';
 }
@@ -1269,6 +1352,69 @@ updateReviewCounter() {
       this.modalResolve = null;
     }
   }
+  
+  // 💔 Show modal when host disconnects
+  showHostDisconnectedModal() {
+    console.log('💔 Showing host disconnected modal');
+    
+    // Create modal overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'host-disconnected-overlay';
+    overlay.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      animation: fadeIn 0.3s ease-out;
+    `;
+    
+    overlay.innerHTML = `
+      <div style="
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 2.5rem;
+        text-align: center;
+        max-width: 400px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      ">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">💔</div>
+        <h2 style="color: white; font-size: 1.5rem; margin-bottom: 0.75rem;">Host Disconnected</h2>
+        <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1.5rem; line-height: 1.5;">
+          The game host has left or lost connection.<br>
+          The game cannot continue without a host.
+        </p>
+        <button id="host-disconnect-return-btn" style="
+          background: linear-gradient(135deg, #ff8c00, #ffd700);
+          color: white;
+          border: none;
+          padding: 0.875rem 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: transform 0.2s, box-shadow 0.2s;
+          box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        ">Return to Menu</button>
+      </div>
+    `;
+    
+    document.body.appendChild(overlay);
+    
+    // Add click handler
+    document.getElementById('host-disconnect-return-btn').addEventListener('click', () => {
+      overlay.remove();
+      this.returnToSetup();
+    });
+  }
+
   startCategoryReview(category) {
     console.log(`🔄 Starting ${category} review session`);
     
@@ -1510,6 +1656,14 @@ updateReviewCounter() {
       clearTimeout(this.lateBufferTimeout);
       this.lateBufferTimeout = null;
     }
+    if (this.allEliminatedTimer) {
+      clearTimeout(this.allEliminatedTimer);
+      this.allEliminatedTimer = null;
+    }
+    if (this.bonusCompleteTimer) {
+      clearTimeout(this.bonusCompleteTimer);
+      this.bonusCompleteTimer = null;
+    }
     // ✨ Clear Solo Certamen countdown timer
     this.clearSoloCountdownTimer();
     
@@ -1569,6 +1723,993 @@ updateReviewCounter() {
       console.error('Failed to start game:', error);
       this.gameState = 'setup';
       alert('Failed to load questions. Please try again.');
+    }
+  }
+
+  // ===================================
+  // MULTIPLAYER GAME START
+  // ===================================
+  
+  async startMultiplayerGame(multiplayerState) {
+    console.log('🎮 Starting MULTIPLAYER Certamen');
+    console.log('Multiplayer state:', multiplayerState);
+    
+    // Set multiplayer properties
+    this.isMultiplayer = true;
+    this.isHost = multiplayerState.isHost;
+    this.roomRef = multiplayerState.roomRef;
+    this.roomCode = multiplayerState.roomCode; // 🎮 FIX: Store roomCode for Firebase sync in endGame
+    this.myPlayerId = multiplayerState.playerId;
+    this.myTeamIndex = null; // Will be set when we find our player
+    this.gameMode = 'certamen-multiplayer';
+    this.gameState = 'playing';
+    
+    // 💔 Reset disconnect detection flag for new game
+    this._hostDisconnectShown = false;
+    this._gameEnded = false;
+    
+    // Store game settings from multiplayer state
+    this.selectedLevel = multiplayerState.level || 'novice';
+    this.selectedCategories = multiplayerState.categories || ['mythology', 'roman-history-daily-life', 'latin-grammar', 'derivatives', 'mottos', 'ancient-geography'];
+    
+    console.log('🔍 Stored game settings from multiplayerState:', {
+      level: this.selectedLevel,
+      categories: this.selectedCategories
+    });
+    
+    // Get players from Firebase and map to teams
+    const players = multiplayerState.players || {};
+    const playerEntries = Object.entries(players);
+    
+    // Create teams array with player names
+    this.teams = playerEntries.map(([id, player]) => {
+      // Check if this is me
+      if (id === this.myPlayerId) {
+        this.myTeamIndex = player.teamIndex;
+      }
+      
+      return {
+        name: player.name,  // Use player name as team name in multiplayer
+        captain: player.name,  // Also keep as captain for backwards compatibility
+        score: 0,
+        buzzed: false,
+        playerId: id,
+        teamIndex: player.teamIndex
+      };
+    });
+    
+    // Sort teams by teamIndex to ensure consistent ordering
+    this.teams.sort((a, b) => a.teamIndex - b.teamIndex);
+    
+    console.log('Teams created:', this.teams);
+    console.log('My team index:', this.myTeamIndex);
+    
+    // Show game interface
+    this.showGameInterface('certamen-multiplayer');
+    
+    // Branch: Host loads and runs game, Players just display
+    if (this.isHost) {
+      console.log('🎮 I am HOST - loading questions and running game');
+      await this.runHostGame();
+    } else {
+      console.log('📺 I am PLAYER - listening for game updates');
+      this.runPlayerDisplay();
+    }
+  }
+  
+  // Host: Load questions and start game
+  async runHostGame() {
+    try {
+      // Load questions for the selected difficulty level
+      await this.loadCertamenQuestions(this.selectedLevel);
+      console.log(`✅ Host loaded ${this.questions.length} questions for ${this.selectedLevel} level`);
+      
+      // Initialize game state in Firebase
+      await this.initializeFirebaseGameState();
+      console.log('✅ Firebase game state initialized');
+      
+      // 🎮 HOST: Set up Firebase listener to detect buzz attempts from players
+      this.setupHostBuzzListener();
+      console.log('✅ Host buzz listener set up');
+      
+      // 💓 HOST: Start heartbeat so players know host is still connected
+      this.startHostHeartbeat();
+      console.log('✅ Host heartbeat started');
+      
+      // Start first question
+      this.startCertamenRound();
+      console.log('✅ First question started!');
+      
+      console.log('🎮 Host game ready!');
+    } catch (error) {
+      console.error('Error loading questions for host:', error);
+      alert('Failed to load questions. Please try again.');
+    }
+  }
+  
+  // 💓 HOST: Send heartbeat to Firebase so players know host is connected
+  startHostHeartbeat() {
+    if (!this.isHost || !this.roomRef || !window.updateFirebaseDoc) {
+      return;
+    }
+    
+    // Send initial heartbeat
+    this.sendHostHeartbeat();
+    
+    // Send heartbeat every 15 seconds
+    this.hostHeartbeatInterval = setInterval(() => {
+      this.sendHostHeartbeat();
+    }, 15000);
+    
+    console.log('💓 Host heartbeat interval started (every 15s)');
+  }
+  
+  // 💓 Write heartbeat timestamp to Firebase
+  sendHostHeartbeat() {
+    if (!this.isHost || !this.roomRef || !window.updateFirebaseDoc) {
+      return;
+    }
+    
+    window.updateFirebaseDoc(this.roomRef, {
+      'hostHeartbeat': Date.now()
+    }).catch(err => {
+      console.warn('💓 Heartbeat write failed:', err.message);
+    });
+  }
+  
+  // 💓 Stop heartbeat (call on game end or return to setup)
+  stopHostHeartbeat() {
+    if (this.hostHeartbeatInterval) {
+      clearInterval(this.hostHeartbeatInterval);
+      this.hostHeartbeatInterval = null;
+      console.log('💓 Host heartbeat stopped');
+    }
+  }
+  
+  // 🎮 HOST: Listen for buzz attempts from players via Firebase
+  setupHostBuzzListener() {
+    if (!this.roomRef || !window.onSnapshot) {
+      console.error('❌ Cannot set up host buzz listener - Firebase not available');
+      return;
+    }
+    
+    console.log('🎮 HOST: Setting up buzz listener for room:', this.roomRef.path);
+    
+    this.hostBuzzUnsubscribe = window.onSnapshot(this.roomRef, (doc) => {
+      if (!doc.exists()) return;
+      
+      const data = doc.data();
+      const state = data.gameState;
+      if (!state) return;
+      
+      // Detect buzz attempts from players
+      if (state.buzzAttempt) {
+        const { teamIndex, timestamp, questionTimestamp } = state.buzzAttempt;
+        
+        // Only process if we haven't seen this buzz yet (prevent duplicates)
+        if (!this.lastProcessedBuzzTimestamp || timestamp > this.lastProcessedBuzzTimestamp) {
+          this.lastProcessedBuzzTimestamp = timestamp;
+          
+          // Get team name for clearer logging
+          const teamName = this.teams[teamIndex]?.name || `Team ${teamIndex}`;
+          const buzzTime = new Date(timestamp).toLocaleTimeString('en-US', { 
+            hour12: false, 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit',
+            fractionalSecondDigits: 3 
+          });
+          
+          // 🎮 SYNC FIX: Reject buzzes from old questions
+          if (questionTimestamp && this._currentQuestionTimestamp && 
+              questionTimestamp !== this._currentQuestionTimestamp) {
+            console.log(`⚠️ STALE BUZZ: ${teamName} buzzed for wrong question - rejected`);
+            // Clear the buzz attempt from Firebase
+            window.updateFirebaseDoc(this.roomRef, {
+              'gameState.buzzAttempt': null
+            });
+            return;
+          }
+          
+          // 🎮 SIMULTANEOUS BUZZ FIX: Reject if someone already buzzed in
+          if (this.teamBuzzedIn !== null) {
+            const winnerName = this.teams[this.teamBuzzedIn]?.name || `Team ${this.teamBuzzedIn}`;
+            const timeDiff = timestamp - (this._winningBuzzTimestamp || timestamp);
+            console.log(`🏆 BUZZ RACE: ${winnerName} won!`);
+            console.log(`⚠️ ${teamName} buzz rejected - arrived ${timeDiff}ms later (at ${buzzTime})`);
+            // Clear the buzz attempt from Firebase
+            window.updateFirebaseDoc(this.roomRef, {
+              'gameState.buzzAttempt': null
+            });
+            return;
+          }
+          
+          // ✨ RACE CONDITION FIX: Check if buzzing is still allowed (timer not expired)
+          if (!this.buzzingAllowed) {
+            const timeSinceExpiry = this._timerExpiredAt ? (timestamp - this._timerExpiredAt) : 0;
+            console.log(`⚠️ LATE BUZZ: ${teamName} buzzed ${timeSinceExpiry}ms after timer expired - rejected (at ${buzzTime})`);
+            // Clear the buzz attempt from Firebase
+            window.updateFirebaseDoc(this.roomRef, {
+              'gameState.buzzAttempt': null
+            });
+            return;
+          }
+          
+          // 🏆 WINNING BUZZ - record timestamp for race comparison
+          this._winningBuzzTimestamp = timestamp;
+          console.log(`🏆 BUZZ WINNER: ${teamName} buzzed in first! (at ${buzzTime})`);
+          this.processBuzz(teamIndex);
+          
+          // Clear the buzz attempt from Firebase
+          window.updateFirebaseDoc(this.roomRef, {
+            'gameState.buzzAttempt': null
+          });
+        }
+      }
+      
+      // 🎮 HOST: Detect answer submissions from players
+      if (state.submittedAnswer) {
+        const { teamIndex, answer, timestamp } = state.submittedAnswer;
+        
+        // Only process if we haven't seen this answer yet
+        if (!this.lastProcessedAnswerTimestamp || timestamp > this.lastProcessedAnswerTimestamp) {
+          this.lastProcessedAnswerTimestamp = timestamp;
+          
+          // 🎮 SYNC FIX: Reject answers from old questions
+          const answerQuestionTimestamp = state.submittedAnswer.questionTimestamp;
+          if (answerQuestionTimestamp && this._currentQuestionTimestamp && 
+              answerQuestionTimestamp !== this._currentQuestionTimestamp) {
+            console.log(`⚠️ HOST: Rejecting stale answer from team ${teamIndex} - wrong question (answer=${answerQuestionTimestamp}, current=${this._currentQuestionTimestamp})`);
+            // Clear the submitted answer from Firebase
+            window.updateFirebaseDoc(this.roomRef, {
+              'gameState.submittedAnswer': null
+            });
+            return;
+          }
+          
+          console.log(`📥 HOST: Processing answer from team ${teamIndex}: "${answer}"`);
+          
+          // Process the answer
+          this.processPlayerAnswer(teamIndex, answer);
+          
+          // Clear the submitted answer from Firebase
+          window.updateFirebaseDoc(this.roomRef, {
+            'gameState.submittedAnswer': null
+          });
+        }
+      }
+    });
+    
+    // 📡 Register listener with global registry for cleanup
+    if (window.listenerRegistry) {
+      window.listenerRegistry.add(this.hostBuzzUnsubscribe, 'host-buzz-listener');
+    }
+    
+    console.log('✅ Host buzz listener attached');
+  }
+  
+  // Initialize Firebase game state
+  async initializeFirebaseGameState() {
+    if (!this.roomRef) {
+      console.error('No roomRef available');
+      return;
+    }
+    
+    if (!window.updateFirebaseDoc) {
+      console.error('Firebase updateDoc not available');
+      return;
+    }
+    
+    try {
+      await window.updateFirebaseDoc(this.roomRef, {
+        // 🎮 Set root phase to 'active' so players know game is in progress
+        'phase': 'active',
+        'gameState': {
+          currentQuestionIndex: 0,
+          currentQuestionData: null,
+          questionTimestamp: 0, // 🎮 SYNC FIX: Track current question ID
+          phase: 'loading',
+          teamBuzzedIn: null,
+          buzzAttempts: {},
+          eliminatedTeams: [false, false, false],
+          bonusState: null,
+          bonusWinningTeam: null,
+          currentBonusIndex: 0,
+          timer: { remaining: 0, type: 'none' },
+          wordIndex: 0,
+          readingActive: false,
+          submittedAnswer: null,
+          gamePhase: 'playing'  // 🎮 Reset game phase for new game
+        }
+      });
+      console.log('✅ Game state initialized in Firebase');
+    } catch (error) {
+      console.error('Error initializing game state:', error);
+    }
+  }
+  
+  // Player: Listen to Firebase and update display
+  runPlayerDisplay() {
+    console.log('📺 Player display mode - listening for updates');
+    
+    if (!this.roomRef) {
+      console.error('❌ No roomRef available');
+      return;
+    }
+    
+    if (!window.onSnapshot) {
+      console.error('❌ window.onSnapshot not available');
+      return;
+    }
+    
+    console.log('✅ Setting up Firebase listener for room:', this.roomRef.path);
+    
+    // Listen for game state changes
+    this.unsubscribe = window.onSnapshot(this.roomRef, (doc) => {
+      // Removed verbose snapshot logging - was cluttering console
+      
+      if (!doc.exists()) {
+        console.error('Room no longer exists');
+        return;
+      }
+      
+      const data = doc.data();
+      const state = data.gameState;
+      
+      // 💓 PLAYER: Check if host is still connected (heartbeat detection)
+      if (!this.isHost && data.hostHeartbeat) {
+        const heartbeatAge = Date.now() - data.hostHeartbeat;
+        const HEARTBEAT_TIMEOUT = 45000; // 45 seconds
+        
+        if (heartbeatAge > HEARTBEAT_TIMEOUT && !this._hostDisconnectShown) {
+          console.log(`💔 Host heartbeat stale (${Math.round(heartbeatAge/1000)}s old) - host may have disconnected`);
+          this._hostDisconnectShown = true;
+          this.showHostDisconnectedModal();
+          return;
+        }
+      }
+      
+      // 💔 PLAYER: Check for intentional host leave
+      if (!this.isHost && data.hostLeft && !this._hostDisconnectShown) {
+        console.log('💔 Host intentionally left the game');
+        this._hostDisconnectShown = true;
+        this.showHostDisconnectedModal();
+        return;
+      }
+      
+      // 🔄 PLAYER: Check if host initiated Play Again (phase = waiting)
+      if (!this.isHost && data.phase === 'waiting' && data.restart) {
+        // Only process if we haven't already shown the waiting room for this restart
+        if (!this._lastRestartTimestamp || this._lastRestartTimestamp !== data.restart) {
+          console.log('🔄 PLAYER: Host initiated Play Again - showing waiting room');
+          this._lastRestartTimestamp = data.restart;
+          this._gameEnded = false; // Reset for new game
+          this.showWaitingRoom();
+          return;
+        }
+      }
+      
+      // 🎮 PLAYER: Check if host started new game from waiting room (phase = countdown)
+      if (!this.isHost && data.phase === 'countdown' && data.countdownStart) {
+        // Only process if we haven't already started countdown for this game
+        if (!this._lastCountdownStart || this._lastCountdownStart !== data.countdownStart) {
+          console.log('🎮 PLAYER: Host started new game - showing countdown');
+          this._lastCountdownStart = data.countdownStart;
+          
+          // Remove waiting room if visible
+          const waitingRoom = document.querySelector('.multiplayer-waiting-room');
+          if (waitingRoom) {
+            waitingRoom.closest('.game-container')?.remove();
+          }
+          
+          // Show countdown
+          this.showCountdown(() => {
+            console.log('🎮 PLAYER: Countdown complete - resetting for new game');
+            
+            // Reset game state for new game
+            this.currentPassage = 0;
+            this.currentQuestion = 0;
+            this._gameEnded = false;
+            this.eliminatedTeams.clear();
+            this._lastBuzzerState = null;
+            this.teamBuzzedIn = null;
+            this.bonusWinningTeam = null;
+            this.bonusState = 'none';
+            this._lastQuestionTimestamp = null;
+            
+            // Reset team scores
+            if (this.teams) {
+              this.teams.forEach(team => {
+                team.score = 0;
+              });
+            }
+            
+            // Recreate the game interface
+            this.showGameInterface('certamen-multiplayer');
+            
+            console.log('🎮 PLAYER: Interface ready - waiting for host to sync questions');
+            // Player's Firebase listener will pick up when host sends first question
+          });
+          return;
+        }
+      }
+      
+      if (!state) {
+        console.warn('⚠️ No gameState found');
+        return;
+      }
+      
+      // 🎮 MULTIPLAYER: Check for game-over FIRST (before any other processing)
+      if (!this.isHost && state.gamePhase === 'ended' && !this._gameEnded) {
+        console.log('📥 PLAYER: Game ended - showing victory screen');
+        this._gameEnded = true;
+        
+        // Use the final scores from Firebase
+        const finalScores = state.finalScores || [];
+        const winners = state.winners || [];
+        
+        // Hide progress counter
+        const certamenProgress = document.getElementById('certamen-progress');
+        if (certamenProgress) certamenProgress.style.display = 'none';
+        
+        // Create winner text
+        let winnerText = '';
+        if (winners.length === 1) {
+          winnerText = `<h2 class="victory-winner">✨ ${winners[0]} Wins! ✨</h2>`;
+        } else if (winners.length > 1) {
+          winnerText = `<h2 class="victory-tie">✨ Tie Game! ${winners.join(' & ')} ✨</h2>`;
+        }
+        
+        // Create confetti
+        const confettiColors = ['#ffd700', '#ff6b6b', '#4ecdc4', '#45b7d1', '#f7931e', '#ff85a2'];
+        const confettiHTML = Array.from({ length: 30 }, (_, i) => {
+          const color = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+          const left = Math.random() * 100;
+          const delay = Math.random() * 2;
+          const duration = (1.4 + Math.random() * 1.4).toFixed(2);
+          const shape = Math.random() > 0.5 ? 'circle' : 'square';
+          return `<div class="confetti ${shape}" style="left: ${left}%; background: ${color}; animation: confetti-fall ${duration}s ${delay}s ease-in infinite;"></div>`;
+        }).join('');
+        
+        // Display victory screen
+        const questionDisplay = document.getElementById('question-display');
+        if (questionDisplay) {
+          questionDisplay.innerHTML = `
+            <div class="game-over">
+              <div class="victory-header" style="position: relative; overflow: hidden;">
+                ${confettiHTML}
+                ${winnerText}
+              </div>
+              <div class="final-scores">
+                ${finalScores.map((team, index) => `
+                  <div class="final-score ${index === 0 ? 'first-place' : ''}">
+                    <span class="team-rank">${index + 1}. ${team.name}</span>
+                    <span class="team-points">${team.score} points</span>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="victory-actions">
+                <button onclick="game.playAgain()" class="play-again-button explosive">Play Again</button>
+              </div>
+            </div>
+          `;
+        }
+        
+        // Hide team cards (they still show BUZZ IN otherwise)
+        const teamInterface = document.getElementById('team-interface');
+        if (teamInterface) {
+          teamInterface.style.display = 'none';
+        }
+        
+        // 🎮 MULTIPLAYER FIX: Also hide .teams-container which is used in multiplayer mode
+        const teamsContainer = document.querySelector('.teams-container');
+        if (teamsContainer) {
+          teamsContainer.style.display = 'none';
+        }
+        
+        // Stop timers and pulsing
+        this.clearQuestionTimer();
+        this.stopBuzzButtonPulsing();
+        
+        return; // Exit early - game is over, no need to process anything else
+      }
+      
+      // Display current question
+      if (state.currentQuestionData) {
+        // 🎮 SYNC FIX: Use questionTimestamp as the authoritative question ID
+        const questionTimestamp = state.questionTimestamp || 0;
+        const questionChanged = this._lastQuestionTimestamp !== questionTimestamp;
+        
+        // 🎮 SYNC FIX: Also validate against currentQuestionIndex for extra safety
+        const questionIndex = state.currentQuestionIndex;
+        const indexChanged = this._lastQuestionIndex !== questionIndex;
+        
+        if (questionChanged || (indexChanged && questionTimestamp)) {
+          this._lastQuestionTimestamp = questionTimestamp;
+          this._lastQuestionIndex = questionIndex;
+          this._lastQuestionId = state.currentQuestionData.question; // Keep for backwards compat
+          this._lastBuzzerState = null; // Force buzzer re-initialization
+          this.eliminatedTeams.clear(); // 🎮 Reset eliminations for new question
+          this.resetAllTeamVisualStates(); // 🎮 Reset visual states for new question
+          console.log(`🔄 New question detected (timestamp=${questionTimestamp}, index=${questionIndex}) - resetting buzzer state and eliminations`);
+          
+          // 🎮 Store question for players so they can reference it
+          this.currentQuestionObj = state.currentQuestionData;
+          
+          // 🎮 Only call displayQuestion when question actually changes
+          console.log('📥 Received question from Firebase:', state.currentQuestionData);
+          this.displayQuestion(state.currentQuestionData);
+          
+          // 🎮 MULTIPLAYER FIX: Players enable buzz button on NEW question only
+          if (!this.isHost) {
+            this.buzzingAllowed = true;
+            this.enableBuzzers();
+            this.startBuzzButtonPulsing(); // ✨ FIX: Start pulsing for players too!
+          }
+        }
+        
+        // 🎮 MULTIPLAYER FIX: Update word-by-word display based on host's reading
+        // BUT NOT during bonus rounds - bonus questions are displayed in full immediately
+        if (state.partialQuestion !== undefined && state.partialQuestion !== null && 
+            state.currentWordIndex !== undefined && state.currentWordIndex !== null &&
+            state.bonusState !== 'active') {
+          this.updateQuestionDisplay(state.partialQuestion, false);
+        }
+      } else {
+        console.log('⏳ No currentQuestionData yet');
+      }
+      
+      // Update progress counter
+      if (state.currentQuestionIndex !== undefined) {
+        this.currentQuestion = state.currentQuestionIndex;
+      }
+      
+      // ✨ MULTIPLAYER FIX: Update round counter from Firebase
+      if (state.currentPassage !== undefined) {
+        this.currentPassage = state.currentPassage;
+      }
+      
+      // 🎮 MULTIPLAYER: Host detects buzz attempts from players
+      if (this.isHost && state.buzzAttempt) {
+        const { teamIndex, timestamp, questionTimestamp } = state.buzzAttempt;
+        
+        // Only process if we haven't seen this buzz yet (prevent duplicates)
+        if (!this.lastProcessedBuzzTimestamp || timestamp > this.lastProcessedBuzzTimestamp) {
+          this.lastProcessedBuzzTimestamp = timestamp;
+          
+          // Get team name for clearer logging
+          const teamName = this.teams[teamIndex]?.name || `Team ${teamIndex}`;
+          const buzzTime = new Date(timestamp).toLocaleTimeString('en-US', { 
+            hour12: false, 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit',
+            fractionalSecondDigits: 3 
+          });
+          
+          // 🎮 SYNC FIX: Reject buzzes from old questions
+          if (questionTimestamp && this._currentQuestionTimestamp && 
+              questionTimestamp !== this._currentQuestionTimestamp) {
+            console.log(`⚠️ STALE BUZZ: ${teamName} buzzed for wrong question - rejected`);
+            // Clear the buzz attempt from Firebase
+            window.updateFirebaseDoc(this.roomRef, {
+              'gameState.buzzAttempt': null
+            });
+            return;
+          }
+          
+          // 🎮 SIMULTANEOUS BUZZ FIX: Reject if someone already buzzed in
+          if (this.teamBuzzedIn !== null) {
+            const winnerName = this.teams[this.teamBuzzedIn]?.name || `Team ${this.teamBuzzedIn}`;
+            const timeDiff = timestamp - (this._winningBuzzTimestamp || timestamp);
+            console.log(`🏆 BUZZ RACE: ${winnerName} won!`);
+            console.log(`⚠️ ${teamName} buzz rejected - arrived ${timeDiff}ms later (at ${buzzTime})`);
+            // Clear the buzz attempt from Firebase
+            window.updateFirebaseDoc(this.roomRef, {
+              'gameState.buzzAttempt': null
+            });
+            return;
+          }
+          
+          // ✨ RACE CONDITION FIX: Check if buzzing is still allowed (timer not expired)
+          if (!this.buzzingAllowed) {
+            const timeSinceExpiry = this._timerExpiredAt ? (timestamp - this._timerExpiredAt) : 0;
+            console.log(`⚠️ LATE BUZZ: ${teamName} buzzed ${timeSinceExpiry}ms after timer expired - rejected (at ${buzzTime})`);
+            // Clear the buzz attempt from Firebase
+            window.updateFirebaseDoc(this.roomRef, {
+              'gameState.buzzAttempt': null
+            });
+            return;
+          }
+          
+          // 🏆 WINNING BUZZ - record timestamp for race comparison
+          this._winningBuzzTimestamp = timestamp;
+          console.log(`🏆 BUZZ WINNER: ${teamName} buzzed in first! (at ${buzzTime})`);
+          this.processBuzz(teamIndex);
+          
+          // Clear the buzz attempt from Firebase
+          window.updateFirebaseDoc(this.roomRef, {
+            'gameState.buzzAttempt': null
+          });
+        }
+      }
+      
+      // 🎮 MULTIPLAYER: Players receive score updates from host
+      if (!this.isHost && state.teamScores && Array.isArray(state.teamScores)) {
+        state.teamScores.forEach((teamData, index) => {
+          if (this.teams[index]) {
+            const oldScore = this.teams[index].score;
+            this.teams[index].score = teamData.score;
+            
+            // Update the display if score changed
+            if (oldScore !== teamData.score) {
+              const teamCard = document.getElementById(`team-${index}`);
+              if (teamCard) {
+                const scoreElement = teamCard.querySelector('.score');
+                if (scoreElement) {
+                  scoreElement.textContent = `${teamData.score} points`;
+                  scoreElement.classList.add('score-update');
+                  setTimeout(() => {
+                    scoreElement.classList.remove('score-update');
+                  }, 1000);
+                }
+              }
+              console.log(`📊 PLAYER: Team ${index} score updated to ${teamData.score}`);
+            }
+          }
+        });
+      }
+      
+      // 🎮 MULTIPLAYER: Players receive teamBuzzedIn updates from host
+      if (!this.isHost && state.teamBuzzedIn !== undefined) {
+        const buzzedTeam = state.teamBuzzedIn;
+        
+        // Only process if different from current state
+        if (buzzedTeam !== this.teamBuzzedIn) {
+          this.teamBuzzedIn = buzzedTeam;
+          
+          if (buzzedTeam !== null) {
+            console.log(`📥 PLAYER: Team ${buzzedTeam} has buzzed in`);
+            
+            // Update visual state for buzzed team
+            this.updateTeamVisualState(buzzedTeam, 'buzzed-in');
+            
+            // Update the badge to show who buzzed
+            const questionTypeEl = document.querySelector('.question-type');
+            if (questionTypeEl && this.teams[buzzedTeam]) {
+              questionTypeEl.textContent = `TEAM ${this.teams[buzzedTeam].name.toUpperCase()} - TOSSUP`;
+            }
+            
+            // Disable all buzz buttons
+            this.disableAllBuzzers();
+            this.stopBuzzButtonPulsing();
+            
+            // Only enable answer options if it's MY team that buzzed
+            if (buzzedTeam === this.myTeamIndex) {
+              console.log(`🎮 PLAYER: It's MY turn to answer!`);
+              this.enableAnswerOptions();
+            } else {
+              console.log(`📺 PLAYER: Team ${buzzedTeam} is answering - watching`);
+              this.disableAnswerOptions();
+            }
+          } else {
+            // teamBuzzedIn was cleared - reset for next buzz opportunity
+            console.log(`🔄 PLAYER: teamBuzzedIn cleared - ready for next buzz`);
+            
+            // ✨ FIX: Reset all team visual states to clear ANSWERING badges
+            this.resetAllTeamVisualStates();
+            
+            // ✨ FIX: Enable buzzing for rollover - players need this flag set!
+            this.buzzingAllowed = true;
+            console.log('🟢 PLAYER: Buzzing enabled for rollover');
+            
+            // Re-enable buzz button for this player
+            this.enableBuzzers();
+            this.startBuzzButtonPulsing();
+            
+            // Disable answer options until someone buzzes
+            this.disableAnswerOptions();
+          }
+        }
+      }
+      
+      // 🎮 MULTIPLAYER: Players receive answer results from host
+      if (!this.isHost && state.answerResult) {
+        const { teamIndex, isCorrect, selectedIndex, timestamp } = state.answerResult;
+        
+        // Only process if we haven't seen this result yet
+        if (!this.lastProcessedAnswerResultTimestamp || timestamp > this.lastProcessedAnswerResultTimestamp) {
+          this.lastProcessedAnswerResultTimestamp = timestamp;
+          console.log(`📥 PLAYER: Team ${teamIndex} answered ${isCorrect ? 'CORRECTLY' : 'INCORRECTLY'}`);
+          
+          // Show visual feedback on answer buttons (multiple choice)
+          if (selectedIndex !== null) {
+            const answerButtons = document.querySelectorAll('.answer-option');
+            if (answerButtons[selectedIndex]) {
+              answerButtons[selectedIndex].classList.add(isCorrect ? 'correct' : 'incorrect');
+            }
+          } else {
+            // Fill-in-the-blank: show visual feedback on input field for ALL screens
+            const answerInput = document.getElementById('answer-input');
+            if (answerInput) {
+              answerInput.style.background = isCorrect ? '#4CAF50' : '#f44336';
+              answerInput.style.color = 'white';
+              
+              // Auto-clear after 1.5 seconds (if not cleared by next buzz first)
+              setTimeout(() => {
+                if (answerInput) {
+                  answerInput.style.background = '';
+                  answerInput.style.color = '';
+                }
+              }, 1500);
+            }
+          }
+          
+          // Update team visual state if incorrect (eliminated)
+          // 🎮 FIX: Only show eliminated state during TOSS-UPS, not during bonus rounds
+          // In bonus rounds, the same team answers both questions regardless of correctness
+          if (!isCorrect && state.bonusState !== 'active') {
+            this.eliminatedTeams.add(teamIndex);
+            this.updateTeamVisualState(teamIndex, 'eliminated');
+            
+            // 🎮 FIX: Re-enable buzzers with updated elimination state
+            // This ensures non-eliminated teams can still buzz during rollover
+            console.log(`🔄 PLAYER: Team ${teamIndex} eliminated, refreshing buzzer state`);
+            this._lastBuzzerState = null; // Force refresh
+            this.enableBuzzers();
+            this.startBuzzButtonPulsing();
+          }
+        }
+      }
+      
+      // 🎮 MULTIPLAYER: Players receive bonus questions from host
+      if (!this.isHost && state.bonusState === 'active' && state.bonusQuestionData) {
+        const bonusData = state.bonusQuestionData;
+        const bonusTimestamp = bonusData.timestamp;
+        
+        // CRITICAL: Reset timestamp if this is a NEW bonus round (different winning team)
+        if (this.bonusWinningTeam !== bonusData.winningTeam) {
+          console.log(`🔄 PLAYER: New bonus round detected (team ${this.bonusWinningTeam} → ${bonusData.winningTeam}), resetting timestamp`);
+          this._lastBonusTimestamp = null;
+        }
+        
+        // Only process if we haven't seen this bonus question yet
+        if (!this._lastBonusTimestamp || bonusTimestamp > this._lastBonusTimestamp) {
+          this._lastBonusTimestamp = bonusTimestamp;
+          
+          console.log(`📥 PLAYER: Received bonus question ${bonusData.bonusNumber}/2 from Firebase`);
+          console.log(`🎯 PLAYER: Bonus is for team ${bonusData.winningTeam}`);
+          
+          // Store bonus state locally
+          this.bonusState = 'active';
+          this.bonusWinningTeam = bonusData.winningTeam;
+          
+          // Display the bonus question
+          this.displayPlayerBonusQuestion(bonusData);
+        }
+      }
+      
+      // 🎮 MULTIPLAYER: Handle bonus round ending
+      if (!this.isHost && state.bonusState === 'inactive' && this.bonusState === 'active') {
+        console.log('📥 PLAYER: Bonus round ended');
+        this.bonusState = 'inactive';
+        this._lastBonusTimestamp = null;
+        // Visual states will be reset when next toss-up comes in
+      }
+      
+      // 🎮 MULTIPLAYER: Players receive timer updates from host
+      if (!this.isHost) {
+        if (state.timer) {
+          const { timeRemaining, timerType, timestamp } = state.timer;
+          
+          // Only update if this is a newer timer update
+          if (!this._lastTimerTimestamp || timestamp > this._lastTimerTimestamp) {
+            this._lastTimerTimestamp = timestamp;
+            
+            // Update local timer state
+            this.questionTimeLeft = timeRemaining;
+            this.currentTimerType = timerType;
+            
+            // Get or create timer box
+            let timerBox = document.getElementById('question-timer-box');
+            
+            if (timerBox) {
+              // Guard against undefined timeRemaining
+              if (timeRemaining === undefined || timeRemaining === null) {
+                console.log('⏰ Timer received but timeRemaining is undefined/null - skipping');
+                return;
+              }
+              
+              if (timeRemaining <= 0) {
+                // Timer expired
+                timerBox.innerHTML = '<span class="timer-icon">⏰</span> Time Expired!';
+                timerBox.classList.add('expired');
+                timerBox.classList.remove('timer-warning', 'timer-critical');
+                
+                // Disable buzzing when timer expires
+                this.buzzingAllowed = false;
+                this.disableAllBuzzers();
+                this.stopBuzzButtonPulsing();
+              } else {
+                // Update timer display
+                timerBox.innerHTML = `
+                  <span class="timer-icon">⏰</span>
+                  <span id="question-timer">${timeRemaining}</span>
+                `;
+                timerBox.style.visibility = 'visible';
+                
+                // Add warning/critical classes
+                timerBox.classList.remove('expired', 'timer-warning', 'timer-critical');
+                if (timeRemaining <= 4) {
+                  timerBox.classList.add('timer-critical');
+                } else if (timeRemaining <= 7) {
+                  timerBox.classList.add('timer-warning');
+                }
+              }
+            }
+          }
+        } else if (state.timer === null && this._lastTimerTimestamp) {
+          // Timer was cleared by host - hide timer box
+          this._lastTimerTimestamp = null;
+          let timerBox = document.getElementById('question-timer-box');
+          if (timerBox) {
+            timerBox.style.visibility = 'hidden';
+          }
+        }
+      }
+      
+      this.updateProgressDisplay();;
+    }, (error) => {
+      console.error('❌ Firebase listener error:', error);
+    });
+    
+    // 📡 Register listener with global registry for cleanup
+    if (window.listenerRegistry) {
+      window.listenerRegistry.add(this.unsubscribe, 'player-game-listener');
+    }
+    
+    console.log('✅ Firebase listener attached');
+  }
+  
+  // Host: Sync current question to Firebase
+  async syncQuestionToFirebase(question) {
+    console.log('📤 Syncing question to Firebase...');
+    
+    // 💓 Refresh heartbeat on game action
+    this.sendHostHeartbeat();
+    
+    if (!this.roomRef) {
+      console.error('❌ No roomRef available');
+      return;
+    }
+    
+    if (!window.updateFirebaseDoc) {
+      console.error('❌ window.updateFirebaseDoc not available');
+      return;
+    }
+    
+    try {
+      // 🎮 SYNC FIX: Generate unique timestamp for this question
+      const questionTimestamp = Date.now();
+      this._currentQuestionTimestamp = questionTimestamp;
+      
+      // 🏆 RACE TRACKING: Reset for new question
+      this._winningBuzzTimestamp = null;
+      this._timerExpiredAt = null;
+      
+      const questionData = {
+        question: question.question,
+        options: question.options || null,
+        answer: question.answer,
+        category: question.category,
+        dependency: question.dependency,
+        group: question.group
+      };
+      
+      console.log('📝 Question data to sync:', questionData);
+      
+      // 🎮 CLEAN SLATE: Clear all stale data from previous question
+      // This prevents race conditions where old data appears on new questions
+      await window.updateFirebaseDoc(this.roomRef, {
+        'gameState.currentQuestionData': questionData,
+        'gameState.currentQuestionIndex': this.currentQuestion,
+        'gameState.currentPassage': this.currentPassage,
+        'gameState.questionTimestamp': questionTimestamp,
+        'gameState.phase': 'reading',
+        // Clear stale data from previous question
+        'gameState.partialQuestion': null,
+        'gameState.currentWordIndex': null,
+        'gameState.answerResult': null,
+        'gameState.teamBuzzedIn': null,
+        'gameState.submittedAnswer': null
+      });
+      
+      console.log('✅ Question synced to Firebase successfully');
+    } catch (error) {
+      console.error('❌ Error syncing question:', error);
+    }
+  }
+
+  // 🎮 MULTIPLAYER FIX: Sync word index for synchronized word-by-word display
+  async syncWordIndexToFirebase(wordIndex, partialText) {
+    if (!this.roomRef || !window.updateFirebaseDoc) {
+      return;
+    }
+    
+    try {
+      await window.updateFirebaseDoc(this.roomRef, {
+        'gameState.currentWordIndex': wordIndex,
+        'gameState.partialQuestion': partialText,
+        'gameState.isReading': this.isReading
+      });
+    } catch (error) {
+      // Silently fail to avoid console spam - word updates happen frequently
+    }
+  }
+
+  // 🎮 MULTIPLAYER: Sync bonus round state to Firebase so players know bonus started
+  async syncBonusStateToFirebase(bonusState, winningTeam) {
+    if (!this.roomRef || !window.updateFirebaseDoc) {
+      console.error('❌ Cannot sync bonus state - no Firebase connection');
+      return;
+    }
+    
+    try {
+      console.log(`📤 HOST: Syncing bonus state to Firebase: state=${bonusState}, winningTeam=${winningTeam}`);
+      
+      const updateData = {
+        'gameState.bonusState': bonusState,
+        'gameState.bonusWinningTeam': winningTeam,
+        'gameState.teamBuzzedIn': null // Clear buzz state for bonus round
+      };
+      
+      // CRITICAL: Clear old bonus question data when starting NEW bonus round
+      // This prevents players from seeing stale data from previous bonus
+      if (bonusState === 'active') {
+        updateData['gameState.bonusQuestionData'] = null;
+        console.log('🧹 Clearing old bonus question data for new bonus round');
+      }
+      
+      // 🎮 FIX: Clear partialQuestion when bonus ends to prevent old toss-up from flashing
+      if (bonusState === 'inactive') {
+        updateData['gameState.partialQuestion'] = null;
+        updateData['gameState.currentWordIndex'] = null;
+        console.log('🧹 Clearing old partialQuestion data after bonus round');
+      }
+      
+      await window.updateFirebaseDoc(this.roomRef, updateData);
+      console.log('✅ Bonus state synced to Firebase');
+    } catch (error) {
+      console.error('❌ Error syncing bonus state:', error);
+    }
+  }
+
+  // 🎮 MULTIPLAYER: Sync current bonus question to Firebase for players to display
+  async syncBonusQuestionToFirebase(bonusQuestion, bonusNumber) {
+    if (!this.roomRef || !window.updateFirebaseDoc) {
+      console.error('❌ Cannot sync bonus question - no Firebase connection');
+      return;
+    }
+    
+    try {
+      const bonusData = {
+        question: bonusQuestion.question,
+        options: bonusQuestion.options || null,
+        answer: bonusQuestion.answer,
+        category: bonusQuestion.category,
+        bonusNumber: bonusNumber,
+        winningTeam: this.bonusWinningTeam,
+        timestamp: Date.now() // Add timestamp to detect changes
+      };
+      
+      console.log(`📤 HOST: Syncing bonus question ${bonusNumber}/2 to Firebase`);
+      await window.updateFirebaseDoc(this.roomRef, {
+        'gameState.bonusQuestionData': bonusData,
+        'gameState.bonusState': 'active'
+      });
+      console.log('✅ Bonus question synced to Firebase');
+    } catch (error) {
+      console.error('❌ Error syncing bonus question:', error);
     }
   }
 
@@ -1653,36 +2794,54 @@ async loadCertamenQuestions(level) {
   
   let categories = ['mythology', 'roman-history-daily-life', 'latin-grammar', 'derivatives', 'mottos', 'ancient-geography'];
   
-  if (level === 'advanced') {
-    categories.push('literature');
+  // Determine which difficulty levels to load
+  let levelsToLoad = [];
+  if (level === 'all') {
+    levelsToLoad = ['novice', 'intermediate', 'advanced'];
+    categories.push('literature'); // Include literature when loading all levels
+  } else {
+    levelsToLoad = [level];
+    if (level === 'advanced') {
+      categories.push('literature');
+    }
   }
+  
+  console.log(`📚 Loading from difficulty levels: ${levelsToLoad.join(', ')}`);
   
   this.questions = [];
   const questionGroups = {};
   
-  // Load all questions from each category
-  for (const category of categories) {
-    try {
-      const questions = await this.questionLoader.loadQuestions(category, level, 'certamen');
-      if (questions && questions.length > 0) {
-        
-        // Group questions by their group field
-        questions.forEach(question => {
-          // ✨ FIX: Only add category prefix if it's not already there
-          const categoryGroup = question.group.startsWith(`${category}_`) 
-            ? question.group 
-            : `${category}_${question.group}`;
-          
-          if (!questionGroups[categoryGroup]) {
-            questionGroups[categoryGroup] = [];
-          }
-          questionGroups[categoryGroup].push(question);
-        });
-        
-        console.log(`✅ Loaded ${questions.length} questions from ${category}`);
+  // Load questions from each difficulty level
+  for (const difficultyLevel of levelsToLoad) {
+    // Load all questions from each category at this difficulty
+    for (const category of categories) {
+      // Skip literature for novice/intermediate
+      if (category === 'literature' && (difficultyLevel === 'novice' || difficultyLevel === 'intermediate')) {
+        continue;
       }
-    } catch (error) {
-      console.warn(`⚠️ Failed to load ${category}:`, error);
+      
+      try {
+        const questions = await this.questionLoader.loadQuestions(category, difficultyLevel, 'certamen');
+        if (questions && questions.length > 0) {
+          
+          // Group questions by their group field
+          questions.forEach(question => {
+            // ✨ FIX: Only add category prefix if it's not already there
+            const categoryGroup = question.group.startsWith(`${category}_`) 
+              ? question.group 
+              : `${category}_${question.group}`;
+            
+            if (!questionGroups[categoryGroup]) {
+              questionGroups[categoryGroup] = [];
+            }
+            questionGroups[categoryGroup].push(question);
+          });
+          
+          console.log(`✅ Loaded ${questions.length} questions from ${category}-${difficultyLevel}`);
+        }
+      } catch (error) {
+        console.warn(`⚠️ Failed to load ${category}-${difficultyLevel}:`, error);
+      }
     }
   }
   
@@ -1943,7 +3102,7 @@ interleaveTriadsByCategory(selectedByCategory) {
 // Save used passages to localStorage for repeat-prevention
 saveCertamenPassages() {
   // Track passages for both regular and solo certamen
-  if ((this.gameMode !== 'certamen' && this.gameMode !== 'certamen-solo') || !this.usedTriads || this.usedTriads.length === 0) {
+  if ((this.gameMode !== 'certamen' && this.gameMode !== 'certamen-solo' && this.gameMode !== 'certamen-multiplayer') || !this.usedTriads || this.usedTriads.length === 0) {
     return; // Only track for certamen modes
   }
   
@@ -2000,15 +3159,15 @@ markTriadAsUsed(groupName) {
   }
 
   setupTeams() {
-    const teamNames = getRandomTeamNames();
-    
+    // For multiplayer, teams will be populated from Firebase with actual player names
+    // For regular certamen, just use simple captain labels
     this.teams = [
-      { name: teamNames[0], captain: 'Player 1', score: 0, buzzed: false },
-      { name: teamNames[1], captain: 'Player 2', score: 0, buzzed: false },
-      { name: teamNames[2], captain: 'Player 3', score: 0, buzzed: false }
+      { name: '', captain: 'Player 1', score: 0, buzzed: false },
+      { name: '', captain: 'Player 2', score: 0, buzzed: false },
+      { name: '', captain: 'Player 3', score: 0, buzzed: false }
     ];
     
-    console.log('Teams setup with names:', teamNames);
+    console.log('Teams setup without randomization');
   }
 
   setupSoloPlayer() {
@@ -2094,14 +3253,20 @@ markTriadAsUsed(groupName) {
     document.body.appendChild(this.createGameInterface(mode));
     
     // Update progress display with actual triad count for certamen modes
-    if ((mode === 'certamen' || mode === 'certamen-solo') && this.actualTriadCount) {
+    if ((mode === 'certamen' || mode === 'certamen-solo' || mode === 'certamen-multiplayer') && this.actualTriadCount) {
       const progressDisplay = document.getElementById('certamen-progress');
       if (progressDisplay) {
-        progressDisplay.textContent = `Round 0 of ${this.actualTriadCount}`;
+        progressDisplay.textContent = `Round 1 of ${this.actualTriadCount}`;
       }
     }
     
-    if (mode === 'certamen' || mode === 'certamen-solo') {
+    if (mode === 'certamen' || mode === 'certamen-solo' || mode === 'certamen-multiplayer') {
+      // For multiplayer, skip hyperbuzz splash - game is already started in runHostGame
+      if (mode === 'certamen-multiplayer') {
+        // Multiplayer game start is handled by runHostGame/runPlayerDisplay
+        return;
+      }
+      
       // Check if hyperbuzz message has been seen this session
       const hasSeenThisSession = sessionStorage.getItem('hyperbuzz-seen');
       
@@ -2163,10 +3328,21 @@ markTriadAsUsed(groupName) {
 createGameInterface(mode) {
     const gameContainer = document.createElement('div');
     gameContainer.className = 'game-container';
+    
+    // Determine display name for mode
+    let modeDisplay = '';
+    if (mode === 'certamen-solo') {
+      modeDisplay = 'Solo Certamen';
+    } else if (mode === 'certamen-multiplayer') {
+      modeDisplay = 'Multiplayer Certamen';
+    } else {
+      modeDisplay = mode.charAt(0).toUpperCase() + mode.slice(1);
+    }
+    
     gameContainer.innerHTML = `
       <div class="game-header">
-        <h2>${mode === 'certamen-solo' ? 'Solo Certamen' : mode.charAt(0).toUpperCase() + mode.slice(1)} Mode</h2>
-        ${(mode === 'certamen' || mode === 'certamen-solo') ? '<div id="certamen-progress" class="certamen-progress">Round 0 of ...</div>' : ''}
+        <h2>${modeDisplay} Mode</h2>
+        ${(mode === 'certamen' || mode === 'certamen-solo' || mode === 'certamen-multiplayer') ? '<div id="certamen-progress" class="certamen-progress">Round 1 of ...</div>' : ''}
         ${mode === 'practice' ? '<div id="question-progress" class="certamen-progress">Question 1 of ' + this.sessionSize + '</div>' : ''}
         <button id="back-to-setup" class="back-button">← Back to Setup</button>
       </div>
@@ -2179,7 +3355,7 @@ createGameInterface(mode) {
         </div>
       ` : ''}
       
-      ${mode === 'certamen' ? this.createCertamenInterface() : mode === 'certamen-solo' ? this.createSoloCertamenInterface() : this.createSinglePlayerInterface(mode)}
+      ${(mode === 'certamen' || mode === 'certamen-multiplayer') ? this.createCertamenInterface() : mode === 'certamen-solo' ? this.createSoloCertamenInterface() : this.createSinglePlayerInterface(mode)}
     `;
     
     gameContainer.querySelector('#back-to-setup').addEventListener('click', () => {
@@ -2190,13 +3366,48 @@ createGameInterface(mode) {
   }
 
   createCertamenInterface() {
+    // For multiplayer, create hierarchical layout with MY team on top
+    if (this.gameMode === 'certamen-multiplayer' && this.myTeamIndex !== null) {
+      const myTeam = this.teams[this.myTeamIndex];
+      const otherTeams = this.teams.filter((team, index) => index !== this.myTeamIndex);
+      const otherIndices = this.teams.map((team, index) => index).filter(index => index !== this.myTeamIndex);
+      
+      console.log(`🎨 Creating MULTIPLAYER interface: myTeamIndex=${this.myTeamIndex}, myTeam=${myTeam.captain}, otherIndices=${otherIndices.join(',')}`);
+      
+      return `
+        <div class="teams-container">
+          <div class="team-scores">
+            <!-- My Team - Full width on top -->
+            <div class="team-card my-team" id="team-${this.myTeamIndex}">
+              <h3>${myTeam.captain}</h3>
+              <div class="score">${myTeam.score} points</div>
+              <button class="buzz-button" id="buzz-${this.myTeamIndex}">🔔 BUZZ IN</button>
+            </div>
+            
+            <!-- Other Teams Row -->
+            <div class="other-teams-row">
+              ${otherTeams.map((team, i) => `
+                <div class="team-card other-team" id="team-${otherIndices[i]}">
+                  <h3>${team.captain}</h3>
+                  <div class="score">${team.score} points</div>
+                  <button class="buzz-button" id="buzz-${otherIndices[i]}">🔔 BUZZ IN</button>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    
+    console.log(`🎨 Creating DEFAULT (non-multiplayer) interface: gameMode=${this.gameMode}, myTeamIndex=${this.myTeamIndex}`);
+    
+    // Default layout for local certamen (no hierarchy)
     return `
       <div class="teams-container">
         <div class="team-scores">
           ${this.teams.map((team, index) => `
             <div class="team-card" id="team-${index}">
-              <h3>${team.name}</h3>
-              <p>Captain: ${team.captain}</p>
+              <h3>${team.captain}</h3>
               <div class="score">${team.score} points</div>
               <button class="buzz-button" id="buzz-${index}">🔔 BUZZ IN</button>
             </div>
@@ -3168,9 +4379,17 @@ startCertamenRound() {
   this.buzzingAllowed = true;
   console.log('🟢 Buzzing enabled for this question');
   
+  // 🎮 MULTIPLAYER: Store the current question object for answer processing
+  this.currentQuestionObj = question;
+  
   this.displayQuestion(question);
   this.enableBuzzers();
   this.disableAnswerOptions();
+  
+  // 🔥 MULTIPLAYER: Sync question to Firebase
+  if (this.isMultiplayer && this.isHost) {
+    this.syncQuestionToFirebase(question);
+  }
   
   // START PULSING BUZZ BUTTONS
   this.startBuzzButtonPulsing();
@@ -3179,7 +4398,7 @@ startCertamenRound() {
 // ✨ UPDATE PROGRESS DISPLAY for Certamen mode
 updateProgressDisplay() {
   const progressDisplay = document.getElementById('certamen-progress');
-  if (progressDisplay && (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo')) {
+  if (progressDisplay && (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo' || this.gameMode === 'certamen-multiplayer')) {
     const triadCount = this.actualTriadCount || CERTAMEN_TRACKING.TRIADS_PER_GAME;
     progressDisplay.textContent = `Round ${this.currentPassage} of ${triadCount}`;
   }
@@ -3252,6 +4471,11 @@ startSoloCertamenRound() {
 endGame() {
   console.log('🏁 Ending Certamen game...');
   
+  // 💓 Stop host heartbeat on game end
+  if (this.isHost) {
+    this.stopHostHeartbeat();
+  }
+  
   // Save used passages for repeat-prevention
   this.saveCertamenPassages();
   
@@ -3265,6 +4489,17 @@ endGame() {
   
   // Sort teams by score (descending)
   const sortedTeams = [...this.teams].sort((a, b) => b.score - a.score);
+  
+  // 🎮 MULTIPLAYER: Sync game-over state to Firebase so all players see victory screen
+  if (this.isMultiplayer && this.isHost && this.roomRef && window.updateFirebaseDoc) {
+    console.log('📤 HOST: Syncing game-over state to Firebase');
+    window.updateFirebaseDoc(this.roomRef, {
+      'gameState.gamePhase': 'ended',
+      'gameState.finalScores': sortedTeams.map(t => ({ name: t.name, score: t.score })),
+      'gameState.winners': winners.map(w => w.name),
+      'gameState.endedAt': Date.now()
+    });
+  }
   
   // Create final scores display
   const questionDisplay = document.getElementById('question-display');
@@ -3281,9 +4516,21 @@ endGame() {
     winnerText = `<h2 class="victory-tie">✨ Tie Game! ${winnerNames} ✨</h2>`;
   }
   
+  // Create confetti particles for winner celebration
+  const confettiColors = ['#ffd700', '#ff6b6b', '#4ecdc4', '#45b7d1', '#f7931e', '#ff85a2'];
+  const confettiHTML = Array.from({ length: 30 }, (_, i) => {
+    const color = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+    const left = Math.random() * 100;
+    const delay = Math.random() * 2;
+    const duration = (1.4 + Math.random() * 1.4).toFixed(2);
+    const shape = Math.random() > 0.5 ? 'circle' : 'square';
+    return `<div class="confetti ${shape}" style="left: ${left}%; background: ${color}; animation: confetti-fall ${duration}s ${delay}s ease-in infinite;"></div>`;
+  }).join('');
+  
   questionDisplay.innerHTML = `
     <div class="game-over">
-      <div class="victory-header">
+      <div class="victory-header" style="position: relative; overflow: hidden;">
+        ${confettiHTML}
         ${winnerText}
       </div>
       <div class="final-scores">
@@ -3299,6 +4546,19 @@ endGame() {
       </div>
     </div>
   `;
+  
+  // Hide team cards (they still show BUZZ IN otherwise)
+  // Try both selectors - #team-interface for local certamen, .teams-container for multiplayer
+  const teamInterface = document.getElementById('team-interface');
+  if (teamInterface) {
+    teamInterface.style.display = 'none';
+  }
+  
+  // 🎮 MULTIPLAYER FIX: Also hide .teams-container which is used in multiplayer mode
+  const teamsContainer = document.querySelector('.teams-container');
+  if (teamsContainer) {
+    teamsContainer.style.display = 'none';
+  }
   
   // Stop any timers
   this.clearQuestionTimer();
@@ -3360,6 +4620,11 @@ endGameSolo() {
 // Play again Solo Certamen with same settings
 async playAgainSolo() {
   console.log('🔄 Play Again Solo button clicked!');
+  
+  // 🛡️ DEBOUNCE: Prevent rapid double-clicks on Play Again
+  if (!buttonClickTracker.canClick('play-again-solo', 1000)) {
+    return; // Ignore rapid repeated clicks
+  }
   
   try {
     console.log('🔄 Starting new solo game with same settings...');
@@ -3573,8 +4838,35 @@ clearSoloCountdownTimer() {
 // Play again with same settings
 async playAgain() {
   console.log('🔄 Play Again Certamen button clicked!');
+  console.log('🔍 DEBUG: gameMode =', this.gameMode, ', isMultiplayer =', this.isMultiplayer);
+  
+  // 🛡️ DEBOUNCE: Prevent rapid double-clicks on Play Again
+  if (!buttonClickTracker.canClick('play-again-certamen', 1000)) {
+    return; // Ignore rapid repeated clicks
+  }
   
   try {
+    // 🎮 MULTIPLAYER: Return to waiting room instead of starting locally
+    // Check BOTH gameMode AND isMultiplayer flag for robustness
+    if (this.gameMode === 'certamen-multiplayer' || this.isMultiplayer) {
+      console.log('🎮 MULTIPLAYER: Returning to waiting room for new game');
+      
+      if (this.isHost && this.roomRef && window.updateFirebaseDoc) {
+        // HOST: Signal restart and reset game state in Firebase
+        await window.updateFirebaseDoc(this.roomRef, {
+          'phase': 'waiting',  // Back to waiting room
+          'gameState': null,   // Clear old game state
+          'restart': Date.now() // Signal to players
+        });
+        console.log('📤 HOST: Signaled restart to Firebase');
+      }
+      
+      // Both host and players: Go back to waiting room UI
+      this.showWaitingRoom();
+      return;
+    }
+    
+    // Regular (local) certamen flow below
     console.log('🔄 Starting new certamen game with same settings...');
     console.log('📋 Categories:', selectedCategories);
     console.log('📋 Level:', selectedLevel);
@@ -3591,6 +4883,7 @@ async playAgain() {
       team.triadsCompleted = 0;
     });
     this.eliminatedTeams.clear();
+    this._lastBuzzerState = null; // Reset buzzer state cache
     this.teamBuzzedIn = null;
     this.bonusWinningTeam = null;
     
@@ -3603,12 +4896,284 @@ async playAgain() {
   }
 }
 
+// 🎮 MULTIPLAYER: Show the waiting room screen for Play Again
+showWaitingRoom() {
+  console.log('📺 Showing waiting room for new game');
+  
+  // Clear the game container
+  const gameContainer = document.querySelector('.game-container');
+  if (gameContainer) {
+    gameContainer.remove();
+  }
+  
+  // Reset game state
+  this._gameEnded = false;
+  this._hostDisconnectShown = false;
+  this.currentPassage = 0;
+  this.currentQuestion = 0;
+  this.eliminatedTeams.clear();
+  this._lastBuzzerState = null;
+  this.teamBuzzedIn = null;
+  this.bonusWinningTeam = null;
+  
+  // Reset team scores
+  if (this.teams) {
+    this.teams.forEach(team => {
+      team.score = 0;
+    });
+  }
+  
+  // Create waiting room UI
+  const waitingRoom = document.createElement('div');
+  waitingRoom.className = 'game-container';
+  waitingRoom.innerHTML = `
+    <div class="multiplayer-waiting-room" style="
+      text-align: center; 
+      padding: 3rem 2rem;
+      max-width: 400px;
+      margin: 0 auto;
+    ">
+      <h2 style="
+        color: white; 
+        margin-bottom: 2rem;
+        font-weight: 300;
+        font-size: 1.5rem;
+        letter-spacing: 0.05em;
+      ">Ready for Next Round</h2>
+      
+      <div style="
+        background: rgba(255,255,255,0.05); 
+        padding: 1.5rem; 
+        border-radius: 12px; 
+        margin-bottom: 2rem;
+        border: 1px solid rgba(255,255,255,0.1);
+      ">
+        <p style="
+          color: rgba(255,255,255,0.5); 
+          margin-bottom: 0.5rem;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+        ">Room Code</p>
+        <p style="
+          font-size: 2rem; 
+          font-weight: 600; 
+          color: #ffd700; 
+          letter-spacing: 0.3em;
+          font-family: monospace;
+        ">${this.roomCode}</p>
+      </div>
+      
+      <div style="margin-bottom: 2rem;">
+        <p style="
+          color: rgba(255,255,255,0.5); 
+          margin-bottom: 1rem;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+        ">Players</p>
+        ${this.teams.map((team, i) => `
+          <div style="
+            color: rgba(255,255,255,0.9); 
+            padding: 0.5rem;
+            font-size: 1rem;
+          ">
+            ${team.name}${i === 0 ? ' · Host' : ''}${i === this.myTeamIndex ? ' (you)' : ''}
+          </div>
+        `).join('')}
+      </div>
+      
+      ${this.isHost ? `
+        <button id="start-new-game-btn" style="
+          background: linear-gradient(135deg, #4ade80, #22c55e);
+          color: white;
+          border: none;
+          padding: 1rem 2.5rem;
+          font-size: 1rem;
+          font-weight: 500;
+          border-radius: 8px;
+          cursor: pointer;
+          box-shadow: 0 4px 20px rgba(74, 222, 128, 0.3);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          letter-spacing: 0.05em;
+        " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 25px rgba(74, 222, 128, 0.4)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(74, 222, 128, 0.3)';">
+          Start New Game
+        </button>
+      ` : `
+        <p style="
+          color: rgba(255,255,255,0.5);
+          font-size: 0.9rem;
+          font-style: italic;
+        ">Waiting for host to start...</p>
+      `}
+      
+      <button onclick="game.returnToSetup()" style="
+        background: transparent;
+        color: rgba(255,255,255,0.4);
+        border: 1px solid rgba(255,255,255,0.2);
+        padding: 0.6rem 1.2rem;
+        margin-top: 1.5rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+      " onmouseover="this.style.borderColor='rgba(255,255,255,0.4)'; this.style.color='rgba(255,255,255,0.7)';"
+         onmouseout="this.style.borderColor='rgba(255,255,255,0.2)'; this.style.color='rgba(255,255,255,0.4)';">
+        ← Leave Room
+      </button>
+    </div>
+  `;
+  
+  document.body.appendChild(waitingRoom);
+  
+  // HOST: Add click handler for start button
+  if (this.isHost) {
+    const startBtn = document.getElementById('start-new-game-btn');
+    if (startBtn) {
+      startBtn.addEventListener('click', () => this.startNewMultiplayerGame());
+    }
+  }
+}
+
+// 🎮 HOST: Start a new multiplayer game from waiting room
+async startNewMultiplayerGame() {
+  console.log('🎮 HOST: Starting new multiplayer game');
+  
+  if (!this.isHost || !this.roomRef) {
+    console.error('Not host or no room ref');
+    return;
+  }
+  
+  try {
+    // Signal countdown to all players
+    await window.updateFirebaseDoc(this.roomRef, {
+      'phase': 'countdown',
+      'countdownStart': Date.now()
+    });
+    
+    // Remove waiting room UI
+    const gameContainer = document.querySelector('.game-container');
+    if (gameContainer) {
+      gameContainer.remove();
+    }
+    
+    // Show countdown and start game (reuse existing countdown logic)
+    this.showCountdown(async () => {
+      // Reset game state for new game
+      this.currentPassage = 0;
+      this.currentQuestion = 0;
+      this._gameEnded = false;
+      this.eliminatedTeams.clear();
+      this._lastBuzzerState = null;
+      this.teamBuzzedIn = null;
+      this.bonusWinningTeam = null;
+      this.bonusState = 'none';
+      
+      // Reset team scores
+      if (this.teams) {
+        this.teams.forEach(team => {
+          team.score = 0;
+        });
+      }
+      
+      // Recreate the game interface
+      this.showGameInterface('certamen-multiplayer');
+      
+      // After countdown, start the actual game
+      await this.runHostGame();
+    });
+    
+  } catch (error) {
+    console.error('Error starting new game:', error);
+  }
+}
+
+// 🎮 Show countdown animation
+showCountdown(onComplete) {
+  const countdownOverlay = document.createElement('div');
+  countdownOverlay.id = 'countdown-overlay';
+  countdownOverlay.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.95));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(10px);
+  `;
+  
+  countdownOverlay.innerHTML = `
+    <div style="text-align: center;">
+      <div id="countdown-number" style="
+        font-size: 5rem;
+        font-weight: 300;
+        color: #ffd700;
+        text-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+        letter-spacing: 0.1em;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      ">3</div>
+      <p style="
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      ">Get Ready</p>
+    </div>
+  `;
+  
+  document.body.appendChild(countdownOverlay);
+  
+  const countdownNumber = document.getElementById('countdown-number');
+  let count = 3;
+  
+  const countdownInterval = setInterval(() => {
+    count--;
+    if (count > 0) {
+      // Subtle pulse animation
+      countdownNumber.style.transform = 'scale(1.1)';
+      countdownNumber.style.opacity = '0.8';
+      setTimeout(() => {
+        countdownNumber.style.transform = 'scale(1)';
+        countdownNumber.style.opacity = '1';
+      }, 100);
+      countdownNumber.textContent = count;
+    } else {
+      clearInterval(countdownInterval);
+      countdownNumber.textContent = 'GO';
+      countdownNumber.style.color = '#4ade80';
+      countdownNumber.style.fontSize = '4rem';
+      countdownNumber.style.fontWeight = '600';
+      
+      setTimeout(() => {
+        countdownOverlay.style.opacity = '0';
+        countdownOverlay.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => {
+          countdownOverlay.remove();
+          if (onComplete) onComplete();
+        }, 300);
+      }, 400);
+    }
+  }, 1000);
+}
+
 // ===================================
 // QUESTION DISPLAY & ANSWER HANDLING
 // ===================================
 displayQuestion(question) {
   // ✨ BUG FIX: Track when question starts to prevent instant skipping
   this.questionStartTime = Date.now();
+  
+  // 🛡️ DEBOUNCE RESET: Clear answer click tracking for new question
+  buttonClickTracker.reset('answer-submit');
+  buttonClickTracker.reset('text-submit');
   
   const questionDisplay = document.getElementById('question-display');
   
@@ -3643,7 +5208,7 @@ displayQuestion(question) {
   let questionTypeLabel = '';
   if (this.gameMode === 'certamen-solo') {
     questionTypeLabel = '<div class="question-type">TOSSUP</div>';
-  } else if (this.gameMode === 'certamen') {
+  } else if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
     questionTypeLabel = '<div class="question-type">TOSSUP</div>';
   } else {
     questionTypeLabel = `<div class="question-type">${this.getCategoryDisplayText(question.category)}</div>`;
@@ -3658,7 +5223,7 @@ displayQuestion(question) {
          <span id="question-timer">0</span>
        </div>
      </div>
-      <h3 id="question-text-display">${(this.gameMode === 'certamen' || this.gameMode === 'certamen-solo') ? '' : this.cleanQuestionText(question.question)}</h3>
+      <h3 id="question-text-display">${(this.gameMode === 'certamen' || this.gameMode === 'certamen-solo' || this.gameMode === 'certamen-multiplayer') ? '' : this.cleanQuestionText(question.question)}</h3>
       ${this.createAnswerOptions(question)}
     </div>
   `;
@@ -3667,15 +5232,24 @@ displayQuestion(question) {
   
   this.setupAnswerHandlers(question);
   
-  // Add buzz-in reminder for text input - FOR BOTH CERTAMEN MODES
-  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo') {
+  // Add buzz-in reminder for text input - FOR ALL CERTAMEN MODES
+  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo' || this.gameMode === 'certamen-multiplayer') {
     setTimeout(() => {
       const answerInput = document.getElementById('answer-input');
       
       if (answerInput) {
-        // ENABLE the input so it can receive events, but prevent typing
+        // 🎮 MULTIPLAYER FIX: Check if this player is currently answering
+        const isMyTurnToAnswer = this.gameMode === 'certamen-multiplayer' && 
+                                  this.teamBuzzedIn === this.myTeamIndex;
+        
+        // ENABLE the input so it can receive events, but prevent typing UNLESS it's our turn
         answerInput.disabled = false;
-        answerInput.readOnly = true; // Prevents typing but allows focus/click
+        answerInput.readOnly = !isMyTurnToAnswer; // Allow typing if it's our turn
+        
+        if (isMyTurnToAnswer) {
+          console.log('🎮 PLAYER: Text input enabled for answering (readOnly=false)');
+          answerInput.focus();
+        }
         
         // Disable autocomplete
         answerInput.setAttribute('autocomplete', 'off');
@@ -3690,8 +5264,8 @@ displayQuestion(question) {
         
         // Create handlers
         answerInput.buzzReminderHandler = () => {
-          const notBuzzedIn = (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo') 
-            ? (this.gameMode === 'certamen' ? this.teamBuzzedIn === null : !this.soloPlayer?.buzzed)
+          const notBuzzedIn = (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo' || this.gameMode === 'certamen-multiplayer') 
+            ? (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer' ? this.teamBuzzedIn === null : !this.soloPlayer?.buzzed)
             : false;
           if (notBuzzedIn) {
             answerInput.placeholder = 'Please buzz in first!';
@@ -3706,8 +5280,8 @@ displayQuestion(question) {
         
         // Prevent typing before buzz-in
         answerInput.buzzKeyHandler = (e) => {
-          const notBuzzedIn = (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo')
-            ? (this.gameMode === 'certamen' ? this.teamBuzzedIn === null : !this.soloPlayer?.buzzed)
+          const notBuzzedIn = (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo' || this.gameMode === 'certamen-multiplayer')
+            ? (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer' ? this.teamBuzzedIn === null : !this.soloPlayer?.buzzed)
             : false;
           if (notBuzzedIn) {
             e.preventDefault();
@@ -3724,7 +5298,7 @@ displayQuestion(question) {
   }
   
   // Start word-by-word reading for Certamen modes
-  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo') {
+  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo' || this.gameMode === 'certamen-multiplayer') {
     this.startWordByWordReading(question);
   }
   
@@ -3784,12 +5358,23 @@ displayQuestion(question) {
 // CERTAMEN MODE - WORD-BY-WORD READING
 // ===================================
   startWordByWordReading(question) {
+    // 🎮 MULTIPLAYER FIX: Only host runs word-by-word simulation
+    // Players display words based on Firebase updates
+    if (this.gameMode === 'certamen-multiplayer' && !this.isHost) {
+      console.log('📺 PLAYER: Waiting for host to control word-by-word reading');
+      // Initialize state for players to track words
+      this.questionWords = question.question.split(' ');
+      this.currentWordIndex = 0;
+      this.partialQuestion = '';
+      return; // Exit - players don't run the simulation
+    }
     
     this.isReading = true;
     this.currentWordIndex = 0;
     this.questionWords = question.question.split(' ');
     this.partialQuestion = '';
     this.eliminatedTeams.clear();
+    this._lastBuzzerState = null; // Reset buzzer state cache
     
     if (this.readingTimeout) {
       clearTimeout(this.readingTimeout);
@@ -3813,6 +5398,11 @@ displayQuestion(question) {
     this.currentWordIndex++;
     
     this.updateQuestionDisplay(this.partialQuestion, false);
+    
+    // 🎮 MULTIPLAYER FIX: Host syncs word index to Firebase for synchronized display
+    if (this.gameMode === 'certamen-multiplayer' && this.isHost) {
+      this.syncWordIndexToFirebase(this.currentWordIndex, this.partialQuestion);
+    }
     
     this.readingTimeout = setTimeout(() => {
       this.readNextWord(question);
@@ -3868,6 +5458,11 @@ displayQuestion(question) {
     clearTimeout(this.readingTimeout);
     this.readingTimeout = null;
   }
+  
+  // 🎮 MULTIPLAYER FIX: Sync reading stopped state to Firebase
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost) {
+    this.syncWordIndexToFirebase(this.currentWordIndex, this.partialQuestion);
+  }
 }
 
 finishReading(question) {
@@ -3877,6 +5472,17 @@ finishReading(question) {
   if (this.readingTimeout) {
     clearTimeout(this.readingTimeout);
     this.readingTimeout = null;
+  }
+  
+  // 🎮 MULTIPLAYER FIX: Sync reading completion to Firebase
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost) {
+    this.syncWordIndexToFirebase(this.questionWords.length, question.question);
+  }
+  
+  // 🎮 MULTIPLAYER FIX: Only host starts timers
+  if (this.gameMode === 'certamen-multiplayer' && !this.isHost) {
+    console.log('⏰ PLAYER: Waiting for host to start timer');
+    return;
   }
   
   // ✨ FIX: Don't start countdown if player already buzzed or timer expired
@@ -3909,17 +5515,20 @@ finishReading(question) {
   // ===================================
 nextQuestion() {
   const currentQ = this.questions[this.currentQuestion];
+  const beforeIndex = this.currentQuestion;
   
-  // Handle unanswered toss-ups
-  if (this.gameMode === 'certamen' && currentQ && currentQ.dependency === 'tossup' && 
-    (this.teamBuzzedIn === null || this.eliminatedTeams.size === 3)) {
-    console.log(`🚫 UNANSWERED TOSS-UP: Skipping to next toss-up (jumping +3 positions)`);
+  // Handle unanswered toss-ups (no one buzzed OR all teams eliminated)
+  const allTeamsEliminated = this.eliminatedTeams && this.eliminatedTeams.size >= this.teams.length;
+  if ((this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') && currentQ && currentQ.dependency === 'tossup' && 
+    (this.teamBuzzedIn === null || allTeamsEliminated)) {
+    console.log(`⏭️ nextQuestion: ${beforeIndex} → ${beforeIndex + 3} (unanswered tossup, skip +3)`);
     this.currentQuestion += 3; // Skip current toss-up + 2 bonus questions
   } else if (this.gameMode === 'certamen-solo' && currentQ && currentQ.dependency === 'tossup' && 
     !this.soloPlayer.buzzed) {
-    console.log(`🚫 UNANSWERED TOSS-UP (SOLO): Skipping to next toss-up (jumping +3 positions)`);
+    console.log(`⏭️ nextQuestion: ${beforeIndex} → ${beforeIndex + 3} (unanswered solo tossup, skip +3)`);
     this.currentQuestion += 3; // Skip current toss-up + 2 bonus questions
   } else {
+    console.log(`⏭️ nextQuestion: ${beforeIndex} → ${beforeIndex + 1} (normal increment)`);
     this.currentQuestion++; // Normal increment for answered questions
   }
 
@@ -3934,10 +5543,20 @@ nextQuestion() {
   this.timerHasExpired = false;
   
   // CRITICAL: Reset state for new toss-up question
-  if (this.gameMode === 'certamen') {
+  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
     this.eliminatedTeams.clear();  // Clear eliminations from previous question
+    this._lastBuzzerState = null;  // 🔧 FIX: Reset buzzer state cache so enableBuzzers() will re-add listeners
     this.teamBuzzedIn = null;      // Reset buzz state
     this.resetAllTeamVisualStates(); // Reset all visual states for new question
+    
+    // 🎮 MULTIPLAYER: Sync teamBuzzedIn reset to Firebase
+    if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef) {
+      window.updateFirebaseDoc(this.roomRef, {
+        'gameState.teamBuzzedIn': null,
+        'gameState.buzzPhase': 'waiting'
+      });
+      console.log('📤 HOST: Synced teamBuzzedIn=null for new question');
+    }
   } else if (this.gameMode === 'certamen-solo') {
     this.soloPlayer.buzzed = false;  // Reset buzz state for solo player
     this.resetSoloPlayerVisualState(); // Reset visual state
@@ -3957,7 +5576,7 @@ nextQuestion() {
   // ✨ PREVENTATIVE FIX: Clear mode-specific countdown timers
   if (this.gameMode === 'certamen-solo') {
     this.clearSoloCountdownTimer();  // Solo Certamen 5-second countdown
-  } else if (this.gameMode === 'certamen') {
+  } else if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
     this.clearQuestionTimer();        // Regular Certamen 5-second buzz-in timer
   }
   
@@ -3974,7 +5593,7 @@ nextQuestion() {
   this.hideVisualTimer();
   
   // Clear word-by-word reading state
-  if (this.gameMode === 'certamen') {
+  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
     this.stopReading();
     this.isReading = false;
     this.currentWordIndex = 0;
@@ -4011,6 +5630,8 @@ nextQuestion() {
       buzzButton.textContent = '🔔 BUZZ IN';
       buzzButton.style.background = '';
       buzzButton.style.color = '';
+      // 🎮 FIX: Reset display property that may have been set to 'none' during bonus
+      buzzButton.style.display = '';
     }
     
     if (floatingButton) {
@@ -4023,7 +5644,7 @@ nextQuestion() {
   });
   
   this.nextRoundTimer = setTimeout(() => {
-    if (this.gameMode === 'certamen') {
+    if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
       this.startCertamenRound();
     } else if (this.gameMode === 'certamen-solo') {
       this.startSoloCertamenRound();
@@ -4034,6 +5655,18 @@ nextQuestion() {
 }
 
 returnToSetup() {
+  // 💓 HOST: Stop heartbeat and notify players
+  if (this.isHost && this.gameMode === 'certamen-multiplayer') {
+    this.stopHostHeartbeat();
+    
+    // Notify players that host left intentionally
+    if (this.roomRef && window.updateFirebaseDoc) {
+      window.updateFirebaseDoc(this.roomRef, {
+        'hostLeft': true
+      }).catch(err => console.warn('Could not notify players of host leaving:', err));
+    }
+  }
+  
   // Save tracking data BEFORE clearing state
   this.saveCertamenPassages();      // For Certamen mode
   if (selectedCategories && selectedCategories.length > 0) {
@@ -4042,7 +5675,7 @@ returnToSetup() {
   
   // CRITICAL: Clear Certamen/reading state BEFORE resetting gameMode
   // (Otherwise the if check below will never work!)
-  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo') {
+  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-solo' || this.gameMode === 'certamen-multiplayer') {
     this.stopReading();
     this.isReading = false;
     this.currentWordIndex = 0;
@@ -4051,6 +5684,7 @@ returnToSetup() {
     if (this.eliminatedTeams) {
       this.eliminatedTeams.clear();
     }
+    this._lastBuzzerState = null; // Reset buzzer state cache
   }
   
   // Clear ALL timers and intervals
@@ -4116,6 +5750,55 @@ returnToSetup() {
   
   document.querySelector('.container').style.display = 'block';
   
+  // 🎮 MULTIPLAYER: Clean up multiplayer state when returning to setup
+  if (this.gameMode === 'certamen-multiplayer' || this.isHost !== undefined) {
+    // Hide the multiplayer setup screen - go back to main setup
+    const multiplayerSetup = document.getElementById('multiplayer-setup');
+    if (multiplayerSetup) {
+      multiplayerSetup.style.display = 'none';
+      multiplayerSetup.classList.remove('active');
+    }
+    
+    // ✅ FIX: Restore the setup elements that showMultiplayerSetup() hid
+    const setupContainer = document.querySelector('.game-setup');
+    const header = document.querySelector('.header');
+    const progressIndicator = document.querySelector('.progress-indicator');
+    
+    if (setupContainer) {
+      setupContainer.style.display = 'block';
+      setupContainer.style.opacity = '1';
+    }
+    if (header) {
+      header.style.display = 'block';
+      header.style.opacity = '1';
+    }
+    if (progressIndicator) {
+      progressIndicator.style.display = 'flex';
+      progressIndicator.style.opacity = '1';
+    }
+    
+    console.log('📱 Returning to main setup screen');
+    
+    // Clean up multiplayer state
+    this.isHost = undefined;
+    this.myTeamIndex = null;
+    this.roomRef = null;
+    
+    // 🧹 Clean up ALL Firebase listeners using registry
+    if (window.listenerRegistry) {
+      window.listenerRegistry.cleanupAll();
+    }
+    // Also clean up local references (in case registry wasn't used)
+    if (this.unsubscribe) {
+      this.unsubscribe();
+      this.unsubscribe = null;
+    }
+    if (this.hostBuzzUnsubscribe) {
+      this.hostBuzzUnsubscribe();
+      this.hostBuzzUnsubscribe = null;
+    }
+  }
+  
   // Reset ALL game state completely
   this.currentQuestion = 0;
   this.currentPassage = 0; // Reset passage counter
@@ -4126,6 +5809,7 @@ returnToSetup() {
   this.teams = [];
   this.usedTriads = []; // Clear tracked triads
   this.buzzingAllowed = false; // Reset buzzing state
+  console.log('🔴 DEBUG: buzzingAllowed set to FALSE (game reset)');
   this.timerHasExpired = false; // Reset timer flag
   
   // Reset solo player state
@@ -4220,8 +5904,8 @@ returnToSetup() {
   }
   
   startBuzzButtonPulsing() {
-    if (this.gameMode === 'certamen') {
-      // Regular certamen - pulse team buzz buttons
+    if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
+      // Regular/multiplayer certamen - pulse team buzz buttons
       this.teams.forEach((team, index) => {
         // Only pulse non-eliminated teams
         if (!this.eliminatedTeams.has(index)) {
@@ -4255,8 +5939,8 @@ returnToSetup() {
   }
 
   stopBuzzButtonPulsing() {
-    if (this.gameMode === 'certamen') {
-      // Regular certamen - stop pulsing team buzz buttons
+    if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
+      // Regular/multiplayer certamen - stop pulsing team buzz buttons
       this.teams.forEach((team, index) => {
         const buzzButton = document.getElementById(`buzz-${index}`);
         const floatingButton = document.getElementById(`floating-buzz-${index}`);
@@ -4352,6 +6036,41 @@ setupAnswerHandlers(question) {
 }
 
 handleAnswer(question, selectedAnswer, element) {
+  // 🛡️ DEBOUNCE: Prevent rapid double-clicks on answer options
+  if (!buttonClickTracker.canClick('answer-submit', 500)) {
+    return; // Ignore rapid repeated clicks
+  }
+  
+  // 🎮 MULTIPLAYER: Check if it's this player/host's turn to answer
+  if (this.gameMode === 'certamen-multiplayer') {
+    // Check if we can answer toss-up (buzzed in) or bonus (our bonus round)
+    const canAnswerTossUp = this.teamBuzzedIn === this.myTeamIndex;
+    const canAnswerBonus = this.bonusState === 'active' && this.bonusWinningTeam === this.myTeamIndex;
+    
+    if (!canAnswerTossUp && !canAnswerBonus) {
+      console.log(`⚠️ Not my turn to answer (teamBuzzedIn=${this.teamBuzzedIn}, myTeamIndex=${this.myTeamIndex}, bonusState=${this.bonusState})`);
+      return;
+    }
+    
+    // If we're a PLAYER (not host), send answer to Firebase
+    if (!this.isHost) {
+      // Log what type of answer this is
+      if (canAnswerBonus) {
+        console.log(`📤 PLAYER: Sending BONUS answer to Firebase`);
+      } else {
+        console.log(`📤 PLAYER: Sending answer to Firebase`);
+      }
+      this.sendAnswerToFirebase(selectedAnswer);
+      
+      // Disable answer options to prevent double submission
+      this.disableAnswerOptions();
+      return; // Don't process locally - host will handle it
+    }
+    
+    // HOST continues to process locally below
+    console.log(`🎯 HOST: Processing own answer (teamBuzzedIn=${this.teamBuzzedIn})`);
+  }
+  
   // CLEAR TIMER when answer is submitted
   this.clearQuestionTimer();
   
@@ -4387,9 +6106,10 @@ handleAnswer(question, selectedAnswer, element) {
   if (hasOptions) {
     // Multiple choice - selectedAnswer is index
     isCorrect = selectedAnswer === question.correct;
-    console.log('🔍 DEBUG MC: User clicked index:', selectedAnswer, 'Expected index:', question.correct);
-    console.log('🔍 DEBUG MC: User clicked:', question.options[selectedAnswer], 'Expected answer:', question.answer);
-    console.log('🔍 DEBUG MC: Comparison result:', isCorrect);
+    // MC answer validation debug logs - uncomment if debugging answer matching
+    // console.log('🔍 DEBUG MC: User clicked index:', selectedAnswer, 'Expected index:', question.correct);
+    // console.log('🔍 DEBUG MC: User clicked:', question.options[selectedAnswer], 'Expected answer:', question.answer);
+    // console.log('🔍 DEBUG MC: Comparison result:', isCorrect);
     
     // Disable all MC buttons
 const allButtons = document.querySelectorAll('.answer-option');
@@ -4406,22 +6126,24 @@ allButtons.forEach((btn, index) => {
         btn.classList.add('incorrect'); // RED - player got it wrong (don't show correct answer)
       }
     }
-  } else if (this.gameMode !== 'certamen') {
+  } else if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
+    // Certamen mode (team or multiplayer): NEVER reveal correct answer
+    // Only show feedback on the selected answer
+    if (index === selectedAnswer) {
+      if (isCorrect) {
+        btn.classList.add('correct'); // GREEN - team got it right!
+      } else {
+        btn.classList.add('incorrect'); // RED - team got it wrong
+        // 🎮 FIX: Keep red highlighting visible so all players see which answers were tried
+        // Don't remove it - highlighting will be cleared when moving to next question
+      }
+    }
+  } else {
     // Practice/Timed modes: permanent green/red for learning
     if (index === question.correct) {
       btn.classList.add('correct');
     } else if (index === selectedAnswer && !isCorrect) {
       btn.classList.add('incorrect');
-    }
-  } else {
-    // Certamen mode (team)
-    if (index === question.correct && isCorrect) {
-      btn.classList.add('correct'); // Show green when correct
-    } else if (index === selectedAnswer && !isCorrect) {
-      btn.classList.add('incorrect'); // Show red briefly
-      setTimeout(() => {
-        btn.classList.remove('incorrect'); // Remove red so next team sees clean options
-      }, 800);
     }
   }
 });
@@ -4429,9 +6151,10 @@ allButtons.forEach((btn, index) => {
   } else {
   // Fill-in-the-blank - selectedAnswer is ignored, get from input
   const userAnswer = document.getElementById('answer-input').value.trim();
-  console.log('🔍 DEBUG: User typed:', userAnswer, 'Expected:', question.answer);
+  // Fill-in answer debug logs - uncomment if debugging answer matching
+  // console.log('🔍 DEBUG: User typed:', userAnswer, 'Expected:', question.answer);
   isCorrect = this.compareAnswers(userAnswer, question.answer);
-  console.log('🔍 DEBUG: Comparison result:', isCorrect);
+  // console.log('🔍 DEBUG: Comparison result:', isCorrect);
   
   // Disable the input and button WITH visual feedback
   const answerInput = document.getElementById('answer-input');
@@ -4459,7 +6182,7 @@ allButtons.forEach((btn, index) => {
 }
 
  // ENHANCED: Mode-specific handling
-if (this.gameMode === 'certamen') {
+if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
   // CERTAMEN MODE: Handle team elimination and bonus questions
   
   // ✨ FIX: Ignore answer submission if timer has already expired
@@ -4469,6 +6192,13 @@ if (this.gameMode === 'certamen') {
   }
   
   console.log(`🎯 Certamen answer: ${isCorrect ? 'CORRECT' : 'INCORRECT'} by team ${this.teamBuzzedIn}`);
+  
+  // 🎮 MULTIPLAYER: Sync host's answer result to Firebase so players see it
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef) {
+    const hasOptions = question.options && question.options.length > 0;
+    this.syncAnswerResultToFirebase(this.teamBuzzedIn, isCorrect, hasOptions ? selectedAnswer : null);
+    console.log('📤 HOST: Synced own answer result to Firebase');
+  }
   
   if (isCorrect) {
     // CORRECT ANSWER - Start bonus questions for winning team
@@ -4599,6 +6329,15 @@ continueAfterIncorrectAnswer() {
   // Reset for remaining teams
   this.teamBuzzedIn = null;
   
+  // 🎮 MULTIPLAYER: Sync teamBuzzedIn reset to Firebase so players can buzz again
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef) {
+    window.updateFirebaseDoc(this.roomRef, {
+      'gameState.teamBuzzedIn': null,
+      'gameState.buzzPhase': 'waiting'
+    });
+    console.log('📤 HOST: Synced teamBuzzedIn=null to Firebase (allowing other teams to buzz)');
+  }
+  
   // RESET THE QUESTION-TYPE LABEL back to "TOSSUP" for remaining teams
   const questionTypeEl = document.querySelector('.question-type');
   if (questionTypeEl) {
@@ -4611,6 +6350,22 @@ continueAfterIncorrectAnswer() {
   
   this.enableBuzzers();
   this.disableAnswerOptions();
+  
+  // 🎮 CERTAMEN: Re-enable answer options but KEEP incorrect highlighting visible
+  // This shows other teams which answers have already been tried
+  // NOTE: Don't call clearAnswerHighlighting() here - keep red highlighting on wrong answers
+  const answerButtons = document.querySelectorAll('.answer-option');
+  answerButtons.forEach(button => {
+    button.disabled = false; // Re-enable for next team to try
+    // Keep 'incorrect' class - don't remove it!
+  });
+  
+  // Also re-enable text input if present
+  const answerInput = document.getElementById('answer-input');
+  if (answerInput) {
+    answerInput.disabled = false;
+    // Keep background color styling to show previous wrong answer
+  }
 
   // RESTART PULSING FOR REMAINING TEAMS
   this.startBuzzButtonPulsing();
@@ -4647,7 +6402,15 @@ continueAfterIncorrectSoloAnswer() {
 }
 
 startBonusQuestions() {
-  console.log('🏛️ Starting bonus questions for winning team:', this.teamBuzzedIn);
+  // Use bonusWinningTeam if already set (from processPlayerAnswer), otherwise fall back to teamBuzzedIn
+  const winningTeam = this.bonusWinningTeam !== null ? this.bonusWinningTeam : this.teamBuzzedIn;
+  console.log('🏛️ Starting bonus questions for winning team:', winningTeam);
+  
+  if (winningTeam === null) {
+    console.error('❌ Cannot start bonus - no winning team identified');
+    this.nextQuestion();
+    return;
+  }
   
   // Helper function for flexible group matching
   function normalizeGroupName(groupName) {
@@ -4659,32 +6422,30 @@ startBonusQuestions() {
   const bonus1Index = tossupIndex + 1;
   const bonus2Index = tossupIndex + 2;
   
+  // Quick alignment sanity check - only log if there's a problem
+  if (tossupIndex % 3 !== 0) {
+    console.error(`🚨 ALIGNMENT ERROR: index ${tossupIndex} is not at tossup position (expected multiple of 3)`);
+  }
+  
   // Verify we have the next 2 questions available
   if (bonus1Index < this.questions.length && bonus2Index < this.questions.length) {
     const bonus1 = this.questions[bonus1Index];
     const bonus2 = this.questions[bonus2Index];
-    
-    // Verify they are from the same group (safety check)
     const tossupGroup = this.questions[tossupIndex].group;
-    console.log(`🔍 DEBUG: Tossup group: "${tossupGroup}"`);
-    console.log(`🔍 DEBUG: Bonus1 group: "${bonus1.group}"`);
-    console.log(`🔍 DEBUG: Bonus2 group: "${bonus2.group}"`);
     
     // Use flexible group matching
     const normalizedTossupGroup = normalizeGroupName(tossupGroup);
     const normalizedBonus1Group = normalizeGroupName(bonus1.group);
     const normalizedBonus2Group = normalizeGroupName(bonus2.group);
     
-    console.log(`🔍 DEBUG: Normalized groups - Tossup: "${normalizedTossupGroup}", Bonus1: "${normalizedBonus1Group}", Bonus2: "${normalizedBonus2Group}"`);
-    console.log(`🔍 DEBUG: Groups match? ${normalizedBonus1Group === normalizedTossupGroup && normalizedBonus2Group === normalizedTossupGroup}`);
-    
     if (normalizedBonus1Group === normalizedTossupGroup && normalizedBonus2Group === normalizedTossupGroup) {
       
-      // Set up bonus state
+      // Set up bonus state - use the winningTeam we calculated at the start
       this.bonusState = 'active';
-      this.bonusWinningTeam = this.teamBuzzedIn;
+      this.bonusWinningTeam = winningTeam;
       this.bonusQuestions = [bonus1, bonus2];
       this.currentBonusQuestion = 0;
+      this.bonusRoundEnding = false; // 🛡️ Reset guard flag for new bonus round
 
       // Keep winning team highlighted during bonus round
       this.updateTeamVisualState(this.bonusWinningTeam, 'bonus-active');
@@ -4696,18 +6457,28 @@ startBonusQuestions() {
         }
       });
       
-      console.log(`📋 Loaded bonus questions from group ${tossupGroup}`);
-      console.log(`Bonus 1: ${bonus1.question.substring(0, 50)}...`);
-      console.log(`Bonus 2: ${bonus2.question.substring(0, 50)}...`);
+      console.log(`📋 Bonus round loaded for team ${this.bonusWinningTeam} (group: ${tossupGroup})`);
       
       // Add winning team score for correct toss-up
       const tossupPoints = this.questions[this.currentQuestion].points || 10;
-      this.teams[this.bonusWinningTeam].score += tossupPoints;
-      this.updateTeamScoreDisplay(this.bonusWinningTeam);
+      if (this.bonusWinningTeam !== null && this.teams[this.bonusWinningTeam]) {
+        this.teams[this.bonusWinningTeam].score += tossupPoints;
+        this.updateTeamScoreDisplay(this.bonusWinningTeam);
+      } else {
+        console.error(`❌ Cannot update score - invalid bonusWinningTeam: ${this.bonusWinningTeam}`);
+      }
+      
+      // 🎮 MULTIPLAYER: Sync bonus state to Firebase so players know bonus round started
+      if (this.gameMode === 'certamen-multiplayer' && this.isHost) {
+        this.syncBonusStateToFirebase('active', this.bonusWinningTeam);
+      }
       
       // Start first bonus question after brief pause
       setTimeout(() => {
-        this.displayBonusQuestion();
+        // 🛡️ GUARD: Only proceed if bonus round is still active
+        if (this.bonusState === 'active') {
+          this.displayBonusQuestion();
+        }
       }, 2000);
       
     } else {
@@ -4742,6 +6513,11 @@ fallbackToNextQuestion() {
   } else {
     console.warn('⚠️ Cannot award toss-up points - no valid winning team');
   }
+  
+  // ✨ FIX: Skip the 2 mismatched bonus questions to maintain triad alignment
+  // We're currently at the tossup, need to skip +2 for the bonuses, then nextQuestion() adds +1
+  console.log(`⏭️ Skipping mismatched bonus questions (${this.currentQuestion} → ${this.currentQuestion + 2})`);
+  this.currentQuestion += 2;
   
   this.bonusCompleteTimer = setTimeout(() => this.nextQuestion(), 2000);
 }
@@ -4778,6 +6554,7 @@ startSoloBonusQuestions() {
       this.bonusWinningTeam = 0; // Solo player is always 0
       this.bonusQuestions = [bonus1, bonus2];
       this.currentBonusQuestion = 0;
+      this.bonusRoundEnding = false; // 🛡️ Reset guard flag for new bonus round
 
       // Card stays normal purple during bonus - only score badge is green
       // (Removed: this.updateSoloPlayerVisualState('bonus-active'))
@@ -4788,10 +6565,12 @@ startSoloBonusQuestions() {
       const floatingSoloButton = document.getElementById('floating-solo-buzz');
       if (soloBuzzButton) {
         soloBuzzButton.classList.remove('buzzed-active', 'pulse');
-        soloBuzzButton.textContent = '🔕 BONUS ROUND';
+        soloBuzzButton.classList.add('bonus-disabled');
+        soloBuzzButton.textContent = '🏆 BONUS ROUND';
       }
       if (floatingSoloButton) {
         floatingSoloButton.classList.remove('buzzed-active', 'pulse');
+        floatingSoloButton.classList.add('bonus-disabled');
       }
       
       console.log(`📋 Loaded bonus questions from group ${tossupGroup}`);
@@ -4851,7 +6630,8 @@ updateSoloScoreDisplay() {
 
 // UNIFIED TIMER SYSTEM for both toss-ups and bonus questions
 startQuestionTimer(duration, timerType) {
-  console.log(`⏰ DEBUG: Starting ${timerType} timer for ${duration} seconds`);
+  // Verbose timer debug logs commented out to reduce console noise
+  // console.log(`⏰ DEBUG: Starting ${timerType} timer for ${duration} seconds`);
   this.questionTimeLeft = duration;
   this.currentTimerType = timerType; // 'tossup', 'bonus', or 'buzz-in'
   
@@ -4872,15 +6652,38 @@ startQuestionTimer(duration, timerType) {
     
     // Make timer visible
     timerBox.style.visibility = 'visible';
-    console.log(`⏰ DEBUG: Timer box updated and made visible`);
+    // console.log(`⏰ DEBUG: Timer box updated and made visible`);
   } else {
-    console.warn(`⏰ DEBUG: Could not find timer box element`);
+    console.warn(`⏰ Could not find timer box element`);
   }
   
-  console.log(`⏰ DEBUG: Starting interval countdown from ${duration} seconds`);
+  // console.log(`⏰ DEBUG: Starting interval countdown from ${duration} seconds`);
+  
+  // 🎮 MULTIPLAYER: Host broadcasts initial timer to Firebase
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef && window.updateFirebaseDoc) {
+    window.updateFirebaseDoc(this.roomRef, {
+      'gameState.timer': {
+        timeRemaining: duration,
+        timerType: timerType,
+        timestamp: Date.now()
+      }
+    });
+  }
+  
   this.questionTimer = setInterval(() => {
     this.questionTimeLeft--;
     this.updateQuestionTimerDisplay();
+    
+    // 🎮 MULTIPLAYER: Host broadcasts timer to Firebase every second
+    if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef && window.updateFirebaseDoc) {
+      window.updateFirebaseDoc(this.roomRef, {
+        'gameState.timer': {
+          timeRemaining: this.questionTimeLeft,
+          timerType: this.currentTimerType,
+          timestamp: Date.now()
+        }
+      });
+    }
     
     if (this.questionTimeLeft <= 0) {
       console.log(`⏰ ${timerType} time expired`);
@@ -4910,11 +6713,24 @@ updateQuestionTimerDisplay() {
 handleQuestionTimeout() {
   // ✨ DISABLE BUZZING - race condition fix
   this.buzzingAllowed = false;
+  this._timerExpiredAt = Date.now(); // Record when timer expired for late buzz logging
   console.log('🔴 Buzzing disabled - timer expired');
   
   if (this.questionTimer) {
     clearInterval(this.questionTimer);
     this.questionTimer = null;
+  }
+  
+  // 🎮 MULTIPLAYER: Host broadcasts timer expiry to Firebase
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef && window.updateFirebaseDoc) {
+    window.updateFirebaseDoc(this.roomRef, {
+      'gameState.timer': {
+        timeRemaining: 0,
+        timerType: this.currentTimerType,
+        timestamp: Date.now()
+      },
+      'gameState.buzzingAllowed': false
+    });
   }
   
   const timerBox = document.getElementById('question-timer-box');
@@ -4924,6 +6740,12 @@ handleQuestionTimeout() {
   }
   
   if (this.currentTimerType === 'buzz-in') {
+    // 🎮 MULTIPLAYER FIX: Only host advances question
+    if (this.gameMode === 'certamen-multiplayer' && !this.isHost) {
+      console.log('⏰ PLAYER: Waiting for host to advance question');
+      return;
+    }
+    
     // 5-second buzz-in time expired - move to next question
     console.log('⏰ No team buzzed within 5 seconds - moving to next question');
     setTimeout(() => {
@@ -4994,15 +6816,131 @@ clearQuestionTimer() {
     this.questionTimer = null;
   }
   
+  // 🎮 MULTIPLAYER: Host clears timer from Firebase
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef && window.updateFirebaseDoc) {
+    window.updateFirebaseDoc(this.roomRef, {
+      'gameState.timer': null
+    });
+  }
+  
   // HIDE the visual timer box instead of removing it (prevents jumping)
   const timerBox = document.getElementById('question-timer-box');
   if (timerBox) {
     timerBox.style.visibility = 'hidden'; // Hide but keep space reserved
-    console.log('⏰ DEBUG: Timer box hidden (space reserved)');
+    // console.log('⏰ DEBUG: Timer box hidden (space reserved)');
+  }
+}
+
+// 🎮 MULTIPLAYER: Display bonus question on player screens (received from Firebase)
+displayPlayerBonusQuestion(bonusData) {
+  console.log(`🎯 PLAYER: Displaying bonus question ${bonusData.bonusNumber}/2`);
+  
+  const winningTeam = bonusData.winningTeam;
+  const isMyBonus = (winningTeam === this.myTeamIndex);
+  
+  // Update team visual states for bonus round
+  this.teams.forEach((team, index) => {
+    if (index === winningTeam) {
+      this.updateTeamVisualState(index, 'bonus-active');
+    } else {
+      this.updateTeamVisualState(index, 'inactive');
+    }
+  });
+  
+  // Build question type label
+  const teamName = this.teams[winningTeam]?.name || `Team ${winningTeam}`;
+  const questionTypeLabel = `TEAM ${teamName.toUpperCase()} - BONUS QUESTION ${bonusData.bonusNumber}`;
+  
+  // Display the bonus question
+  const questionDisplay = document.getElementById('question-display');
+  questionDisplay.innerHTML = `
+    <div class="bonus-question-container">
+      <div class="question-content">
+        <div class="question-type">${questionTypeLabel}</div>
+        <div class="timer-placeholder" id="timer-placeholder">
+          <div class="question-timer-box" id="question-timer-box" style="visibility: hidden; min-width: 70px; min-height: 30px;">
+            <span class="timer-icon">⏰</span>
+            <span id="question-timer">0</span>
+          </div>
+        </div>
+        <h3 id="question-text-display">${this.cleanQuestionText(bonusData.question)}</h3>
+        ${this.createAnswerOptionsFromData(bonusData)}
+      </div>
+    </div>
+  `;
+  
+  // Ensure question display is visible
+  questionDisplay.style.display = 'block';
+  
+  // Disable all buzz buttons during bonus
+  this.disableAllBuzzers();
+  this.stopBuzzButtonPulsing();
+  
+  // 🎮 MULTIPLAYER FIX: Only show button on answering team
+  // Non-answering teams should have their button hidden during bonus
+  this.teams.forEach((team, index) => {
+    const buzzButton = document.getElementById(`buzz-${index}`);
+    if (buzzButton) {
+      if (index === winningTeam) {
+        // Answering team - show "ANSWERING" button
+        buzzButton.textContent = '🎯 ANSWERING';
+        buzzButton.classList.add('bonus-disabled');
+        buzzButton.style.display = 'block';
+      } else {
+        // Non-answering teams - hide the button entirely during bonus
+        buzzButton.style.display = 'none';
+      }
+    }
+  });
+  
+  // If it's MY team's bonus, enable answer options
+  if (isMyBonus) {
+    console.log('🎮 PLAYER: This is MY team\'s bonus - enabling answer options');
+    // Set up answer handlers for the bonus question
+    const bonusQuestionObj = {
+      question: bonusData.question,
+      options: bonusData.options,
+      answer: bonusData.answer,
+      category: bonusData.category
+    };
+    this.currentQuestionObj = bonusQuestionObj;
+    this.setupAnswerHandlers(bonusQuestionObj);
+    this.enableAnswerOptions();
+  } else {
+    console.log('📺 PLAYER: Watching other team\'s bonus - answer options disabled');
+    this.disableAnswerOptions();
+  }
+}
+
+// Helper method to create answer options from bonus data
+createAnswerOptionsFromData(bonusData) {
+  if (bonusData.options && bonusData.options.length > 0) {
+    // Multiple choice
+    return `
+      <div class="answer-options">
+        ${bonusData.options.map((option, index) => `
+          <button class="answer-option" data-index="${index}" disabled>${option}</button>
+        `).join('')}
+      </div>
+    `;
+  } else {
+    // Fill in the blank - use same structure as host for consistent styling
+    return `
+      <div class="answer-input">
+        <input type="text" placeholder="Type your answer..." id="answer-input" autocomplete="off" disabled />
+        <button id="submit-answer-btn" disabled>Submit</button>
+      </div>
+    `;
   }
 }
 
 displayBonusQuestion() {
+  // 🛡️ GUARD: Don't display if bonus round is already ending
+  if (this.bonusRoundEnding) {
+    console.log('⚠️ displayBonusQuestion skipped - bonus round already ending');
+    return;
+  }
+  
   if (this.currentBonusQuestion >= this.bonusQuestions.length) {
     this.endBonusRound();
     return;
@@ -5016,6 +6954,11 @@ displayBonusQuestion() {
   
   console.log(`📋 Displaying bonus question ${bonusNumber}/2`);
   
+  // 🎮 MULTIPLAYER: Sync bonus question to Firebase so players can see it
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost) {
+    this.syncBonusQuestionToFirebase(bonusQuestion, bonusNumber);
+  }
+  
   // Update question display
 const questionDisplay = document.getElementById('question-display');
 
@@ -5024,7 +6967,8 @@ let questionTypeLabel;
 if (this.gameMode === 'certamen-solo') {
   questionTypeLabel = `BONUS ${bonusNumber}`;
 } else {
-  questionTypeLabel = `TEAM ${this.teams[this.bonusWinningTeam].name.toUpperCase()} - BONUS QUESTION ${bonusNumber}`;
+  const teamName = this.teams[this.bonusWinningTeam]?.name || `Team ${this.bonusWinningTeam}`;
+  questionTypeLabel = `TEAM ${teamName.toUpperCase()} - BONUS QUESTION ${bonusNumber}`;
 }
 
 questionDisplay.innerHTML = `
@@ -5046,8 +6990,23 @@ questionDisplay.innerHTML = `
   // Ensure question display is visible (in case it was hidden by clearQuestionDisplay)
   questionDisplay.style.display = 'block';
   
-  // Set up answer handlers for this bonus question
-  this.setupAnswerHandlers(bonusQuestion);
+  // 🎮 MULTIPLAYER: Update currentQuestionObj so host can validate player bonus answers
+  this.currentQuestionObj = bonusQuestion;
+  
+  // 🎮 MULTIPLAYER FIX: Only set up answer handlers if it's the host's team's bonus
+  // In multiplayer, host should only be able to answer during their own team's bonus
+  const isMyTeamsBonus = this.gameMode === 'certamen-multiplayer' 
+    ? (this.myTeamIndex === this.bonusWinningTeam)
+    : true; // Non-multiplayer modes always allow answering
+  
+  if (isMyTeamsBonus) {
+    // Set up answer handlers for this bonus question
+    this.setupAnswerHandlers(bonusQuestion);
+  } else {
+    // Not my team's bonus - disable answer options
+    console.log('📺 HOST: Watching other team\'s bonus - answer options disabled');
+    this.disableAnswerOptions();
+  }
   
   // Start 15-second timer using unified system
   this.startQuestionTimer(15, 'bonus');
@@ -5062,26 +7021,43 @@ questionDisplay.innerHTML = `
     const floatingSoloButton = document.getElementById('floating-solo-buzz');
     if (soloBuzzButton) {
       soloBuzzButton.classList.remove('buzzed-active', 'pulse');
-      soloBuzzButton.textContent = '🔕 BONUS ROUND';
+      soloBuzzButton.classList.add('bonus-disabled');
+      soloBuzzButton.textContent = '🏆 BONUS ROUND';
     }
     if (floatingSoloButton) {
       floatingSoloButton.classList.remove('buzzed-active', 'pulse');
+      floatingSoloButton.classList.add('bonus-disabled');
     }
   } else {
     // Team mode - disable all team buzzers
     this.disableAllBuzzers();
     
-    // Set BONUS ROUND text on all team buttons (only during actual bonus)
+    // 🎮 MULTIPLAYER FIX: Only show button on answering team
+    // Non-answering teams should have their button hidden during bonus
     this.teams.forEach((team, index) => {
       const buzzButton = document.getElementById(`buzz-${index}`);
       if (buzzButton) {
-        buzzButton.textContent = '🔕 BONUS ROUND';
+        if (index === this.bonusWinningTeam) {
+          // Answering team - show "ANSWERING" button
+          buzzButton.textContent = '🎯 ANSWERING';
+          buzzButton.classList.add('bonus-disabled');
+          buzzButton.style.display = 'block';
+        } else {
+          // Non-answering teams - hide the button entirely during bonus
+          buzzButton.style.display = 'none';
+        }
       }
     });
   }
 }
 
 handleBonusAnswer(question, selectedAnswer, isCorrect) {
+  // 🛡️ GUARD: Don't process if bonus round is already ending
+  if (this.bonusRoundEnding) {
+    console.log('⚠️ handleBonusAnswer skipped - bonus round already ending');
+    return;
+  }
+  
   // Clear the timer
   this.clearQuestionTimer();
   
@@ -5095,14 +7071,13 @@ handleBonusAnswer(question, selectedAnswer, isCorrect) {
     allButtons.forEach((btn, index) => {
       btn.disabled = true;
       
-      // Only show green when user got it right
-      if (index === question.correct && isCorrect) {
-        btn.classList.add('correct');
-      }
-      
-      // Show the wrong answer in red (stays visible for bonus)
-      if (index === selectedAnswer && !isCorrect) {
-        btn.classList.add('incorrect');
+      // Show feedback on the selected answer only (like toss-ups in Certamen)
+      if (index === selectedAnswer) {
+        if (isCorrect) {
+          btn.classList.add('correct'); // GREEN - got it right!
+        } else {
+          btn.classList.add('incorrect'); // RED - got it wrong
+        }
       }
     });
   } else {
@@ -5142,6 +7117,12 @@ handleBonusAnswer(question, selectedAnswer, isCorrect) {
 }
 
 nextBonusQuestion() {
+  // 🛡️ GUARD: Don't process if bonus round is already ending
+  if (this.bonusRoundEnding) {
+    console.log('⚠️ nextBonusQuestion skipped - bonus round already ending');
+    return;
+  }
+  
   this.currentBonusQuestion++;
   
   if (this.currentBonusQuestion >= this.bonusQuestions.length) {
@@ -5152,6 +7133,13 @@ nextBonusQuestion() {
 }
 
 endBonusRound() {
+  // 🛡️ GUARD: Prevent multiple calls due to timer/answer race condition
+  if (this.bonusRoundEnding) {
+    console.log('⚠️ endBonusRound already in progress - skipping duplicate call');
+    return;
+  }
+  this.bonusRoundEnding = true;
+  
   console.log('🎉 Bonus round complete');
   
   // Reset bonus state
@@ -5166,6 +7154,11 @@ endBonusRound() {
     this.bonusTimer = null;
   }
   
+  // 🎮 MULTIPLAYER: Sync bonus end state to Firebase
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost) {
+    this.syncBonusStateToFirebase('inactive', null);
+  }
+  
   // CRITICAL: Skip the 2 bonus questions we just used
   // Jump directly to the next toss-up (which will be current + 3)
   console.log(`⏭️ Skipping from question ${this.currentQuestion} to ${this.currentQuestion + 3}`);
@@ -5173,6 +7166,7 @@ endBonusRound() {
   
   // Move to next toss-up question
   setTimeout(() => {
+    this.bonusRoundEnding = false; // 🛡️ Reset guard flag for future bonus rounds
     this.nextQuestion(); // This will increment currentQuestion by 1 more, landing on next toss-up
   }, 2000);
 }
@@ -5189,6 +7183,30 @@ updateTeamScoreDisplay(teamIndex) {
       }, 1000);
     }
   }
+  
+  // 🎮 MULTIPLAYER: Host syncs scores to Firebase
+  if (this.isHost && this.roomRef && window.updateFirebaseDoc) {
+    this.syncScoresToFirebase();
+  }
+}
+
+// 🎮 MULTIPLAYER: Sync all team scores to Firebase
+async syncScoresToFirebase() {
+  if (!this.isHost || !this.roomRef) return;
+  
+  try {
+    const teamScores = this.teams.map(team => ({
+      name: team.name,
+      score: team.score
+    }));
+    
+    await window.updateFirebaseDoc(this.roomRef, {
+      'gameState.teamScores': teamScores
+    });
+    console.log('📊 Synced team scores to Firebase:', teamScores);
+  } catch (error) {
+    console.error('❌ Failed to sync scores:', error);
+  }
 }
 
 disableAllBuzzers() {
@@ -5198,12 +7216,11 @@ disableAllBuzzers() {
     
     if (buzzButton) {
       buzzButton.disabled = true;
-      buzzButton.classList.add('bonus-disabled');
+      // Note: bonus-disabled class is added separately only during actual bonus rounds
     }
     
     if (floatingButton) {
       floatingButton.disabled = true;
-      floatingButton.classList.add('bonus-disabled');
     }
   });
 }
@@ -5390,6 +7407,11 @@ showExplanation(question, isCorrect) {
 }
 
 submitAnswer() {
+  // 🛡️ DEBOUNCE: Prevent rapid double-clicks on submit button
+  if (!buttonClickTracker.canClick('text-submit', 500)) {
+    return; // Ignore rapid repeated clicks
+  }
+  
   const input = document.getElementById('answer-input');
   if (!input) return;
   
@@ -5400,7 +7422,18 @@ submitAnswer() {
 }
 
 enableBuzzers() {
-  if (this.gameMode !== 'certamen') return;
+  if (this.gameMode !== 'certamen' && this.gameMode !== 'certamen-multiplayer') return;
+  
+  // 🔧 FIX: Prevent constant re-initialization during Firebase updates
+  // Only reinitialize if state has actually changed
+  const stateKey = `${this.myTeamIndex}-${Array.from(this.eliminatedTeams).join(',')}`;
+  if (this._lastBuzzerState === stateKey) {
+    // State hasn't changed, no need to re-clone buttons
+    return;
+  }
+  this._lastBuzzerState = stateKey;
+  
+  console.log(`🔧 enableBuzzers: Initializing (state changed to ${stateKey})`);
   
   this.teams.forEach((team, index) => {
     const buzzButton = document.getElementById(`buzz-${index}`);
@@ -5410,19 +7443,32 @@ enableBuzzers() {
       const newButton = buzzButton.cloneNode(true);
       buzzButton.parentNode.replaceChild(newButton, buzzButton);
       
+      // 🎮 MULTIPLAYER FIX: In multiplayer, only enable button for player's own team
+      if (this.gameMode === 'certamen-multiplayer' && this.myTeamIndex !== null && index !== this.myTeamIndex) {
+        // This is NOT the player's team - let CSS handle hiding (.other-team .buzz-button { display: none })
+        // Don't override the CSS - just return without setting up the button
+        return;
+      }
+      
       // Check if team is eliminated from current question
       if (this.eliminatedTeams.has(index)) {
         newButton.disabled = true;
         newButton.classList.add('eliminated');
         newButton.textContent = 'ELIMINATED';
         newButton.style.background = 'rgba(239, 68, 68, 0.3)';
+        newButton.style.display = 'block';
       } else {
         newButton.disabled = false;
-        newButton.classList.remove('eliminated');
+        newButton.classList.remove('eliminated', 'inactive-team', 'bonus-disabled');
         newButton.textContent = '🔔 BUZZ IN';
         newButton.style.background = '';
+        newButton.style.opacity = '';
+        newButton.style.cursor = '';
+        newButton.style.display = 'block';
         // Add FRESH event listener (no duplicates possible now)
-        newButton.addEventListener('click', () => this.handleBuzz(index));
+        newButton.addEventListener('click', () => {
+          this.handleBuzz(index);
+        });
       }
     }
   });
@@ -5460,6 +7506,8 @@ enableSoloBuzzer() {
 }
 
 handleBuzz(teamIndex) {
+  console.log(`🔔 handleBuzz called: teamIndex=${teamIndex}, buzzingAllowed=${this.buzzingAllowed}, teamBuzzedIn=${this.teamBuzzedIn}`);
+  
   // ✨ RACE CONDITION FIX: Prevent buzzing when not allowed (timer expired, between questions, etc.)
   if (!this.buzzingAllowed) {
     console.log('⚠️ Buzz rejected - buzzing not currently allowed');
@@ -5479,14 +7527,87 @@ handleBuzz(teamIndex) {
     return;
   }
   
+  // 🎮 MULTIPLAYER: If player (not host), send buzz to Firebase and return
+  if (this.gameMode === 'certamen-multiplayer' && !this.isHost) {
+    this.sendBuzzToFirebase(teamIndex);
+    return; // Players don't process buzzes locally
+  }
+  
+  // 🎮 HOST or REGULAR CERTAMEN: Process buzz locally
+  this.processBuzz(teamIndex);
+}
+
+// 🎮 MULTIPLAYER: Send buzz attempt to Firebase
+async sendBuzzToFirebase(teamIndex) {
+  if (!this.roomRef || !window.updateFirebaseDoc) {
+    console.error('❌ Cannot send buzz - Firebase not available');
+    return;
+  }
+  
+  try {
+    await window.updateFirebaseDoc(this.roomRef, {
+      'gameState.buzzAttempt': {
+        teamIndex: teamIndex,
+        timestamp: Date.now(),
+        questionTimestamp: this._lastQuestionTimestamp || 0 // 🎮 SYNC FIX: Include which question this buzz is for
+      }
+    });
+  } catch (error) {
+    console.error('❌ Error sending buzz:', error);
+  }
+}
+
+// 🎮 MULTIPLAYER: Send answer to Firebase for host to process
+async sendAnswerToFirebase(selectedAnswer) {
+  if (!this.roomRef || !window.updateFirebaseDoc) {
+    console.error('❌ Cannot send answer - Firebase not available');
+    return;
+  }
+  
+  // For text input, get the value
+  let answerData = selectedAnswer;
+  if (selectedAnswer === null) {
+    const answerInput = document.getElementById('answer-input');
+    answerData = answerInput ? answerInput.value.trim() : '';
+  }
+  
+  try {
+    await window.updateFirebaseDoc(this.roomRef, {
+      'gameState.submittedAnswer': {
+        teamIndex: this.myTeamIndex,
+        answer: answerData,
+        timestamp: Date.now(),
+        questionTimestamp: this._lastQuestionTimestamp || 0 // 🎮 SYNC FIX: Include which question this answer is for
+      }
+    });
+    console.log('✅ Answer sent to Firebase:', answerData);
+  } catch (error) {
+    console.error('❌ Error sending answer:', error);
+  }
+}
+
+// 🎮 Process buzz (called by host or in non-multiplayer)
+processBuzz(teamIndex) {
+  // 💓 Refresh heartbeat on game action
+  if (this.isHost) this.sendHostHeartbeat();
+  
   this.teamBuzzedIn = teamIndex;
+  
+  // 🎮 MULTIPLAYER: Host syncs teamBuzzedIn to Firebase so all players know who buzzed
+  if (this.gameMode === 'certamen-multiplayer' && this.isHost && this.roomRef) {
+    window.updateFirebaseDoc(this.roomRef, {
+      'gameState.teamBuzzedIn': teamIndex,
+      'gameState.buzzPhase': 'answering'  // Signal that a team is now answering
+    });
+    console.log(`📤 HOST: Synced teamBuzzedIn=${teamIndex} to Firebase`);
+  }
   
   // ✨ IMMEDIATELY DISABLE ALL BUZZ BUTTONS to prevent spam
   this.disableAllBuzzers();
   
   // Clear any buzz-in timer when someone buzzes
   this.clearQuestionTimer();
-  if (this.gameMode === 'certamen') {
+  if (this.gameMode === 'certamen' || this.gameMode === 'certamen-multiplayer') {
     this.stopReading();
   }
   console.log(`Team ${teamIndex} buzzed in`);
@@ -5504,7 +7625,7 @@ handleBuzz(teamIndex) {
   
   // UPDATE THE YELLOW BADGE TO SHOW WHICH TEAM BUZZED IN
   const questionTypeEl = document.querySelector('.question-type');
-  if (questionTypeEl) {
+  if (questionTypeEl && this.teams[teamIndex]) {
     questionTypeEl.textContent = `TEAM ${this.teams[teamIndex].name.toUpperCase()} - TOSSUP`;
   } 
  
@@ -5518,10 +7639,11 @@ handleBuzz(teamIndex) {
   
   // Re-enable answer options after buzz-in
   const answerButtons = document.querySelectorAll('.answer-option');
-  console.log(`🎮 DEBUG: Found ${answerButtons.length} answer buttons to enable after buzz-in`);
+  // Verbose button enable logs commented out to reduce console noise
+  // console.log(`🎮 DEBUG: Found ${answerButtons.length} answer buttons to enable after buzz-in`);
   answerButtons.forEach((button, index) => {
     button.disabled = false;
-    console.log(`✅ DEBUG: Enabled button ${index}: "${button.textContent}" (disabled=${button.disabled})`);
+    // console.log(`✅ DEBUG: Enabled button ${index}: "${button.textContent}" (disabled=${button.disabled})`);
   });
   
 // Also enable text input if it exists
@@ -5534,15 +7656,150 @@ if (answerInput) {
   answerInput.style.background = ''; // Reset background color
   answerInput.style.color = ''; // Reset text color
   answerInput.focus();
-  console.log('✅ DEBUG: Enabled text input field');
+  // console.log('✅ DEBUG: Enabled text input field');
 }
 if (submitButton) {
   submitButton.disabled = false;
-  console.log('✅ DEBUG: Enabled submit button');
+  // console.log('✅ DEBUG: Enabled submit button');
 }
 
-console.log('🎮 DEBUG: Answer options should now be clickable. Timer should be running.');
+// console.log('🎮 DEBUG: Answer options should now be clickable. Timer should be running.');
 } 
+
+// 🎮 MULTIPLAYER: Host processes answer submitted by a player
+processPlayerAnswer(teamIndex, answer) {
+  // 💓 Refresh heartbeat on game action
+  this.sendHostHeartbeat();
+  
+  console.log(`🎮 HOST: processPlayerAnswer called with teamIndex=${teamIndex}, answer="${answer}"`);
+  // Verbose debug logs commented out - uncomment if debugging answer processing
+  // console.log(`🎮 HOST: currentQuestionObj=`, this.currentQuestionObj);
+  // console.log(`🎮 HOST: bonusState=${this.bonusState}`);
+  
+  // Clear the answer timer
+  this.clearQuestionTimer();
+  
+  // Get current question - use currentQuestionObj for multiplayer
+  const question = this.currentQuestionObj;
+  if (!question) {
+    console.error('❌ No current question to process answer against (currentQuestionObj is null)');
+    return;
+  }
+  
+  console.log(`🔍 HOST: Question:`, question);
+  console.log(`🔍 HOST: Question has options: ${!!question.options}, correct index: ${question.correct}`);
+  
+  // Determine if answer is correct
+  let isCorrect;
+  const hasOptions = question.options && question.options.length > 0;
+  
+  if (hasOptions) {
+    // Multiple choice - answer is the index
+    isCorrect = parseInt(answer) === question.correct;
+    console.log(`🔍 HOST: MC answer index ${answer}, correct index ${question.correct}, isCorrect=${isCorrect}`);
+    
+    // Show visual feedback on the host's screen
+    const answerButtons = document.querySelectorAll('.answer-option');
+    const selectedIndex = parseInt(answer);
+    if (answerButtons[selectedIndex]) {
+      answerButtons[selectedIndex].classList.add(isCorrect ? 'correct' : 'incorrect');
+    }
+  } else {
+    // Text answer
+    isCorrect = this.compareAnswers(answer, question.answer);
+    console.log(`🔍 HOST: Text answer "${answer}" vs "${question.answer}", isCorrect=${isCorrect}`);
+  }
+  
+  // Log the result
+  console.log(`🎯 HOST: Team ${teamIndex} answered ${isCorrect ? 'CORRECTLY' : 'INCORRECTLY'}`);
+  
+  // Sync result to Firebase for players to see FIRST
+  this.syncAnswerResultToFirebase(teamIndex, isCorrect, hasOptions ? parseInt(answer) : null);
+  
+  // 🎮 Check if this is a BONUS question answer (different flow)
+  if (this.bonusState === 'active') {
+    console.log('🎯 HOST: Processing as BONUS answer');
+    this.handleBonusAnswerFromPlayer(teamIndex, isCorrect);
+    return;
+  }
+  
+  // TOSS-UP answer logic
+  if (isCorrect) {
+    // CORRECT ANSWER - Start bonus questions for winning team
+    console.log('✅ CORRECT ANSWER - Starting bonus round');
+    
+    this.bonusWinningTeam = teamIndex;
+    this.bonusState = 'pending';
+    
+    this.bonusStartTimer = setTimeout(() => {
+      this.startBonusQuestions();
+    }, 1500);
+    
+  } else {
+    // INCORRECT ANSWER - Eliminate team and continue
+    console.log(`❌ INCORRECT - Eliminating team ${teamIndex}`);
+    this.eliminatedTeams.add(teamIndex);
+    this.updateTeamVisualState(teamIndex, 'eliminated');
+
+    setTimeout(() => {
+      this.continueAfterIncorrectAnswer();
+    }, 1000);
+  }
+}
+
+// 🎮 MULTIPLAYER: Sync answer result to Firebase
+async syncAnswerResultToFirebase(teamIndex, isCorrect, selectedIndex) {
+  if (!this.roomRef || !window.updateFirebaseDoc) return;
+  
+  try {
+    await window.updateFirebaseDoc(this.roomRef, {
+      'gameState.answerResult': {
+        teamIndex: teamIndex,
+        isCorrect: isCorrect,
+        selectedIndex: selectedIndex,
+        timestamp: Date.now()
+      },
+      'gameState.teamBuzzedIn': null,  // Clear buzzed state
+      'gameState.buzzPhase': 'complete'
+    });
+    console.log(`📤 HOST: Synced answer result to Firebase`);
+  } catch (error) {
+    console.error('❌ Error syncing answer result:', error);
+  }
+}
+
+// 🎮 MULTIPLAYER: Handle bonus answer submitted by player
+handleBonusAnswerFromPlayer(teamIndex, isCorrect) {
+  console.log(`🎯 HOST: handleBonusAnswerFromPlayer - team ${teamIndex}, correct: ${isCorrect}`);
+  
+  // 🛡️ GUARD: Don't process if bonus round is already ending
+  if (this.bonusRoundEnding) {
+    console.log('⚠️ handleBonusAnswerFromPlayer skipped - bonus round already ending');
+    return;
+  }
+  
+  // CRITICAL: Clear timer immediately when answer is received
+  this.clearQuestionTimer();
+  
+  const bonusNumber = this.currentBonusQuestion + 1;
+  const bonusPoints = this.bonusQuestions[this.currentBonusQuestion]?.points || 5;
+  
+  if (isCorrect) {
+    // Award bonus points
+    this.teams[this.bonusWinningTeam].score += bonusPoints;
+    this.updateTeamScoreDisplay(this.bonusWinningTeam);
+    console.log(`✅ BONUS ${bonusNumber} CORRECT - Team ${this.bonusWinningTeam} awarded ${bonusPoints} points`);
+  } else {
+    console.log(`❌ BONUS ${bonusNumber} INCORRECT - No points awarded`);
+  }
+  
+  // Move to next bonus question after delay
+  this.currentBonusQuestion++;
+  
+  setTimeout(() => {
+    this.displayBonusQuestion(); // Will call endBonusRound if no more bonuses
+  }, 1500);
+}
 
 handleSoloBuzz() {
   // Race condition fix: Prevent buzzing when not allowed
@@ -5700,6 +7957,53 @@ disableAnswerOptions() {
   }
 }
 
+// 🎮 MULTIPLAYER: Enable answer options for the buzzed team
+enableAnswerOptions() {
+  const answerButtons = document.querySelectorAll('.answer-option');
+  answerButtons.forEach(button => {
+    button.disabled = false;
+  });
+  
+  // Also enable text input and submit button
+  const answerInput = document.getElementById('answer-input');
+  const submitButton = document.querySelector('.answer-input button');
+  if (answerInput) {
+    answerInput.disabled = false;
+    answerInput.readOnly = false;
+    answerInput.value = '';
+    answerInput.style.background = '';
+    answerInput.style.color = '';
+    answerInput.focus();
+  }
+  if (submitButton) {
+    submitButton.disabled = false;
+  }
+  console.log('✅ Answer options enabled');
+}
+
+// 🎮 CERTAMEN: Clear any correct/incorrect highlighting from answer options
+clearAnswerHighlighting() {
+  const answerButtons = document.querySelectorAll('.answer-option');
+  answerButtons.forEach(button => {
+    button.classList.remove('correct', 'incorrect');
+    button.disabled = false; // Re-enable for next team
+  });
+  
+  // Also clear text input styling
+  const answerInput = document.getElementById('answer-input');
+  if (answerInput) {
+    answerInput.style.background = '';
+    answerInput.style.color = '';
+    answerInput.value = '';
+    answerInput.disabled = false;
+  }
+  
+  const submitButton = document.querySelector('.answer-input button');
+  if (submitButton) {
+    submitButton.disabled = false;
+  }
+}
+
 hideVisualTimer() {
   const timer = document.querySelector('.visual-timer');
   if (timer) {
@@ -5712,22 +8016,72 @@ updateTeamVisualState(teamIndex, state) {
   const teamCard = document.getElementById(`team-${teamIndex}`);
   if (!teamCard) return;
   
+  // Debug: Check if .other-team class is present (for ANSWERING/ELIMINATED badges)
+  const hasOtherTeamClass = teamCard.classList.contains('other-team');
+  const hasMyTeamClass = teamCard.classList.contains('my-team');
+  
+  // Debug log the class list for troubleshooting badge visibility
+  if (state === 'buzzed-in' || state === 'eliminated') {
+    console.log(`🏷️ Team ${teamIndex} classList: ${teamCard.className}`);
+  }
+  
   // Remove all visual state classes
   teamCard.classList.remove('team-buzzed-in', 'team-bonus-active', 'team-eliminated', 'team-inactive');
+  
+  // 🎮 FIX: Also reset button text when going to normal state
+  const buzzButton = document.getElementById(`buzz-${teamIndex}`);
+  if (buzzButton && state === 'normal') {
+    const oldText = buzzButton.textContent;
+    buzzButton.textContent = '🔔 BUZZ IN';
+    buzzButton.classList.remove('bonus-disabled');
+    // Reset display - clear any inline style so CSS takes over
+    buzzButton.style.display = '';
+    console.log(`🔔 Reset buzz-${teamIndex} button: "${oldText}" → "🔔 BUZZ IN", display cleared`);
+  } else if (state === 'normal') {
+    console.log(`⚠️ Could not find buzz-${teamIndex} button to reset`);
+  }
   
   // Apply new state
   switch(state) {
     case 'buzzed-in':
       teamCard.classList.add('team-buzzed-in');
-      console.log(`🟢 Team ${teamIndex} visual state: BUZZED IN (green)`);
+      // 🎮 FIX: Set button text to ANSWERING for other teams during toss-up buzzes
+      if (buzzButton && hasOtherTeamClass) {
+        buzzButton.textContent = '🎯 ANSWERING';
+        console.log(`🟠 Team ${teamIndex} visual state: BUZZED IN (other team - button set to ANSWERING)`);
+        console.log(`🏷️ Team ${teamIndex} buzzed classList: ${teamCard.className}`);
+      } else if (hasOtherTeamClass) {
+        console.log(`🟠 Team ${teamIndex} visual state: BUZZED IN (other team - no button found)`);
+        console.log(`🏷️ Team ${teamIndex} buzzed classList: ${teamCard.className}`);
+      } else {
+        console.log(`🟢 Team ${teamIndex} visual state: BUZZED IN (my team - green glow)`);
+      }
       break;
     case 'bonus-active':
       teamCard.classList.add('team-bonus-active');
-      console.log(`🟢 Team ${teamIndex} visual state: BONUS ACTIVE (green)`);
+      // 🎮 FIX: Set button text to ANSWERING for other teams during bonus rounds
+      if (buzzButton && hasOtherTeamClass) {
+        buzzButton.textContent = '🎯 ANSWERING';
+        console.log(`🟠 Team ${teamIndex} visual state: BONUS ACTIVE (other team - button set to ANSWERING)`);
+        console.log(`🏷️ Team ${teamIndex} bonus classList: ${teamCard.className}`);
+      } else if (hasOtherTeamClass) {
+        console.log(`🟠 Team ${teamIndex} visual state: BONUS ACTIVE (other team - no button found)`);
+        console.log(`🏷️ Team ${teamIndex} bonus classList: ${teamCard.className}`);
+      } else {
+        console.log(`🟢 Team ${teamIndex} visual state: BONUS ACTIVE (my team - green glow)`);
+      }
       break;
     case 'eliminated':
       teamCard.classList.add('team-eliminated');
-      console.log(`🔴 Team ${teamIndex} visual state: ELIMINATED (red)`);
+      // 🎮 FIX: Set button text to ELIMINATED
+      if (buzzButton) {
+        buzzButton.textContent = 'ELIMINATED';
+      }
+      if (hasOtherTeamClass) {
+        console.log(`🔴 Team ${teamIndex} visual state: ELIMINATED (other team - button set to ELIMINATED)`);
+      } else {
+        console.log(`🔴 Team ${teamIndex} visual state: ELIMINATED (my team - button set to ELIMINATED)`);
+      }
       break;
     case 'inactive':
       teamCard.classList.add('team-inactive');
@@ -5836,19 +8190,146 @@ document.getElementById('start-game').addEventListener('click', function(event) 
   if (selectedCategories.length > 0 && selectedLevel && selectedMode && isSelectionValid()) {
     // Disable button to prevent double-clicking
     this.disabled = true;
-    this.textContent = 'Starting...';
+    
+    // Update button text for split-reveal structure
+    const topSpan = this.querySelector('.split-top');
+    const bottomSpan = this.querySelector('.split-bottom');
+    const revealSpan = this.querySelector('.split-reveal');
+    
+    if (topSpan && bottomSpan && revealSpan) {
+      topSpan.textContent = 'STARTING...';
+      bottomSpan.textContent = 'STARTING...';
+      revealSpan.style.display = 'none';
+    }
     
     try {
-      // Pass array of categories instead of single category
-      game.startGame(selectedCategories, selectedLevel, selectedMode);
+      // Check if multiplayer certamen mode
+      if (selectedMode === 'certamen-multiplayer') {
+        console.log('🌐 Multiplayer Certamen selected - showing Host/Join screen');
+        
+        // CRITICAL: Store selections in BOTH localStorage AND window globals
+        // localStorage for firebase.js, window for multiplayer.js
+        localStorage.setItem('multiplayer_selectedLevel', selectedLevel);
+        localStorage.setItem('multiplayer_selectedCategories', selectedCategories.join(','));
+        window.selectedLevel = selectedLevel;
+        window.selectedCategories = selectedCategories;
+        
+        console.log(`📊 Stored for multiplayer: Level=${selectedLevel}, Categories=${selectedCategories}`);
+        
+        showMultiplayerSetup();
+        // Re-enable button in case they go back
+        this.disabled = false;
+        if (topSpan && bottomSpan && revealSpan) {
+          topSpan.textContent = 'START GAME';
+          bottomSpan.textContent = 'START GAME';
+          revealSpan.style.display = '';
+        }
+      } else {
+        // Regular modes - start game immediately
+        game.startGame(selectedCategories, selectedLevel, selectedMode);
+      }
     } catch (error) {
       console.error('Error starting game:', error);
       this.disabled = false;
-      this.textContent = 'Start Game';
+      if (topSpan && bottomSpan && revealSpan) {
+        topSpan.textContent = 'START GAME';
+        bottomSpan.textContent = 'START GAME';
+        revealSpan.style.display = '';
+      }
     }
   } else {
     console.warn('Cannot start game - invalid selection');
   }
+});
+
+// ============================================
+// MULTIPLAYER SCREEN MANAGEMENT
+// ============================================
+
+function showMultiplayerSetup() {
+  console.log('📱 Showing Host/Join screen');
+  
+  // Hide the setup screen with fade out
+  const setupContainer = document.querySelector('.game-setup');
+  const header = document.querySelector('.header');
+  const progressIndicator = document.querySelector('.progress-indicator');
+  
+  if (setupContainer) {
+    setupContainer.style.transition = 'opacity 0.5s ease';
+    setupContainer.style.opacity = '0';
+  }
+  if (header) {
+    header.style.transition = 'opacity 0.5s ease';
+    header.style.opacity = '0';
+  }
+  if (progressIndicator) {
+    progressIndicator.style.transition = 'opacity 0.5s ease';
+    progressIndicator.style.opacity = '0';
+  }
+  
+  // Show multiplayer setup screen after fade out
+  setTimeout(() => {
+    if (setupContainer) setupContainer.style.display = 'none';
+    if (header) header.style.display = 'none';
+    if (progressIndicator) progressIndicator.style.display = 'none';
+    
+    const multiplayerSetup = document.getElementById('multiplayer-setup');
+    if (multiplayerSetup) {
+      multiplayerSetup.style.display = 'flex';
+      // Trigger reflow for transition
+      multiplayerSetup.offsetHeight;
+      multiplayerSetup.classList.add('active');
+    }
+  }, 500);
+}
+
+function hideMultiplayerSetup() {
+  console.log('📱 Hiding Host/Join screen');
+  
+  const multiplayerSetup = document.getElementById('multiplayer-setup');
+  
+  if (multiplayerSetup) {
+    multiplayerSetup.classList.remove('active');
+    
+    setTimeout(() => {
+      multiplayerSetup.style.display = 'none';
+      
+      // Show setup screen again with fade in
+      const setupContainer = document.querySelector('.game-setup');
+      const header = document.querySelector('.header');
+      const progressIndicator = document.querySelector('.progress-indicator');
+      
+      if (setupContainer) {
+        setupContainer.style.display = 'block';
+        setupContainer.style.opacity = '0';
+        setTimeout(() => {
+          setupContainer.style.opacity = '1';
+        }, 50);
+      }
+      if (header) {
+        header.style.display = 'block';
+        header.style.opacity = '0';
+        setTimeout(() => {
+          header.style.opacity = '1';
+        }, 50);
+      }
+      if (progressIndicator) {
+        progressIndicator.style.display = 'flex';
+        progressIndicator.style.opacity = '0';
+        setTimeout(() => {
+          progressIndicator.style.opacity = '1';
+        }, 50);
+      }
+    }, 500);
+  }
+}
+
+// Event listeners for Host/Join buttons
+// Multiplayer button handlers now in multiplayer.js
+
+document.getElementById('back-to-setup').addEventListener('click', function() {
+  console.log('← Back to setup clicked');
+  hideMultiplayerSetup();
 });
 
 // Scroll event listeners
