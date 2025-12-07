@@ -573,7 +573,8 @@ body {
 
 /* Orange badge for Certamen and Solo Certamen mode cards */
 [data-mode="certamen"] .card-subtitle,
-[data-mode="certamen-solo"] .card-subtitle {
+[data-mode="certamen-solo"] .card-subtitle,
+[data-mode="certamen-multiplayer"] .card-subtitle {
   background: linear-gradient(135deg, #ff8c00, #ffaa00, #ffd700);
   color: #000000;
   opacity: 1;
@@ -599,7 +600,8 @@ body {
 }
 
 [data-mode="certamen"] .card-title,
-[data-mode="certamen-solo"] .card-title {
+[data-mode="certamen-solo"] .card-title,
+[data-mode="certamen-multiplayer"] .card-title {
   margin-bottom: 0rem !important;
   font-size: 0.85rem !important;
 }
