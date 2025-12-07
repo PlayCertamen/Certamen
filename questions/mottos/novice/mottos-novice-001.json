@@ -1117,7 +1117,7 @@
     "id": "phrases_nov_104",
     "question": "Fill in the blank: 'a.i.' (ad interim) means ________.",
     "answer": "In the meantime",
-    "explanation": "Used to describe temporary or acting positions.",
+    "explanation": "Used to describe an intervening or temporary period of time.",
     "topic": "Common Latin Abbreviations",
     "subtopic": "Abbreviations",
     "dependency": "bonus_independent",
