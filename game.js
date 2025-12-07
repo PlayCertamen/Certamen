@@ -7378,12 +7378,35 @@ showExplanation(question, isCorrect) {
   const explanationDiv = document.createElement('div');
   explanationDiv.className = `explanation ${isCorrect ? 'correct' : 'incorrect'}`;
   
-  explanationDiv.innerHTML = `
+  // Build the content - show correct answer when wrong
+  let content = `
     <div class="result-indicator">
       ${isCorrect ? '✅ Correct!' : '❌ Incorrect'}
     </div>
-    <p>${question.explanation || 'No explanation available for this question.'}</p>
   `;
+  
+  // Show the correct answer when the user got it wrong
+  if (!isCorrect && question.answer) {
+    let primaryAnswer;
+    if (Array.isArray(question.answer)) {
+      // Array format: ["answer1", "answer2"] - show first one
+      primaryAnswer = question.answer[0];
+    } else if (question.answer.includes('|')) {
+      // Pipe-separated format: "answer1|answer2" - show first one
+      primaryAnswer = question.answer.split('|')[0].trim();
+    } else {
+      // Single answer
+      primaryAnswer = question.answer;
+    }
+    content += `<p class="correct-answer-reveal"><strong>The answer is:</strong> ${primaryAnswer}</p>`;
+  }
+  
+  // Show explanation if available
+  if (question.explanation) {
+    content += `<p class="explanation-text">${question.explanation}</p>`;
+  }
+  
+  explanationDiv.innerHTML = content;
   
   // Add Continue button for Practice mode only
   if (this.gameMode === 'practice') {

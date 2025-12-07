@@ -1271,6 +1271,26 @@ body {
   margin: 0;
 }
 
+.correct-answer-reveal {
+  background: rgba(60, 60, 120, 0.7);
+  border: 1px solid rgba(120, 120, 200, 0.5);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  color: #e0d4ff;
+  font-size: 1.1rem;
+}
+
+.correct-answer-reveal strong {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.explanation-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
 @keyframes explanationSlideIn {
   from {
     opacity: 0;
